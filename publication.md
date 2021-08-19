@@ -1,8 +1,8 @@
 ---
-title: Hello, I'm Zhe Wang
-permalink: /about/
+title: Publications
+permalink: /publication/
 layout: page
-excerpt: about
+excerpt: publication
 comments: false
 ---
 

@@ -6,6 +6,10 @@
   url: /about/
   external: false # set true if you using external link, see below
 
+- title: publication
+  url: /publication/
+  external: false
+
 - title: blog
   url: /blog/
   external: false
