@@ -4,6 +4,9 @@ layout: default
 
 # Unless we change directions, we will end up where we are headed. -- Confucius
 
+<br />
+<br />
+
 ## - About Me
 
 📍&ensp;Qingdao, P.R.China -> Hiroshima, Japan
