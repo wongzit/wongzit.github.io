@@ -1,8 +1,6 @@
 # Site settings
-title: Klise Theme # site title
-description: >- # site description
-  He's writing in Bahasa about web technology and experience as a journal 
-  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
+title: Z. Wang # site title
+description: personal website
 lang: en-US # default lang
 timezone: Asia/Tokyo # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
@@ -20,6 +18,35 @@ author:
   facebook: facebook_username # facebook username
   email: wongzit@yahoo.co.jp # email adress
   avatar: /assets/img/profile.png # change with your own avatar
+  googlescholar    : "https://scholar.google.co.jp/citations?user=gzUh6CMAAAAJ&hl=ja&oi=sra"
+  email            : "wongzit@yahoo.co.jp"
+  researchgate     : "https://www.researchgate.net/profile/Zhe-Wang-84"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : "https://www.facebook.com/profile.php?id=100004305313075"
+  foursquare       :
+  github           : "wongzit"
+  google_plus      :
+  keybase          :
+  instagram        : "https://www.instagram.com/tetsu_____/"
+  impactstory      : 
+  lastfm           :
+  linkedin         :
+  orcid            : "http://orcid.org/0000-0002-9996-586X"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : "ooooooootetsu"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
 
 # URL settings
 url: "https://wongzit.github.io" #
