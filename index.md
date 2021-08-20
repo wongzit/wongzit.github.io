@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# - About Me
+# Unless we change directions, we will end up where we are headed. -- Confucius
+
+## - About Me
 
 📍&ensp;Qingdao, P.R.China -> Hiroshima, Japan
 
@@ -15,6 +17,6 @@ layout: default
 <br />
 <br />
 
-# - Catch me with
+## - Catch me with
 
 <a href="https://orcid.org/0000-0002-9996-586X"> <img alt="ORCID iD" class="icon" src="./assets/img/Display_4PP.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;">0000-0002-9996-586X</a>
