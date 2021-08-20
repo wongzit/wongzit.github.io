@@ -2,10 +2,8 @@
 layout: default
 ---
 
-'''
-Unless we change directions, we will end up where we are headed.
-                                              -- Confucius
-'''
+> Unless we change directions, we will end up where we are headed.
+>                                                     -- Confucius
 
 <br />
 <br />
