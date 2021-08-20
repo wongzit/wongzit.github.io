@@ -31,5 +31,8 @@ layout: default
 
 ✉️&ensp;[Mail to](wongzit@yahoo.co.jp) wongzit[at]yahoo.co.jp
 
+<br />
+<br />
+
 > Unless we change directions, we will end up where we are headed.
 >                                                     -- Confucius
