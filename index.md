@@ -29,5 +29,7 @@ layout: default
 
 <a href="https://twitter.com/oooooootetsu"> <img alt="twitter" class="icon" src="./assets/img/GitHub-Mark-120px-plus.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;">Twitter: @oooooootetsu</a>
 
+✉️&ensp;[Mail to](wongzit@yahoo.co.jp) wongzit[at]yahoo.co.jp
+
 > Unless we change directions, we will end up where we are headed.
 >                                                     -- Confucius
