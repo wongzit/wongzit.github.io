@@ -4,13 +4,16 @@ layout: default
 
 # - About Me
 
-📍&ensp;**Born in Qingdao, P.R.China, living in Hiroshima, Japan.**
+📍&ensp;Qingdao, P.R.China -> Hiroshima, Japan
 
-👨🏻‍🎓&ensp;**PhD student in Hiroshima University.**
+👨🏻‍🎓&ensp;PhD student in Hiroshima University.
 
-👨🏻‍🔬&ensp;**Researcher of organic chemistry.**
+👨🏻‍🔬&ensp;Researcher of organic chemistry.
 
-👨🏻‍💻&ensp;**Python, Swift, C, C++ programmer.**
+👨🏻‍💻&ensp;Python, Swift, C, C++ programmer.
+
+<br />
+<br />
 
 # - Catch me with
 
