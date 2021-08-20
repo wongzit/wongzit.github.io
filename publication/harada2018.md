@@ -12,15 +12,16 @@ Accepted at <b>18th July 2018</b>
 <img src = "https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue?style=flat-square" alt = "cej_doi">
 </p>
 
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<div data-badge-type="1" data-doi="10.1002/chem.201803076" data-hide-no-mentions="true" class="altmetric-embed"></div>
+
 ## Abstract
 <p align = "justify">
 Localized singlet diradicals have attracted much attention, not only in the field of bond-homolysis chemistry, but also in nonlinear optical materials. In this study, an extremely long lived localized singlet diradical was obtained by using a new molecular design strategy in which it is kinetically stabilized by means of a macrocycle that increases the molecular strain of the corresponding σ-bonded compound. Notably, the lifetime of this diradical (14 μs) is two orders of magnitude longer than that of a standard singlet diradical without a macrocyclic structure (≈0.2 μs) at 293 K. The species is persistent below a temperature of 100 K. In addition to the kinetic stabilization of the singlet diradical, the spontaneous oxidation of its corresponding ring-closed compound at 298 K produced oxygenated products under atmospheric conditions. Apparently, the “stretch effect” induced by the macrocyclic structure plays a crucial role in extending the lifetime of localized singlet diradicals and increasing the reactivity of their corresponding σ-bonded compounds.
 </p>
 
-## Download from
+## Download Paper
 <p align = "center">
 <a href="https://doi.org/10.1002/chem.201803076"> <img src = '/assets/img/cej_logo.png' alt = 'cej_logo' style="width:200px"></a>
 </p>
 
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-<div data-badge-type="1" data-doi="10.1002/chem.201803076" data-hide-no-mentions="true" class="altmetric-embed"></div>
