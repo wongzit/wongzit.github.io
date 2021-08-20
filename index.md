@@ -4,7 +4,7 @@ layout: default
 
 ## - About Me
 
-📍&ensp;Qingdao, P.R.China -> Hiroshima, Japan
+📍&ensp;Hiroshima, Japan
 
 👨🏻‍🎓&ensp;PhD student in Hiroshima University.
 
@@ -19,7 +19,7 @@ layout: default
 
 <a href="https://orcid.org/0000-0002-9996-586X"> <img alt="ORCID iD" class="icon" src="./assets/img/Display_4PP.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;">ORCiD: 0000-0002-9996-586X</a>
 
-<a href="https://scholar.google.co.jp/citations?user=gzUh6CMAAAAJ&hl=ja"> <img alt="google scholar" class="icon" src="./assets/img/512px-Google_Scholar_logo.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;">Google Scholar: Zhe Wang</a>
+<a href="https://scholar.google.co.jp/citations?user=gzUh6CMAAAAJ&hl=ja"> <img alt="google scholar" class="icon" src="./assets/img/512px-Google_Scholar_logo.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>Google Scholar</b> Zhe Wang</a>
 
 <a href="https://www.researchgate.net/profile/Zhe-Wang-84"> <img alt="researchgate" class="icon" src="./assets/img/researchgate.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;">ResearchGate: Zhe Wang</a>
 
