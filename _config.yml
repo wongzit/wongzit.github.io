@@ -18,35 +18,6 @@ author:
   facebook: facebook_username # facebook username
   email: wongzit@yahoo.co.jp # email adress
   avatar: /assets/img/profile.png # change with your own avatar
-  googlescholar    : "https://scholar.google.co.jp/citations?user=gzUh6CMAAAAJ&hl=ja&oi=sra"
-  email            : "wongzit@yahoo.co.jp"
-  researchgate     : "https://www.researchgate.net/profile/Zhe-Wang-84"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         : "https://www.facebook.com/profile.php?id=100004305313075"
-  foursquare       :
-  github           : "wongzit"
-  google_plus      :
-  keybase          :
-  instagram        : "https://www.instagram.com/tetsu_____/"
-  impactstory      : 
-  lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/0000-0002-9996-586X"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : "ooooooootetsu"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
 
 # URL settings
 url: "https://wongzit.github.io" #
