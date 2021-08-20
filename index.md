@@ -29,7 +29,7 @@ layout: default
 
 <a href="https://twitter.com/oooooootetsu"> <img alt="twitter" class="icon" src="./assets/img/738px-Twitter_bird_logo_2012.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>Twitter</b> @oooooootetsu</a>
 
-✉️&ensp;[**Mail to**](wongzit@yahoo.co.jp) wongzit[at]yahoo.co.jp
+✉️&ensp;[ **Mail to**](wongzit@yahoo.co.jp) wongzit[at]yahoo.co.jp
 
 <br />
 <br />
