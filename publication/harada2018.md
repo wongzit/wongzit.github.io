@@ -11,7 +11,7 @@ comments: false
 
 Y. Harada, <u>Z. Wang</u>, S. Kumashiro, S. Hatano, M. Abe, *Chem. Eur. J.*, **2018**, *24*, 14808–14815.
 
-**Submitted**: 16th June, 2018;&ensp;**Accepted**: 18th July 2018&ensp;![](https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue)  
+**Submitted**: 16th June, 2018;&ensp;**Accepted**: 18th July 2018&ensp;![](https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue?style=for-the-badge&logo=appveyor)  
 
 ## Abstract
 <p align = "justify">
