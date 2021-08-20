@@ -22,3 +22,6 @@ Y. Miyazawa, <u>Z. Wang</u>, M. Matsumoto, S. Hatano, I. Antol, E. Kayahara, S. 
 ## 2018
 1.[ **Extremely Long Lived Localized Singlet Diradicals in a Macrocyclic Structure: A Case Study on the Stretch Effect**](https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/chem.201803076)&ensp;![](https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue)  
 Y. Harada, <u>Z. Wang</u>, S. Kumashiro, S. Hatano, M. Abe, *Chem. Eur. J.*, **2018**, *24*, 14808–14815.
+
+1.[ **Extremely Long Lived Localized Singlet Diradicals in a Macrocyclic Structure: A Case Study on the Stretch Effect**](https://wongzit.github.io/publication/harada2018/)&ensp;![](https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue)  
+Y. Harada, <u>Z. Wang</u>, S. Kumashiro, S. Hatano, M. Abe, *Chem. Eur. J.*, **2018**, *24*, 14808–14815.
