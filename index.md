@@ -5,9 +5,12 @@ layout: default
 
 ### about me
 
-Hello, welcom to my space. I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, studying 👨🏻‍🔬 **organic chemistry**. I was born in **Qingdao, P.R.China**🇨🇳, and now living in 📍 **Hiroshima, Japan**🇯🇵.
+Hello, welcom to my space. I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, studying 👨🏻‍🔬 **organic chemistry**. I was born in **Qingdao, P.R.China** 🇨🇳, and now living in 📍 **Hiroshima, Japan** 🇯🇵.
 
 I also do some 👨🏻‍💻 **programming**, I will post my publications, programs and some blogs (sometime for memo) on this website.
+
+<br />
+<br />
 
 ### may u needs ✨
 
