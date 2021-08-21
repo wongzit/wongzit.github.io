@@ -1,5 +1,5 @@
 ---
-title: Hello, I'm Zhe Wang
+title: Hello
 permalink: /about/
 layout: page
 excerpt: about
