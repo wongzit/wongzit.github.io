@@ -6,15 +6,18 @@ excerpt: about
 comments: false
 ---
 
-**Education**
+## education
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+- 2019.10 ~ now **Hiroshima University** (Ph.D.)
+- 2017.10 ~ 2019.09 **Hiroshima University** (M.Sc.)
+- 2013.09 ~ 2017.06 **China University of Petroleum, East China** (B.Eng.)
 
-If you have a question about him or else, just send a letter to him.
+<br>
+</br>
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
+## language
+### Human language
+🇨🇳🇹🇼 Chinese, 🇺🇸 English, 🇯🇵 Japanese
 
-**may u needs ✨**
-
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+### Computer language
+💻 C, C++, Python, Swift, Shell
