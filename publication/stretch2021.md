@@ -1,5 +1,5 @@
 ---
-title: "Impact of the macrocyclic structure and dynamic solvent effect on the reactivity of a localised singlet diradicaloid with π-single bonding character"
+title: "Impact of the Macrocyclic Structure and Dynamic Solvent Effect on the Reactivity of a Localised Singlet Diradicaloid with π-Single Bonding Character"
 permalink: /publication/stretch2021/
 layout: page
 excerpt: stretch2021
