@@ -12,8 +12,6 @@ comments: false
 - 2017.10 ~ 2019.09 **Hiroshima University** (M.Sc.)
 - 2013.09 ~ 2017.06 **China University of Petroleum, East China** (B.Eng.)
 
-<br />
-
 ## language
 - 🇨🇳🇹🇼 Chinese, 🇺🇸 English, 🇯🇵 Japanese
 - 💻 C, C++, Python, Swift, Shell
