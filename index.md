@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-### about me
+## about me
 
 Hello, welcom to my space. I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, studying 👨🏻‍🔬 **organic chemistry**. I was born in **Qingdao, P.R.China** 🇨🇳, and now living in 📍 **Hiroshima, Japan** 🇯🇵.
 
@@ -12,7 +12,7 @@ I also do some 👨🏻‍💻 **programming**, I will post my publications, pro
 <br />
 <br />
 
-### may u needs ✨
+## may u needs ✨
 
 <a href="https://orcid.org/0000-0002-9996-586X"> <img alt="ORCID iD" class="icon" src="./assets/img/Display_4PP.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>ORCiD</b> 0000-0002-9996-586X</a>
 
