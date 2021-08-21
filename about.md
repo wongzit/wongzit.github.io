@@ -15,8 +15,5 @@ comments: false
 <br />
 
 ## language
-### Human language
-🇨🇳🇹🇼 Chinese, 🇺🇸 English, 🇯🇵 Japanese
-
-### Computer language
-💻 C, C++, Python, Swift, Shell
+- 🇨🇳🇹🇼 Chinese, 🇺🇸 English, 🇯🇵 Japanese
+- 💻 C, C++, Python, Swift, Shell
