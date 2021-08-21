@@ -10,7 +10,7 @@ comments: false
 5.[ **SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals**](https://doi.org/10.1021/acsomega.1c03125)&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facsomega.1c03125-blue?style=flat-square)  
 <u>Z. Wang</u>, R. Murata, M. Abe, *ACS Omega*, **2021**, DOI:10.1021/acsomega.1c03125.
 
-4.[ **SOMO-HOMO Conversion in Triplet Carbenes**](https://pubs.acs.org/doi/10.1021/acs.orglett.1c01137)&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue?style=flat-square)  
+4.[ **SOMO-HOMO Conversion in Triplet Carbenes**](https://wongzit.github.io/publication/murata2021/)&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue?style=flat-square)  
 R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol, S. Yamago, M. Abe, *Org. Lett.*, **2021**, *23*, 4955–4959.
 
 3.[ **1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity**](https://pubs.acs.org/doi/10.1021/jacs.1c01329)&ensp;![](https://img.shields.io/badge/doi-10.1021%2Fjacs.1c01329-blue?style=flat-square)  
