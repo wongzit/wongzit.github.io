@@ -7,7 +7,7 @@ comments: false
 ---
 
 ## 2021
-5.[ **SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals**](https://doi.org/10.1021/acsomega.1c03125)&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facsomega.1c03125-blue?style=flat-square)  
+5.[ **SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals**](https://wongzit.github.io/publication/shc2021/)&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facsomega.1c03125-blue?style=flat-square)  
 <u>Z. Wang</u>, R. Murata, M. Abe, *ACS Omega*, **2021**, DOI:10.1021/acsomega.1c03125.
 
 4.[ **SOMO-HOMO Conversion in Triplet Carbenes**](https://wongzit.github.io/publication/murata2021/)&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue?style=flat-square)  
