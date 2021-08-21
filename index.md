@@ -9,9 +9,6 @@ Hello, welcom to my space. I am a 👨🏻‍🎓 **PhD student** from **Hiroshi
 
 I also do some 👨🏻‍💻 **programming**, I will post my publications, programs and some blogs (sometime for memo) on this website.
 
-<br />
-<br />
-
 ## may u needs ✨
 
 <a href="https://orcid.org/0000-0002-9996-586X"> <img alt="ORCID iD" class="icon" src="./assets/img/Display_4PP.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>ORCiD</b> 0000-0002-9996-586X</a>

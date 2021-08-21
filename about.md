@@ -15,3 +15,8 @@ comments: false
 ## language
 - 🇨🇳🇹🇼 Chinese, 🇺🇸 English, 🇯🇵 Japanese
 - 💻 C, C++, Python, Swift, Shell
+
+## membership
+- **The Chemical Society of Japan** (from 2018.04.01)
+- **The Society of Pyhsical Organic Chemistry, Japan** (from 2019)
+- **Japan Society of Theoretical Chemistry** (from 2020)
