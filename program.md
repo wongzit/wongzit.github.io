@@ -10,7 +10,7 @@ comments: false
 <a href="https://github.com/wongzit"> <img alt="githubpage" class="icon" src="https://github-readme-stats.vercel.app/api?username=wongzit&show_icons=true&theme=tokyonight"></a>
 </p>
 
-## independent programs
+## independent programs 🧰
 
 <p align="center">
 <a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:66px; background-color:transparent;"></a>
@@ -104,7 +104,7 @@ comments: false
 
 <br />
 
-## minor scripts
+## minor scripts 🛠
 
 All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
 
