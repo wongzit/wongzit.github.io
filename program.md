@@ -6,12 +6,11 @@ excerpt: program
 comments: false
 ---
 
-## 2021
-5.[ **SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals**](https://doi.org/10.1021/acsomega.1c03125)  
-<u>Z. Wang</u>, R. Murata, M. Abe, *ACS Omega*, **2021**, DOI:10.1021/acsomega.1c03125.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facsomega.1c03125-blue)
+## ICSSgen
 
-4.[ **SOMO-HOMO Conversion in Triplet Carbenes**](https://pubs.acs.org/doi/10.1021/acs.orglett.1c01137)  
-R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol, S. Yamago, M. Abe, *Org. Lett.*, **2021**, *23*, 4955–4959.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue)
+- **An 2D-ICSS input file generator**.
+- **Release date** 19th April 2021
+- **Platform** macOS, Linux, Windows
 
 3.[ **1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity**](https://pubs.acs.org/doi/10.1021/jacs.1c01329)  
 Y. Miyazawa, <u>Z. Wang</u>, M. Matsumoto, S. Hatano, I. Antol, E. Kayahara, S. Yamago, M. Abe, *J. Am. Chem. Soc.*, **2021**, *143*, 7426–7439.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Fjacs.1c01329-blue)
