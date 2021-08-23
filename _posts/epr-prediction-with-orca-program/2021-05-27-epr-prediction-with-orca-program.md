@@ -74,12 +74,12 @@ ELECTRONIC G-MATRIX
 -------------------
 
  The g-matrix: 
-              2.0060206    0.0004709   -0.0003205
-              0.0006221    2.0032154    0.0023911
-             -0.0002906    0.0024341    2.0088349
+                 2.0060206    0.0004709   -0.0003205
+                 0.0006221    2.0032154    0.0023911
+                -0.0002906    0.0024341    2.0088349
 
- gel          2.0023193    2.0023193    2.0023193
- gRMC        -0.0002988   -0.0002988   -0.0002988
+ gel             2.0023193    2.0023193    2.0023193
+ gRMC           -0.0002988   -0.0002988   -0.0002988
  gDSO(tot)    0.0001605    0.0002266    0.0001485
  gPSO(tot)    0.0000400    0.0038717    0.0075621
              ----------   ----------   ----------
@@ -141,8 +141,8 @@ cvw: van Wüllen method
 After the calculation is completed, you could read the ZFS parameters from output file:
 
 {% highlight xml %}
-D     =    0.019661  cm**-1
-E/D =    0.172867
+D       =    0.019661  cm**-1
+E/D   =    0.172867
 {% endhighlight %}
 
 # Example
@@ -151,7 +151,7 @@ Here I put two input files I used for EPR prediction. (methyl radical and triple
 
 ## Predict HFC of methyl radical
 
-{% highlight ruby %}
+{% highlight xml %}
 ! roks b3lyp epr-ii autoaux pal8
 * xyzfile 0   2
  C          0.12985        0.22512        0.99745
