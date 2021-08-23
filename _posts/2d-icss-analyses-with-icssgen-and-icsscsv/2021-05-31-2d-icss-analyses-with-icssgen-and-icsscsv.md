@@ -2,7 +2,7 @@
 layout: post
 title:  "2D-ICSS Analyses with ICSSgen and ICSScsv"
 date:   2021-05-31 00:20:36 +0900
-categories: jekyll update
+categories: software guide
 ---
 
 # Statement of need
@@ -11,7 +11,7 @@ categories: jekyll update
 
 # Install and Usage
 
-ICSSgen and ICSScsv could be download from [GitHub](https://github.com/wongzit). To install and run the programs, please refer to the user manuals.
+ICSSgen and ICSScsv could be download from [*GitHub*](https://github.com/wongzit). To install and run the programs, please refer to the user manuals.
 
 # 2D-ICSS analyses of 1-methylazulene
 
