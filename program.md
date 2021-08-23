@@ -98,7 +98,7 @@ comments: false
 - A program package of **Gaussian job monitor**, released on **17th July 2021**.
 - Supports **macOS** and **Linux**.
 - User manual and source code are free available from [*GitHub*](https://github.com/wongzit/gauMonitor).
-![](https://img.shields.io/badge/made%20with-Python%20BashShell-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20calculation%20monitor-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
+- ![](https://img.shields.io/badge/made%20with-Python%20%26%20Bash%20shell-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20calculation%20monitor-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
 <br />
 
