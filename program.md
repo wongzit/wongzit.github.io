@@ -16,7 +16,7 @@ comments: false
 ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)
 
 <p align="right">
-<a href="https://www.python.org"> <img alt="made-with-python" class="icon" src="https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square"></a>
+<img alt="made-with-python" class="icon" src="https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square">
 </p>
 
 <br />
