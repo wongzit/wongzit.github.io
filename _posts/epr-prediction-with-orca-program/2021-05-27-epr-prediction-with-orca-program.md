@@ -22,7 +22,7 @@ end
 
 **Input file 2**: Save the geometry as .xyz file at same dictionary with ORCA input file, the ORCA program will read geometry information from .xyz file.
 
-{% highlight %}
+{% highlight xml %}
 ! [R/U/ROKS] [method] [basis set] [CPU cores]
 * xyzfile [charge] [spin multiplicity] [geometry.xyz]
 %eprnmr
