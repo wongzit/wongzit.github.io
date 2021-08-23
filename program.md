@@ -24,4 +24,6 @@ comments: false
 - **Release date** 19th April 2021
 - **Platform** macOS, Linux, Windows
 
-[![](./assets/program/ICSSgen_icon.png)](https://github.com/wongzit/icssgen)
+<p align="center">
+<a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="./assets/program/ICSSgen_icon.png" style="width:100px; height:100px; background-color:transparent;"> <b>ICSSgen</b></a>
+</p>
