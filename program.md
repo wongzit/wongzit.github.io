@@ -8,6 +8,8 @@ comments: false
 
 > Programming makes life easier and more efficient!
 
+[![wongzit's GitHub stats](https://github-readme-stats.vercel.app/api?username=wongzit&show_icons=true&theme=tokyonight)](https://github.com/wongzit)
+
 ## independent programs
 
 <p align="center">
