@@ -32,21 +32,21 @@ end
 
 **Details about the input file:**
 
-[R/U/ROKS]: For restricted Hartree-Fock (HF) calculation, use RKS; for unrestricted HF, use UKS and for restricted-open HF, use ROKS. It is better to use ROKS rather than UKS for EPR prediction (*J. Phys. Chem. A* **2006**, *110*, 12267-12275).
+<u>R/U/ROKS</u>: For restricted Hartree-Fock (HF) calculation, use RKS; for unrestricted HF, use UKS and for restricted-open HF, use ROKS. It is better to use ROKS rather than UKS for EPR prediction (*J. Phys. Chem. A* **2006**, *110*, 12267-12275).
 
-[method]: Specify the calculation method, like B3LYP, BP, etc.
+<u>method</u>: Specify the calculation method, like B3LYP, BP, etc.
 
-[basis set]: Specify the basis set, like 6-31G*, etc. EPR-II and EPR-III are widely used basis sets optimized for EPR prediction. ( I always use EPR-II for my calculations due to its high-efficiency. EPR-III is more accurate but much more expensive calculation cost is needed.)
+<u>basis set</u>: Specify the basis set, like 6-31G*, etc. EPR-II and EPR-III are widely used basis sets optimized for EPR prediction. ( I always use EPR-II for my calculations due to its high-efficiency. EPR-III is more accurate but much more expensive calculation cost is needed.)
 
-[charge] [spin multiplicity]: Same with Gaussian (e.g., for neutral triplet, use *0 3*).
+<u>charge</u> <u>spin multiplicity</u>: Same with Gaussian (e.g., for neutral triplet, use 0 3).
 
-[EPR keywords section]: This would be discussed in following section.
+<u>EPR keywords section</u>: This would be discussed in following section.
 
 Keywords *AutoAux* and *RIJCOSX* could be added to speed up calculations with introducing a very very small error (usually smaller than basis set errors and much smaller than electronic-structure-method errors). For more information about these keywords, please check the [ORCA manual](https://sites.google.com/site/orcainputlibrary/basis-sets/ri-and-auxiliary-basis-sets).
 
 # Hyperfine Coupling Constant
 
-For predicting hyperfine coupling (HFC), you need to include following keywords in [EPR keywords section].
+For predicting hyperfine coupling (HFC), you need to include following keywords in [[EPR keywords section].
 
 {% highlight xml %}
  %eprnmr
