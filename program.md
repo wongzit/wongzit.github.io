@@ -10,8 +10,6 @@ comments: false
 <a href="https://github.com/wongzit"> <img alt="githubpage" class="icon" src="https://github-readme-stats.vercel.app/api?username=wongzit&show_icons=true&theme=tokyonight"></a>
 </p>
 
-> Programming makes life easier and more efficient!
-
 ## independent programs
 
 <p align="center">
@@ -121,3 +119,5 @@ All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minor
 
 #### pdb2xyz (8th June 2021)
 **pdb2xyz** is a Python script for converting .pdb file to .xyz file.
+
+> Programming makes life easier and more efficient!
