@@ -111,8 +111,8 @@ For UKS calculation:
 {% highlight xml %}
 %eprnmr
     dtensor ssandso   # ss, so
-    dss uno           # direct
-    dsoc cp           # qro, pk, cvw
+    dss uno               # direct
+    dsoc cp               # qro, pk, cvw
 end
 {% endhighlight %}
 
@@ -132,9 +132,9 @@ end
 <u>dsoc</u> flag controls the algorithms of calculation of spin-orbital component. This is not available in restricted-open calculation. Other options:
 
 {% highlight xml %}
- cp: coupled-perturbed method (default)
+  cp: coupled-perturbed method (default)
 qro: quasi-restricted method, must be done with keyword !uno
- pk: Pederson-Khanna method
+  pk: Pederson-Khanna method
 cvw: van Wüllen method
 {% endhighlight %}
 
@@ -193,7 +193,7 @@ end
 
 Calculate at UBP/EPR-II level of theory.
 
-{% highlight ruby %}
+{% highlight xml %}
 !uks bp epr-ii autoaux pal8
 * xyz 0 3
  C   1.022000   0.768000  -0.094000
