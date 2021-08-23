@@ -6,24 +6,17 @@ excerpt: program
 comments: false
 ---
 
-## ICSSgen
+<a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:100px; background-color:transparent;"></a>
 
 - **An 2D-ICSS input file generator**.
 - **Release date** 19th April 2021
 - **Platform** macOS, Linux, Windows
 
-## ICSSgen
-
-- **An 2D-ICSS input file generator**.
-- **Release date** 19th April 2021
-- **Platform** macOS, Linux, Windows
-
-## ICSSgen
-
-- **An 2D-ICSS input file generator**.
-- **Release date** 19th April 2021
-- **Platform** macOS, Linux, Windows
+<br />
+<br />
 
 <a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:100px; background-color:transparent;"></a>
 
-**ICSSgen** is a 2D-ICSS input file generator, released on **19th April 2021**. 
+- **An 2D-ICSS input file generator**.
+- **Release date** 19th April 2021
+- **Platform** macOS, Linux, Windows
