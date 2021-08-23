@@ -61,8 +61,8 @@ For predicting hyperfine coupling (HFC), you need to include following keywords 
 <u>Nuclei = ...</u>: This flag defines the atoms for the hyperfine coupling calculations. all H calculates the HFC on all hydrogens, or use all N, all C and so on for different atoms. You can also use Nuclei = 1,5,8 to give one list per atom type (in this example, atom 1,5,8 must be same element) with the atom numbering starting from 1. The {flags} in Nuclei lines requests calculation option for HFC:
 
 {% highlight xml %}
-aiso: calculate the isotropic part of the HFC
-adip: calculated the dipolar part of the HFC
+ aiso: calculate the isotropic part of the HFC
+ adip: calculated the dipolar part of the HFC
 aorb: 2nd order contribution to the HFC from SOC
 {% endhighlight %}
 
@@ -110,9 +110,9 @@ For UKS calculation:
 
 {% highlight xml %}
 %eprnmr
-    dtensor ssandso   # ss, so
-    dss uno               # direct
-    dsoc cp               # qro, pk, cvw
+    dtensor ssandso     # ss, so
+    dss uno                 # direct
+    dsoc cp                 # qro, pk, cvw
 end
 {% endhighlight %}
 
@@ -132,16 +132,16 @@ end
 <u>dsoc</u> flag controls the algorithms of calculation of spin-orbital component. This is not available in restricted-open calculation. Other options:
 
 {% highlight xml %}
-  cp: coupled-perturbed method (default)
-qro: quasi-restricted method, must be done with keyword !uno
-  pk: Pederson-Khanna method
+   cp: coupled-perturbed method (default)
+ qro: quasi-restricted method, must be done with keyword !uno
+   pk: Pederson-Khanna method
 cvw: van Wüllen method
 {% endhighlight %}
 
 After the calculation is completed, you could read the ZFS parameters from output file:
 
 {% highlight xml %}
-D   =    0.019661  cm**-1
+D     =    0.019661  cm**-1
 E/D =    0.172867
 {% endhighlight %}
 
