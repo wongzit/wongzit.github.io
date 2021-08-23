@@ -13,7 +13,6 @@ comments: false
 - **Platform** macOS, Linux, Windows
 
 <br />
-<br />
 
 <a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:80px; background-color:transparent;"></a>
 
