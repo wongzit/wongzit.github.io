@@ -25,5 +25,5 @@ comments: false
 - **Platform** macOS, Linux, Windows
 
 <p align="center">
-<a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="./assets/program/ICSSgen_icon.png" style="width:100px; height:100px; background-color:transparent;"> <b>ICSSgen</b></a>
+<a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="./assets/program/ICSSgen_icon.png" style="width:50px; height:50px; background-color:transparent;"> <b>ICSSgen</b></a>
 </p>
