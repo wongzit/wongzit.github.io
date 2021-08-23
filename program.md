@@ -10,7 +10,7 @@ comments: false
 <a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:66px; background-color:transparent;"></a>
 </p>
 
-![](https://img.shields.io/github/repo-size/wongzit/icssgen?style=flat-square)&ensp;![](https://img.shields.io/badge/language-Python-yellow?style=flat-square)
+![](https://img.shields.io/github/repo-size/wongzit/icssgen?style=flat-square)&ensp;[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 
 - A Python program of **input file generator for 2D-ICSS (2D-NICS) calculations**, released on **19th April 2021**.
