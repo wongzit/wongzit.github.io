@@ -32,7 +32,7 @@ end
 
 **Details about the input file:**
 
-<u>R/U/ROKS</u>: For restricted Hartree-Fock (HF) calculation, use RKS; for unrestricted HF, use UKS and for restricted-open HF, use ROKS. It is better to use ROKS rather than UKS for EPR prediction (*J. Phys. Chem. A* **2006**, *110*, 12267-12275).
+<u>R/U/ROKS</u>: For restricted Hartree-Fock (HF) calculation, use RKS; for unrestricted HF, use UKS and for restricted-open HF, use ROKS. It is better to use ROKS rather than UKS for EPR prediction (<i>J. Phys. Chem. A</i> <b>2006</b>, <i>110</i>, 12267-12275).
 
 <u>method</u>: Specify the calculation method, like B3LYP, BP, etc.
 
@@ -46,7 +46,7 @@ Keywords *AutoAux* and *RIJCOSX* could be added to speed up calculations with in
 
 # Hyperfine Coupling Constant
 
-For predicting hyperfine coupling (HFC), you need to include following keywords in [[EPR keywords section].
+For predicting hyperfine coupling (HFC), you need to include following keywords in <u>EPR keywords section</u>.
 
 {% highlight xml %}
  %eprnmr
@@ -56,9 +56,9 @@ For predicting hyperfine coupling (HFC), you need to include following keywords 
  end
  {% endhighlight %}
  
-[gtensor] flag must be set to true or 1 to compute it.
+<u>gtensor</u> flag must be set to true or 1 to compute it.
 
-[Nuclei = ...]: This flag defines the atoms for the hyperfine coupling calculations. all H calculates the HFC on all hydrogens, or use all N, all C and so on for different atoms. You can also use Nuclei = 1,5,8 to give one list per atom type (in this example, atom 1,5,8 must be same element) with the atom numbering starting from 1. The {flags} in Nuclei lines requests calculation option for HFC:
+<u>Nuclei = ...</u>: This flag defines the atoms for the hyperfine coupling calculations. all H calculates the HFC on all hydrogens, or use all N, all C and so on for different atoms. You can also use Nuclei = 1,5,8 to give one list per atom type (in this example, atom 1,5,8 must be same element) with the atom numbering starting from 1. The {flags} in Nuclei lines requests calculation option for HFC:
 
 {% highlight xml %}
 aiso: calculate the isotropic part of the HFC
@@ -104,7 +104,7 @@ ELECTRONIC G-MATRIX
 
 # Zero-field Splitting (ZFS) Prediction
 
-If you want to predict ZFS parameters for the systems with S > 1/2, please include following keywords in [EPR keywords section]. Keywords after the # indicate for other options.
+If you want to predict ZFS parameters for the systems with S > 1/2, please include following keywords in <u>EPR keywords section</u>. Keywords after the # indicate for other options.
 
 For UKS calculation:
 
@@ -125,11 +125,11 @@ For ROKS calculation:
 end
 {% endhighlight %}
 
-[dtensor] flag has three options for predict the D tensor: (1) ssandso (spin-spin and spin-orbital component), (2) ss (only spin-spin component) and (3) so (only spin-orbital component). All of these three options could be applied in unrestricted (UKS) calculation, but for restricted-open (ROKS) calculation, only spin-spin part (ss) could be estimated.
+<u>dtensor</u> flag has three options for predict the D tensor: (1) ssandso (spin-spin and spin-orbital component), (2) ss (only spin-spin component) and (3) so (only spin-orbital component). All of these three options could be applied in unrestricted (UKS) calculation, but for restricted-open (ROKS) calculation, only spin-spin part (ss) could be estimated.
 
-[dss] flag controls the algorithms of calculation of spin-spin component. Two options is available: (1) uno (use spin density from UNOs, this could only be used in UKS calculation) and (2) direct (directly use the canonical orbitals for the spin density).
+<u>dss</u> flag controls the algorithms of calculation of spin-spin component. Two options is available: (1) uno (use spin density from UNOs, this could only be used in UKS calculation) and (2) direct (directly use the canonical orbitals for the spin density).
 
-[dsoc] flag controls the algorithms of calculation of spin-orbital component. This is not available in restricted-open calculation. Other options:
+<u>dsoc</u> flag controls the algorithms of calculation of spin-orbital component. This is not available in restricted-open calculation. Other options:
 
 {% highlight xml %}
  cp: coupled-perturbed method (default)
@@ -193,7 +193,7 @@ end
 
 Calculate at UBP/EPR-II level of theory.
 
-{% highlight xml %}
+{% highlight ruby %}
 !uks bp epr-ii autoaux pal8
 * xyz 0 3
  C   1.022000   0.768000  -0.094000
