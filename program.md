@@ -77,9 +77,9 @@ comments: false
 <a href="https://github.com/wongzit/ICSScub3D"> <img alt="icsscub3d" class="icon" src="/assets/program/ICSScub3D_icon.png" style="height:66px; background-color:transparent;"></a>
 </p>
 
-- A Python program of **input file generator for 3D-ICSS calculations**, released on **6th June 2021**.
+- A Python program of **extracting magnetic shielding tensors from 3D-ICSS calculation outputs**, released on **6th June 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
-- User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/ICSSgen3D).
+- User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/ICSScub3D).
 - ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-3DICSS%20%7C%20Gaussian%20%7C%20Aromaticity-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
 <p align="center">
@@ -104,11 +104,28 @@ comments: false
 
 ## minor scripts
 
-<p align="center">
-<a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:66px; background-color:transparent;"></a>
+All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
+
+### xyz2cml (24th May 2021)
+![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)
+<p align="justify">
+<b>xyz2cml</b> is a Python script for converting .xyz file to .cml file. I wrote this script for my GIMIC calculation. It reads mol.xyz file at current dictionary and convert it to mol-bohr.cml file.
 </p>
 
-- A Python program of **extracting magnetic shielding tensors from 3D-ICSS calculation outputs**, released on **19th April 2021**/
-- Supports **macOS**, **Linux** and **Microsoft Windows**.
-- User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/icssgen).
-- ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-ICSS%20%7C%20NICS%20%7C%20Gaussian%20%7C%20Aromaticity-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
+### RunGJF (5th June 2021)
+![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)
+<p align="justify">
+<b>RunGJF</b> is a Bash Shell script for running Gaussian jobs automatically. RunGJF reads all .gjf files in current dictionary, and submit the to Gaussian 16 calculation one by one.
+</p>
+
+### gimicInp (7th June 2021)
+![](https://img.shields.io/badge/made%20with-Python%20%26%20Bash%20shell-1f425f?style=flat-square)
+<p align="justify">
+<b>gimicInp</b> is a Python script for generating GIMIC input file. User can specify the parameters and the input file gimic.inp will be saved at current dictionary. Bash shell version is also available.
+</p>
+
+### pdb2xyz (8th June 2021)
+![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)
+<p align="justify">
+<b>pdb2xyz</b> is a Python script for converting .pdb file to .xyz file.
+</p>
