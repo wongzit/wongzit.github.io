@@ -107,25 +107,21 @@ comments: false
 All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
 
 ### xyz2cml (24th May 2021)
-![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)
 <p align="justify">
 <b>xyz2cml</b> is a Python script for converting .xyz file to .cml file. I wrote this script for my GIMIC calculation. It reads mol.xyz file at current dictionary and convert it to mol-bohr.cml file.
 </p>
 
 ### RunGJF (5th June 2021)
-![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)
 <p align="justify">
 <b>RunGJF</b> is a Bash Shell script for running Gaussian jobs automatically. RunGJF reads all .gjf files in current dictionary, and submit the to Gaussian 16 calculation one by one.
 </p>
 
 ### gimicInp (7th June 2021)
-![](https://img.shields.io/badge/made%20with-Python%20%26%20Bash%20shell-1f425f?style=flat-square)
 <p align="justify">
 <b>gimicInp</b> is a Python script for generating GIMIC input file. User can specify the parameters and the input file gimic.inp will be saved at current dictionary. Bash shell version is also available.
 </p>
 
 ### pdb2xyz (8th June 2021)
-![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)
 <p align="justify">
 <b>pdb2xyz</b> is a Python script for converting .pdb file to .xyz file.
 </p>
