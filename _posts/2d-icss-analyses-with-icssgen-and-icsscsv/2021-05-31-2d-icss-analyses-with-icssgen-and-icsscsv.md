@@ -25,7 +25,7 @@ ICSSgen and ICSScsv could be download from [*GitHub*](https://github.com/wongzit
 
 > Figure 1. Optimized geometry of 1-methylazulene.
 
-![figure2](https://github.com/wongzit/wongzit.github.io/blob/master/_posts/2d-icss-analyses-with-icssgen-and-icsscsv/figure2.png)
+![figure2](./figure2.png)
 > Figure 2. 2D-ICSS input geometries created by ICSSgen (Z = 0 and Z = 1).
 
 NMR (GIAO method) calculations were conducted at B3LYP/6-31+G(d) level of theory. The output files were then, processed with ICSScsv. The magnetic shielding tensors (isotropic and ZZ component) of ghost atoms were extracted to .csv files. 2D-ICSS maps were plotted with those date in .csv files by Origin (Figure 3). From these maps, the aromaticity of 1-methylazulene has been well proved by the negative shielding tensor values. Furthermore, the on-plane maps (Z = 1) show contribution from σ bonds, which sometimes annoying. The over-plane maps (Z = 1) well produced the contribution from π electrons.
