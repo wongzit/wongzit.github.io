@@ -54,7 +54,7 @@ For predicting hyperfine coupling (HFC), you need to include following keywords 
      Nuclei = all N {flags}  # flags = aiso, adip, aorb, etc...
      Nuclei = all C {flags}
  end
- {% endhighlight %}
+{% endhighlight %}
  
 <u>gtensor</u> flag must be set to true or 1 to compute it.
 
