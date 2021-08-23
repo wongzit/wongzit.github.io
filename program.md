@@ -6,11 +6,11 @@ excerpt: program
 comments: false
 ---
 
-> Programming makes life easier and more efficient!
-
 <p align="center">
 <a href="https://github.com/wongzit"> <img alt="githubpage" class="icon" src="https://github-readme-stats.vercel.app/api?username=wongzit&show_icons=true&theme=tokyonight"></a>
 </p>
+
+> Programming makes life easier and more efficient!
 
 ## independent programs
 
