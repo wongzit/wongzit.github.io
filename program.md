@@ -25,7 +25,7 @@ comments: false
 - **Platform** macOS, Linux, Windows
 
 <p align="center">
-<a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="width:50px; height:50px; background-color:transparent;"> <div style="font-size: 20px"> <b>ICSSgen</b></div></a>
+<a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="width:50px; height:50px; background-color:transparent;"> <div style="font-size: 200px"> <b>ICSSgen</b></div></a>
 </p>
 
 **ICSSgen** is a 2D-ICSS input file generator, released on **19th April 2021**. 
