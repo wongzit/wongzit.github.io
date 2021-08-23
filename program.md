@@ -6,6 +6,8 @@ excerpt: program
 comments: false
 ---
 
+> Programming makes life easier and more efficient! 
+
 <p align="center">
 <a href="https://github.com/wongzit/icssgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:66px; background-color:transparent;"></a>
 </p>
