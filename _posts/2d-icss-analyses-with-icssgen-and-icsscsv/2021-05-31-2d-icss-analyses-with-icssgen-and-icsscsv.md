@@ -13,7 +13,7 @@ categories: jekyll update
 
 ICSSgen and ICSScsv could be download from [GitHub](https://github.com/wongzit). To install and run the programs, please refer to the user manuals.
 
-#2D-ICSS analyses of 1-methylazulene
+# 2D-ICSS analyses of 1-methylazulene
 
 2D-ICSS analyses of 1-methylazulene would be discussed in this section. All files in this section could be download from here.
 
