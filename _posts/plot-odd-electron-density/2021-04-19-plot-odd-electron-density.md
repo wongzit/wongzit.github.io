@@ -67,9 +67,3 @@ Indenyl_optimization//b3lyp/6-31g*
  H                 -0.20000000   -0.76500000   -0.49200000
  
 ```
-
-
-
-<p align="center">
-<img alt="nicsfig3" src="/assets/blog/figure63.png" style="height:200px;">
-</p>
