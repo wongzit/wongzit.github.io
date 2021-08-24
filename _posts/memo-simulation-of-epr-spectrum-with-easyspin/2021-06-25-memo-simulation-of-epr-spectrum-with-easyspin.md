@@ -11,8 +11,7 @@ categories: software usage
 Sys.S = 1;      % S = 1 for triplet and S = 2 for quintet states
 Sys.g = 2.0023;      % g factor
 convert = 100*clight/1e6;      % cm^-1 -> MHz conversion factor
-Sys.D = [0.0100000 0.002000]*convert;      % input D and E value,
-                                             in cm^-1
+Sys.D = [0.0100000 0.002000]*convert;      % input D and E value, in cm^-1
 Sys.lwpp = 6;      % Gaussian-type line broadening
 Exp.mwFreq = 9.4;      % Spectrometer frequency, in GHz
 Exp.Range = [100 500];      % Lower and upper limit of the field 
