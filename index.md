@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-## about me
+## about me 🤖
 
 Hello, welcom to my space. I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, studying 👨🏻‍🔬 **organic chemistry**. I was born in **Qingdao, P.R.China** 🇨🇳, and now living in 📍 **Hiroshima, Japan** 🇯🇵.
 
@@ -31,11 +31,13 @@ I also do some 👨🏻‍💻 **programming**, I will post my publications, pro
 <br />
 <br />
 
-## some useful sites
+## some useful sites 🌏
 
 [**WebPlotDigitizer**](https://automeris.io/WebPlotDigitizer/) Web based tool to extract data from plots, images, and maps.
 
 [**Unit Conversion & Calculation**](https://ha2.seikyou.ne.jp/home/Takehito.Senga/geocity/unitconversion.html#Photon)
+
+[**Maze Generator**](https://www.mazegenerator.net): A maze generator.
 
 <br />
 <br />
