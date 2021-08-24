@@ -44,7 +44,7 @@ Next, we need to determine the calculation region. In this calculation, the ghos
 
 ## Submit input files to Gaussian calculation
 
-ICSSgen3D would generate several input files, and we need to submit these input files to Gaussian calculation. The input files named from xxx_3DICSS_0001.log, xxx_3DICSS_0002.log, ... . From the second input file, the guess=read keyword is included to save the calculation time by reading MO information from the previous .chk file. So, please save these input files into one folder.
+ICSSgen3D would generate several input files, and we need to submit these input files to Gaussian calculation. The input files named from *xxx_3DICSS_0001.log*, *xxx_3DICSS_0002.log*, ... . From the second input file, the `guess=read` keyword is included to save the calculation time by reading MO information from the previous .chk file. So, please save these input files into one folder.
 
 I wrote a Bash Shell script ([RunGJF](https://github.com/wongzit/minorScripts)) for submit all Gaussian jobs in the same dictionary one by one.
 
