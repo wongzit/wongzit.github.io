@@ -10,7 +10,7 @@ ORCA input file for EPR calculation have to (at least) include following section
 
 **Input file 1**: including Cartesian coordinates in input file. The coordinates structure is same as those in Gaussian input file.
 
-{% highlight xml %}
+```
 ! [R/U/ROKS] [method] [basis set] [CPU cores]
 * xyz [charge] [spin multiplicity]
  [Cartesian coordinates]
@@ -18,17 +18,17 @@ ORCA input file for EPR calculation have to (at least) include following section
 %eprnmr
     [EPR keywords section]
 end
-{% endhighlight %}
+```
 
 **Input file 2**: Save the geometry as .xyz file at same dictionary with ORCA input file, the ORCA program will read geometry information from .xyz file.
 
-{% highlight xml %}
+```
 ! [R/U/ROKS] [method] [basis set] [CPU cores]
 * xyzfile [charge] [spin multiplicity] [geometry.xyz]
 %eprnmr
     [EPR keywords section]
 end
-{% endhighlight %}
+```
 
 **Details about the input file:**
 
@@ -36,7 +36,7 @@ end
 
 <u>method</u>: Specify the calculation method, like B3LYP, BP, etc.
 
-<u>basis set</u>: Specify the basis set, like 6-31G*, etc. EPR-II and EPR-III are widely used basis sets optimized for EPR prediction. ( I always use EPR-II for my calculations due to its high-efficiency. EPR-III is more accurate but much more expensive calculation cost is needed.)
+<u>basis set</u>: Specify the basis set, like 6-31G(d), etc. EPR-II and EPR-III are widely used basis sets optimized for EPR prediction. ( I always use EPR-II for my calculations due to its high-efficiency. EPR-III is more accurate but much more expensive calculation cost is needed.)
 
 <u>charge</u> <u>spin multiplicity</u>: Same with Gaussian (e.g., for neutral triplet, use 0 3).
 
@@ -48,38 +48,38 @@ Keywords *AutoAux* and *RIJCOSX* could be added to speed up calculations with in
 
 For predicting hyperfine coupling (HFC), you need to include following keywords in <u>EPR keywords section</u>.
 
-{% highlight xml %}
+```
  %eprnmr
      gtensor = true
      Nuclei = all N {flags}  # flags = aiso, adip, aorb, etc...
      Nuclei = all C {flags}
  end
-{% endhighlight %}
+```
  
 <u>gtensor</u> flag must be set to true or 1 to compute it.
 
 <u>Nuclei = ...</u>: This flag defines the atoms for the hyperfine coupling calculations. all H calculates the HFC on all hydrogens, or use all N, all C and so on for different atoms. You can also use Nuclei = 1,5,8 to give one list per atom type (in this example, atom 1,5,8 must be same element) with the atom numbering starting from 1. The {flags} in Nuclei lines requests calculation option for HFC:
 
-{% highlight xml %}
- aiso: calculate the isotropic part of the HFC
- adip: calculated the dipolar part of the HFC
+```
+aiso: calculate the isotropic part of the HFC
+adip: calculated the dipolar part of the HFC
 aorb: 2nd order contribution to the HFC from SOC
-{% endhighlight %}
+```
 
 After the calculation is completed, the g tensor and HFC could be read from output file:
 
-{% highlight xml %}
+```
 -------------------
 ELECTRONIC G-MATRIX
 -------------------
 
  The g-matrix: 
-                       2.0060206    0.0004709   -0.0003205
-                       0.0006221    2.0032154    0.0023911
-                      -0.0002906    0.0024341    2.0088349
+              2.0060206    0.0004709   -0.0003205
+              0.0006221    2.0032154    0.0023911
+             -0.0002906    0.0024341    2.0088349
 
- gel                2.0023193    2.0023193    2.0023193
- gRMC           -0.0002988   -0.0002988   -0.0002988
+ gel          2.0023193    2.0023193    2.0023193
+ gRMC        -0.0002988   -0.0002988   -0.0002988
  gDSO(tot)    0.0001605    0.0002266    0.0001485
  gPSO(tot)    0.0000400    0.0038717    0.0075621
              ----------   ----------   ----------
@@ -91,7 +91,7 @@ ELECTRONIC G-MATRIX
 
 ----------------------------------------------------------------
  Atom  |   Alpha    Beta    Gamma   |   Ax       Ay       Az 
-          |                  [degrees]         |           [MHz]         
+       |          [degrees]         |           [MHz]         
 ----------------------------------------------------------------
   0N       67.4      3.0    -66.1      67.76    -0.70    -0.22
   5H      174.1     28.6   -139.2      -2.86    -2.63     3.86
@@ -100,7 +100,7 @@ ELECTRONIC G-MATRIX
   8H      -82.6     20.1     99.2       2.36     2.43     6.83
   9H       79.0     26.7    -97.0      28.68    41.28    28.42
 ----------------------------------------------------------------
-{% endhighlight %}
+```
 
 # Zero-field Splitting (ZFS) Prediction
 
@@ -108,22 +108,22 @@ If you want to predict ZFS parameters for the systems with S > 1/2, please inclu
 
 For UKS calculation:
 
-{% highlight xml %}
+```
 %eprnmr
-    dtensor ssandso     # ss, so
-    dss uno                 # direct
-    dsoc cp                 # qro, pk, cvw
+    dtensor ssandso   # ss, so
+    dss uno           # direct
+    dsoc cp           # qro, pk, cvw
 end
-{% endhighlight %}
+```
 
 For ROKS calculation:
 
-{% highlight xml %}
+```
 %eprnmr
     dtensor ss
     dss direct
 end
-{% endhighlight %}
+```
 
 <u>dtensor</u> flag has three options for predict the D tensor: (1) ssandso (spin-spin and spin-orbital component), (2) ss (only spin-spin component) and (3) so (only spin-orbital component). All of these three options could be applied in unrestricted (UKS) calculation, but for restricted-open (ROKS) calculation, only spin-spin part (ss) could be estimated.
 
@@ -131,19 +131,19 @@ end
 
 <u>dsoc</u> flag controls the algorithms of calculation of spin-orbital component. This is not available in restricted-open calculation. Other options:
 
-{% highlight xml %}
-   cp: coupled-perturbed method (default)
- qro: quasi-restricted method, must be done with keyword !uno
-   pk: Pederson-Khanna method
+```
+ cp: coupled-perturbed method (default)
+qro: quasi-restricted method, must be done with keyword !uno
+ pk: Pederson-Khanna method
 cvw: van Wüllen method
-{% endhighlight %}
+```
 
 After the calculation is completed, you could read the ZFS parameters from output file:
 
-{% highlight xml %}
-D       =    0.019661  cm**-1
-E/D   =    0.172867
-{% endhighlight %}
+```
+D   =    0.019661  cm**-1
+E/D =    0.172867
+```
 
 # Example
 
@@ -151,7 +151,7 @@ Here I put two input files I used for EPR prediction. (methyl radical and triple
 
 ## Predict HFC of methyl radical
 
-{% highlight xml %}
+```
 ! roks b3lyp epr-ii autoaux pal8
 * xyzfile 0   2
  C          0.12985        0.22512        0.99745
@@ -162,13 +162,13 @@ Here I put two input files I used for EPR prediction. (methyl radical and triple
     gtensor 1
     Nuclei = all H {aiso, adip, aorb}
 end
-{% endhighlight %}
+```
 
 ## Predict ZFS of cyclopentane-1,3-diyl diradical
 
 Calculate at ROBP/EPR-II level of theory:
 
-{% highlight xml %}
+```
 !roks bp epr-ii autoaux pal8
 * xyz 0 3
  C   1.022000   0.768000  -0.094000
@@ -189,11 +189,11 @@ Calculate at ROBP/EPR-II level of theory:
     dtensor ss
     dss direct
 end
-{% endhighlight %}
+```
 
 Calculate at UBP/EPR-II level of theory.
 
-{% highlight xml %}
+```
 !uks bp epr-ii autoaux pal8
 * xyz 0 3
  C   1.022000   0.768000  -0.094000
@@ -215,7 +215,7 @@ Calculate at UBP/EPR-II level of theory.
     dss uno
     dsoc cp
 end
-{% endhighlight %}
+```
 
 # End
 
