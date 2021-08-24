@@ -44,7 +44,7 @@ The coordinates of *p*(*c*) is the ghost atom for NICS(0) calculation.
 Next, for NICS(n): we need to add the ghost atom to the height of n Å from the center point of the plane. Here is the common solution:
 
 <p align="center">
-<img alt="nicsfig1" src="/assets/blog/figure61.png" style="height:300px;">
+<img alt="nicsfig1" src="/assets/blog/figure61.png" style="height:30px;">
 </p>
 
 Vector *n* is the normal vector of plane Π, so,
