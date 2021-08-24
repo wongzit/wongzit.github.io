@@ -44,7 +44,7 @@ The coordinates of *p*(*c*) is the ghost atom for NICS(0) calculation.
 Next, for NICS(n): we need to add the ghost atom to the height of n Å from the center point of the plane. Here is the common solution:
 
 <p align="center">
-<img alt="nicsfig1" src="/assets/blog/figure61.png" style="height:500px;">
+<img alt="nicsfig1" src="/assets/blog/figure61.png" style="height:300px;">
 </p>
 
 Vector *n* is the normal vector of plane Π, so,
@@ -62,7 +62,7 @@ therefore, we can solve the equation to get the values of *x*(*n*), *y*(*n*) and
 Calculation files in this section could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_NICS). 1-Methylazulene was optimized at ωB97X-D/6-31G(d) level of theory with Gaussian 16 B.01 package. The optimized azulene is located on XY plane (Figure1). I want to know the NICS(0) values of 7- and 5-membered rings, and the NICS(1) of 7-membered ring.
 
 <p align="center">
-<img alt="nicsfig2" src="/assets/blog/figure62.png" style="height:500px;">
+<img alt="nicsfig2" src="/assets/blog/figure62.png" style="height:300px;">
 </p>
 
 > Figure 1. Optimized geometry of 1-methylazulene.
@@ -70,7 +70,7 @@ Calculation files in this section could be download from [here](https://github.c
 The input file for NICS calculation was created by NICSgen, the input geometry is shown in Figure 2. For NICS calculation, B3LYP/6-31G+(d) or higher level of theory is recommended.
 
 <p align="center">
-<img alt="nicsfig3" src="/assets/blog/figure63.png" style="height:500px;">
+<img alt="nicsfig3" src="/assets/blog/figure63.png" style="height:300px;">
 </p>
 
 > Figure 2. Input geometry for NICS calculation.
