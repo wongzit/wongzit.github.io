@@ -24,17 +24,12 @@ $$ {\rm HOMA}=1-\frac {1}{n} \sum^n_i \alpha_j \left( R_{opt,j}-R_{i,j} \right)^
 
 The optimal bond length *Ropt* is the length of a bond for which equal energy inputs are required to extend it to the length of the singlet bond or to compress it to the length of the double bond. For C-C case, as an example, the *Ropt* was defined as following:
 
-
-
-
+$$ R_{opt}=\frac {1}{3} \left( R_{\rm C-C}+2R_{\rm C=C} \right) $$
 
 Applying C-C bond length (1.467 Å) and C=C bond (1.349 Å) in cyclobuta-1,3-diene, the Ropt of CC bond could be calculated to 1.388 Å.
 The α is an empirical normalization constant, chosen to give HOMA = 0 for a model nonaromatic system and HOMA = 1 for a system where all bonds are equal to *Ropt*. α was defined in following equation, where *Rs* and *Rd* are bond length for single and double bonds.
 
-
-
-
-
+$$ \alpha = \frac {2}{\left( R_S-R_{opt} \right)^2+\left( R_d-R_{opt}\right)^2} $$
 
 The α and *Ropt* for common bonds are referred from [this paper](https://pubs.acs.org/doi/10.1021/cr400252h).
 
