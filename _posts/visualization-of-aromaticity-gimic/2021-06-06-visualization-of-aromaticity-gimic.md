@@ -144,5 +144,7 @@ ffmpeg -framerate 30 -i image_%03d.png -vcodec libx264 -pix_fmt yuv420p -r 60 ou
 By this command, 10000 images would be saved as a about 33 second mp4 movie.
 
 <p align="center">
-<img alt="gimicfig5" src="/assets/blog/figure95.png">
+<video width="371" height="300" controls>
+  <source src="/assets/blog/video01.mp4" type="video/mp4">
+</video>
 </p>
