@@ -5,6 +5,7 @@ date:   2021-04-19 19:01:33 +0900
 categories: computation
 ---
 
+Source of this blog: [ResearchGate](https://www.researchgate.net/post/What-is-the-procedure-for-plotting-odd-electron-density-plots-of-organic-diradicals) 
 
 **1. Open .fchk file in GaussView**
 
