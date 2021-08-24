@@ -42,22 +42,22 @@ export LD_LIBRARY_PATH=/home/wangzhe/openmpi411/lib:$LD_LIBRARY_PATH
 
 (1) Unzip the install file:
 
-{% highlight xml %}
+```
 tar -Jxvf orca_5_0_0_linux_x86-64_shared_openmpi411.tar.xz
-{% endhighlight %}
+```
 
 (2) Rename the ORCA folder (default name is too long):
 
-{% highlight xml %}
+```
 mv ./orca_5_0_0_linux_x86-64_shared_openmpi411 ./orca500
-{% endhighlight %}
+```
 
 (3) Add following variables to `~/.bashrc`:
 
-{% highlight xml %}
+```
 export PATH=/home/wangzhe/orca500:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/wangzhe/orca500
 alias orca='/home/wangzhe/orca500/orca'
-{% endhighlight %}
+```
 
 (4) Re-enter the terminal window, execute `orca` to run ORCA 5.0.0.
