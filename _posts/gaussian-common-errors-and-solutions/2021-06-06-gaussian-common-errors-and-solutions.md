@@ -344,7 +344,7 @@ SCF not converged.
 
 ### < Solution >
 
-Please check this [post](https://wongzit.github.io/) for "SCF not converged" problem.
+Please check this [post](https://wongzit.github.io/method-to-solve-the-scf-not-converged/) for "SCF not converged" problem.
 # L502, L1002
 
 ```
