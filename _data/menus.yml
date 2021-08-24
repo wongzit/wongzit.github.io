@@ -4,7 +4,11 @@
 
 - title: about
   url: /about/
-  external: false # set true if you using external link, see below
+  external: false
+
+- title: device
+  url: /device/
+  external: false
 
 - title: publication
   url: /publication/
@@ -18,7 +22,6 @@
   url: /blog/
   external: false
 
-# Example:
-# - title: github
-#   url: https://github.com/piharpi/jekyll-klise
-#   external: true
+ - title: old version
+   url: https://www.wangzhe95.net/
+   external: true
