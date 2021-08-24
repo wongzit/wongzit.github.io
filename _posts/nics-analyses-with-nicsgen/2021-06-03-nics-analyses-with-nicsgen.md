@@ -55,7 +55,17 @@ Next, for NICS(n): we need to add the ghost atom to the height of n Å from the 
 
 Vector *n* is the normal vector of plane Π, so,
 
-$$  $$
+$$ \because \overrightarrow{n} \bot \Pi $$
+
+$$ \therefore \overrightarrow{n}=\overrightarrow{p_1p_2} \times \overrightarrow{p_1p_3} = \begin{vmatrix} i & j & k \\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\ x_3-x_1 & y_3-y_1 & z_3-z_1 \end{vmatrix} = a \overrightarrow{i} + b \overrightarrow{j} + c \overrightarrow{k} =(a,b,c) $$
+
+thus,
+
+$$ a=(y_2-y_1)(z_3-z_1)-(y_3-y_1)(z_2-z_1) $$
+
+$$ b=(z_2-z_1)(x_3-x_1)-(z_3-z_1)(x_2-x_1) $$
+
+$$ c=(x_2-x_1)(y_3-y_1)-(x_3-x_1)(y_2-y_1) $$
 
 The vector *p*(*c*)*p*(*n*) should be parallel with normal vector, so:
 
