@@ -5,8 +5,6 @@ date:   2021-06-03 21:06:03 +0900
 categories: software guide
 ---
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 # Background
 
 HOMA (Harmonic Oscillator Model of Aromaticity) is a geometry-based aromaticity index. The HOMA model is based on the assumption that the harmonic oscillator energy of extension or compression of a bond depends on the force constants, which are dependent on the bond lengths. HOMA value can be calculated from following equation:
