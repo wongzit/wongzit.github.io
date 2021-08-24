@@ -9,7 +9,7 @@ categories: software guide
 
 HOMA (Harmonic Oscillator Model of Aromaticity) is a geometry-based aromaticity index. The HOMA model is based on the assumption that the harmonic oscillator energy of extension or compression of a bond depends on the force constants, which are dependent on the bond lengths. HOMA value can be calculated from following equation:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\large&space;{\rm&space;HOMA}=1-\frac&space;{1}{n}&space;\sum^n_i&space;\alpha_j&space;\left(&space;R_{{\rm&space;opt,}j}-R_{i{\rm&space;,}j}&space;\right)^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\large&space;{\rm&space;HOMA}=1-\frac&space;{1}{n}&space;\sum^n_i&space;\alpha_j&space;\left(&space;R_{{\rm&space;opt,}j}-R_{i{\rm&space;,}j}&space;\right)^2" title="\large {\rm HOMA}=1-\frac {1}{n} \sum^n_i \alpha_j \left( R_{{\rm opt,}j}-R_{i{\rm ,}j} \right)^2" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\large&space;{\rm&space;HOMA}=1-\frac&space;{1}{n}&space;\sum^n_i&space;\alpha_j&space;\left(&space;R_{opt,j}-R_{i,j}&space;\right)^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\large&space;{\rm&space;HOMA}=1-\frac&space;{1}{n}&space;\sum^n_i&space;\alpha_j&space;\left(&space;R_{opt,j}-R_{i,j}&space;\right)^2" title="\large {\rm HOMA}=1-\frac {1}{n} \sum^n_i \alpha_j \left( R_{opt,j}-R_{i,j} \right)^2" /></a>
 
 The optimal bond length *Ropt* is the length of a bond for which equal energy inputs are required to extend it to the length of the singlet bond or to compress it to the length of the double bond. For C-C case, as an example, the *Ropt* was defined as following:
 
