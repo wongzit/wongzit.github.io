@@ -50,3 +50,38 @@ Next, for NICS(n): we need to add the ghost atom to the height of n Å from the 
 Vector *n* is the normal vector of plane Π, so,
 
 $$  $$
+
+The vector *p*(*c*)*p*(*n*) should be parallel with normal vector, so:
+
+$$  $$
+
+therefore, we can solve the equation to get the values of *x*(*n*), *y*(*n*) and *z*(*n*).
+
+# NICS analyses of 1-methylazulene
+
+Calculation files in this section could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_NICS). 1-Methylazulene was optimized at ωB97X-D/6-31G(d) level of theory with Gaussian 16 B.01 package. The optimized azulene is located on XY plane (Figure1). I want to know the NICS(0) values of 7- and 5-membered rings, and the NICS(1) of 7-membered ring.
+
+<p align="center">
+<img alt="nicsfig2" src="/assets/blog/figure62.png" style="height:500px;">
+</p>
+
+> Figure 1. Optimized geometry of 1-methylazulene.
+
+The input file for NICS calculation was created by NICSgen, the input geometry is shown in Figure 2. For NICS calculation, B3LYP/6-31G+(d) or higher level of theory is recommended.
+
+<p align="center">
+<img alt="nicsfig3" src="/assets/blog/figure63.png" style="height:500px;">
+</p>
+
+> Figure 2. Input geometry for NICS calculation.
+
+We can find the magnetic shielding tensors of these ghost atoms in the output file, and the NICS values are the reversed magnetic shielding tensors:
+
+```
+ NICS(0)zz  =   -7.6656 (7-membered ring)
+ NICS(0)zz  =  -30.1781 (5-membered ring)
+ NICS(1)zz  =  -19.8181
+NICS(-1)zz  =  -19.8172
+```
+
+This results are in accordance with the [2D-ICSS](https://wongzit.github.io/2d-icss-analyses-with-icssgen-and-icsscsv/) and [3D-ICSS](https://wongzit.github.io/3d-icss-analyses-with-icssgen3d-and-icsscub3d/) analyses.
