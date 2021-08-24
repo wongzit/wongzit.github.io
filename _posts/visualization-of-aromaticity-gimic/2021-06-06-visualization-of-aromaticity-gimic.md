@@ -16,7 +16,7 @@ Different to AICD, GIMIC can use GIAO method for NMR calculation, this may be be
 
 # Procedure
 
-The procedure of conducting GIMIC calculation will be discussed in this section. All calculation files could be found from [here](https://github.com/wongzit/blogFiles).
+The procedure of conducting GIMIC calculation will be discussed in this section. All calculation files could be found from [here](https://github.com/wongzit/blogFiles/tree/main/blog_GIMIC).
 
 ## NMR calculations
 
