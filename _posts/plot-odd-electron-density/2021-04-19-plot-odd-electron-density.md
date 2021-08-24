@@ -24,7 +24,7 @@ Source of this blog: [ResearchGate](https://www.researchgate.net/post/What-is-th
 **4. Square the new generated HOMO and LUMO cubes.**
 
 <p align="center">
-<img alt="oddfig3" src="/assets/blog/figure73.png" style="height:400px;">
+<img alt="oddfig3" src="/assets/blog/figure73.png" style="height:300px;">
 </p>
 
 **5. Add two squared cubes.**
