@@ -31,4 +31,11 @@ I also do some 👨🏻‍💻 **programming**, I will post my publications, pro
 <br />
 <br />
 
+## some useful sites
+
+[WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/): Web based tool to extract data from plots, images, and maps.
+
+<br />
+<br />
+
 > Unless we change directions, we will end up where we are headed.   -- Confucius
