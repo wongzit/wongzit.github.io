@@ -63,6 +63,10 @@ $$ \because \overrightarrow{p_n p_c} \parallel \overrightarrow{n} $$
 
 $$ \therefore \overrightarrow{p_n p_c} = (x_n-x_c,y_n-y_c,z_n-z_c)=\lambda \overrightarrow{n} $$
 
+thus,
+
+$$ \frac {\overrightarrow{p_n p_c}}{\overrightarrow{n}} = \frac {x_n-x_c}{a} = \frac {y_n-y_c}{b} = \frac {z_n-z_c}{c} =\lambda $$
+
 therefore, we can solve the equation to get the values of *x*(*n*), *y*(*n*) and *z*(*n*).
 
 # NICS analyses of 1-methylazulene
