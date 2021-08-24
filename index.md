@@ -33,9 +33,9 @@ I also do some 👨🏻‍💻 **programming**, I will post my publications, pro
 
 ## some useful sites
 
-[WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/): Web based tool to extract data from plots, images, and maps.
+[**WebPlotDigitizer**](https://automeris.io/WebPlotDigitizer/) Web based tool to extract data from plots, images, and maps.
 
-[Unit Conversion & Calculation](https://ha2.seikyou.ne.jp/home/Takehito.Senga/geocity/unitconversion.html#Photon)
+[**Unit Conversion & Calculation**](https://ha2.seikyou.ne.jp/home/Takehito.Senga/geocity/unitconversion.html#Photon)
 
 <br />
 <br />
