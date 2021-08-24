@@ -21,9 +21,18 @@ ICSSgen3D and ICSScub3D could be download from [*GitHub*](https://github.com/won
 
 An original input file is prepared, including the route line, calculation method, geometry coordinates. The original input file looks like:
 
-<p align="center">
-<img alt="3dicssblogfig1" src="/assets/blog/figure41.png" style="height:500px;">
-</p>
+```
+%nprocshared=6
+%mem=10GB
+%chk=methylazulene.chk
+#p nmr=giao rb3lyp/6-31g(d)
+
+optimized_1-methylazulene
+
+0 1
+ C            -2.68122300      -0.69593600       0.00002600
+ ...
+```
 
 Next, we need to determine the calculation region. In this calculation, the ghost would be added in the cuboid with X (-7.5, 7.5), Y (-6.5, 6.5) and Z (-6, 6).
 
