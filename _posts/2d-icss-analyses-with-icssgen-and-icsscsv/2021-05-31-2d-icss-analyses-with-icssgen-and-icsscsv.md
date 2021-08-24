@@ -23,6 +23,10 @@ ICSSgen and ICSScsv could be download from [*GitHub*](https://github.com/wongzit
 <img alt="2dicssblogfig1" src="/_posts/2d-icss-analyses-with-icssgen-and-icsscsv/figure1.png" style="height:500px; background-color:transparent;">
 </p>
 
+<p align="center">
+<a href="https://github.com/wongzit/CSIgen"> <img alt="csigen" class="icon" src="/assets/program/CSIgen_icon.png" style="height:66px; background-color:transparent;"></a>
+</p>
+
 > Figure 1. Optimized geometry of 1-methylazulene.
 
 ![figure2](./figure2.png)
