@@ -81,7 +81,7 @@ There are some useful option for make high quality AICD plots:
 Molecular view in AICD plots, *n* = 1-4. (1: single view, surface only; 2: single view, surface and arrows; 3: multi view, surface only; 4: multi view, surface and arrows)
 
 <p align="center">
-<img alt="aicdfig2" src="/assets/blog/figure82.png" style="height:300px;">
+<img alt="aicdfig2" src="/assets/blog/figure82.png">
 </p>
 
 ### -b *x y z*
@@ -119,6 +119,10 @@ Define the maximum of arrow length, the arrows longer than value *f* would not b
 
 Smoothly graphical representation, needs more computational cost.
 
+<p align="center">
+<img alt="aicdfig7" src="/assets/blog/figure87.png" style="height:300px;">
+</p>
+
 More options can be found from `AICD -h` command. After AICD calculation, several files would be generated and we need the files in the folder named as “*xxxxxxxxxxxxxx.d*”. Copy this folder to a computer with POV-Ray installed.
 
 ## AICD visualization
@@ -132,7 +136,7 @@ Here are some common issues when using the POV-Ray:
 The following figure shows how the POV-Ray renders an image:
 
 <p align="center">
-<img alt="aicdfig7" src="/assets/blog/figure87.png" style="height:300px;">
+<img alt="aicdfig8" src="/assets/blog/figure88.png" style="height:300px;">
 </p>
 
 If the molecule is not displayed in full, please modify the `camera - location` coordinate <*x*, *y*, *z*> in the “*RenderMich.pov*” file. More negative *z* value will give smaller size molecule. 
@@ -149,7 +153,7 @@ camera{
 ```
 
 <p align="center">
-<img alt="aicdfig8" src="/assets/blog/figure88.png" style="height:300px;">
+<img alt="aicdfig9" src="/assets/blog/figure89.png" style="height:300px;">
 </p>
 
 ### Geometries are overlapping with others
@@ -209,5 +213,5 @@ object           // side view in the 3rd column
 ```
 
 <p align="center">
-<img alt="aicdfig9" src="/assets/blog/figure89.png" style="height:300px;">
+<img alt="aicdfig10" src="/assets/blog/figure810.png">
 </p>
