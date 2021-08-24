@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prepare Supporting Information with CSIgen"
+title:  "Diradical Character Calculation"
 date:   2021-06-02 21:23:19 +0900
 categories: compuations
 ---
