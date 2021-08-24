@@ -29,14 +29,20 @@ NICSgen could be download from homepage and [*GitHub*](https://github.com/wongzi
 Imagine we have *m* (*m* >= 3) points *p* on plane in Cartesian coordinate space system, the coordinates of these points are:
 
 $$ p_1 = (x_1,y_1,z_1) $$
+
 $$ p_2 = (x_2,y_2,z_2) $$
+
 $$ p_3 = (x_3,y_3,z_3) $$
+
 $$ \cdots $$
+
 $$ p_m = (x_m,y_m,z_m) $$
+
 
 So, the center point p(c) of these point should be located at:
 
 $$ p_c = (x_c,y_c,z_c),{\rm where:} $$
+
 $$ x_c=\frac{1}{m} \sum_{i=1}^m x_i,\:y_c=\frac{1}{m} \sum_{i=1}^m y_i,\:z_c=\frac{1}{m} \sum_{i=1}^m z_i $$
 
 The coordinates of *p*(*c*) is the ghost atom for NICS(0) calculation.
