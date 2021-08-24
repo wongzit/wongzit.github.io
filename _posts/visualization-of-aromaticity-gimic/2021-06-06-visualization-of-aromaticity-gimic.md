@@ -7,211 +7,142 @@ categories: computation
 
 > This blog is part of theme collection: Visualization of Aromaticity, see post of [AICD](https://wongzit.github.io/visualization-of-aromaticity-aicd/) in this collection.
 
+
 # Background
 
-Anisotropy of the Induced Current Density (AICD) has been widely used for aromaticity analyses. More basic knowledge about AICD, please refer to this [review paper](https://pubs.acs.org/doi/10.1021/cr0300901). In this blog, I will show you how to make the AICD plot and apply AICD to your research. AICD is a free and open source program, you can obtain the program freely from the [author](rherges@oc.uni-kiel.de).
+Gauge-including magnetically induced currents ([GIMIC](https://github.com/qmcurrents/gimic)) is a useful tool for aromaticity analyses. In this blog, I will show you how to do the GIMIC calculation and visualize the results using ParaView.
 
-The biggest feature of AICD is that it can separate the orbital contribution (from all molecular orbitals, or from π orbitals only), this is useful when analyze the aromaticity from the contribution of π electrons.
+Different to AICD, GIMIC can use GIAO method for NMR calculation, this may be better than CSGT. But, GIMIC does not support to decompose the contribution from different orbitals.
 
 # Procedure
 
-In this section, I will use an example of 1-methylazulene as a demo calculation to explain how to make the AICD plot. Calculation files could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_AICD). I also uploaded a slide for AICD analysis of cyclo[18]carbon, it is also a good example for AICD analysis.
+The procedure of conducting GIMIC calculation will be discussed in this section. All calculation files could be found from [here](https://github.com/wongzit/blogFiles).
 
-## NMR calculation
+## NMR calculations
 
-Before doing this NMR calculation, make sure you have already optimized your geometry. The 1-methylazulene was optimized at ωB97X-D/6-31G(d) level of theory. The input file for NMR calculation have to contain following keywords:
+NMR calculations are necessary before GIMIC analyses. Input files for open-shell and close-shell calculation are different:
 
-**Contribution from all ortbials**
-
-```
-# nmr=csgt b3lyp/6-31g(d) iop(10/93=1)
-
- title
-
- 0 1
- […Coordinates…]
-
- filename.txt
+**Closed-shell system**
 
 ```
+%chk=methylazulene_GIMIC.chk
+# nmr=giao rb3lyp/6-31g(d) iop(10/33=2) int=nobasistransform
 
-**Contribution from specified orbitals**
+Title
 
-```
-# nmr=csgt b3lyp/6-31g(d) iop(10/93=2)
-
-title
-
-0 1
-[…Coordinates…]
-
-filename.txt
-
-orbital number 1
-orbital number 2
-...
-
+Geometry specification
 ```
 
-There are several important points for the input file:
+**Open-shell system**
 
-1. Use `CSGT` method for NMR calculation.
-2. B3LYP/6-31G(d) is often enough to yield qualitatively satisfactory result.
-3. Include the `IOp(10/93=n)` keywords: *n* = 1 for calculating contribution from all orbitals and *n* = 2 for calculating contribution from specified orbitals.
-4. A .txt file including ring current grid information would be saved during the NMR calculation, so, you need to specify a file name for it.
-5. Include the molecular orbital numbers (those will be considered for NMR calculation) in the end of input file if you use `IOp(10/93=2)`. (For unrestricted calculation, alpha orbitals and beta orbitals are separated, the orbital numbers of alpha orbital are same as those displayed in GaussView, but, the orbital numbers of beta orbitals are those in GaussView plus occupied orbital numbers. e.g., for the ith alpha and beta orbitals, and total *n* occupied orbitals, you need to write "*i*" and "*i+n*".)
+```
+%chk=methylazulene_GIMIC.chk
+# nmr=giao ub3lyp/6-31g(d) iop(10/33=2) int=nobasistransform gfprint pop=full
+
+Title
+
+Geometry specification
+```
+
+## Generate XDENS & MOL files
+
+XDENS and MOL files are necessary for GIMIC analyses. After finishing the NMR calculations by Gaussian, copy the .fchk (for closed-shell calculations) or .log (for open-shell calculations) to the computer with GIMIC installed.
+
+Copy the BasisSet.py and Gaussian2gimic.py files in the `~/gimic/tools/g092gimic` folder to the same dictionary with .fchk or .log file. Execute following command:
+
+```
+(for closed-shell) ./Gaussian2gimic.py --input=filename.fchk
+(for open-shell) ./Gaussian2gimic.py --input=filename.log
+```
+
+The XDENS and MOL files would be generated in the same dictionary.
+
+### GIMIC calculation
+
+Prepare GIMIC input file, you can use author's [gimicInp](https://github.com/wongzit/minorScripts) program to easily create GIMIC input file. An example of GIMIC input file is shown in following, more details about the input file, please refer to the [user manual](https://gimic.readthedocs.io/en/latest/).
+
+```
+calc=cdens
+basis="./MOL"
+xdens="./XDENS"
+openshell=false 
+magnet=[0,0,1]
+
+Grid(base) { 
+    type=even
+    origin=[-8.0, -7.0, -6.0]
+    ivec=[1.0, 0.0, 0.0]
+    jvec=[0.0, 1.0, 0.0]
+    lengths=[16.0, 14.0, 12.0]
+    grid_points=[50, 50, 50]
+}
+
+Advanced {
+    spherical=off
+    diamag=on
+    paramag=on
+}
+
+Essential {
+    acid=on
+    jmod=on
+}
+```
+
+Save the input file in the same folder with XDENS and MOL files, execute gimic command, the GIMIC calculation would run in seconds.
+
+## Visualization
+
+After several minutes, some new files would be generated after finishing the calculation. To visualize the results, we will use ParaView (free download from [homepage](https://www.paraview.org)). In order for ParaView to display the molecular structure correctly, the .cml format file of the molecule also needs to be generated before visualization. Here are two method to convert the .xyz into .cml.
+
+1. Use OpenBabel, Windows user can download from [homepage](http://openbabel.org/wiki/Main_Page) of OpenBabel. In my experience, it does not work normally on Mac computer. Please note that, you also need to convert the unit from Angstrom to Bohr, since .vti file generated by GIMIC use Bohr unit.
+
+2. Use [xyz2cml](https://github.com/wongzit/minorScripts), it can convert mol.xyz in the current dictionary into mol-bohr.cml, which also convert the unit from Angstrom to Bohr.
+
+GIMIC and ParaView can do a lot, in this section I will only present how to draw the stream line of ring current. Here is the general procedure.
+
+1) Open ParaView, load plugins from **Tools -> Manage Plugins**, select the **StreamLinesRepresentation**, **StreamingParticles** and **SurfaceLIC**, and click **Load Selected**.
 
 <p align="center">
-<img alt="aicdfig1" src="/assets/blog/figure81.png">
+<img alt="gimicfig1" src="/assets/blog/figure91.png">
 </p>
 
-Submit this input file to Gaussian calculation. Once the calculation is completed, .log (or .out) and .txt files would be generated, these 2 files are necessary for next step AICD calculation.
+2) Load mol-bohr.cml and jvec.vti files to the ParaView.
 
-## AICD calculation
+3) Choose **Streame Lines** in the **Representation**.
 
-Execute following command for AICD calculation:
+<p align="center">
+<img alt="gimicfig2" src="/assets/blog/figure92.png">
+</p>
+
+4) Set the coloring, step length, number of particles and max time to live.
+
+5) I think you could see the ring current stream lines in the main window.
+
+## Export movie
+
+ParaView has the built-in function to export movie, but it does not work on my computer. My solution is, save .png images, and combine them into a movie.
+
+1) Choose **View** -> **Animation View**, enlarge the number of frames (for example, 10000).
+
+<p align="center">
+<img alt="gimicfig3" src="/assets/blog/figure93.png">
+</p>
+
+2) Click **File** -> **Save Animation**, and save the .png files.
+
+<p align="center">
+<img alt="gimicfig4" src="/assets/blog/figure94.png">
+</p>
+
+3) I use [ffmpeg](https://www.ffmpeg.org) program to convert the .png images into .mp4 movie. The command is:
 
 ```
-AICD option1 value1 option2 value2 --povrayinput -c xxx.log
+ffmpeg -framerate 30 -i image_%03d.png -vcodec libx264 -pix_fmt yuv420p -r 60 out.mp4
 ```
 
-There are some useful option for make high quality AICD plots:
-
-### -m *n*
-Molecular view in AICD plots, *n* = 1-4. (1: single view, surface only; 2: single view, surface and arrows; 3: multi view, surface only; 4: multi view, surface and arrows)
+By this command, 10000 images would be saved as a about 33 second mp4 movie.
 
 <p align="center">
-<img alt="aicdfig2" src="/assets/blog/figure82.png">
-</p>
-
-### -b *x y z*
-Direction of external magnetic field (default is 0 0 1), the external magnetic field is defined in vector space with *x*, *y*, *z* direction. The external is only defined in direction, the magnitude is out of consideration (e.g.: 0 0 1 is same as 0 0 2).
-
-<p align="center">
-<img alt="aicdfig3" src="/assets/blog/figure83.png" style="height:300px;">
-</p>
-
-### -l *r*
-
-Iso-surface value.
-
-<p align="center">
-<img alt="aicdfig4" src="/assets/blog/figure84.png" style="height:300px;">
-</p>
-
-### -p *n*
-
-Number of data points, default is 40000, larger *n* value will generate more arrows and smoother iso-surface. More computational cost is needed.
-
-<p align="center">
-<img alt="aicdfig5" src="/assets/blog/figure85.png" style="height:300px;">
-</p>
-
-### --maxarrowlength *f*
-
-Define the maximum of arrow length, the arrows longer than value *f* would not be displayed in AICD map (similar option: `--minarrowlength`)
-
-<p align="center">
-<img alt="aicdfig6" src="/assets/blog/figure86.png" style="height:300px;">
-</p>
-
-### -s
-
-Smoothly graphical representation, needs more computational cost.
-
-<p align="center">
-<img alt="aicdfig7" src="/assets/blog/figure87.png" style="height:300px;">
-</p>
-
-More options can be found from `AICD -h` command. After AICD calculation, several files would be generated and we need the files in the folder named as “*xxxxxxxxxxxxxx.d*”. Copy this folder to a computer with POV-Ray installed.
-
-## AICD visualization
-
-To visualize the AICD plot, image rendering software, POV-Ray, is needed. POV-Ray could be freely download from the [homepage](http://www.povray.org). Open the “*RenderMich.pov*” file with POV-Ray in the “*xxxxxxxxxxxxxx.d*” folder. Choose the resolution and click “Run” icon. The AICD plot will be shown in a new window, and it will be saved as .png image at current path automatically, so, you don’t need to save it manually.
-
-Here are some common issues when using the POV-Ray:
-
-### Molecular structure could not be fully displayed
-
-The following figure shows how the POV-Ray renders an image:
-
-<p align="center">
-<img alt="aicdfig8" src="/assets/blog/figure88.png" style="height:300px;">
-</p>
-
-If the molecule is not displayed in full, please modify the `camera - location` coordinate <*x*, *y*, *z*> in the “*RenderMich.pov*” file. More negative *z* value will give smaller size molecule. 
-
-```
-camera{
-  location <  0, 0, -160 >
-  direction < 0, 0, 2 >
-  sky < 0, 1, 0 >
-  up < 0, 1, 0 >
-  right < 1.333, 0, 0 >
-  orthographic
-}
-```
-
-<p align="center">
-<img alt="aicdfig9" src="/assets/blog/figure89.png">
-</p>
-
-### Geometries are overlapping with others
-
-If the molecule is overlapping to each other, please modify the object translate coordinates in the end of the file. The value also consists with <*x*, *y*, *z*> coordinates, *z* should always be 0 (on the plane).
-
-```
-object           // vertical view in the 1st column
-{ MolUndMag
-  translate < -45,32,0 >
-}
-object           // front view in the 1st column
-{ MolUndMag
-  rotate < 90,0,0 >
-  translate < -45,0,0 >
-}
-object           // side view in the 1st column
-{ MolUndMag
-  rotate < 0,90,0 >
-  translate < -45,-32,0 >
-}
-
-
-object           // vertical view in the 2nd column
-{ MolUndIso
-  translate < -10,29,0 >
-}
-object           // front view in the 2nd column
-{ MolUndIso
-  rotate < 90,0,0 >
-  translate < -10,0,0 >
-}
-object           // side view in the 2nd column
-{ MolUndIso
-  rotate < 0,90,0 >
-  translate < -10,-29,0 >
-}
-
-object           // vertical view in the 3rd column
-{ MolUndIso
-  rotate < 0,180,0 >
-  translate < 35,29,0 >
-}
-object           // front view in the 3rd column
-{ MolUndIso
-  rotate < 90,0,0 >
-  rotate < 0,180,0 >
-  translate < 35,0,0 >
-}
-object           // side view in the 3rd column
-{ MolUndIso
-  rotate < 0,90,0 >
-  rotate < 0,180,0 >
-  translate < 35,-29,0 >
-}
-
-```
-
-<p align="center">
-<img alt="aicdfig10" src="/assets/blog/figure810.png">
+<img alt="gimicfig5" src="/assets/blog/figure95.png">
 </p>
