@@ -5,12 +5,23 @@ date:   2021-06-03 21:06:03 +0900
 categories: software guide
 ---
 
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
 # Background
 
 HOMA (Harmonic Oscillator Model of Aromaticity) is a geometry-based aromaticity index. The HOMA model is based on the assumption that the harmonic oscillator energy of extension or compression of a bond depends on the force constants, which are dependent on the bond lengths. HOMA value can be calculated from following equation:
 
 
-$$ e^{i x} = \cos{x} + i \sin{x} $$
+$$ {\rm HOMA } = 1 - \frac {1}{n} \sum^n_i \alpha_j \left( R_{{\rm opt,}j} - R_{i{\rm ,}j} \right)^2 $$
 
 The optimal bond length *Ropt* is the length of a bond for which equal energy inputs are required to extend it to the length of the singlet bond or to compress it to the length of the double bond. For C-C case, as an example, the *Ropt* was defined as following:
 
