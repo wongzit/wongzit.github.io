@@ -62,7 +62,7 @@ There are several important points for the input file:
 5. Include the molecular orbital numbers (those will be considered for NMR calculation) in the end of input file if you use `IOp(10/93=2)`. (For unrestricted calculation, alpha orbitals and beta orbitals are separated, the orbital numbers of alpha orbital are same as those displayed in GaussView, but, the orbital numbers of beta orbitals are those in GaussView plus occupied orbital numbers. e.g., for the ith alpha and beta orbitals, and total *n* occupied orbitals, you need to write "*i*" and "*i+n*".)
 
 <p align="center">
-<img alt="aicdfig1" src="/assets/blog/figure81.png" style="height:300px;">
+<img alt="aicdfig1" src="/assets/blog/figure81.png">
 </p>
 
 Submit this input file to Gaussian calculation. Once the calculation is completed, .log (or .out) and .txt files would be generated, these 2 files are necessary for next step AICD calculation.
@@ -153,7 +153,7 @@ camera{
 ```
 
 <p align="center">
-<img alt="aicdfig9" src="/assets/blog/figure89.png" style="height:300px;">
+<img alt="aicdfig9" src="/assets/blog/figure89.png">
 </p>
 
 ### Geometries are overlapping with others
