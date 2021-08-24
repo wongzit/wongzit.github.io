@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Visualization of Aromaticity: AICD"
-date:   2021-06-06 00:33:56 +0900
+title:  "Visualization of Aromaticity: GIMIC"
+date:   2021-06-06 00:53:08 +0900
 categories: computation
 ---
 
-> This blog is part of theme collection: Visualization of Aromaticity, see post of [GIMIC](https://wongzit.github.io/visualization-of-aromaticity-gimic/) in this collection.
+> This blog is part of theme collection: Visualization of Aromaticity, see post of [AICD](https://wongzit.github.io/visualization-of-aromaticity-aicd/) in this collection.
 
 # Background
 
