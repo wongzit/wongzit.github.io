@@ -19,7 +19,7 @@ For running ORCA in serial, skip this step.
 
  (1) Execute following commands:
 
-{% highlight xml %}
+```
 tar -xjf openmpi-4.1.1.tar.bz2
 cd openmpi-4.1.1
 ./configure --prefix=/home/wangzhe/openmpi411
@@ -27,7 +27,7 @@ cd openmpi-4.1.1
                                                       /home/wangzhe/openmpi411
 make -j8                                         # Use 8 CPU cores to compile
 make install
-{% endhighlight %}
+```
 
 (2) Add following environmental variables to `~/.bashrc`:
 
