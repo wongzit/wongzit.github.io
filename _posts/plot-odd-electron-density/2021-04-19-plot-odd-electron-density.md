@@ -23,7 +23,7 @@ categories: computation
 **4. Square the new generated HOMO and LUMO cubes.**
 
 <p align="center">
-<img alt="oddfig3" src="/assets/blog/figure73.png" style="height:500px;">
+<img alt="oddfig3" src="/assets/blog/figure73.png" style="height:400px;">
 </p>
 
 **5. Add two squared cubes.**
