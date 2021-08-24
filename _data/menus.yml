@@ -6,10 +6,6 @@
   url: /about/
   external: false
 
-- title: device
-  url: /device/
-  external: false
-
 - title: publication
   url: /publication/
   external: false
@@ -22,6 +18,6 @@
   url: /blog/
   external: false
 
- - title: old version
+ - title: oldVersion
    url: https://www.wangzhe95.net/
    external: true
