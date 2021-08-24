@@ -1,30 +1,20 @@
 ---
 layout: post
-title:  "MEMO: Simulation of EPR Spectrum with EasySpin"
-date:   2021-07-02 18:45:05 +0900
+title:  "Prepare Supporting Information with CSIgen"
+date:   2021-06-13 20:43:18 +0900
 categories: software usage
 ---
 
-## S > 0.5 Case, plot EPR spectrum with EasySpin
+Computational supporting information (CSI) is necessary in scientific article but preparing CSI is a tiresome task. So, I wrote a program for myself to easily make CSI from Gaussian output file, and last weekend, I released it on [*GitHub*](https://github.com/wongzit/CSIgen).
 
-```
-Sys.S = 1;      % S = 1 for triplet and S = 2 for quintet states
-Sys.g = 2.0023;      % g factor
-convert = 100*clight/1e6;      % cm^-1 -> MHz conversion factor
-Sys.D = [0.0100000 0.002000]*convert;      % input D and E value,
-                                             in cm^-1
-Sys.lwpp = 6;      % Gaussian-type line broadening
-Exp.mwFreq = 9.4;      % Spectrometer frequency, in GHz
-Exp.Range = [100 500];      % Lower and upper limit of the field 
-                              sweep range, in mT
-pepper(Sys,Exp)
-```
+<p align="center">
+<img alt="csigenfig1" src="/assets/blog/figure21.png">
+</p>
 
-## Save numeric data from Matlab figure
+Users can easily export the CSI in 6 built-in templates (including .txt and .xlsx format) by loading Gaussian output file to CSIgen. About more details on usage, please refer to the user manual.
 
-```
-open(fname);      % fname = path to Matlab figure file
-lh = findall(gca,'type','line');
-xc = get(lh,'xdata');
-yc = get(lh,'ydata');
-```
+Take a look on the CSI created by CSIgen.
+
+<p align="center">
+<img alt="csigenfig2" src="/assets/blog/figure22.png">
+</p>
