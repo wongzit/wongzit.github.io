@@ -10,9 +10,7 @@ comments: false
 
 ## independent programs 🧰
 
-<p align="center">
 <a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:56px; weight:56px; background-color:transparent;"><b>EnePro</b></a>
-</p>
 
 - A Python program of **generating energy profiles**, released on **8th March 2015**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
@@ -135,6 +133,8 @@ All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minor
 
 ### pdb2xyz (8th June 2021)
 **pdb2xyz** is a Python script for converting .pdb file to .xyz file.
+
+<br />
 
 <p align="center">
 <a href="https://github.com/wongzit"> <img alt="githubpage" class="icon" src="https://github-readme-stats.vercel.app/api?username=wongzit&show_icons=true&theme=tokyonight"></a>
