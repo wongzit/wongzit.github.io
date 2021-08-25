@@ -17,7 +17,7 @@ comments: false
 - A Python program of **generating energy profiles**, released on **8th March 2015**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/EnePro).
-- ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-energy%20profile-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
+- ![](https://img.shields.io/badge/made%20with-Python%20%26%20C-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-energy%20profile-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
 <br />
 
