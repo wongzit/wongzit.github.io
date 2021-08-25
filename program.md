@@ -12,9 +12,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **generating energy profiles**, released on **8th March 2015**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
@@ -23,9 +21,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/CSIgen"> <img alt="csigen" class="icon" src="/assets/program/CSIgen_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **computational supporting information generator**, released on **2nd April 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
@@ -34,9 +30,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/ICSSgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **input file generator for 2D-ICSS (2D-NICS) calculations**, released on **19th April 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
