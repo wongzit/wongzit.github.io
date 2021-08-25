@@ -6,14 +6,12 @@ excerpt: program
 comments: false
 ---
 
-<p align="center">
-<a href="https://github.com/wongzit"> <img alt="githubpage" class="icon" src="https://github-readme-stats.vercel.app/api?username=wongzit&show_icons=true&theme=tokyonight"></a>
-</p>
+> Programming makes life easier and more efficient!
 
 ## independent programs 🧰
 
 <p align="center">
-<a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:56px; weight:56px; background-color:transparent;"><b>EnePro</b></a>
 </p>
 
 - A Python program of **generating energy profiles**, released on **8th March 2015**.
@@ -138,4 +136,6 @@ All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minor
 ### pdb2xyz (8th June 2021)
 **pdb2xyz** is a Python script for converting .pdb file to .xyz file.
 
-> Programming makes life easier and more efficient!
+<p align="center">
+<a href="https://github.com/wongzit"> <img alt="githubpage" class="icon" src="https://github-readme-stats.vercel.app/api?username=wongzit&show_icons=true&theme=tokyonight"></a>
+</p>
