@@ -24,7 +24,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/CSIgen"> <img alt="csigen" class="icon" src="/assets/program/CSIgen_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/CSIgen"> <img alt="csigen" class="icon" src="/assets/program/CSIgen_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A Python program of **computational supporting information generator**, released on **2nd April 2021**.
@@ -35,7 +35,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/ICSSgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/ICSSgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A Python program of **input file generator for 2D-ICSS (2D-NICS) calculations**, released on **19th April 2021**.
@@ -46,7 +46,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/ICSScsv"> <img alt="icsscsv" class="icon" src="/assets/program/ICSScsv_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/ICSScsv"> <img alt="icsscsv" class="icon" src="/assets/program/ICSScsv_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A Python program of **extracting magnetic shielding tensors from 2D-ICSS (2D-NICS) calculation outputs**, released on **23rd April 2021**.
@@ -57,7 +57,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/NICSgen"> <img alt="nicsgen" class="icon" src="/assets/program/NICSgen_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/NICSgen"> <img alt="nicsgen" class="icon" src="/assets/program/NICSgen_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A Python program of **input file generator for NICS calculations**, released on **25th April 2021**.
@@ -68,7 +68,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/HOMAcalc"> <img alt="homacalc" class="icon" src="/assets/program/HOMAcalc_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/HOMAcalc"> <img alt="homacalc" class="icon" src="/assets/program/HOMAcalc_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A Python program of **HOMA value calculator**, released on **25th May 2021**.
@@ -79,7 +79,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/ICSSgen3D"> <img alt="icssgen3d" class="icon" src="/assets/program/ICSSgen3D_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/ICSSgen3D"> <img alt="icssgen3d" class="icon" src="/assets/program/ICSSgen3D_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A Python program of **input file generator for 3D-ICSS calculations**, released on **6th June 2021**.
@@ -90,7 +90,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/ICSScub3D"> <img alt="icsscub3d" class="icon" src="/assets/program/ICSScub3D_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/ICSScub3D"> <img alt="icsscub3d" class="icon" src="/assets/program/ICSScub3D_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A Python program of **extracting magnetic shielding tensors from 3D-ICSS calculation outputs**, released on **6th June 2021**.
@@ -101,7 +101,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/O2Ig"> <img alt="o2ig" class="icon" src="/assets/program/O2Ig_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/O2Ig"> <img alt="o2ig" class="icon" src="/assets/program/O2Ig_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A Python program of **creating Gaussian input files from output files**, released on **2nd July 2021**.
@@ -112,7 +112,7 @@ comments: false
 <br />
 
 <p align="center">
-<a href="https://github.com/wongzit/gauMonitor"> <img alt="gaumonitor" class="icon" src="/assets/program/gauMonitor_icon.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/gauMonitor"> <img alt="gaumonitor" class="icon" src="/assets/program/gauMonitor_icon.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 - A program package of **Gaussian job monitor**, released on **17th July 2021**.
