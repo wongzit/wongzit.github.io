@@ -57,9 +57,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/HOMAcalc"> <img alt="homacalc" class="icon" src="/assets/program/HOMAcalc_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **HOMA value calculator**, released on **25th May 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
