@@ -39,9 +39,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/ICSScsv"> <img alt="icsscsv" class="icon" src="/assets/program/ICSScsv_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **extracting magnetic shielding tensors from 2D-ICSS (2D-NICS) calculation outputs**, released on **23rd April 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
@@ -50,9 +48,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/NICSgen"> <img alt="nicsgen" class="icon" src="/assets/program/NICSgen_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **input file generator for NICS calculations**, released on **25th April 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
@@ -72,9 +68,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/ICSSgen3D"> <img alt="icssgen3d" class="icon" src="/assets/program/ICSSgen3D_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **input file generator for 3D-ICSS calculations**, released on **6th June 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
@@ -83,9 +77,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/ICSScub3D"> <img alt="icsscub3d" class="icon" src="/assets/program/ICSScub3D_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **extracting magnetic shielding tensors from 3D-ICSS calculation outputs**, released on **6th June 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
@@ -94,9 +86,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/O2Ig"> <img alt="o2ig" class="icon" src="/assets/program/O2Ig_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A Python program of **creating Gaussian input files from output files**, released on **2nd July 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
@@ -105,9 +95,7 @@ comments: false
 
 <br />
 
-<p align="center">
 <a href="https://github.com/wongzit/gauMonitor"> <img alt="gaumonitor" class="icon" src="/assets/program/gauMonitor_icon.png" style="height:76px; background-color:transparent;"></a>
-</p>
 
 - A program package of **Gaussian job monitor**, released on **17th July 2021**.
 - Supports **macOS** and **Linux**.
