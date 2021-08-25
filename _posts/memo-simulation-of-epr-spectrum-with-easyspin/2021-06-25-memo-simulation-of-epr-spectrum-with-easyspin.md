@@ -5,7 +5,19 @@ date:   2021-06-25 18:45:05 +0900
 categories: software usage
 ---
 
-## S > 0.5 Case, plot EPR spectrum with EasySpin
+**Note:** MATLAB and [EasySpin](https://easyspin.org) are necessary for simulation of EPR spectra.
+
+## Install EasySpin
+
+1. Download the EasySpin zip file and unpack it to a folder of your choice, e.g., `C:\ or /var/myfiles/`. Once unpacked, EasySpin is contained in a subfolder which in turn contains several subfolders.
+2. Launch MATLAB and go to *Home* -> *Set Path*. Remove any folders containing older EasySpin installations from the MATLAB search path. Add the EasySpin subfolder `easyspin-x.y.z/easyspin` to the MATLAB search path by clicking on "Add Folder...", selecting the `easyspin-x.y.z/easyspin` subfolder from your new EasySpin directory, and clicking on "Save".
+3. In MATLAB, type `easyspin` at the command prompt. This will display information about the installed version of EasySpin
+
+## Simulation of EPR spectrum
+
+### S > 0.5 Case, plot EPR spectrum with EasySpin
+
+Exacute following command (before `%` symbol) in MATLAB, after running of `pepper(Sys,Exp)`, EPR spectrum would be displayed in current window.
 
 ```
 Sys.S = 1;      % S = 1 for triplet and S = 2 for quintet states
@@ -19,11 +31,15 @@ Exp.Range = [100 500];      % Lower and upper limit of the field
 pepper(Sys,Exp)
 ```
 
-## Save numeric data from Matlab figure
+### Save numeric data from MATLAB figure
+
+If you want to save numeric data from MATLAB figure, save current EPR spectrum as MATLAB figure file (`xxx.fig`) and then, run following command. 
 
 ```
-open(fname);      % fname = path to Matlab figure file
+open("C:\Desktop\xxx.fig");      % input the path to MATLAB figure file
 lh = findall(gca,'type','line');
 xc = get(lh,'xdata');
 yc = get(lh,'ydata');
 ```
+
+The x axis and y axis data would be saved in xc and yc sheet, respectively.
