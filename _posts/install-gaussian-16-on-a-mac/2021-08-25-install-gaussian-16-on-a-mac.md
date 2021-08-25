@@ -50,4 +50,4 @@ setenv GAUSS_SCRDIR /Applications/g16/Scratch
 
 ## Check installation
 
-Run `g16` in *Terminal*, if ` Entering Gaussian System, Link 0=g16` is displayed in current windows, the Gaussian 16 is successfully installed on your computer.
+Run `g16` in *Terminal*, if `Entering Gaussian System, Link 0=g16` is displayed in current windows, the Gaussian 16 is successfully installed on your computer.
