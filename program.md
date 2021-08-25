@@ -10,7 +10,11 @@ comments: false
 
 ## independent programs 🧰
 
-<a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:56px; weight:56px; background-color:transparent;"></a>
+<br />
+
+<p align="center">
+<a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:66px; background-color:transparent;"></a>
+</p>
 
 - A Python program of **generating energy profiles**, released on **8th March 2015**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
