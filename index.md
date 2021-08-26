@@ -31,7 +31,7 @@ I also do some 👨🏻‍💻 **programming**, I will post my publications, pro
 <br />
 <br />
 
-## some useful sites 🌏
+## useful links 🌏
 
 [**WebPlotDigitizer**](https://automeris.io/WebPlotDigitizer/) Web based tool to extract data from plots, images, and maps.
 
