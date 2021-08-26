@@ -13,6 +13,52 @@ Anisotropy of the Induced Current Density (AICD) has been widely used for aromat
 
 The biggest feature of AICD is that it can separate the orbital contribution (from all molecular orbitals, or from π orbitals only), this is useful when analyze the aromaticity from the contribution of π electrons.
 
+# Install AICD on a Linux machine
+
+*This is a guide for install AICD 3.0.4, if you are using different version, this procedure may be not work.*
+
+1. Run following command in termial window.
+```
+tar xvf AICD-3.0.4.tar
+cd AICD-3.0.4
+make
+```
+2. Add following environment variable to the `~/.bashrc` file:
+```
+alias AICD=~/path_to/AICD-3.0.4/AICD
+```
+3. Add permision to the AICD program:
+```
+chmod +x ~/path_to/AICD-3.0.4/* -R
+```
+4. **Install povchem 1.0**: Download `povchem.c`, and run following command:
+```
+cc povchem.c -o povchem -lm
+```
+5. Add following environment variable to the `~/.bashrc` file:
+```
+alias povchem=~/path_to/pocvhem
+```
+6. Copy `povchem.cfg` and `periodic.tab` files to `/AICD-3.0.4/povchem`. Maybe you need to modify the `/AICD-3.0.4/AICD` file using texteditor, the row No.404, replace the `povchem` to the full path of `povchem`.
+
+7. **Install PovRay**: Download *PovRay* from [homepage](http://www.povray.org/download/index-3.6.php), and run following command:
+```
+tar -xvf povlinux-3.6.tar
+cd povlinux-3.6
+./install -no-arch-check
+```
+
+8. Run `AICD` in terminal window, if you could see following message, the program was installed successfully on the computer.
+```
+Zweck: Extraktion der induzierten Stromdichte (ICD)
+       aus einem oder mehreren Gaussian98-log-files.
+
+Dieses Script liest die angegebenen Dateien und
+wandelt sie in mehrere Dateien um.
+
+Aufruf: /home/hpc/wang/AICD-3.0.4/AICD  Gaussian98-output-file(s)
+```
+
 # Procedure
 
 In this section, I will use an example of 1-methylazulene as a demo calculation to explain how to make the AICD plot. Calculation files could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_AICD). I also uploaded a slide for AICD analysis of cyclo[18]carbon, it is also a good example for AICD analysis.
