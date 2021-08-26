@@ -13,7 +13,7 @@ In the previous [post](https://wongzit.github.io/2d-icss-analyses-with-icssgen-a
 
 ICSSgen3D and ICSScub3D could be download from [*GitHub*](https://github.com/wongzit). To install and run the programs, please refer to the user manuals.
 
-# DD-ICSS analyses of 1-methylazulene
+# 3D-ICSS analyses of 1-methylazulene
 
 ## Create input files with ICSSgen3D
 
