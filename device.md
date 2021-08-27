@@ -8,7 +8,7 @@ comments: false
 
 # home-built computer
 
-## pc#9700KF
+### pc#9700KF
 
 > Program testing and gaming.
 
@@ -21,7 +21,7 @@ comments: false
 - **PSU** Thermaltake Smart 600W
 - **OS** Microsoft Windows 10 Education
 
-## pc#10700
+### pc#10700
 
 > For molecule simulation.
 
@@ -36,7 +36,7 @@ comments: false
 
 # Macintosh
 
-## Mac mini (2018) 
+### Mac mini (2018) 
 
 > Writing code, net surfing, etc.
 
@@ -46,7 +46,7 @@ comments: false
 - **SSD** 512GB
 - **OS** macOS 11.5.2
 
-## MacBook Air (2020)
+### MacBook Air (2020)
 
 > Working...
 
