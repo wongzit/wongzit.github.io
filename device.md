@@ -32,7 +32,7 @@ comments: false
 
 # Macintosh
 
-## Mac mini (2020)
+## Mac mini (2018) 
 
 - **CPU** Intel Core™ i5-8500B
 - **GPU** Intel Iris UHD 630
