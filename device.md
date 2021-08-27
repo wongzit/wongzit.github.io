@@ -9,7 +9,9 @@ comments: false
 # home-built computer
 
 ## pc#9700KF
+
 > Program testing and gaming.
+
 - **CPU** Intel Core™ i7-9700KF
 - **GPU** MSI GAMING X GeForce RTX 3060 12GB
 - **RAM** Kingston HyperX DDR4 2666MHz 16GB (8GB\*2)
@@ -20,7 +22,9 @@ comments: false
 - **OS** Microsoft Windows 10 Education
 
 ## pc#10700
+
 > For molecule simulation.
+
 - **CPU** Intel Core™ i7-10700
 - **GPU** Intel Iris UHD 630
 - **RAM** Kingston HyperX DDR4 2666MHz 32GB (8GB\*4)
@@ -33,7 +37,9 @@ comments: false
 # Macintosh
 
 ## Mac mini (2018) 
+
 > Writing code, net surfing, etc.
+
 - **CPU** Intel Core™ i5-8500B
 - **GPU** Intel Iris UHD 630
 - **RAM** Crucial by Micron DDR4 2666MHz 16GB (8GB\*2)
@@ -41,9 +47,10 @@ comments: false
 - **OS** macOS 11.5.2
 
 ## MacBook Air (2020)
+
 > Working...
-- **CPU** Apple M1
-- **GPU** Apple M1 (8 Cores)
+
+- **APU** Apple M1 (8 Core CPU & 8 Core GPU)
 - **RAM** 8GB
 - **SSD** 512GB
 - **OS** macOS 11.5.2
