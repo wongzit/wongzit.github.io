@@ -23,7 +23,7 @@ comments: false
 
 ### pc#10700
 
-> For molecule simulation.
+> For molecular simulation.
 
 - **CPU** Intel Core™ i7-10700
 - **GPU** Intel Iris UHD 630
