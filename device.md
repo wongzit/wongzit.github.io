@@ -54,5 +54,3 @@ comments: false
 - **RAM** 8GB
 - **SSD** 512GB
 - **OS** macOS 11.5.2
-
-# other devices
