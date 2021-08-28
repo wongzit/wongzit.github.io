@@ -10,8 +10,6 @@ comments: false
 
 ## independent programs 🧰
 
-<br />
-
 <a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:86px; background-color:transparent;"></a>
 
 - A Python program of **generating energy profiles**, released on **8th March 2015**.
@@ -29,6 +27,55 @@ comments: false
 - ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-ESI%20%7C%20Gaussian%20%7C%20supporting%20information-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
 <br />
+
+<a href="https://github.com/wongzit/O2Ig"> <img alt="o2ig" class="icon" src="/assets/program/O2Ig_icon.png" style="height:86px; background-color:transparent;"></a>
+
+- A Python program of **creating Gaussian input files from output files**, released on **2nd July 2021**.
+- Supports **macOS**, **Linux** and **Microsoft Windows**.
+- User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/O2Ig).
+- ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20input%20%7C%20output-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
+
+<br />
+
+<a href="https://github.com/wongzit/gauMonitor"> <img alt="gaumonitor" class="icon" src="/assets/program/gauMonitor_icon.png" style="height:86px; background-color:transparent;"></a>
+
+- A program package of **Gaussian job monitor**, released on **17th July 2021**.
+- Supports **macOS** and **Linux**.
+- Source code is free available from [*GitHub*](https://github.com/wongzit/gauMonitor).
+- ![](https://img.shields.io/badge/made%20with-Python%20%26%20Bash%20shell-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20calculation%20monitor-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
+
+<br />
+
+<a href="https://github.com/wongzit/pyAroma"> <img alt="pyaroma" class="icon" src="/assets/program/pyAroma_icon.png" style="height:86px; background-color:transparent;"></a>
+
+- **An aromaticity analyzer**, released on **28th August 2021**.
+- Supports **macOS**, **Linux** and **Microsoft Windows**.
+- User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/pyAroma).
+- ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-HOMA%20%7C%20NICS%20%7C%20ICSS%20%7C%20Aromaticity-red?style=flat-square)&ensp;![](https://img.shields.io/badge/License%3F-MIT-9cf?style=flat-square)
+
+<br />
+
+## minor scripts 🛠
+
+All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
+
+### xyz2cml (24th May 2021)
+**xyz2cml** is a Python script for converting .xyz file to .cml file. I wrote this script for my GIMIC calculation. It reads mol.xyz file at current dictionary and convert it to mol-bohr.cml file.
+
+### RunGJF (5th June 2021)
+**RunGJF** is a Bash Shell script for running Gaussian jobs automatically. RunGJF reads all .gjf files in current dictionary, and submit the to Gaussian 16 calculation one by one.
+
+### gimicInp (7th June 2021)
+**gimicInp** is a Python script for generating GIMIC input file. User can specify the parameters and the input file gimic.inp will be saved at current dictionary. Bash shell version is also available.
+
+### pdb2xyz (8th June 2021)
+**pdb2xyz** is a Python script for converting .pdb file to .xyz file.
+
+<br />
+
+## end of support
+
+**Note**: Basic functions of *ICSSgen*, *ICSScsv*, *ICSSgen3D*, *ICSScub3D*, *NICSgen* and *HOMAcalc* are combined to [*py.Aroma*](https://github.com/wongzit/pyAroma), a multi-function program for analyzing aromaticity.
 
 <a href="https://github.com/wongzit/ICSSgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:86px; background-color:transparent;"></a>
 
@@ -81,51 +128,6 @@ comments: false
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/ICSScub3D).
 - ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-3DICSS%20%7C%20Gaussian%20%7C%20Aromaticity-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
-
-<br />
-
-<a href="https://github.com/wongzit/O2Ig"> <img alt="o2ig" class="icon" src="/assets/program/O2Ig_icon.png" style="height:86px; background-color:transparent;"></a>
-
-- A Python program of **creating Gaussian input files from output files**, released on **2nd July 2021**.
-- Supports **macOS**, **Linux** and **Microsoft Windows**.
-- User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/O2Ig).
-- ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20input%20%7C%20output-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
-
-<br />
-
-<a href="https://github.com/wongzit/gauMonitor"> <img alt="gaumonitor" class="icon" src="/assets/program/gauMonitor_icon.png" style="height:86px; background-color:transparent;"></a>
-
-- A program package of **Gaussian job monitor**, released on **17th July 2021**.
-- Supports **macOS** and **Linux**.
-- Source code is free available from [*GitHub*](https://github.com/wongzit/gauMonitor).
-- ![](https://img.shields.io/badge/made%20with-Python%20%26%20Bash%20shell-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20calculation%20monitor-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
-
-<br />
-
-<a href="https://github.com/wongzit/pyAroma"> <img alt="pyaroma" class="icon" src="/assets/program/pyAroma_icon.png" style="height:86px; background-color:transparent;"></a>
-
-- **An aromaticity analyzer**, released on **28th August 2021**.
-- Supports **macOS**, **Linux** and **Microsoft Windows**.
-- User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/pyAroma).
-- ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-HOMA%20%7C%20NICS%20%7C%20ICSS%20%7C%20Aromaticity-red?style=flat-square)&ensp;![](https://img.shields.io/badge/License%3F-MIT-9cf?style=flat-square)
-
-<br />
-
-## minor scripts 🛠
-
-All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
-
-### xyz2cml (24th May 2021)
-**xyz2cml** is a Python script for converting .xyz file to .cml file. I wrote this script for my GIMIC calculation. It reads mol.xyz file at current dictionary and convert it to mol-bohr.cml file.
-
-### RunGJF (5th June 2021)
-**RunGJF** is a Bash Shell script for running Gaussian jobs automatically. RunGJF reads all .gjf files in current dictionary, and submit the to Gaussian 16 calculation one by one.
-
-### gimicInp (7th June 2021)
-**gimicInp** is a Python script for generating GIMIC input file. User can specify the parameters and the input file gimic.inp will be saved at current dictionary. Bash shell version is also available.
-
-### pdb2xyz (8th June 2021)
-**pdb2xyz** is a Python script for converting .pdb file to .xyz file.
 
 <br />
 
