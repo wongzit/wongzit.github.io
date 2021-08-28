@@ -73,7 +73,7 @@ comments: false
 
 <br />
 
-## end of support
+## end of support ⛔️
 
 > **Note**: Basic functions of *ICSSgen*, *ICSScsv*, *ICSSgen3D*, *ICSScub3D*, *NICSgen* and *HOMAcalc* are combined to [*py.Aroma*](https://github.com/wongzit/pyAroma), a multi-function program for analyzing aromaticity.
 
