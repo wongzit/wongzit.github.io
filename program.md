@@ -57,7 +57,7 @@ comments: false
 
 ## minor scripts 🛠
 
-All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
+> All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
 
 ### xyz2cml (24th May 2021)
 **xyz2cml** is a Python script for converting .xyz file to .cml file. I wrote this script for my GIMIC calculation. It reads mol.xyz file at current dictionary and convert it to mol-bohr.cml file.
@@ -75,7 +75,7 @@ All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minor
 
 ## end of support
 
-**Note**: Basic functions of *ICSSgen*, *ICSScsv*, *ICSSgen3D*, *ICSScub3D*, *NICSgen* and *HOMAcalc* are combined to [*py.Aroma*](https://github.com/wongzit/pyAroma), a multi-function program for analyzing aromaticity.
+> **Note**: Basic functions of *ICSSgen*, *ICSScsv*, *ICSSgen3D*, *ICSScub3D*, *NICSgen* and *HOMAcalc* are combined to [*py.Aroma*](https://github.com/wongzit/pyAroma), a multi-function program for analyzing aromaticity.
 
 <a href="https://github.com/wongzit/ICSSgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:86px; background-color:transparent;"></a>
 
