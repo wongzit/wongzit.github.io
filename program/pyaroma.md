@@ -10,6 +10,8 @@ comments: false
 <img alt="pyaroma" class="icon" src="/assets/program/pyAroma_rm.png">
 </p>
 
+Latest version: **1.0.0**, updated at 2021-08-29
+
 ## statement of need
 
 py.**Aroma** is a Python program for aromaticity analyses, including ICSS, NICS, HOMA analyses tool. Users can easily create input files for NICS, 2D-ICSS and 3D-ICSS calculations and process output files of HOMA and ICSS calculations.
