@@ -12,9 +12,7 @@ comments: false
 
 ## statement of need
 
-<p align = "justify">
-py.<b>Aroma</b> is a Python program for aromaticity analyses, including ICSS, NICS, HOMA analyses tool. Users can easily create input files for NICS, 2D-ICSS and 3D-ICSS calculations and process output files of HOMA and ICSS calculations.
-</p>
+py.**Aroma** is a Python program for aromaticity analyses, including ICSS, NICS, HOMA analyses tool. Users can easily create input files for NICS, 2D-ICSS and 3D-ICSS calculations and process output files of HOMA and ICSS calculations.
 
 ## how to run
 
@@ -63,8 +61,11 @@ And then, run following command in command window:
 ```
 pyinstaller /path_to_pyAroma/pyAroma_src_v_1_0_0.py --onefile
 ```
-
 The packaged executable file will be generated in the dist folder name as *pyAroma_src_v_1_0_0.exe*. Only *.exe* file is needed, you can delete other files.
+
+## usage
+
+For detail information, please refer to the user manual.
 
 ## download
 
