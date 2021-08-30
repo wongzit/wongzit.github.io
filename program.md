@@ -38,7 +38,7 @@ comments: false
 - Source code is free available from [*GitHub*](https://github.com/wongzit/gauMonitor).
 - ![](https://img.shields.io/badge/made%20with-Python%20%26%20Bash%20shell-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20calculation%20monitor-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
-<a href="https://github.com/wongzit/pyAroma"> <img alt="pyaroma" class="icon" src="/assets/program/pyAroma_icon.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://wongzit.github.io/program/pyaroma/"> <img alt="pyaroma" class="icon" src="/assets/program/pyAroma_icon.png" style="height:86px; background-color:transparent;"></a>
 
 - **An aromaticity analyzer**, released on **28th August 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
