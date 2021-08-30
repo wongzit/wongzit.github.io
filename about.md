@@ -17,6 +17,7 @@ comments: false
 - 💻 C, C++, Python, Swift, Shell
 
 ## membership 🎟
+- [**Chinese Chemical Society**](https://www.chemsoc.org.cn) (from 2018.03.11)
 - [**The Chemical Society of Japan**](https://www.chemistry.or.jp) (from 2018.04.01)
 - [**The Society of Pyhsical Organic Chemistry, Japan**](http://jpoc.ac) (from 2019.05.23)
 - [**Japan Society of Theoretical Chemistry**](https://www.rkk-web.jp) (from 2020.08.21)
