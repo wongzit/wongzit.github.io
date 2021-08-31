@@ -23,3 +23,6 @@ Curved π-conjugated molecules and open-shell structures have attracted much att
 <p align = "center">
 <a href="https://doi.org/10.1021/jacs.1c01329"> <img src = '/assets/journal/jacs_logo.png' alt = 'jacs_logo' style="height:130px"></a>
 </p>
+
+## Cover art
+<img src = '/assets/cover/jacsat_v143i019-4.jpg' alt = 'jacs_cover'>
