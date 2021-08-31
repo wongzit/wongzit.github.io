@@ -23,3 +23,6 @@ In this study, the SOMO–HOMO conversion has been shown for the first time in t
 <p align = "center">
 <a href="https://doi.org/10.1021/acs.orglett.1c01137"> <img src = '/assets/journal/ol_logo.png' alt = 'ol_logo' style="height:130px"></a>
 </p>
+
+## Cover art
+<img src = '/assets/cover/orlef7_v023i013-2.jpg' alt = 'ol_cover'>
