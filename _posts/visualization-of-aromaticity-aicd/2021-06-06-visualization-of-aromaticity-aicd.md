@@ -49,6 +49,7 @@ cd povlinux-3.6
 ```
 
 8. Run `AICD` in terminal window, if you could see following message, the program was installed successfully on the computer.
+
 ```
 Zweck: Extraktion der induzierten Stromdichte (ICD)
        aus einem oder mehreren Gaussian98-log-files.
