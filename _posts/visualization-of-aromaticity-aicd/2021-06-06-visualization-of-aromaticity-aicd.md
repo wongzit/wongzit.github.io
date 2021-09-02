@@ -18,30 +18,41 @@ The biggest feature of AICD is that it can separate the orbital contribution (fr
 *This is a guide for install AICD 3.0.4, if you are using different version, this procedure may be not work.*
 
 1. Run following command in termial window.
+
 ```
 tar xvf AICD-3.0.4.tar
 cd AICD-3.0.4
 make
 ```
+
 2. Add following environment variable to the `~/.bashrc` file:
+
 ```
 alias AICD=~/path_to/AICD-3.0.4/AICD
 ```
+
 3. Add permision to the AICD program:
+
 ```
 chmod +x ~/path_to/AICD-3.0.4/* -R
 ```
+
 4. **Install povchem 1.0**: Download `povchem.c`, and run following command:
+
 ```
 cc povchem.c -o povchem -lm
 ```
+
 5. Add following environment variable to the `~/.bashrc` file:
+
 ```
 alias povchem=~/path_to/pocvhem
 ```
+
 6. Copy `povchem.cfg` and `periodic.tab` files to `/AICD-3.0.4/povchem`. Maybe you need to modify the `/AICD-3.0.4/AICD` file using texteditor, the row No.404, replace the `povchem` to the full path of `povchem`.
 
 7. **Install PovRay**: Download *PovRay* from [homepage](http://www.povray.org/download/index-3.6.php), and run following command:
+
 ```
 tar -xvf povlinux-3.6.tar
 cd povlinux-3.6
