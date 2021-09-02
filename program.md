@@ -65,7 +65,9 @@ comments: false
 
 <br />
 
-**End of support programs** [⛔️](https://wongzit.github.io/program/end-of-support)
+## end of support ⛔
+
+Check the [programs](https://wongzit.github.io/program/end-of-support) those end of support
 
 <p align="center">
 <a href="https://github.com/wongzit"> <img alt="githubpage" class="icon" src="https://github-readme-stats.vercel.app/api?username=wongzit&show_icons=true&theme=tokyonight"></a>
