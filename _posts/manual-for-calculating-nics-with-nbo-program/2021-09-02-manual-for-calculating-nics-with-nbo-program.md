@@ -7,7 +7,7 @@ categories: guide
 
 > This post records a general manual for calculating NICS index using NBO program. About NICS index, please refer to this OL [paper](https://doi.org/10.1021/ol0529546).
 
-Input and output files could be find [here](https://github.com/wongzit/blogFiles/tree/main/blog_nics_index).
+**NOTE:** Input and output files could be find [here](https://github.com/wongzit/blogFiles/tree/main/blog_nics_index).
 
 # Input
 
