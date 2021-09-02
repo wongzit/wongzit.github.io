@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "pyAroma: A multifunction aromaticity analyser"
+title:  "pyAroma: A Multifunction Aromaticity Analyser"
 date:   2021-08-28 16:22:06 +0900
 categories: software
 ---
