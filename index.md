@@ -41,6 +41,8 @@ I also do some 👨🏻‍💻 **programming**, I will post my publications, pro
 
 [**CCCBDB**](https://cccbdb.nist.gov/vibscalejust.asp): Precomputed vibrational scaling factors.
 
+[**CHESHIRE**](http://cheshirenmr.info): Computed NMR scaling factors.
+
 [**Maze Generator**](https://www.mazegenerator.net): A maze generator.
 
 <br />
