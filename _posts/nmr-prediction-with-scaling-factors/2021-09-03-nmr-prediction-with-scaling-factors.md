@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "NMR Prediction with ScalingFactors"
+title:  "NMR Prediction with Scaling Factors"
 date:   2021-09-03 10:13:33 +0900
 categories: guide
 ---
