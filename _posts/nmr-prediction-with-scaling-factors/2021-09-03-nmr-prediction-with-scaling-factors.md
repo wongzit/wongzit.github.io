@@ -115,3 +115,14 @@ $$ \delta = \frac {intercept - \sigma}{- slope} $$
 
 So, the scaled chemical shift *δ_scaled* in this demo calculation are **7.3148**, **7.3143** and **7.3007**, much 
 closer to the experimental value than those before scaling.
+
+# Add more references in *GaussView*
+
+1. Open the *GaussView* dictionary, open the `nmr.data` in `data` folder with text edit. For macOS users, the `nmr.data` locates 
+at `/Applications/gv/data/nmr.data`.
+2. Add the references at the end of file, for example, `  H    32.3685  "TMS wB97XD/6-31+G(d,p) GIAO"`.
+3. Re-open *GaussView*, you could find the new reference in NMR window.
+
+<p align = "center">
+<img alt="nmt_re" src="/assets/blog/figure103.png" style="height:200px;">
+</p>
