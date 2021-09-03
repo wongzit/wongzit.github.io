@@ -133,5 +133,5 @@ py.**NMR** is a Python program for applying scaling factors to computed shieldin
 The source code could be downloaded from [GitHub](https://github.com/wongzit/pyNMR) now.
 
 <p align = "center">
-<img alt="pynmr" class="icon" src="/assets/program/pyNMR_icon.png" style="height:86px; background-color:transparent;">
+<img alt="pynmr" class="icon" src="/assets/program/pyNMR_icon.png" style="height:106px; background-color:transparent;">
 </p>
