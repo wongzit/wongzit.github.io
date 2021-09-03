@@ -16,7 +16,8 @@ categories: software install
 ## Set Unix environment variables
 
 1. Open *Terminal*.
-2. Run `echo $SHELL` command, if `/bin/bash` is displayed in the command windows, you are running **bash** shell, if `/bin/tcsh` is displayed, you are running **tcsh** shell. 
+2. Run `echo $SHELL` command, if `/bin/bash` is displayed in the command windows, you are running **bash** shell, if `/bin/tcsh` is displayed, you are running **tcsh** shell.
+3. If the current shell is not **bash** or **tcsh**, run `chsh -s /bin/bash`, and refer to the following *If you are running bash shell* section.
 
 ### If you are running bash shell
 
