@@ -45,7 +45,7 @@ comments: false
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/pyAroma).
 - ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-HOMA%20%7C%20NICS%20%7C%20ICSS%20%7C%20Aromaticity-red?style=flat-square)&ensp;![](https://img.shields.io/badge/License%3F-MIT-9cf?style=flat-square)
 
-<a href="https://wongzit.github.io/program/pyNMR/"> <img alt="pynmr" class="icon" src="/assets/program/pyNMR_icon.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://github.com/wongzit/pyNMR"> <img alt="pynmr" class="icon" src="/assets/program/pyNMR_icon.png" style="height:86px; background-color:transparent;"></a>
 
 - **NMR scaling tool**, released on **3rd September 2021**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
