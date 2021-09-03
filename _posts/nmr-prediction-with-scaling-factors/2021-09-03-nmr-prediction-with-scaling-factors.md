@@ -107,7 +107,7 @@ NMR (nmr=method): B3LYP/6-311+G(2d,p) (giao, scrf)
 is exactly what we want. We need the `slope = -1.0781` and `intercept = 31.9786`, and we could calculate the scaled 
 chemical shift *δ_scaled* with following equation:
 
-$$ \delta = \frac {{\rm intercept} - \sigma}{-{\rm slope}} $$
+$$ \delta = \frac {intercept - \sigma}{- slope} $$
 
 - *δ_scaled* (ppm): Chemical shift after applied with scaling factor
 - slope and intercept: Scaling factors from [CHESHIRE](http://cheshirenmr.info/index.htm)
