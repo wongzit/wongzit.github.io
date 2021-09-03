@@ -48,7 +48,7 @@ Benzene//optimization
 ```
 
 The optimized geometry is used for NMR (NMR=GIAO) calculation at B3LYP/6-311+G(2d,p) level of 
-theory with SMD solvation model chloroform.
+theory with SMD solvation model of chloroform.
 
 ```
 %nprocshared=8
