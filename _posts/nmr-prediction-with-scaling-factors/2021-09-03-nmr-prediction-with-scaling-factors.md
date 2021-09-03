@@ -120,7 +120,7 @@ closer to the experimental value than those before scaling.
 
 1. Open the *GaussView* dictionary, open the `nmr.data` in `data` folder with text edit. For macOS users, the `nmr.data` locates 
 at `/Applications/gv/data/nmr.data`.
-2. Add the references at the end of file, for example, `  H    32.3685  "TMS wB97XD/6-31+G(d,p) GIAO"`.
+2. Add the references at the end of file, for example:  **H    32.3685  "TMS wB97XD/6-31+G(d,p) GIAO"**
 3. Re-open *GaussView*, you could find the new reference in NMR window.
 
 <p align = "center">
