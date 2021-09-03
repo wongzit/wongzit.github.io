@@ -16,7 +16,7 @@ categories: guide
  });
 </script>
 
-**Note:** Input and output files could be find [here](https://github.com/wongzit/blogFiles/tree/main/blog_nmr_prediction).
+**Note:** Input and output files could be found [here](https://github.com/wongzit/blogFiles/tree/main/blog_nmr_prediction).
 
 # Input
 
