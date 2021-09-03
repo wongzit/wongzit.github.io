@@ -16,8 +16,6 @@ categories: guide
  });
 </script>
 
-> This post records a general manual for calculating NICS index using 
-
 **Note:** Input and output files could be find [here](https://github.com/wongzit/blogFiles/tree/main/blog_nmr_prediction).
 
 # Input
@@ -115,3 +113,5 @@ $$ \delta = \frac {{\rm intercept} - \sigma}{-{\rm slope}} $$
 - slope and intercept: Scaling factors from [CHESHIRE](http://cheshirenmr.info/index.htm)
 - *σ* (ppm): Computed magnetic shielding tensors from Gaussian output
 
+So, the scaled chemical shift *δ_scaled* in this demo calculation are **7.3148**, **7.3143** and **7.3007**, much 
+closer to the experimental value than those before scaling.
