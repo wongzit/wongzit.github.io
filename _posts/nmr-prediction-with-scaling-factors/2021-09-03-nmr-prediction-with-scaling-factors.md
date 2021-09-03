@@ -124,5 +124,5 @@ at `/Applications/gv/data/nmr.data`.
 3. Re-open *GaussView*, you could find the new reference in NMR window.
 
 <p align = "center">
-<img alt="nmt_re" src="/assets/blog/figure103.png" style="height:200px;">
+<img alt="nmt_re" src="/assets/blog/figure103.png">
 </p>
