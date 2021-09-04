@@ -135,3 +135,8 @@ The source code could be downloaded from [GitHub](https://github.com/wongzit/pyN
 <p align = "center">
 <img alt="pynmr" class="icon" src="/assets/program/pyNMR_icon.png" style="height:106px; background-color:transparent;">
 </p>
+
+In py.**NMR**, Lorentizan function (*eq*. 1) for line broadening will be applied to the scaled chemical shift, and the sprctrum 
+data would be saved in an Excel .xlsx file at the same dictionary as the Gaussian output.
+
+$$ L(x) = \frac {FWHM}{2 \pi} \frac {1}{(x-x_i)^2 + 0.25 \times FWHM^2} $$
