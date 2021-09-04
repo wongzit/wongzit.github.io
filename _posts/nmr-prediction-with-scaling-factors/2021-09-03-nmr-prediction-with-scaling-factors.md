@@ -129,7 +129,7 @@ at `/Applications/gv/data/nmr.data`.
 
 # Apply scaling factor with py.NMR
 
-py.**NMR** is a Python program for applying scaling factors to computed shielding tensors. The latest version of py.**NMR** could be freely download from [GitHub page](https://github.com/wongzit/pyNMR)
+py.**NMR** is a Python program for applying scaling factors to computed shielding tensors. The latest version of py.**NMR** could be freely download from [GitHub page](https://github.com/wongzit/pyNMR).
 
 <p align = "center">
 <img alt="pynmr" class="icon" src="/assets/program/pyNMR_icon.png" style="height:106px; background-color:transparent;">
