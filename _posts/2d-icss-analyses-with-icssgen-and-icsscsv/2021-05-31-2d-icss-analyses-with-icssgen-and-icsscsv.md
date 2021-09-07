@@ -5,15 +5,21 @@ date:   2021-05-31 00:20:36 +0900
 categories: software guide
 ---
 
-# Statement of need
+**Contents**
+
+- [1. Statement of need](https://wongzit.github.io/2d-icss-analyses-with-icssgen-and-icsscsv/#1-statement-of-need)
+- [2. Install and usage](https://wongzit.github.io/2d-icss-analyses-with-icssgen-and-icsscsv/#2-install-and-usage)
+- [3. 2D-ICSS analyses of 1-methylazulene](https://wongzit.github.io/2d-icss-analyses-with-icssgen-and-icsscsv/#3-2d-icss-analyses-of-1-methylazulene)
+
+# 1. Statement of need
 
 2D isochemical shielding surface (2D-ICSS) maps, also known as 2D-NICS (nuclear independent chemical shift) maps, are useful tools for investigating the aromaticity of cyclic molecules. A large number of ghost atoms, in addition to the target molecules, must be included in the input file for 2D-ICSS calculations. After completing the calculations, the magnetic shielding tensors of all ghost atoms must be extracted from the output files. This process is a huge and tiresome task; therefore, we present ICSSgen and ICSScsv, two open-source, highly efficient, and user-friendly Python programs, to easily generate 2D-ICSS maps.
 
-# Install and usage
+# 2. Install and usage
 
 ICSSgen and ICSScsv could be download from [*GitHub*](https://github.com/wongzit). To install and run the programs, please refer to the user manuals.
 
-# 2D-ICSS analyses of 1-methylazulene
+# 3. 2D-ICSS analyses of 1-methylazulene
 
 2D-ICSS analyses of 1-methylazulene would be discussed in this section. All files in this section could be download from [*here*](https://github.com/wongzit/blogFiles/tree/main/blog_ICSSgen_ICSScsv).
 
