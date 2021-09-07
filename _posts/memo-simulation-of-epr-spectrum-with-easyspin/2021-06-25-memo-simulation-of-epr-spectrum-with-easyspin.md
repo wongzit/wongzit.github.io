@@ -53,4 +53,8 @@ xc = get(lh,'xdata');
 yc = get(lh,'ydata');
 ```
 
-The x axis and y axis data would be saved in xc and yc sheet, respectively.
+The x axis and y axis data would be saved in `xc` and `yc` sheet, respectively.
+
+<p align = "center">
+<img alt="epr" src="/assets/blog/figure121.png" style="height:106px; background-color:transparent;">
+</p>
