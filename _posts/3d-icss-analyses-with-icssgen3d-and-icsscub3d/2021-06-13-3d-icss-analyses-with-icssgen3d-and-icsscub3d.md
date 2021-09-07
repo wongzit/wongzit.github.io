@@ -5,6 +5,15 @@ date:   2021-06-13 00:02:03 +0900
 categories: software guide
 ---
 
+**Contents**
+
+- [1. Statement of need](https://wongzit.github.io/3d-icss-analyses-with-icssgen3d-and-icsscub3d/#1-statement-of-need)
+- [2. Install and usage](https://wongzit.github.io/3d-icss-analyses-with-icssgen3d-and-icsscub3d/#2-install-and-usage)
+- [3. 3D-ICSS analyses of 1-methylazulene](https://wongzit.github.io/3d-icss-analyses-with-icssgen3d-and-icsscub3d/#3-3d-icss-analyses-of-1-methylazulene)
+- [3.1 Create input files with ICSSgen3D](https://wongzit.github.io/3d-icss-analyses-with-icssgen3d-and-icsscub3d/#31-create-input-files-with-icssgen3d)
+- [3.2 Submit input files to Gaussian calculation](https://wongzit.github.io/3d-icss-analyses-with-icssgen3d-and-icsscub3d/#32-submit-input-files-to-gaussian-calculation)
+- [3.3 Visualize 3D-ICSS with ICSScub3D](https://wongzit.github.io/3d-icss-analyses-with-icssgen3d-and-icsscub3d/#33-visualize-3d-icss-with-icsscub3d)
+
 # 1. Statement of need
 
 In the previous [post](https://wongzit.github.io/2d-icss-analyses-with-icssgen-and-icsscsv/), I introduced how to plot 2D-ICSS map to investigate the aromaticity. Sometimes, a 3D-ICSS is necessary if the molecular structure is [complicate](https://www.nature.com/articles/s41557-019-0399-2), and it may hard to be presented by 2D-ICSS map. Thus, I developed the 3D version of [ICSSgen](https://github.com/wongzit/ICSSgen) and [ICSScsv](https://github.com/wongzit/ICSScsv), the Python programs kit: [ICSSgen3D](https://github.com/wongzit/ICSSgen3D) and [ICSScub3D](https://github.com/wongzit/ICSScub3D).
