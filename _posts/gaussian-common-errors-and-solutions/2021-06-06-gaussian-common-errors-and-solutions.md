@@ -7,9 +7,8 @@ categories: software usage
 
 > Original source of this blog (in Chinese):[http://bbs.keinsci.com/thread-4829-1-1.html](http://bbs.keinsci.com/thread-4829-1-1.html)
 
-**Index**
 
-[L101](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l101-l301), [L103](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l103), [L114](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l114), [L123](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l123), [L1](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l1), [L202](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l202), [L301](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l301), [L502](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l502), [L1002](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l502-l1002), [L508](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l508), [L801](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l801), [L9999](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l9999)
+**Index:** [L101](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l101-l301), [L103](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l103), [L114](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l114), [L123](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l123), [L1](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l1), [L202](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l202), [L301](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l301), [L502](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l502), [L1002](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l502-l1002), [L508](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l508), [L801](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l801), [L9999](https://wongzit.github.io/gaussian-common-errors-and-solutions/#l9999)
 
 ## L101, L301
 
