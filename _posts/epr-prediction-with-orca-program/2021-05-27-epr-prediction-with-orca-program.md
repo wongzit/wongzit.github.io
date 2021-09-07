@@ -10,7 +10,7 @@ categories: jekyll update
 - [2. Hyperfine Coupling Constant](https://wongzit.github.io/epr-prediction-with-orca-program/#2-hyperfile-coupling-constant)
 - [3. Zero-field Splitting (ZFS) Prediction](https://wongzit.github.io/epr-prediction-with-orca-program/#3-zero-field-splitting-zfs-prediction)
 - [4. Example](https://wongzit.github.io/epr-prediction-with-orca-program/#4-example)
-- [4.1 Predict HFC of methyl radical](https://wongzit.github.io/epr-prediction-with-orca-program/#41-predict-hfc-of-methyl-radical)
+- [4.1 Predict HFC of TEMPO radical](https://wongzit.github.io/epr-prediction-with-orca-program/#41-predict-hfc-of-tempo-radical)
 - [4.2 Predict ZFS of cyclopentane-1,3-diyl diradical](https://wongzit.github.io/epr-prediction-with-orca-program/#42-predict-zfs-of-cyclopentane-13-diyl-diradical)
 - [5. End](https://wongzit.github.io/epr-prediction-with-orca-program/#5-end)
 
@@ -158,21 +158,19 @@ E/D =    0.172867
 
 # 4. Example
 
-Here I put two input files I used for EPR prediction. (methyl radical and triplet cyclopentane-1,3-diyl diradical, all geometries were optimized at UB3LYP/6-31G* level of theory with *Gaussian 16 B.01*).
+Here I put two input files I used for EPR prediction. (methyl radical and triplet cyclopentane-1,3-diyl diradical, all geometries were optimized at UB3LYP/6-31G* level of theory with *Gaussian 16 B.01*). These file could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_epr_orca).
 
-## 4.1 Predict HFC of methyl radical
+## 4.1 Predict HFC of TEMPO radical
 
 ```
-! roks b3lyp epr-ii autoaux rijcosx pal8
-* xyz 0 2
- C          0.12985        0.22512        0.99745
- H         -0.05078       -0.08769       -0.01940
- H          1.02784       -0.08847        1.50742
- H         -0.59091        0.84605        1.50753
+!B3LYP EPR-II Autoaux rijcosx pal8
+* xyzfile 0 2 tempo_opt.xyz
 %eprnmr
     gtensor 1
-    Nuclei = all H {aiso, adip, aorb, fgrad, rho}
+    Nuclei = all N {aiso, adip, aorb, fgrad, rho}
+    Nuclei = all C {aiso, adip, aorb, fgrad, rho}
 end
+
 ```
 
 ## 4.2 Predict ZFS of cyclopentane-1,3-diyl diradical
