@@ -16,15 +16,19 @@ categories: software guide
  });
 </script>
 
-# Statement of need
+**Contents**
+
+- [1. Statement of need](https://wongzit.github.io/nics-analyses-with-nicsgen/#1-statement-of-need)
+- [2. Mathematic Principle](https://wongzit.github.io/nics-analyses-with-nicsgen/#2-mathematic-principle)
+- [3. NICS analyses of 1-methylazulene](https://wongzit.github.io/nics-analyses-with-nicsgen/#3-nics-analyses-of-1-methylazulene)
+
+# 1. Statement of need
 
 NICS (Nucleus-Independent Chemical Shifts) is a popular method for analyzing aromaticity of cyclic compound, by calculating the magnetic shielding tensor (in ppm) with NMR calculation. In NICS calculation, ghost atoms (Bq) are needed to be included in the input file. NICS(n) is widely used for n = 0 and n = 1 ([Which NICS aromaticity index for planar π rings is best?](https://pubs.acs.org/doi/10.1021/ol0529546)), we need to add the ghost atom to the height of 1 Å from the center point of the plane. It is difficult to add the ghost atom accurately. So, I present the Python program NICSgen, to help user add the ghost atom in the right position.
 
-# Statement of need
-
 NICSgen could be download from homepage and [*GitHub*](https://github.com/wongzit/NICSgen). To install and run the programs, please refer to the user manuals
 
-# Mathematic Principle
+# 2. Mathematic Principle
 
 Imagine we have *m* (*m* >= 3) points *p* on plane in Cartesian coordinate space system, the coordinates of these points are:
 
@@ -79,7 +83,7 @@ $$ \frac {\overrightarrow{p_n p_c}}{\overrightarrow{n}} = \frac {x_n-x_c}{a} = \
 
 therefore, we can solve the equation to get the values of *x*(*n*), *y*(*n*) and *z*(*n*).
 
-# NICS analyses of 1-methylazulene
+# 3. NICS analyses of 1-methylazulene
 
 Calculation files in this section could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_NICS). 1-Methylazulene was optimized at ωB97X-D/6-31G(d) level of theory with Gaussian 16 B.01 package. The optimized azulene is located on XY plane (Figure1). I want to know the NICS(0) values of 7- and 5-membered rings, and the NICS(1) of 7-membered ring.
 
