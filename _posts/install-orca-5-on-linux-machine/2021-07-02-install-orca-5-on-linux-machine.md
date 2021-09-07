@@ -5,15 +5,21 @@ date:   2021-07-02 12:01:59 +0900
 categories: software install
 ---
 
-ORCA got it major update to 5.0.0 on July, 1st, 2021. Many new features are introduced, especially the new SHARK module. This blog will give an instruction on how to install ORCA on a Linux computer.
+**Note:** ORCA got it major update to 5.0.0 on July, 1st, 2021. Many new features are introduced, especially the new SHARK module. This blog will give an instruction on how to install ORCA on a Linux computer.
 
-## Download necessary packages
+**Contents**
+
+- [1. Download necessary packages](https://wongzit.github.io/install-orca-5-on-linux-machine/#1-download-necessary-packages)
+- [2. Install OpenMPI](https://wongzit.github.io/install-orca-5-on-linux-machine/#2-install-openmpi)
+- [3. Install ORCA 5](https://wongzit.github.io/install-orca-5-on-linux-machine/#3-install-orca-5)
+
+# 1. Download necessary packages
 
 (1) Download ORCA package from ORCA [homepage](https://orcaforum.kofo.mpg.de), here I install the dynamically linked version, the name is `ORCA 5.0.0, Linux, x86-64, shared-version, .tar.xz`.
 
 (2) Parallel running of ORCA relies on the OpenMPI 4.1.1, download the installer from OpenMPI [homepage](https://www.open-mpi.org). I used the `openmpi-4.1.1.tar.bz2` file.
 
-## Install OpenMPI
+# 2. Install OpenMPI
 
 For running ORCA in serial, skip this step.
 
@@ -38,7 +44,7 @@ export LD_LIBRARY_PATH=/home/wangzhe/openmpi411/lib:$LD_LIBRARY_PATH
 
 (3) Execute `mpiexec -V` to check the installation was succeeded or not.
 
-## Install ORCA 5
+# 3. Install ORCA 5
 
 (1) Unzip the install file:
 
