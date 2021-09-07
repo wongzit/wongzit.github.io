@@ -7,7 +7,13 @@ categories: software install
 
 **Note:** Official installation guide could be found [here](https://gaussian.com/g16/g16m_install.pdf).
 
-# 1. Unzip installation folder
+**Contents**
+
+- [1. Unzip installation file](https://wongzit.github.io/install-gaussian-16-on-a-mac/#1-unzip-installation-file)
+- [2. Set Unix environment variables](https://wongzit.github.io/install-gaussian-16-on-a-mac/#2-set-unix-environment-variables)
+- [3. Check installation](https://wongzit.github.io/install-gaussian-16-on-a-mac/#3-check-installation)
+
+# 1. Unzip installation file
 
 1. Find the `M*.tbz` file and double-click, the `g16` folder would be generated at current dictionary after finishing the expanding.
 2. Create a `Scratch` folder in the `g16` folder.
