@@ -6,7 +6,7 @@ excerpt: harada2018
 comments: false
 ---
 
-Y. Harada, <u>Z. Wang</u>, S. Kumashiro, S. Hatano, M. Abe, *Chem. Eur. J.*, **2018**, *24*, 14808–14815.
+Y. Harada, <u>Z. Wang</u>, S. Kumashiro, S. Hatano, M. Abe, *Chem. Eur. J.*, **2018**, *24(55)*, 14808–14815.
 <p align = "right">
 Accepted at <b>18th July 2018</b>
 <img src = "https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue?style=flat-square" alt = "cej_doi">
