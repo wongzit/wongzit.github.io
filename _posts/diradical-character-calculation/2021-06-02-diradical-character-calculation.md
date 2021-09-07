@@ -5,6 +5,13 @@ date:   2021-06-02 21:23:19 +0900
 categories: compuations
 ---
 
+**Contents**
+
+- [1. Principle](https://wongzit.github.io/diradical-character-calculation/#1-principle)
+- [2. Input File Structure](https://wongzit.github.io/diradical-character-calculation/#2-input-file-structure)
+- [3. Get Ocuupation Number from Output](https://wongzit.github.io/diradical-character-calculation/#3-get-ocuupation-number-from-output)
+- [4. Example: Comparison of Calculation Method](https://wongzit.github.io/diradical-character-calculation/#4-example-comparison-of-calculation-method)
+
 Diradical character has been widely used for estimating the diradical properties of open-shell species. Here I put my memo on calculating diradical character with CASSCF(2,2) method to this blog.
 
 # 1. Principle
