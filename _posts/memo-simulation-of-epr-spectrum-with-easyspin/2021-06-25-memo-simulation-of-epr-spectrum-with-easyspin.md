@@ -5,7 +5,7 @@ date:   2021-06-25 18:45:05 +0900
 categories: software usage
 ---
 
-**Note:** MATLAB and [EasySpin](https://easyspin.org) are necessary for simulation of EPR spectra.
+**Note:** Softeares [MATLAB](https://jp.mathworks.com/products/matlab.html) and [EasySpin](https://easyspin.org) are necessary for simulation of EPR spectra.
 
 **Contents**
 - [1. Install EasySpin](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#1-install-easyspin)
