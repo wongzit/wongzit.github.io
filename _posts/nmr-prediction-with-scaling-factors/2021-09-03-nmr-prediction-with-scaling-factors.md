@@ -18,7 +18,10 @@ categories: guide
 
 **Note:** Input and output files could be found [here](https://github.com/wongzit/blogFiles/tree/main/blog_nmr_prediction).
 
-# Input
+**Contents**
+
+
+# 1. Input
 
 An example of NMR calculation for benzene in *d*-chloroform will be discussed in this post. 
 The geometry of benzene was optimized at B3LYP/6-311+G(2d,p) level of theory in gas phase. The input file
@@ -73,7 +76,7 @@ Benzene//NMR
 
 ```
 
-# Output
+# 2. Output
 
 Open the output file with *GaussView*, go to "Results -> NMR", choose "H" from "element", we could get the 
 magnetic shielding tensors σ (in ppm).
@@ -91,7 +94,7 @@ You could also use "Reference" like TMS, to get the chemical shift δ, to compar
 In this demo calculation, the computed shielding tensors *σ* for all protons are **24.0925**, **24.0931** and **24.1077** ppm, the 
 chemical shift *δ* are **7.7896**, **7.7890** and **7.7744**. The experimental chemica shift of benzene in *d*-chloroform is **7.36**.
 
-# Improve accuracy with scaling factor
+# 3. Improve accuracy with scaling factor
 
 Empirical scaling technique could improve the accuracy using scaling factors. 
 [CHESHIRE](http://cheshirenmr.info/index.htm) is a website with a lot of scaling factors at different calculation levels. 
@@ -116,7 +119,7 @@ $$ \delta = \frac {intercept - \sigma}{- slope} $$
 So, the scaled chemical shift *δ_scaled* in this demo calculation are **7.3148**, **7.3143** and **7.3007**, much 
 closer to the experimental value than those before scaling.
 
-# Add more references in *GaussView*
+# 4. Add more references in *GaussView*
 
 1. Open the *GaussView* dictionary, open the `nmr.data` in `data` folder with text edit. For macOS users, the `nmr.data` locates 
 at `/Applications/gv/data/nmr.data`.
@@ -127,7 +130,7 @@ at `/Applications/gv/data/nmr.data`.
 <img alt="nmt_re" src="/assets/blog/figure103.png">
 </p>
 
-# Apply scaling factor with py.NMR
+# 5. Apply scaling factor with py.NMR
 
 py.**NMR** is a Python program for applying scaling factors to computed shielding tensors. The latest version of py.**NMR** could be freely download from [GitHub](https://github.com/wongzit/pyNMR).
 
