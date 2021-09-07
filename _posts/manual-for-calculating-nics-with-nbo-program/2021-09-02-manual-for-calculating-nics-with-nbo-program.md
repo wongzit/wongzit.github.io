@@ -9,7 +9,13 @@ categories: guide
 
 **Note:** Input and output files could be found [here](https://github.com/wongzit/blogFiles/tree/main/blog_nics_index).
 
-# Input
+**Contents**
+
+- [1. Input](https://wongzit.github.io/manual-for-calculating-nics-with-nbo-program/#1-input)
+- [2. Output](https://wongzit.github.io/manual-for-calculating-nics-with-nbo-program/#2-output)
+- [3. Issues about Running of NBO](https://wongzit.github.io/manual-for-calculating-nics-with-nbo-program/#3-issues-about-running-of-nbo)
+
+# 1. Input
 
 The input file for calculating NICS(0) and NICS(1/-1) for benzene is given below. 
 The commercially abailable NBO 7.0 program will be used, if you are using NBO 3 embedded in Gaussian, 
@@ -44,7 +50,7 @@ $NBO NPA NBO NBOSUM BNDIDX E2PERT NLMO DIPOLE CMO NRT NCS <XYZ MO> $END
 
 ```
 
-## Output
+# 2. Output
 
 NBO 7.0 program is appled, following information could be found in the output file, you could find the 
 discription for each NBO keywords.
@@ -157,14 +163,14 @@ Focus on the lines marked with # symbol in the second table, we could find:
 - **NICS**π = -(14.36+5.16+5.16) = -24.68
 - **NICS**iso = -8.02
 
-# Issues about Running of NBO
+# 3. Issues about Running of NBO
 
 ## Running NBO 7.0 with Gaussian 16
 
 - For Gaussian 16 **B**.01, use keyword `pop=nbo6read` to read additional NBO **7.0** keyword.
 - For Gaussian 16 **C**.01, use keyword `pop=nbo7read` to read additional NBO **7.0** keyword.
 
-### MEMO: Running NBO 7.0 with .47 Files
+## MEMO: Running NBO 7.0 with .47 Files
 
 1) Run Gaussian to get *.47* file:
 
