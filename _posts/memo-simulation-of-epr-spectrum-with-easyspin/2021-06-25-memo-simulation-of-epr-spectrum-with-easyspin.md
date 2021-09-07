@@ -44,10 +44,10 @@ pepper(Sys,Exp)                            % Plot spectrum
 
 ### Save numeric data from MATLAB figure
 
-If you want to save numeric data from MATLAB figure, save current EPR spectrum as MATLAB figure file (`xxx.fig`) and then, run following command. 
+If you want to save numeric data from MATLAB figure, first, please save the EPR spectrum as MATLAB figure file (`xxx.fig`) and then, run following command. 
 
 ```
-open("C:\Desktop\xxx.fig");      % input the path to MATLAB figure file
+open("C:\Desktop\xxx.fig");                % input the path to MATLAB figure file
 lh = findall(gca,'type','line');
 xc = get(lh,'xdata');
 yc = get(lh,'ydata');
@@ -58,3 +58,5 @@ The x axis and y axis data would be saved in `xc` and `yc` sheet, respectively.
 <p align = "center">
 <img alt="epr" src="/assets/blog/figure121.png" style="height:56px; background-color:transparent;">
 </p>
+
+Now, you can copy the data to Excel etc., and plot the EPR spectrum.
