@@ -7,15 +7,15 @@ categories: compuations
 
 Diradical character has been widely used for estimating the diradical properties of open-shell species. Here I put my memo on calculating diradical character with CASSCF(2,2) method to this blog.
 
-## Principle
+# 1. Principle
 
 1. To calculate diradical character, we need to calculate the occupation number of HOMO and LUMO, (in natural orbitals, HONO and LUNO). Thus, we need to include `pop=no` keyword in the input file.
 2. Convergence may be difficult to achieve with direct calculation by CASSCF.
 3. We can start the calculations from HF with a small basis set, and save the molecular orbitals (MO) information to .chk file. Then, CASSCF calculations can read the MO information from the .chk file, and use it as the initial guess (`guess=read`).
 
-## Input File Structure
+# 2. Input File Structure
 
-### Faster way (but maybe difficult to converge)
+## 2.1 Faster way (but maybe difficult to converge)
 
 For initial MO, we can use RHF/6-31G(d).
 
@@ -34,7 +34,7 @@ Title
 
 ```
 
-### Slower way (but easier to converge)
+## 2.2 Slower way (but easier to converge)
 
 We can start the calculation from a small basis set, like RHF/STO-3g, and increase the basis set step by step to 6-31G(d). **This method is a better choice.**
 
@@ -61,7 +61,7 @@ Title
 
 ```
 
-## Get Ocuupation Number from Output
+# 3. Get Ocuupation Number from Output
 Open the output file (.log) with GaussView and check the MO, find the orbital number for HOMO and LUMO. Then, open the output file by text editor, search "Natural Orbital Corfficients", you could get following information:
 
 ```
@@ -75,7 +75,7 @@ Open the output file (.log) with GaussView and check the MO, find the orbital nu
 
 The number in the first row is orbital number, the eigenvalues are occupation number for each orbital. So, you can find the occupation number for your HOMO and LUMO (here, natural orbital, so they should be called as HONO and LUNO). The occupation number of LUNO could be treated as diradical character.
 
-## Example: Comparison of Calculation Method
+# 4. Example: Comparison of Calculation Method
 
 Following methods were used for estimating the diradical character of cyclopentant-1,3-diyl diradical. The input and output files could be download from [*here*](https://github.com/wongzit/blogFiles/tree/main/diradical_character).
 
@@ -85,7 +85,7 @@ Following methods were used for estimating the diradical character of cyclopenta
 4. RHF/STO-3G   ->   CASSCF(2,2)/STO-3g   ->   CASSCF(2,2)/6-31G(d)
 5. RHF/STO-3G   ->   CASSCF(2,2)/STO-3g   ->   CASSCF(2,2)/4-31G   ->   CASSCF(2,2)/6-31G(d)
 
-### Results
+## Results
 1. n(LUNO) = 0.95328
 2. n(LUNO) = 0.00000
 3. Not converged, error termination
