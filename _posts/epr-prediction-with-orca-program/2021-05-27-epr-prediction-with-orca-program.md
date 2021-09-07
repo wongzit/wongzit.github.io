@@ -5,13 +5,13 @@ date:   2021-05-27 21:29:20 +0900
 categories: jekyll update
 ---
 
-- **Contents**
+**Contents**
 - [1. Input File Structure](https://wongzit.github.io/epr-prediction-with-orca-program/#input-file-structure)
 - [2. Hyperfine Coupling Constant](https://wongzit.github.io/epr-prediction-with-orca-program/#hyperfile-coupling-constant)
 - [3. Zero-field Splitting (ZFS) Prediction](https://wongzit.github.io/epr-prediction-with-orca-program/#zero-field-splitting-zfs-prediction)
 - [4. Example](https://wongzit.github.io/epr-prediction-with-orca-program/#example)
-- [4.1 Predict HFC of methyl radical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-hfc-of-methyl-radical)
-- [4.2 Predict ZFS of cyclopentane-1,3-diyl diradical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-zfs-of-cyclopentane-13-diyl-diradical)
+-   [4.1 Predict HFC of methyl radical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-hfc-of-methyl-radical)
+-   [4.2 Predict ZFS of cyclopentane-1,3-diyl diradical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-zfs-of-cyclopentane-13-diyl-diradical)
 - [5. End](https://wongzit.github.io/epr-prediction-with-orca-program/#end)
 
 # Input File Structure
