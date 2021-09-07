@@ -10,11 +10,11 @@ categories: jekyll update
 - [2. Hyperfine Coupling Constant](https://wongzit.github.io/epr-prediction-with-orca-program/#hyperfile-coupling-constant)
 - [3. Zero-field Splitting (ZFS) Prediction](https://wongzit.github.io/epr-prediction-with-orca-program/#zero-field-splitting-zfs-prediction)
 - [4. Example](https://wongzit.github.io/epr-prediction-with-orca-program/#example)
--   [4.1 Predict HFC of methyl radical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-hfc-of-methyl-radical)
--   [4.2 Predict ZFS of cyclopentane-1,3-diyl diradical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-zfs-of-cyclopentane-13-diyl-diradical)
+- [4.1 Predict HFC of methyl radical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-hfc-of-methyl-radical)
+- [4.2 Predict ZFS of cyclopentane-1,3-diyl diradical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-zfs-of-cyclopentane-13-diyl-diradical)
 - [5. End](https://wongzit.github.io/epr-prediction-with-orca-program/#end)
 
-# Input File Structure
+# 1. Input File Structure
 ORCA input file for EPR calculation have to (at least) include following section: (1) Calculation method, (2) geometry coordinates, and (3) additional keywords section. The (2) geometry coordinates can be inserted in input file, or save the structure as .xyz file in the same dictionary with input file. Here are 2 examples of input file.
 
 **Input file 1**: including Cartesian coordinates in input file. The coordinates structure is same as those in Gaussian input file.
@@ -53,7 +53,7 @@ end
 
 Keywords *AutoAux* and *RIJCOSX* could be added to speed up calculations with introducing a very very small error (usually smaller than basis set errors and much smaller than electronic-structure-method errors). For more information about these keywords, please check the [ORCA manual](https://sites.google.com/site/orcainputlibrary/basis-sets/ri-and-auxiliary-basis-sets).
 
-# Hyperfine Coupling Constant
+# 2. Hyperfine Coupling Constant
 
 For predicting hyperfine coupling (HFC), you need to include following keywords in <u>EPR keywords section</u>.
 
@@ -113,7 +113,7 @@ ELECTRONIC G-MATRIX
 ----------------------------------------------------------------
 ```
 
-# Zero-field Splitting (ZFS) Prediction
+# 3. Zero-field Splitting (ZFS) Prediction
 
 If you want to predict ZFS parameters for the systems with S > 1/2, please include following keywords in <u>EPR keywords section</u>. Keywords after the # indicate for other options.
 
@@ -156,11 +156,11 @@ D   =    0.019661  cm**-1
 E/D =    0.172867
 ```
 
-# Example
+# 4. Example
 
 Here I put two input files I used for EPR prediction. (methyl radical and triplet cyclopentane-1,3-diyl diradical, all geometries were optimized at UB3LYP/6-31G* level of theory with *Gaussian 16 B.01*).
 
-## Predict HFC of methyl radical
+## 4.1 Predict HFC of methyl radical
 
 ```
 ! roks b3lyp epr-ii autoaux pal8
@@ -175,7 +175,7 @@ Here I put two input files I used for EPR prediction. (methyl radical and triple
 end
 ```
 
-## Predict ZFS of cyclopentane-1,3-diyl diradical
+## 4.2 Predict ZFS of cyclopentane-1,3-diyl diradical
 
 Calculate at ROBP/EPR-II level of theory:
 
@@ -228,7 +228,7 @@ Calculate at UBP/EPR-II level of theory.
 end
 ```
 
-# End
+# 5. End
 
 The EPR prediction of ZFS may get better results from CASSCF method.
 For more information, please refer to the ORCA official manual (for EPR calculation keywords, from page 888 to page 891 in the manual of version 4.2.1).
