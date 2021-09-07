@@ -15,20 +15,31 @@ categories: software usage
 
 ## Simulation of EPR spectrum
 
-### S > 0.5 Case, plot EPR spectrum with EasySpin
+### S = 0.5 Case
+
+After EPR calculation with ORCA, a `.prop` file would be generated along with `.out` file. Use EasySpin's `orca2easyspin` to read calculated 
+data from `.prop` file.
+```
+Sys = orca2easyspin('tempo.prop')
+Sys.lwpp = 1;                              % Line broadening
+Exp.mwFreq = 9.4;                          % Spectrometer frequency, in GHz
+Exp.Range = [325 350];                     % Lower and upper limit of the field sweep range, in mT
+pepper(Sys,Exp)                            % Plot spectrum
+```
+
+### S > 0.5 Case
 
 Exacute following command (before `%` symbol) in MATLAB, after running of `pepper(Sys,Exp)`, EPR spectrum would be displayed in current window.
 
 ```
-Sys.S = 1;      % S = 1 for triplet and S = 2 for quintet states
-Sys.g = 2.0023;      % g factor
-convert = 100*clight/1e6;      % cm^-1 -> MHz conversion factor
-Sys.D = [0.0100000 0.002000]*convert;      % input D and E value, in cm^-1
-Sys.lwpp = 6;      % Gaussian-type line broadening
-Exp.mwFreq = 9.4;      % Spectrometer frequency, in GHz
-Exp.Range = [100 500];      % Lower and upper limit of the field 
-                              sweep range, in mT
-pepper(Sys,Exp)
+Sys.S = 1;                                 % S = 1 for triplet and S = 2 for quintet states
+Sys.g = 2.0023;                            % g factor
+convert = 100*clight/1e6;                  % cm^-1 -> MHz conversion factor
+Sys.D = [0.0100000 0.002000]*convert;      % Input D and E value, in cm^-1
+Sys.lwpp = 6;                              % Gaussian-type line broadening
+Exp.mwFreq = 9.4;                          % Spectrometer frequency, in GHz
+Exp.Range = [100 500];                     % Lower and upper limit of the field sweep range, in mT
+pepper(Sys,Exp)                            % Plot spectrum
 ```
 
 ### Save numeric data from MATLAB figure
