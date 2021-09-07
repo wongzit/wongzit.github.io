@@ -51,7 +51,7 @@ For predicting hyperfine coupling (HFC), you need to include following keywords 
 ```
  %eprnmr
      gtensor = true
-     Nuclei = all N {flags}  # flags = aiso, adip, aorb, etc...
+     Nuclei = all N {flags}  # flags = aiso, adip, aorb, fgrad, rho, etc.
      Nuclei = all C {flags}
  end
 ```
@@ -61,9 +61,11 @@ For predicting hyperfine coupling (HFC), you need to include following keywords 
 <u>Nuclei = ...</u>: This flag defines the atoms for the hyperfine coupling calculations. all H calculates the HFC on all hydrogens, or use all N, all C and so on for different atoms. You can also use Nuclei = 1,5,8 to give one list per atom type (in this example, atom 1,5,8 must be same element) with the atom numbering starting from 1. The {flags} in Nuclei lines requests calculation option for HFC:
 
 ```
-aiso: calculate the isotropic part of the HFC
-adip: calculated the dipolar part of the HFC
-aorb: 2nd order contribution to the HFC from SOC
+ aiso: calculate the isotropic part of the HFC
+ adip: calculate the dipolar part of the HFC
+ aorb: 2nd order contribution to the HFC from SOC
+fgrad: calculate the electric field gradient
+  rho: calculate the electron density at the nucleus
 ```
 
 After the calculation is completed, the g tensor and HFC could be read from output file:
