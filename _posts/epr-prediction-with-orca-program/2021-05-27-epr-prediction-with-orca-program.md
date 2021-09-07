@@ -163,8 +163,8 @@ Here I put two input files I used for EPR prediction. (methyl radical and triple
 ## 4.1 Predict HFC of methyl radical
 
 ```
-! roks b3lyp epr-ii autoaux pal8
-* xyzfile 0   2
+! roks b3lyp epr-ii autoaux rijcosx pal8
+* xyz 0 2
  C          0.12985        0.22512        0.99745
  H         -0.05078       -0.08769       -0.01940
  H          1.02784       -0.08847        1.50742
@@ -180,7 +180,7 @@ end
 Calculate at ROBP/EPR-II level of theory:
 
 ```
-!roks bp epr-ii autoaux pal8
+!roks bp epr-ii autoaux rijcosx pal8
 * xyz 0 3
  C   1.022000   0.768000  -0.094000
  C   1.022000  -0.768000   0.094000
@@ -205,7 +205,7 @@ end
 Calculate at UBP/EPR-II level of theory.
 
 ```
-!uks bp epr-ii autoaux pal8
+!uks bp epr-ii autoaux rijcosx pal8
 * xyz 0 3
  C   1.022000   0.768000  -0.094000
  C   1.022000  -0.768000   0.094000
