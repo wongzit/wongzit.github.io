@@ -16,7 +16,13 @@ categories: software guide
  });
 </script>
 
-# Background
+**Contents**
+
+- [1. Background](https://wongzit.github.io/homa-calculation-with-homacalc/#1-background)
+- [2. Statement of need](https://wongzit.github.io/homa-calculation-with-homacalc/#2-statement-of-need)
+- [3. HOMA analyses with HOMAcalc](https://wongzit.github.io/homa-calculation-with-homacalc/#homa-analyses-with-homacalc)
+
+# 1. Background
 
 HOMA (Harmonic Oscillator Model of Aromaticity) is a geometry-based aromaticity index. The HOMA model is based on the assumption that the harmonic oscillator energy of extension or compression of a bond depends on the force constants, which are dependent on the bond lengths. HOMA value can be calculated from following equation:
 
@@ -33,11 +39,11 @@ $$ \alpha = \frac {2}{\left( R_S-R_{opt} \right)^2+\left( R_d-R_{opt}\right)^2} 
 
 The α and *Ropt* for common bonds are referred from [this paper](https://pubs.acs.org/doi/10.1021/cr400252h).
 
-# Statement of need
+# 2. Statement of need
 
 HOMAcalc is a Python program for calculating the HOMA in cyclic system easily. About install and usage of HOMAcalc, please refer to the user documents on [*GitHub*](https://github.com/wongzit/HOMAcalc).
 
-# HOMA analyses with HOMAcalc
+# 3. HOMA analyses with HOMAcalc
 
 All calculation files could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_HOMA). Benzene and [6]radialene were optimized at B3LYP/6-31G(d) level of theory, the output files were imported to HOMAcalc, the HOMA values were calculated to be 1 for benzene and 0.13 for [6]radialene.
 
