@@ -7,19 +7,19 @@ categories: software install
 
 **Note:** Official installation guide could be found [here](https://gaussian.com/g16/g16m_install.pdf).
 
-## Unzip installation folder
+# 1. Unzip installation folder
 
 1. Find the `M*.tbz` file and double-click, the `g16` folder would be generated at current dictionary after finishing the expanding.
 2. Create a `Scratch` folder in the `g16` folder.
 3. Move `g16` folder to the `/Application`.
 
-## Set Unix environment variables
+# 2. Set Unix environment variables
 
 1. Open *Terminal*.
 2. Run `echo $SHELL` command, if `/bin/bash` is displayed in the command windows, you are running **bash** shell, if `/bin/tcsh` is displayed, you are running **tcsh** shell.
-3. If the current shell is not **bash** or **tcsh**, run `chsh -s /bin/bash`, and refer to the following *If you are running bash shell* section.
+3. If the current shell is not **bash** or **tcsh**, run `chsh -s /bin/bash`, and refer to the following section **2.1**.
 
-### If you are running bash shell
+## 2.1 If you are running bash shell
 
 1. Run following command:
 ```
@@ -34,7 +34,7 @@ export g16root=/Applications
 export GAUSS_SCRDIR=/Applications/g16/Scratch
 ```
 
-### If you are running tcsh shell
+## 2.2 If you are running tcsh shell
 
 1. Run following command:
 ```
@@ -49,6 +49,6 @@ source $g16root/g16/bsd/g16.login
 setenv GAUSS_SCRDIR /Applications/g16/Scratch
 ```
 
-## Check installation
+# 3. Check installation
 
 Run `g16` in *Terminal*, if `Entering Gaussian System, Link 0=g16` is displayed in current windows, the Gaussian 16 is successfully installed on your computer.
