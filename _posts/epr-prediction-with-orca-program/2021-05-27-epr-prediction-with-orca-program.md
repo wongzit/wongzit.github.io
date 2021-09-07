@@ -5,6 +5,15 @@ date:   2021-05-27 21:29:20 +0900
 categories: jekyll update
 ---
 
+- **Contents**
+- [1. Input File Structure](https://wongzit.github.io/epr-prediction-with-orca-program/#input-file-structure)
+- [2. Hyperfine Coupling Constant](https://wongzit.github.io/epr-prediction-with-orca-program/#hyperfile-coupling-constant)
+- [3. Zero-field Splitting (ZFS) Prediction](https://wongzit.github.io/epr-prediction-with-orca-program/#zero-field-splitting-zfs-prediction)
+- [4. Example](https://wongzit.github.io/epr-prediction-with-orca-program/#example)
+- [4.1 Predict HFC of methyl radical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-hfc-of-methyl-radical)
+- [4.2 Predict ZFS of cyclopentane-1,3-diyl diradical](https://wongzit.github.io/epr-prediction-with-orca-program/#predict-zfs-of-cyclopentane-13-diyl-diradical)
+- [5. End](https://wongzit.github.io/epr-prediction-with-orca-program/#end)
+
 # Input File Structure
 ORCA input file for EPR calculation have to (at least) include following section: (1) Calculation method, (2) geometry coordinates, and (3) additional keywords section. The (2) geometry coordinates can be inserted in input file, or save the structure as .xyz file in the same dictionary with input file. Here are 2 examples of input file.
 
@@ -162,7 +171,7 @@ Here I put two input files I used for EPR prediction. (methyl radical and triple
  H         -0.59091        0.84605        1.50753
 %eprnmr
     gtensor 1
-    Nuclei = all H {aiso, adip, aorb}
+    Nuclei = all H {aiso, adip, aorb, fgrad, rho}
 end
 ```
 
