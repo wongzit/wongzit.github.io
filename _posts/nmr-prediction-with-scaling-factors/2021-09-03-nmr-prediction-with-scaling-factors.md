@@ -23,7 +23,7 @@ categories: guide
 - [2. Output](https://wongzit.github.io/nmr-prediction-with-scaling-factors/#2-output)
 - [3. Improve accuracy with scaling factor](https://wongzit.github.io/nmr-prediction-with-scaling-factors/#3-improve-accuracy-with-scaling-factor)
 - [4. Add more references in *GaussView*](https://wongzit.github.io/nmr-prediction-with-scaling-factors/#4-add-more-references-in-gaussview)
-- [5. Apply scaling factor with py.**NMR**](https://wongzit.github.io/nmr-prediction-with-scaling-factors/#5-apply-scaling-factor-with-pynmr)
+- [5. Apply scaling factor with py.NMR](https://wongzit.github.io/nmr-prediction-with-scaling-factors/#5-apply-scaling-factor-with-pynmr)
 
 
 # 1. Input
