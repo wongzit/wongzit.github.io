@@ -9,7 +9,7 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Zhe Wang # author name
+  name: Zhe Wang (王 哲) # author name
   bio: >- # tell to the world
     M.Sc., Researcher & Coder
   username: username # general username
