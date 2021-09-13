@@ -32,7 +32,7 @@ The *Gaussian* monitoring tool, [**gauMonitor**](https://github.com/wongzit/gauM
  -------------------------------------------------------------
 ```
 
-### Now the directions (forward and reverse) will be displayed for IRC jobs. (only for calulate with `#p`)
+### Now the directions (forward and reverse) will be displayed for IRC jobs. (only for calulations with `#p`)
 
 ```
 # IRC STEPS
