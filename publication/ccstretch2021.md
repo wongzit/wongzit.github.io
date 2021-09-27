@@ -1,0 +1,25 @@
+---
+title: "Long-lived Localised Singlet Diradicaloids having Carbon–Carbon π-Single Bonding Character (C–π–C)"
+permalink: /publication/ccstretch2021/
+layout: page
+excerpt: ccstretch2021
+comments: false
+---
+
+<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, in press.
+<p align = "right">
+Accepted at <b>27th September 2021</b>
+<img src = "https://img.shields.io/badge/doi-10.1021%2Facsomega.1c03125-blue?style=flat-square" alt = "acsomega_doi">
+</p>
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<div data-badge-type="1" data-doi="10.1021/acsomega.1c03125" data-hide-no-mentions="true" class="altmetric-embed"></div>
+
+## Abstract
+<p align = "justify">
+Localised singlet cyclopentane-1,3-diyl diradicaloids have been considered promising candidates for constructing carbon–carbon π-single bonds (C–π–C). However, its high reactivity during formation of the σ-bond has limited a deeper investigation of its unique chemical properties. In this feature article, recent progress in kinetic stabilisation based on the “stretch effect” and the “solvent dynamic effect” induced by the macrocyclic system is summarised. Singlet diradicaloids S-DR4a/b and S-DR4d containing macrocyclic rings showed much longer lifetime at 293 K (14 μs for S-DR4a and 156 μs for S-DR4b in benzene) compared to the parent singlet diradicaloid S-DR2 having no macrocyclic ring (209 ns in benzene). Furthermore, the dynamic solvent effect in viscous solvents was observed for the first time in intramolecular σ-bond formation, the lifetime of S-DR4d increased to 400 μs in viscous solvent glycerin triacetin at 293 K). The experimental results proved the validity of the “stretch effect” and the “solvent dynamic effect” on the kinetic stabilisation of singlet cyclopentane-1,3-diyl diradicaloids, and provided a strategy for isolating the carbon–carbon π-single bonded species (C–π–C), and toward a deeper understanding of the nature of chemical bonding.
+</p>
+
+<p align = "center">
+<a href="https://doi.org/10.1021/acsomega.1c03125"> <img src = '/assets/journal/acsomega_logo.png' alt = 'acsomega_logo' style="height:130px"></a>
+</p>
