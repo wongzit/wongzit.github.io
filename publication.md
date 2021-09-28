@@ -8,7 +8,7 @@ comments: false
 
 ## 2021
 6.[ **Long-lived Localised Singlet Diradicaloids having Carbon–Carbon π-Single Bonding Character (C–π–C)**](https://wongzit.github.io/publication/ccstretch2021/)  
-<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, in press.
+<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.
 
 5.[ **SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals**](https://wongzit.github.io/publication/shc2021/)  
 <u>Z. Wang</u>, R. Murata, M. Abe\*, *ACS Omega*, **2021**, *6(35)*, 22773–22779.

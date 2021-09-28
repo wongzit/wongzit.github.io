@@ -6,14 +6,14 @@ excerpt: ccstretch2021
 comments: false
 ---
 
-<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, in press.
+<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.
 <p align = "right">
 Accepted at <b>27th September 2021</b>
-<img src = "https://img.shields.io/badge/doi-10.1021%2Facsomega.1c03125-blue?style=flat-square" alt = "acsomega_doi">
+<img src = "https://img.shields.io/badge/doi-10.1039%2Fd1cc04581d-blue?style=flat-square" alt = "acsomega_doi">
 </p>
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-<div data-badge-type="1" data-doi="10.1021/acsomega.1c03125" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<div data-badge-type="1" data-doi="10.1039/d1cc04581d" data-hide-no-mentions="true" class="altmetric-embed"></div>
 
 ## Abstract
 <p align = "justify">
@@ -21,5 +21,5 @@ Localised singlet cyclopentane-1,3-diyl diradicaloids have been considered promi
 </p>
 
 <p align = "center">
-<a href="https://doi.org/10.1021/acsomega.1c03125"> <img src = '/assets/journal/cc_logo.png' alt = 'cc_logo' style="height:130px"></a>
+<a href="https://doi.org/10.1039/d1cc04581d"> <img src = '/assets/journal/cc_logo.png' alt = 'cc_logo' style="height:130px"></a>
 </p>
