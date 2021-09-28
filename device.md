@@ -14,7 +14,7 @@ comments: false
 
 - **CPU** Intel Core™ i7-9700KF
 - **GPU** MSI GAMING X GeForce RTX 3060 12GB
-- **RAM** Kingston HyperX DDR4 2666MHz 16GB (8GB\*2)
+- **RAM** Kingston HyperX DDR4 2666MHz 32GB (8GB\*4)
 - **MTB** MSI Z390-A PRO ATX
 - **SSD** WD Black SN750 500GB (M.2), WD Blue 500GB (SATA III)
 - **HDD** Seagate BarraCuda 3.5" 4TB (SATA III)
