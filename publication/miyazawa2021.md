@@ -6,7 +6,7 @@ excerpt: miyazawa2021
 comments: false
 ---
 
-Y. Miyazawa, <u>Z. Wang</u>, M. Matsumoto, S. Hatano, I. Antol, E. Kayahara, S. Yamago, M. Abe, *J. Am. Chem. Soc.*, **2021**, *143(19)*, 7426–7439.
+Y. Miyazawa, <u>Z. Wang</u>, M. Matsumoto, S. Hatano, I. Antol, E. Kayahara, S. Yamago, M. Abe, *J. Am. Chem. Soc.*, **2021**, *143*(19*), 7426–7439.
 <p align = "right">
 Accepted at <b>26th April 2021</b>
 <img src = "https://img.shields.io/badge/doi-10.1021%2Fjacs.1c01329-blue?style=flat-square" alt = "jacs_doi">
