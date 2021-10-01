@@ -26,5 +26,5 @@ In this study, the SOMO–HOMO conversion has been shown for the first time in t
 ## Cover art
 <img src = '/assets/cover/orlef7_v023i013-2.jpg' alt = 'ol_cover'>
 
-[**Next Article** SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals](https://wongzit.github.io/publication/shc2021/)  
-[**Last Article** 1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity](https://wongzit.github.io/publication/miyazawa2021/)
+[**Next Article**](https://wongzit.github.io/publication/shc2021/)  
+[**Last Article**](https://wongzit.github.io/publication/miyazawa2021/)
