@@ -26,3 +26,6 @@ Curved π-conjugated molecules and open-shell structures have attracted much att
 
 ## Cover art
 <img src = '/assets/cover/jacsat_v143i019-4.jpg' alt = 'jacs_cover'>
+
+[**Next Article** SOMO-HOMO Conversion in Triplet Carbenes](https://wongzit.github.io/publication/murata2021/)  
+[**Last Article** Impact of the Macrocyclic Structure and Dynamic Solvent Effect on the Reactivity of a Localised Singlet Diradicaloid with π-Single Bonding Character](https://wongzit.github.io/publication/stretch2021/)

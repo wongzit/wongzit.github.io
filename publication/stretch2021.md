@@ -24,4 +24,4 @@ Localised singlet diradicals are key intermediates in bond homolysis processes. 
 </p>
 
 [**Next Article** 1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity](https://wongzit.github.io/publication/miyazawa2021/)  
-[**Last Article**  Extremely Long Lived Localized Singlet Diradicals in a Macrocyclic Structure: A Case Study on the Stretch Effect](https://wongzit.github.io/publication/harada2018/)
+[**Last Article** Extremely Long Lived Localized Singlet Diradicals in a Macrocyclic Structure: A Case Study on the Stretch Effect](https://wongzit.github.io/publication/harada2018/)
