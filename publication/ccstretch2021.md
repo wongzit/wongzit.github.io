@@ -6,10 +6,9 @@ excerpt: ccstretch2021
 comments: false
 ---
 
-<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.
+<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.&ensp;![](https://img.shields.io/badge/doi-10.1039%2Fd1cc04581d-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 18th Aug. 2021, <b>Accepted</b> 27th Sep. 2021
-<img src = "https://img.shields.io/badge/doi-10.1039%2Fd1cc04581d-blue?style=flat-square" alt = "acsomega_doi">
 </p>
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
@@ -23,3 +22,5 @@ Localised singlet cyclopentane-1,3-diyl diradicaloids have been considered promi
 <p align = "center">
 <a href="https://doi.org/10.1039/d1cc04581d"> <img src = '/assets/journal/cc_logo.png' alt = 'cc_logo' style="height:130px"></a>
 </p>
+
+[**Last Article** SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals](https://wongzit.github.io/publication/shc2021/)

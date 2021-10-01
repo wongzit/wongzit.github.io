@@ -6,10 +6,9 @@ excerpt: murata2021
 comments: false
 ---
 
-R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol, S. Yamago, M. Abe, *Org. Lett.*, **2021**, *23*(*13*), 4955–4959.
+R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol, S. Yamago, M. Abe, *Org. Lett.*, **2021**, *23*(*13*), 4955–4959.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 2nd Apr. 2021, <b>Accepted</b> 28th May 2021
-<img src = "https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue?style=flat-square" alt = "ol_doi">
 </p>
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
@@ -26,3 +25,6 @@ In this study, the SOMO–HOMO conversion has been shown for the first time in t
 
 ## Cover art
 <img src = '/assets/cover/orlef7_v023i013-2.jpg' alt = 'ol_cover'>
+
+[**Next Article** SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals](https://wongzit.github.io/publication/shc2021/)  
+[**Last Article** 1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity](https://wongzit.github.io/publication/miyazawa2021/)
