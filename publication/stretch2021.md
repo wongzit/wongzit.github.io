@@ -8,7 +8,7 @@ comments: false
 
 <u>Z. Wang</u>, R. Akisaka, S. Yabumoto, T. Nakagawa, S. Hatano, M. Abe, *Chem. Sci.*, **2021**, *12*(*2*), 613–625.
 <p align = "right">
-Accepted at <b>9th November 2020</b>
+<b>Submitted</b> 25th Sep. 2020, <b>Accepted</b> 9th Nov. 2020
 <img src = "https://img.shields.io/badge/doi-10.1039%2Fd0sc05311b-blue?style=flat-square" alt = "cs_doi">
 </p>
 
