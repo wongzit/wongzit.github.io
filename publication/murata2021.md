@@ -6,6 +6,8 @@ excerpt: murata2021
 comments: false
 ---
 
+![](https://img.shields.io/badge/-Cover%20Picture-orange?style=flat-square)
+
 R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol, S. Yamago, M. Abe, *Org. Lett.*, **2021**, *23*(*13*), 4955–4959.
 <p align = "right">
 Accepted at <b>28th May 2021</b>
