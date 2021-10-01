@@ -21,7 +21,3 @@
 - title: blog
   url: /blog/
   external: false
-
-- title: oldVersion
-  url: https://www.wangzhe95.net
-  external: true
