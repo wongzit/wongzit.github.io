@@ -8,7 +8,7 @@ comments: false
 
 R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol, S. Yamago, M. Abe, *Org. Lett.*, **2021**, *23*(*13*), 4955–4959.
 <p align = "right">
-Accepted at <b>28th May 2021</b>
+<b>Submitted</b> 2nd Apr. 2021, <b>Accepted</b> 28th May 2021
 <img src = "https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue?style=flat-square" alt = "ol_doi">
 </p>
 
