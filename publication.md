@@ -13,13 +13,13 @@ comments: false
 5.[ **SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals**](https://wongzit.github.io/publication/shc2021/)  
 <u>Z. Wang</u>, R. Murata, M. Abe\*, *ACS Omega*, **2021**, *6*(*35*), 22773–22779.
 
-4.![](https://img.shields.io/badge/-Cover%20Picture-orange?style=flat-square)&ensp;[ **SOMO-HOMO Conversion in Triplet Carbenes**](https://wongzit.github.io/publication/murata2021/)  
+4.&ensp;![](https://img.shields.io/badge/-Cover%20Picture-orange?style=flat-square)&ensp;[ **SOMO-HOMO Conversion in Triplet Carbenes**](https://wongzit.github.io/publication/murata2021/)  
 R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol\*, S. Yamago, M. Abe\*, *Org. Lett.*, **2021**, *23*(*13*), 4955–4959.
 
-3.![](https://img.shields.io/badge/-Cover%20Picture-orange?style=flat-square)&ensp;[ **1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity**](https://wongzit.github.io/publication/miyazawa2021/)  
+3.&ensp;![](https://img.shields.io/badge/-Cover%20Picture-orange?style=flat-square)&ensp;[ **1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity**](https://wongzit.github.io/publication/miyazawa2021/)  
 Y. Miyazawa, <u>Z. Wang</u>, M. Matsumoto, S. Hatano, I. Antol\*, E. Kayahara, S. Yamago\*, M. Abe\*, *J. Am. Chem. Soc.*, **2021**, *143*(*19*), 7426–7439.
 
-2.![](https://img.shields.io/badge/-2020%20HOT%20Article-orange?style=flat-square)&ensp;[ **Impact of the Macrocyclic Structure and Dynamic Solvent Effect on the Reactivity of a Localised Singlet Diradicaloid with π-Single Bonding Character**](https://wongzit.github.io/publication/stretch2021/)  
+2.&ensp;![](https://img.shields.io/badge/-2020%20HOT%20Article-orange?style=flat-square)&ensp;[ **Impact of the Macrocyclic Structure and Dynamic Solvent Effect on the Reactivity of a Localised Singlet Diradicaloid with π-Single Bonding Character**](https://wongzit.github.io/publication/stretch2021/)  
 <u>Z. Wang</u>, R. Akisaka, S. Yabumoto, T. Nakagawa, S. Hatano, M. Abe\*, *Chem. Sci.*, **2021**, *12*(*2*), 613–625.
 
 ## 2018
