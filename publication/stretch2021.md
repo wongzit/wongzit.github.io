@@ -6,10 +6,9 @@ excerpt: stretch2021
 comments: false
 ---
 
-<u>Z. Wang</u>, R. Akisaka, S. Yabumoto, T. Nakagawa, S. Hatano, M. Abe, *Chem. Sci.*, **2021**, *12*(*2*), 613–625.
+<u>Z. Wang</u>, R. Akisaka, S. Yabumoto, T. Nakagawa, S. Hatano, M. Abe, *Chem. Sci.*, **2021**, *12*(*2*), 613–625.&ensp;![](https://img.shields.io/badge/doi-10.1039%2Fd0sc05311b-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 25th Sep. 2020, <b>Accepted</b> 9th Nov. 2020
-<img src = "https://img.shields.io/badge/doi-10.1039%2Fd0sc05311b-blue?style=flat-square" alt = "cs_doi">
 </p>
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
@@ -23,3 +22,6 @@ Localised singlet diradicals are key intermediates in bond homolysis processes. 
 <p align = "center">
 <a href="https://doi.org/10.1039/d0sc05311b"> <img src = '/assets/journal/cs_logo.png' alt = 'cs_logo' style="height:130px"></a>
 </p>
+
+[**Next Article** 1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity](https://wongzit.github.io/publication/miyazawa2021/)  
+[**Last Article** Impact of the Macrocyclic Structure and Dynamic Solvent Effect on the Reactivity of a Localised Singlet Diradicaloid with π-Single Bonding Character](https://wongzit.github.io/publication/stretch2021/)
