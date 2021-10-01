@@ -8,7 +8,7 @@ comments: false
 
 <u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.
 <p align = "right">
-Accepted at <b>27th September 2021</b>
+<b>Submitted</b> 18th Aug. 2021, <b>Accepted</b> 27th Sep. 2021
 <img src = "https://img.shields.io/badge/doi-10.1039%2Fd1cc04581d-blue?style=flat-square" alt = "acsomega_doi">
 </p>
 
