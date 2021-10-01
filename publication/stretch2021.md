@@ -6,8 +6,6 @@ excerpt: stretch2021
 comments: false
 ---
 
-![](https://img.shields.io/badge/-2020%20Chemical%20Science%20HOT%20Article%20Collection-c8102e?style=flat-square)
-
 <u>Z. Wang</u>, R. Akisaka, S. Yabumoto, T. Nakagawa, S. Hatano, M. Abe, *Chem. Sci.*, **2021**, *12*(*2*), 613–625.
 <p align = "right">
 Accepted at <b>9th November 2020</b>
