@@ -33,7 +33,7 @@ I also do some 👨🏻‍💻 **programming**, I will post my publications, pro
 
 ## useful links 🌏
 
-[**Old Verion**](https://www.wangzhe95.net/) of my personal homepage.
+[**Old Version**](https://www.wangzhe95.net/) of my personal homepage.
 
 [**WebPlotDigitizer**](https://automeris.io/WebPlotDigitizer/) Web based tool to extract data from plots, images, and maps.
 
