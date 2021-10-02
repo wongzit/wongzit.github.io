@@ -6,7 +6,7 @@ excerpt: publication
 comments: false
 ---
 
-## 2021
+# 2021
 6.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **Long-lived Localised Singlet Diradicaloids having Carbon–Carbon π-Single Bonding Character (C–π–C)**](https://wongzit.github.io/publication/ccstretch2021/)  
 <u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.
 
@@ -22,7 +22,7 @@ Y. Miyazawa, <u>Z. Wang</u>, M. Matsumoto, S. Hatano, I. Antol\*, E. Kayahara, S
 2.&ensp;![](https://img.shields.io/badge/-2020%20Chemical%20Science%20HOT%20Article%20Collection-c8102e?style=flat-square)&ensp;[ **Impact of the Macrocyclic Structure and Dynamic Solvent Effect on the Reactivity of a Localised Singlet Diradicaloid with π-Single Bonding Character**](https://wongzit.github.io/publication/stretch2021/)  
 <u>Z. Wang</u>, R. Akisaka, S. Yabumoto, T. Nakagawa, S. Hatano, M. Abe\*, *Chem. Sci.*, **2021**, *12*(*2*), 613–625.
 
-## 2018
+# 2018
 
 1.[ **Extremely Long Lived Localized Singlet Diradicals in a Macrocyclic Structure: A Case Study on the Stretch Effect**](https://wongzit.github.io/publication/harada2018/)  
 Y. Harada, <u>Z. Wang</u>, S. Kumashiro, S. Hatano, M. Abe\*, *Chem. Eur. J.*, **2018**, *24*(*55*), 14808–14815.
