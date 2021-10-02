@@ -23,5 +23,5 @@ Localised singlet diradicals are key intermediates in bond homolysis processes. 
 <a href="https://doi.org/10.1039/d0sc05311b"> <img src = '/assets/journal/cs_logo.png' alt = 'cs_logo' style="height:130px"></a>
 </p>
 
-[**Next Article >>>**](https://wongzit.github.io/publication/miyazawa2021/)  
-[**Last Article <<<**](https://wongzit.github.io/publication/harada2018/)
+[**Next Article >**](https://wongzit.github.io/publication/miyazawa2021/)  
+[**Last Article <**](https://wongzit.github.io/publication/harada2018/)

@@ -26,5 +26,5 @@ Curved π-conjugated molecules and open-shell structures have attracted much att
 ## Cover art
 <img src = '/assets/cover/jacsat_v143i019-4.jpg' alt = 'jacs_cover'>
 
-[**Next Article >>>**](https://wongzit.github.io/publication/murata2021/)  
-[**Last Article <<<**](https://wongzit.github.io/publication/stretch2021/)
+[**Next Article >**](https://wongzit.github.io/publication/murata2021/)  
+[**Last Article <**](https://wongzit.github.io/publication/stretch2021/)

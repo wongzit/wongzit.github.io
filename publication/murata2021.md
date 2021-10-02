@@ -26,5 +26,5 @@ In this study, the SOMO–HOMO conversion has been shown for the first time in t
 ## Cover art
 <img src = '/assets/cover/orlef7_v023i013-2.jpg' alt = 'ol_cover'>
 
-[**Next Article >>>**](https://wongzit.github.io/publication/shc2021/)  
-[**Last Article <<<**](https://wongzit.github.io/publication/miyazawa2021/)
+[**Next Article >**](https://wongzit.github.io/publication/shc2021/)  
+[**Last Article <**](https://wongzit.github.io/publication/miyazawa2021/)
