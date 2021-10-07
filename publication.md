@@ -7,7 +7,7 @@ comments: false
 ---
 
 [2021](https://wongzit.github.io/publication/#2021)&emsp;&emsp;[2018](https://wongzit.github.io/publication/#2018)  
-[![](https://img.shields.io/badge/-Full%20Articles-orange?style=flat-square)](https://wongzit.github.io/pubilcation/article/)&ensp;[![](https://img.shields.io/badge/-Review%20Papers-9cf?style=flat-square)](https://wongzit.github.io/pubilcation/review/)
+[< Articles >](https://wongzit.github.io/publication/article/)&ensp;[ < Review Papers >](https://wongzit.github.io/publication/review/)
 
 # 2021
 

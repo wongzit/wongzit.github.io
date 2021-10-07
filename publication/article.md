@@ -1,5 +1,5 @@
 ---
-title: "Full Articles"
+title: "Articles"
 permalink: /publication/article/
 layout: page
 excerpt: article
