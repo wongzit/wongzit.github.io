@@ -6,10 +6,6 @@
   url: /about/
   external: false
 
-- title: device
-  url: /device/
-  external: false
-
 - title: publication
   url: /publication/
   external: false
