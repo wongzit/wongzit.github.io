@@ -1,5 +1,5 @@
 ---
-title: "Review Papers"
+title: "Reviews"
 permalink: /publication/review/
 layout: page
 excerpt: review
