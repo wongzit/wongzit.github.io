@@ -1,5 +1,5 @@
 ---
-title: "Long-lived Localised Singlet Diradicaloids having Carbon–Carbon π-Single Bonding Character (C–π–C)"
+title: "Long-lived Localised Singlet Diradicaloids with Carbon–Carbon π-Single Bonding (C–π–C)"
 permalink: /publication/ccstretch2021/
 layout: page
 excerpt: ccstretch2021
