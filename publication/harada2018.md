@@ -6,7 +6,7 @@ excerpt: harada2018
 comments: false
 ---
 
-Yuta Harada, <u>Zhe Wang</u>, Shunsuke Kumashiro, Sayaka Hatano, Manabu Abe, *Chemistry - A European Journal*, **2018**, *24*(*55*), 14808–14815.&ensp;![](https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue?style=flat-square)
+Yuta Harada, <u>Zhe Wang</u>, Shunsuke Kumashiro, Sayaka Hatano, Manabu Abe\*, *Chemistry - A European Journal*, **2018**, *24*(*55*), 14808–14815.&ensp;![](https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 16th Jun. 2018, <b>Accepted</b> 18th Jul. 2018
 </p>

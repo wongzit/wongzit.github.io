@@ -6,7 +6,7 @@ excerpt: miyazawa2021
 comments: false
 ---
 
-Y. Miyazawa, <u>Z. Wang</u>, M. Matsumoto, S. Hatano, I. Antol, E. Kayahara, S. Yamago, M. Abe, *J. Am. Chem. Soc.*, **2021**, *143*(*19*), 7426–7439.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Fjacs.1c01329-blue?style=flat-square)
+Yuki Miyazawa, <u>Zhe Wang</u>, Misaki Matsumoto, Sayaka Hatano, Ivana Antol\*, Eiichi Kayahara, Shigeru Yamago\*, Manabu Abe\*, *Journal of the American Chemical Society*, **2021**, *143*(*19*), 7426–7439.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Fjacs.1c01329-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 3rd Feb. 2021, <b>Accepted</b> 26th Apr. 2021
 </p>
@@ -26,5 +26,5 @@ Curved π-conjugated molecules and open-shell structures have attracted much att
 ## Cover art
 <img src = '/assets/cover/jacsat_v143i019-4.jpg' alt = 'jacs_cover'>
 
-[**Next Article >**](https://wongzit.github.io/publication/murata2021/)  
-[**Last Article <**](https://wongzit.github.io/publication/stretch2021/)
+[**Next Article ⏩**](https://wongzit.github.io/publication/murata2021/)  
+[**Last Article ⏪**](https://wongzit.github.io/publication/stretch2021/)
