@@ -10,7 +10,7 @@ comments: false
 
 ## independent programs 🧰
 
-<p align="right">
+<p align="left">
 <a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
