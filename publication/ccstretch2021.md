@@ -20,7 +20,7 @@ Localised singlet cyclopentane-1,3-diyl diradicaloids have been considered promi
 </p>
 
 <p align = "center">
-<a href="https://doi.org/10.1039/d1cc04581d"> <img src = '/assets/journal/cc_logo.png' alt = 'cc_logo' style="height:130px"></a>
+<a href="https://doi.org/10.1039/d1cc04581d"> <img src = '/assets/journal/cc_logo.png' alt = 'cc_logo'></a>
 </p>
 
 [**Next Article >**](https://wongzit.github.io/publication/ajc2021/)  
