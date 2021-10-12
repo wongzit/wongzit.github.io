@@ -16,6 +16,8 @@ Localized singlet diradicals are key intermediates in bond homolysis processes. 
 <a> <img src = '/assets/research/dr.png' alt = 'dr'></a>
 </p>
 
+<br />
+
 ## Oil-adsorption Performance of Graphene Aerogel
 
 <p align = "justify">
