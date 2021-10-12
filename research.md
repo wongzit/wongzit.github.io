@@ -8,6 +8,7 @@ comments: false
 
 ## Kinetic Stabilization of Localized Singlet Diradicals
 
+
 ## Oil-adsorption Performance of Graphene Aerogel
 
 <p align = "justify">
@@ -15,5 +16,5 @@ The graphene aerogels have extremely low density, great specific surface area an
 </p>
 
 <p align = "justify">
-<a> <img src = '/assets/research/go.png' alt = 'go'></a>
+<a> <img src = '/assets/research/ga.png' alt = 'ga'></a>
 </p>
