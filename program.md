@@ -19,7 +19,7 @@ comments: false
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/EnePro).
 - ![](https://img.shields.io/badge/made%20with-Python%20%26%20C-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-energy%20profile-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
-<p align="center">
+<p align="left">
 <a href="https://github.com/wongzit/CSIgen"> <img alt="csigen" class="icon" src="/assets/program/CSIgen_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
@@ -28,7 +28,7 @@ comments: false
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/CSIgen).
 - ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-ESI%20%7C%20Gaussian%20%7C%20supporting%20information-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
-<p align="center">
+<p align="left">
 <a href="https://github.com/wongzit/O2Ig"> <img alt="o2ig" class="icon" src="/assets/program/O2Ig_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
@@ -37,7 +37,7 @@ comments: false
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/O2Ig).
 - ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20input%20%7C%20output-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
-<p align="center">
+<p align="left">
 <a href="https://github.com/wongzit/gauMonitor"> <img alt="gaumonitor" class="icon" src="/assets/program/gauMonitor_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
@@ -46,7 +46,7 @@ comments: false
 - Source code is free available from [*GitHub*](https://github.com/wongzit/gauMonitor).
 - ![](https://img.shields.io/badge/made%20with-Python%20%26%20Bash%20shell-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-Gaussian%20%7C%20calculation%20monitor-red?style=flat-square)&ensp;![](https://img.shields.io/badge/open%20source%3F-Yes!-9cf?style=flat-square)
 
-<p align="center">
+<p align="left">
 <a href="https://wongzit.github.io/program/pyaroma/"> <img alt="pyaroma" class="icon" src="/assets/program/pyAroma_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
@@ -55,7 +55,7 @@ comments: false
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/pyAroma).
 - ![](https://img.shields.io/badge/made%20with-Python-1f425f?style=flat-square)&ensp;![](https://img.shields.io/badge/keywords-HOMA%20%7C%20NICS%20%7C%20ICSS%20%7C%20Aromaticity-red?style=flat-square)&ensp;![](https://img.shields.io/badge/License%3F-MIT-9cf?style=flat-square)
 
-<p align="center">
+<p align="left">
 <a href="https://github.com/wongzit/pyNMR"> <img alt="pynmr" class="icon" src="/assets/program/pyNMR_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
