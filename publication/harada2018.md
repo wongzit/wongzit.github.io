@@ -23,4 +23,4 @@ Localized singlet diradicals have attracted much attention, not only in the fiel
 <a href="https://doi.org/10.1002/chem.201803076"> <img src = '/assets/journal/cej_logo.png' alt = 'cej_logo' style="height:80px"></a>
 </p>
 
-[**Next Article ➡️**](https://wongzit.github.io/publication/stretch2021/)  
+[**Next Article ⏩**](https://wongzit.github.io/publication/stretch2021/)  
