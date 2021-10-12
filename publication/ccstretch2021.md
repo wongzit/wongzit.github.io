@@ -6,7 +6,7 @@ excerpt: ccstretch2021
 comments: false
 ---
 
-<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.&ensp;![](https://img.shields.io/badge/doi-10.1039%2Fd1cc04581d-blue?style=flat-square)
+<u>Zhe Wang</u>, Pinky Yadav, Manabu Abe\*, *Chemical Communications*, **2021**, DOI:10.1039/d1cc04581d.&ensp;![](https://img.shields.io/badge/doi-10.1039%2Fd1cc04581d-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 18th Aug. 2021, <b>Accepted</b> 27th Sep. 2021
 </p>
@@ -23,5 +23,5 @@ Localised singlet cyclopentane-1,3-diyl diradicaloids have been considered promi
 <a href="https://doi.org/10.1039/d1cc04581d"> <img src = '/assets/journal/cc_logo.png' alt = 'cc_logo' style="height:80px"></a>
 </p>
 
-[**Next Article >**](https://wongzit.github.io/publication/ajc2021/)  
-[**Last Article <**](https://wongzit.github.io/publication/shc2021/)
+[**Next Article ⏩**](https://wongzit.github.io/publication/ajc2021/)  
+[**Last Article ⏪**](https://wongzit.github.io/publication/shc2021/)
