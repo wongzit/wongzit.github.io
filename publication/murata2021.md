@@ -6,7 +6,7 @@ excerpt: murata2021
 comments: false
 ---
 
-R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol, S. Yamago, M. Abe, *Org. Lett.*, **2021**, *23*(*13*), 4955–4959.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue?style=flat-square)
+Ryo Murata, <u>Zhe Wang</u>, Yuki Miyazawa, Ivana Antol\*, Shigeru Yamago, Manabu Abe\*, *Organic Letters*, **2021**, *23*(*13*), 4955–4959.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Facs.orglett.1c01137-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 2nd Apr. 2021, <b>Accepted</b> 28th May 2021
 </p>
@@ -26,5 +26,5 @@ In this study, the SOMO–HOMO conversion has been shown for the first time in t
 ## Cover art
 <img src = '/assets/cover/orlef7_v023i013-2.jpg' alt = 'ol_cover'>
 
-[**Next Article >**](https://wongzit.github.io/publication/shc2021/)  
-[**Last Article <**](https://wongzit.github.io/publication/miyazawa2021/)
+[**Next Article ⏩**](https://wongzit.github.io/publication/shc2021/)  
+[**Last Article ⏪**](https://wongzit.github.io/publication/miyazawa2021/)
