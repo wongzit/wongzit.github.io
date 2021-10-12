@@ -6,7 +6,7 @@ excerpt: review
 comments: false
 ---
 
-1.[ **Long-lived Localised Singlet Diradicaloids having Carbon–Carbon π-Single Bonding Character (C–π–C)**](https://wongzit.github.io/publication/ccstretch2021/)  
+1.[ **Long-lived Localised Singlet Diradicaloids with Carbon–Carbon π-Single Bonding (C–π–C)**](https://wongzit.github.io/publication/ccstretch2021/)  
 <u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.
 
 2.[ **Singly Occupied Molecular Orbital–Heighest Occupied Molecular Orbital (SOMO–HOMO) Conversion**](https://wongzit.github.io/publication/ajc2021/)  
