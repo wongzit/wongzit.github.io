@@ -6,7 +6,7 @@ excerpt: harada2018
 comments: false
 ---
 
-Y. Harada, <u>Z. Wang</u>, S. Kumashiro, S. Hatano, M. Abe, *Chem. Eur. J.*, **2018**, *24*(*55*), 14808–14815.&ensp;![](https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue?style=flat-square)
+Yuta Harada, <u>Zhe Wang</u>, Shunsuke Kumashiro, Sayaka Hatano, Manabu Abe, *Chemistry - A European Journal*, **2018**, *24*(*55*), 14808–14815.&ensp;![](https://img.shields.io/badge/doi-10.1002%2Fchem.201803076-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 16th Jun. 2018, <b>Accepted</b> 18th Jul. 2018
 </p>
@@ -23,4 +23,4 @@ Localized singlet diradicals have attracted much attention, not only in the fiel
 <a href="https://doi.org/10.1002/chem.201803076"> <img src = '/assets/journal/cej_logo.png' alt = 'cej_logo' style="height:80px"></a>
 </p>
 
-[**Next Article >**](https://wongzit.github.io/publication/stretch2021/)  
+[**Next Article ➡️**](https://wongzit.github.io/publication/stretch2021/)  
