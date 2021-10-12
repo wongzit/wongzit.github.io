@@ -6,6 +6,10 @@
   url: /about/
   external: false
 
+- title: research
+  url: /research/
+  external: false
+
 - title: publication
   url: /publication/
   external: false
