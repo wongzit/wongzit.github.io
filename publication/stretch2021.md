@@ -6,7 +6,7 @@ excerpt: stretch2021
 comments: false
 ---
 
-<u>Z. Wang</u>, R. Akisaka, S. Yabumoto, T. Nakagawa, S. Hatano, M. Abe, *Chem. Sci.*, **2021**, *12*(*2*), 613–625.&ensp;![](https://img.shields.io/badge/doi-10.1039%2Fd0sc05311b-blue?style=flat-square)
+<u>Zhe Wang</u>, Rikuo Akisaka, Sohshi Yabumoto, Tatsuo Nakagawa, Sayaka Hatano, Manabu Abe, *Chemical Science*, **2021**, *12*(*2*), 613–625.&ensp;![](https://img.shields.io/badge/doi-10.1039%2Fd0sc05311b-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 25th Sep. 2020, <b>Accepted</b> 9th Nov. 2020
 </p>
@@ -23,5 +23,5 @@ Localised singlet diradicals are key intermediates in bond homolysis processes. 
 <a href="https://doi.org/10.1039/d0sc05311b"> <img src = '/assets/journal/cs_logo.png' alt = 'cs_logo' style="height:80px"></a>
 </p>
 
-[**Next Article >**](https://wongzit.github.io/publication/miyazawa2021/)  
-[**Last Article <**](https://wongzit.github.io/publication/harada2018/)
+[**Next Article ⏩**](https://wongzit.github.io/publication/miyazawa2021/)  
+[**Last Article ⏪**](https://wongzit.github.io/publication/harada2018/)
