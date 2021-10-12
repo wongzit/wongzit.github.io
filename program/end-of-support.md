@@ -1,5 +1,5 @@
 ---
-title: "end of support"
+title: "End of Support"
 permalink: /program/end-of-support/
 layout: page
 excerpt: end of support
