@@ -13,7 +13,7 @@ Localized singlet diradicals are key intermediates in bond homolysis processes. 
 </p>
 
 <p align = "center">
-<a> <img src = '/assets/research/dr.png' alt = 'dr' style="height:200px"></a>
+<a> <img src = '/assets/research/dr.png' alt = 'dr' style="weight:105px"></a>
 </p>
 
 <br />
@@ -25,6 +25,6 @@ The graphene aerogels have extremely low density, great specific surface area an
 </p>
 
 <p align = "center">
-<a> <img src = '/assets/research/ga.png' alt = 'ga' style="height:200px"></a>
+<a> <img src = '/assets/research/ga.png' alt = 'ga' style="weight:105px"></a>
 </p>
 
