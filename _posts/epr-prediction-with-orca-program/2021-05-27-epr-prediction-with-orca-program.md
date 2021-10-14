@@ -41,7 +41,7 @@ end
 
 **Details about the input file:**
 
-<u>R/U/ROKS</u>: For restricted Hartree-Fock (HF) calculation, use RKS; for unrestricted HF, use UKS and for restricted-open HF, use ROKS. It is better to use ROKS rather than UKS for EPR prediction (<i>J. Phys. Chem. A</i> <b>2006</b>, <i>110</i>, 12267-12275).
+<u>R/U/ROKS</u>: For restricted Hartree-Fock (HF) calculation, use RKS; for unrestricted HF, use UKS and for restricted-open HF, use ROKS. It is better to use ROKS rather than UKS for D and E tensors prediction (<i>J. Phys. Chem. A</i> <b>2006</b>, <i>110</i>, 12267-12275). For g tensor and HFC, use default (UHF).
 
 <u>method</u>: Specify the calculation method, like B3LYP, BP, etc.
 
@@ -158,7 +158,7 @@ E/D =    0.172867
 
 # 4. Example
 
-Here I put two input files I used for EPR prediction. (methyl radical and triplet cyclopentane-1,3-diyl diradical, all geometries were optimized at UB3LYP/6-31G* level of theory with *Gaussian 16 B.01*). These file could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_epr_orca).
+Here I put two input files I used for EPR prediction. (TEMPO radical and triplet cyclopentane-1,3-diyl diradical, all geometries were optimized at UB3LYP/6-31G* level of theory with *Gaussian 16 B.01*). These file could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_epr_orca).
 
 ## 4.1 Predict HFC of TEMPO radical
 
