@@ -74,6 +74,7 @@ comments: false
 - **RunGJF (5th June 2021)** is a Bash Shell script for running Gaussian jobs automatically.
 - **gimicInp (7th June 2021)** is a Python / Bash shell script for generating GIMIC input file.
 - **pdb2xyz (8th June 2021)** is a Python script for converting .pdb file to .xyz file.
+- **pdb2gjf (25th October 2021)** is a Python script for creating .gjf file from .pdb file.
 
 <br />
 
