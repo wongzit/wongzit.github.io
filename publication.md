@@ -16,7 +16,7 @@ comments: false
 R. Murata, <u>Z. Wang</u>, M. Abe\*. *Aust. J. Chem.*, **2021**, accepted manuscript.
 
 6.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **Long-lived Localised Singlet Diradicaloids with Carbon–Carbon π-Single Bonding (C–π–C)**](https://wongzit.github.io/publication/ccstretch2021/)  
-<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, DOI:10.1039/d1cc04581d.
+<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, *57*(*86*), 11301–11309.
 
 5.[ **SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals**](https://wongzit.github.io/publication/shc2021/)  
 <u>Z. Wang</u>, R. Murata, M. Abe\*, *ACS Omega*, **2021**, *6*(*35*), 22773–22779.

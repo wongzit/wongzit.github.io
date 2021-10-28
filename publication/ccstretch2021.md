@@ -6,7 +6,7 @@ excerpt: ccstretch2021
 comments: false
 ---
 
-<u>Zhe Wang</u>, Pinky Yadav, Manabu Abe\*, *Chemical Communications*, **2021**, DOI:10.1039/d1cc04581d.&ensp;![](https://img.shields.io/badge/doi-10.1039%2Fd1cc04581d-blue?style=flat-square)
+<u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, *57*(*86*), 11301–11309.&ensp;![](https://img.shields.io/badge/doi-10.1039%2Fd1cc04581d-blue?style=flat-square)
 <p align = "right">
 <b>Submitted</b> 18th Aug. 2021, <b>Accepted</b> 27th Sep. 2021
 </p>
