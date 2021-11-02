@@ -1,5 +1,5 @@
 ---
-title: "An Aromaticity Analyzer"
+title: "A Kinetics Analyzing Tool"
 permalink: /program/pykinetics/
 layout: page
 excerpt: pykinetics
