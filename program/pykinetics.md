@@ -10,18 +10,22 @@ comments: false
 <img alt="pykinetics" class="icon" src="/assets/program/pyKinetics_wide.png">
 </p>
 
-Latest version: **0.3 α**, updated at 2021-11-02
+Latest version: **0.4.2α**, updated at 2021-11-03
 
 ## statement of need
 
-py.**Kinetics** is a Python program for kinetics analyzing.
+py.**Kinetics** is a Python program for kinetics analyses, designed for transient absorption measurements of laser flash photolysis.
 
 ## how to run
 
 ### run with source code
 
-If Python IDE is already installed, py.**Kinetics** could be run with the source code. Python 3.9+ is recommended. You can download the newest version of Python from [homepage](https://www.python.org). py.**Kinetics** is running with external library *matplotlib*, *numpy* and *scipy*, please make sure *matplotlib*, *numpy* and *scipy* are already installed on your computer before running py.**Kinetics**.
+If Python IDE is installed on the target computer, py.**Kinetics** could be run with the source code. Python 3.9+ is recommended. You can download the newest version of Python from [homepage](https://www.python.org). py.**Kinetics** is running with external library *Pillow*, *matplotlib*, *numpy* and *scipy*, please make sure all of these *lib* are already installed before running py.**Kinetics**. Graphic user interface (GUI) of py.**Kinetics** is supported by *tkinter*. Runing of py.**Kinetics** by command line is not supported.
 
 ## usage
 
-For detail information, please refer to the user manual.
+to be update
+
+## known issues
+
+to be update
