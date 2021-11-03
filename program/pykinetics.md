@@ -20,7 +20,7 @@ py.**Kinetics** is a Python program for kinetics analyses, designed for transien
 
 ### run with source code
 
-If Python IDE is installed on the target computer, py.**Kinetics** could be run with the source code. Python 3.9+ is recommended. You can download the newest version of Python from [homepage](https://www.python.org). py.**Kinetics** is running with external library *Pillow*, *matplotlib*, *numpy* and *scipy*, please make sure all of these *lib* are already installed before running py.**Kinetics**. Graphic user interface (GUI) of py.**Kinetics** is supported by *tkinter*. Runing of py.**Kinetics** by command line is not supported.
+If Python IDE is installed on the target computer, py.**Kinetics** could be run with the source code. Python 3.9+ is recommended. You can download the newest version of Python from [homepage](https://www.python.org). py.**Kinetics** is running with external library *Pillow*, *matplotlib*, *numpy* and *scipy*, please make sure all of these *lib* are already installed before running py.**Kinetics**. Graphic user interface (GUI) of py.**Kinetics** is supported by *tkinter*. Runing of py.**Kinetics** from command line is not supported.
 
 ## usage
 
