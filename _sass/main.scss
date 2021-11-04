@@ -45,8 +45,8 @@ $spacing-half: $spacing-full / 2;
 // State of devices
 $on-mobile: 768px;
 $on-tablet: 769px;
-$on-desktop: 1024px;
-$on-widescreen: 1152px;
+$on-desktop: 2048px;
+$on-widescreen: 2048px;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
