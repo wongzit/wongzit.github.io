@@ -6,7 +6,7 @@ excerpt: research
 comments: false
 ---
 
-## Kinetic Stabilization of Singlet Cyclopentante-1,3-diyl Diradicals
+## Kinetic Stabilization of Singlet Cyclopentane-1,3-diyl Diradicals
 
 <p align = "justify">
 Localized singlet diradicals are key intermediates in bond homolysis processes. Generally, these highly reactive species undergo radical–radical coupling reaction immediately after their generation. Therefore, their short-lived character hampers experimental investigations of their nature. In this study, we implemented the new concept of “stretch effect” to access a kinetically stabilized singlet cyclopentane-1,3-diyl diradicals.
