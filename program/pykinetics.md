@@ -10,7 +10,7 @@ comments: false
 <img alt="pykinetics" class="icon" src="/assets/program/pyKinetics_wide.png">
 </p>
 
-Latest version: **0.4.2α**, updated at 2021-11-03
+Latest version: **1.0.0**, updated at 2021-11-10
 
 ## statement of need
 
