@@ -83,12 +83,12 @@ It consists of these main components:
 
 ![](/assets/pyKinetics/open_icon.png) **Open**: Click on this button will bring up an Open file dialog. User can open a .*csv* 
 file. The file name would be displayed in the bottom orange bar.  
-**Read**: Plot the data from specified .*csv* file. A .*hdr* file is also needed to read 
+![](/assets/pyKinetics/read_icon.png) **Read**: Plot the data from specified .*csv* file. A .*hdr* file is also needed to read 
 time unit, if the .*hdr* file does not exist, a warning window (Figure 2) will show up and 
 nanosecond ‘ns’ will be used for the time unit.  
-**Setting**: Open the setting panel, see section 3.4.  
-**Help**: Jump to the homepage of py.**Kinetics** with an online version of user manual.  
-**Quit**: Terminate the whole program. Quit the py.**Kinetics** by this button is 
+![](/assets/pyKinetics/set_icon.png) **Setting**: Open the setting panel, see section 3.4.  
+![](/assets/pyKinetics/web_icon.png) **Help**: Jump to the homepage of py.**Kinetics** with an online version of user manual.  
+![](/assets/pyKinetics/quit_icon.png) **Quit**: Terminate the whole program. Quit the py.**Kinetics** by this button is 
 recommended. Users do not need to close all active windows before quitting the py.**Kinetics**.
 
 
