@@ -57,3 +57,16 @@ If the packaged programs cannot work due to system security problem, please refe
 > If warning window: “Cannot open an app from an unidentified developer” showed up when you run packaged 
 > executable file, please go to “System setting” -> “Security & Privacy” and click “Open Anyway”, click “Open”. 
 > Then, you could run the program by double click.
+
+## 3. Usage
+
+### 3.1 Basic of py.Kinetics
+
+The main py.**Kinetics** interface is illustrated in Figure 1.
+
+It consists of these main components:
+**Open**: Click on this button will bring up an Open file dialog. User can open a .csv file. The file name would be displayed in the bottom orange bar.
+**Read**: Plot the data from specified .csv file. A .hdr file is also needed to read time unit, if the .hdr file does not exist, a warning window (Figure 2) will show up and nanosecond ‘ns’ will be used for the time unit.
+**Setting**: Open the setting panel, see section 3.4.
+**Help**: Jump to the homepage of py.**Kinetics** with an online version of user manual.
+**Quit**: Terminate the whole program. Quit the py.**Kinetics** by this button is recommended. Users do not need to close all active windows before quitting the py.**Kinetics**.
