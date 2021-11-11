@@ -227,6 +227,10 @@ to variable type problem, RGB code is not allowed in py.**Kinetics**.
 *Matplotlib* has plenty of built-in colormaps. In py.**Kinetics**, users can easily access 
 these colormap by colormap code. All available colormap are listed following.
 
+<p align="center">
+<img alt="pykinetics_cmap_1" src="/assets/pyKinetics/cmap_1.png">
+<img alt="pykinetics_cmap_2" src="/assets/pyKinetics/cmap_2.png">
+</p>
 
 ## LICENSE
 py.**Kinetics** is following MIT license. The LICENSE file could be found along with py.**Kinetics** source code.
