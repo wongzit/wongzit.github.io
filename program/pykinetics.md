@@ -171,6 +171,13 @@ supported by matplotlib color system. Users can use all colors and colormap thos
 allowed by matplotlib. For more information, please refer to the **Appendix** and *matplotlib* 
 documents. The default line color is `tab:blue` and default colormap is `plasma`.
 
+<p align="center">
+<img alt="pykinetics_fig_12" src="/assets/pyKinetics/fig12.png">
+<img alt="pykinetics_fig_13" src="/assets/pyKinetics/fig13.png">
+</p>
+
+> Figure 8. Time traces with different line width: 0.5 (top) and 1.5 (bottom)
+
 ## Appendix I Line Color
 
 ### 1. Use color name
