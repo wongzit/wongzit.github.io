@@ -118,8 +118,23 @@ Basic functions in 3D-view window:
 ![](/assets/pyKinetics/decayWaveIcon.png) **Time trace of single wavelength**: Show time trace at a single wavelength in a new 
 window, select the wavelength from the list box.  
 
+<p align="center">
+<img alt="pykinetics_fig_4" src="/assets/pyKinetics/fig4.png">
+<img alt="pykinetics_fig_5" src="/assets/pyKinetics/fig5.png">
+<img alt="pykinetics_fig_6" src="/assets/pyKinetics/fig6.png">
+</p>
+
+> Figure 4. From top: heatmap, 2D transient absorption spectrum, time traces
+
 For 2D transient absorption spectrum and time traces, user can highlight a single 
 curve by the slider at the bottom of the window (Figure 5).
+
+<p align="center">
+<img alt="pykinetics_fig_8" src="/assets/pyKinetics/fig8.png">
+<img alt="pykinetics_fig_7" src="/assets/pyKinetics/fig7.png">
+</p>
+
+> Figure 5. Highlight a single curve using slider
 
 ### 3.3 Exponential Fitting
 
@@ -145,6 +160,12 @@ data line, fitting line and difference line will be showed up. The fitted parame
 also be displayed on the screen (Figure 6). Initial guess of line fitting could be 
 customized from setting panel (Section 3.4).
 
+<p align="center">
+<img alt="pykinetics_fig_9" src="/assets/pyKinetics/fig9.png">
+<img alt="pykinetics_fig_10" src="/assets/pyKinetics/fig10.png">
+</p>
+
+> Figure 6. (Top) Monochromic time trace, (bottom) line fitting window
 
 ### 3.4 The Program Setting Panel
 
