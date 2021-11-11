@@ -201,9 +201,13 @@ documents. The default line color is `tab:blue` and default colormap is `plasma`
 
 ## Appendix I Line Color
 
-### 1. Use color name
+### 1. Use color name colorpalette
 
 *Matplotlib* has several built-in colors, users can use these colors by inputting the color name directly.
+
+<p align="center">
+<img alt="pykinetics_colorpalette" src="/assets/pyKinetics/colorpalette.png">
+</p>
 
 ### 2. Use single character
 
