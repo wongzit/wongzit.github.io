@@ -80,7 +80,8 @@ The main py.**Kinetics** interface is illustrated in Figure 1.
 </p>
 
 It consists of these main components:
-**Open**: Click on this button will bring up an Open file dialog. User can open a .*csv* 
+
+![](/assets/pyKinetics/open_icon.png) **Open**: Click on this button will bring up an Open file dialog. User can open a .*csv* 
 file. The file name would be displayed in the bottom orange bar.  
 **Read**: Plot the data from specified .*csv* file. A .*hdr* file is also needed to read 
 time unit, if the .*hdr* file does not exist, a warning window (Figure 2) will show up and 
@@ -97,6 +98,7 @@ If a multi-wavelength transient absorption data is read, 3D view plot will be di
 new window (Figure 3). If the .csv file is monochromic data, only time trace plot will be displayed (Figure 6, left).
 
 Basic functions in 3D-view window:
+
 **Heatmap**: Show the heatmap in a new window.  
 **TAS**: Show 2D transient absorption spectrum in a new window.  
 **TAS in time trace**: Show time traces in a new window.  
