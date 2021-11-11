@@ -79,6 +79,8 @@ The main py.**Kinetics** interface is illustrated in Figure 1.
 <img alt="pykinetics_fig_1" src="/assets/pyKinetics/fig1.png" style="width:300px;">
 </p>
 
+> Figure 1. Main window of py.**Kinetics**
+
 It consists of these main components:
 
 ![](/assets/pyKinetics/open_icon.png) **Open**: Click on this button will bring up an Open file dialog. User can open a .*csv* 
