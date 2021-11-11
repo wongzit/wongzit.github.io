@@ -228,8 +228,7 @@ to variable type problem, RGB code is not allowed in py.**Kinetics**.
 these colormap by colormap code. All available colormap are listed following.
 
 <p align="center">
-<img alt="pykinetics_cmap_1" src="/assets/pyKinetics/cmap_1.png">
-<img alt="pykinetics_cmap_2" src="/assets/pyKinetics/cmap_2.png">
+<img alt="pykinetics_cmap" src="/assets/pyKinetics/cmap.png">
 </p>
 
 ## LICENSE
