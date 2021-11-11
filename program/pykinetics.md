@@ -75,6 +75,10 @@ If the packaged programs cannot work due to system security problem, please refe
 
 The main py.**Kinetics** interface is illustrated in Figure 1.
 
+<p align="center">
+<img alt="pykinetics_fig_1" src="/assets/pyKinetics/fig1.png" style="height:200px;">
+</p>
+
 It consists of these main components:
 **Open**: Click on this button will bring up an Open file dialog. User can open a .*csv* 
 file. The file name would be displayed in the bottom orange bar.  
