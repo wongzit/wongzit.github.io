@@ -6,6 +6,17 @@ excerpt: pykinetics
 comments: false
 ---
 
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
 <p align = "center">
 <img alt="pykinetics" class="icon" src="/assets/program/pyKinetics_wide.png">
 </p>
@@ -95,7 +106,7 @@ curve by the slider at the bottom of the window (Figure 5).
 
 py.**Kinetics** have 3 built-in exponential fitting model:
 
-**Single exponential decay**:  
+**Single exponential decay**:  $$ y = p_1 + p_3 \times e^{-t/p_4} $$  
 **Second-order exponential decay**:  
 **Third-order exponential decay**:  
 
