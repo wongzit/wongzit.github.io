@@ -97,6 +97,8 @@ recommended. Users do not need to close all active windows before quitting the p
 <img alt="pykinetics_fig_2" src="/assets/pyKinetics/fig2.png" style="width:300px;">
 </p>
 
+> Figure 2. Warning window if .hdr file does not exist
+
 ### 3.2 Working with Transient Absorption Spectrum
 
 If a multi-wavelength transient absorption data is read, 3D view plot will be displayed in a 
@@ -105,6 +107,8 @@ new window (Figure 3). If the .csv file is monochromic data, only time trace plo
 <p align="center">
 <img alt="pykinetics_fig_3" src="/assets/pyKinetics/fig3.png">
 </p>
+
+> Figure 3. 3D view window of a transient absorption spectra data
 
 Basic functions in 3D-view window:
 
@@ -121,15 +125,15 @@ curve by the slider at the bottom of the window (Figure 5).
 
 py.**Kinetics** have 3 built-in exponential fitting model:
 
-**Single exponential decay**:
+**Single exponential decay**: ![](/assets/pyKinetics/fit_icon_1.png)
 
 $$ y = p_1 + p_3 \exp(-t/p_4) $$
 
-**Second-order exponential decay**:
+**Second-order exponential decay**: ![](/assets/pyKinetics/fit_icon_2.png)
 
 $$ y = p_1 + p_3 \exp(-t/p_4) + p_5 \exp(-t/p_5) $$
 
-**Third-order exponential decay**:
+**Third-order exponential decay**: ![](/assets/pyKinetics/fit_icon_3.png)
 
 $$ y = p_1 + p_3 \exp(-t/p_4) + p_5 \exp(-t/p_6) + p_7 \exp(-t/p_8) $$
 
@@ -147,6 +151,12 @@ customized from setting panel (Section 3.4).
 The program setting panel could be accessed from the main window. Users can customize 
 the plot style and initial guess of line fitting (Figure 7). After setting the program 
 parameters, click the “OK” button to save the changed parameters.
+
+<p align="center">
+<img alt="pykinetics_fig_11" src="/assets/pyKinetics/fig11.png">
+</p>
+
+> Figure 7. Setting panel window of py.**Kinetics**
 
 #### 3.4.1 Time Trace Plot Style
 
