@@ -112,15 +112,15 @@ py.**Kinetics** have 3 built-in exponential fitting model:
 
 **Single exponential decay**:
 
-$$ y = p_1 + p_3 \times e^{-t/p_4} $$
+$$ y = p_1 + p_3 \exp(-t/p_4) $$
 
 **Second-order exponential decay**:
 
-$$ y = p_1 + p_3 \times e^{-t/p_4} + p_5 \times e^{-t/p_6} $$
+$$ y = p_1 + p_3 \exp(-t/p_4) + p_5 \exp(-t/p_5) $$
 
 **Third-order exponential decay**:
 
-$$ y = p_1 + p_3 \times e^{-t/p_4} + p_5 \times e^{-t/p_6} + p_7 \times e^{-t/p_8} $$
+$$ y = p_1 + p_3 \exp(-t/p_4) + p_5 \exp(-t/p_6) + p_7 \exp(-t/p_8) $$
 
 In the time trace window, the fitting buttons are displayed at the bottom. To fitting 
 a time trace, first users need to set the fitting region by specify the initial (red) 
