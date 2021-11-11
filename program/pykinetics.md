@@ -76,7 +76,7 @@ If the packaged programs cannot work due to system security problem, please refe
 The main py.**Kinetics** interface is illustrated in Figure 1.
 
 <p align="center">
-<img alt="pykinetics_fig_1" src="/assets/pyKinetics/fig1.png" style="width:200px;">
+<img alt="pykinetics_fig_1" src="/assets/pyKinetics/fig1.png" style="width:300px;">
 </p>
 
 It consists of these main components:
