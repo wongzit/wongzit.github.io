@@ -93,18 +93,25 @@ nanosecond ‘ns’ will be used for the time unit.
 ![](/assets/pyKinetics/quit_icon.png) **Quit**: Terminate the whole program. Quit the py.**Kinetics** by this button is 
 recommended. Users do not need to close all active windows before quitting the py.**Kinetics**.
 
+<p align="center">
+<img alt="pykinetics_fig_2" src="/assets/pyKinetics/fig2.png" style="width:300px;">
+</p>
 
 ### 3.2 Working with Transient Absorption Spectrum
 
 If a multi-wavelength transient absorption data is read, 3D view plot will be displayed in a 
 new window (Figure 3). If the .csv file is monochromic data, only time trace plot will be displayed (Figure 6, left).
 
+<p align="center">
+<img alt="pykinetics_fig_3" src="/assets/pyKinetics/fig3.png">
+</p>
+
 Basic functions in 3D-view window:
 
-**Heatmap**: Show the heatmap in a new window.  
-**TAS**: Show 2D transient absorption spectrum in a new window.  
-**TAS in time trace**: Show time traces in a new window.  
-**Time trace of single wavelength**: Show time trace at a single wavelength in a new 
+![](/assets/pyKinetics/htmp_icon.png) **Heatmap**: Show the heatmap in a new window.  
+![](/assets/pyKinetics/tas_icon.png) **TAS**: Show 2D transient absorption spectrum in a new window.  
+![](/assets/pyKinetics/dec_icon.png) **TAS in time trace**: Show time traces in a new window.  
+![](/assets/pyKinetics/decayWaveIcon.png) **Time trace of single wavelength**: Show time trace at a single wavelength in a new 
 window, select the wavelength from the list box.  
 
 For 2D transient absorption spectrum and time traces, user can highlight a single 
