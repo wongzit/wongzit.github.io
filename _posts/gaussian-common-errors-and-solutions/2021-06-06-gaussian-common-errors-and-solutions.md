@@ -274,6 +274,19 @@ The geometry includes atoms which is not supported by current basis set. For exa
 Use correct basis set.
 
 ```
+ R6DQ: No Q value available for IA=                   0
+ Error termination via Lnk1e in l301.exe
+```
+
+### < Reason >
+
+Ghost atom Bq could not calculated with dispersion correction like `em` keyword and DFT functionals which including dispersion correction like `wb97XD`, `B97D`.
+
+### < Solution >
+When ghost atom is needed in calculations, do not use `em` or `empiricaldispersion` keywords. If DFT functionals like `wb97XD` must be used, include `IOp(3/124)=4` 
+keyword to force the program not use dispersion correction.
+
+```
 Standard basis: 6-31G(d) (6D, 7F)
 Ernie: Thresh= 0.10000D-02 Tol=  0.10000D-05 Strict=F.
 The combination of multiplicity 1 and     1 electrons is impossible.
