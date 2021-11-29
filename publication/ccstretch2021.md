@@ -19,6 +19,8 @@ comments: false
 Localised singlet cyclopentane-1,3-diyl diradicaloids have been considered promising candidates for constructing carbon–carbon π-single bonds (C–π–C). However, its high reactivity during formation of the σ-bond has limited a deeper investigation of its unique chemical properties. In this feature article, recent progress in kinetic stabilisation based on the “stretch effect” and the “solvent dynamic effect” induced by the macrocyclic system is summarised. Singlet diradicaloids S-DR4a/b and S-DR4d containing macrocyclic rings showed much longer lifetime at 293 K (14 μs for S-DR4a and 156 μs for S-DR4b in benzene) compared to the parent singlet diradicaloid S-DR2 having no macrocyclic ring (209 ns in benzene). Furthermore, the dynamic solvent effect in viscous solvents was observed for the first time in intramolecular σ-bond formation, the lifetime of S-DR4d increased to 400 μs in viscous solvent glycerin triacetin at 293 K). The experimental results proved the validity of the “stretch effect” and the “solvent dynamic effect” on the kinetic stabilisation of singlet cyclopentane-1,3-diyl diradicaloids, and provided a strategy for isolating the carbon–carbon π-single bonded species (C–π–C), and toward a deeper understanding of the nature of chemical bonding.
 </p>
 
+**Press Release:** [https://www.hiroshima-u.ac.jp/news/67783](https://www.hiroshima-u.ac.jp/news/67783), [https://www.hiroshima-u.ac.jp/sci/news/67798](https://www.hiroshima-u.ac.jp/sci/news/67798)
+
 <p align = "center">
 <a href="https://doi.org/10.1039/d1cc04581d"> <img src = '/assets/journal/cc_logo.png' alt = 'cc_logo' style="height:80px"></a>
 </p>
