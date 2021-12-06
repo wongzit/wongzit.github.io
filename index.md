@@ -31,7 +31,9 @@ Hello, I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, stu
 
 ## useful links 🌏
 
+<!--
 [**Old Version**](https://www.wangzhe95.net/) of my personal homepage.
+-->
 
 [**WebPlotDigitizer**](https://automeris.io/WebPlotDigitizer/) Web based tool to extract data from plots, images, and maps.
 
