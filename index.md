@@ -19,9 +19,9 @@ Hello, I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, stu
 <a href="https://www.researchgate.net/profile/Zhe-Wang-84"> <img alt="researchgate" class="icon" src="./assets/img/researchgate.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>ResearchGate</b> Zhe Wang</a>
 
 <a href="https://github.com/wongzit"> <img alt="github" class="icon" src="./assets/img/GitHub-Mark-120px-plus.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>GitHub</b> wongzit</a>
-
+<!--
 <a href="https://www.instagram.com/tetsu_____/"> <img alt="instagram" class="icon" src="./assets/img/Instagram_logo_2016.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>Instagram</b> tetsu_____</a>
-
+-->
 <a href="https://twitter.com/oooooootetsu"> <img alt="twitter" class="icon" src="./assets/img/738px-Twitter_bird_logo_2012.png" style="width:20px; height:16px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>Twitter</b> @oooooootetsu</a>
 
 ✉️&ensp;&ensp;[**Mail to**](wongzit@yahoo.co.jp) wongzit[at]yahoo.co.jp
