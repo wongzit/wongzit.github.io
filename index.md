@@ -5,9 +5,7 @@ layout: default
 
 ## about me 🤖
 
-Hello, I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, studying 👨🏻‍🔬 **organic chemistry**. I was born in [**Qingdao, P.R.China**](https://en.wikipedia.org/wiki/Qingdao) 🇨🇳, and now living in 📍 [**Hiroshima, Japan**](https://en.wikipedia.org/wiki/Higashihiroshima) 🇯🇵.
-
-I also do some 👨🏻‍💻 **programming**, I will post my publications, programs and some blogs (sometime for memo) on this website.
+Hello, I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, studying 👨🏻‍🔬 **organic chemistry**. I was born in [**Qingdao, P.R.China**](https://en.wikipedia.org/wiki/Qingdao) 🇨🇳, and now living in 📍 [**Hiroshima, Japan**](https://en.wikipedia.org/wiki/Higashihiroshima) 🇯🇵. My research focuses on the kinetic stabilization of localized 1,3-diraricals.
 
 <br />
 <br />
