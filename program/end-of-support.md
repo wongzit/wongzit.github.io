@@ -12,7 +12,7 @@ comments: false
 <a href="https://github.com/wongzit/ICSSgen"> <img alt="icssgen" class="icon" src="/assets/program/ICSSgen_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- A Python program of **input file generator for 2D-ICSS (2D-NICS) calculations**, released on **19th April 2021**.
+- A Python program of **input file generator for 2D-ICSS (2D-NICS) calculations**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/ICSSgen).
 
@@ -20,7 +20,7 @@ comments: false
 <a href="https://github.com/wongzit/ICSScsv"> <img alt="icsscsv" class="icon" src="/assets/program/ICSScsv_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- A Python program of **extracting magnetic shielding tensors from 2D-ICSS (2D-NICS) calculation outputs**, released on **23rd April 2021**.
+- A Python program of **extracting magnetic shielding tensors from 2D-ICSS (2D-NICS) calculation outputs**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/ICSScsv).
 
@@ -28,7 +28,7 @@ comments: false
 <a href="https://github.com/wongzit/NICSgen"> <img alt="nicsgen" class="icon" src="/assets/program/NICSgen_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- A Python program of **input file generator for NICS calculations**, released on **25th April 2021**.
+- A Python program of **input file generator for NICS calculations**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/NICSgen).
 
@@ -36,7 +36,7 @@ comments: false
 <a href="https://github.com/wongzit/HOMAcalc"> <img alt="homacalc" class="icon" src="/assets/program/HOMAcalc_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- A Python program of **HOMA value calculator**, released on **25th May 2021**.
+- A Python program of **HOMA value calculator**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/HOMAcalc).
 
@@ -44,7 +44,7 @@ comments: false
 <a href="https://github.com/wongzit/ICSSgen3D"> <img alt="icssgen3d" class="icon" src="/assets/program/ICSSgen3D_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- A Python program of **input file generator for 3D-ICSS calculations**, released on **6th June 2021**.
+- A Python program of **input file generator for 3D-ICSS calculations**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/ICSSgen3D).
 
@@ -52,7 +52,7 @@ comments: false
 <a href="https://github.com/wongzit/ICSScub3D"> <img alt="icsscub3d" class="icon" src="/assets/program/ICSScub3D_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- A Python program of **extracting magnetic shielding tensors from 3D-ICSS calculation outputs**, released on **6th June 2021**.
+- A Python program of **extracting magnetic shielding tensors from 3D-ICSS calculation outputs**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/ICSScub3D).
 
