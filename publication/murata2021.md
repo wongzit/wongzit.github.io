@@ -19,7 +19,7 @@ Ryo Murata, <u>Zhe Wang</u>, Yuki Miyazawa, Ivana Antol\*, Shigeru Yamago, Manab
 In this study, the SOMO–HOMO conversion has been shown for the first time in triplet carbenes embedded in cycloparaphenylene units. The high-lying HOMO originating from the curved π-conjugated system and the low-lying SOMO–1 originating due to the small carbene angle are the key to endowing this interesting electronic configuration. Furthermore, simple planar triplet carbenes such as fluorenylidene were found to possess SOMO–HOMO energy-converted electronic configurations.
 </p>
 
-**Press Release:** [https://www.hiroshima-u.ac.jp/news/65243](https://www.hiroshima-u.ac.jp/news/65243), [https://www.hiroshima-u.ac.jp/sci/news/65261](https://www.hiroshima-u.ac.jp/sci/news/65261)
+**Press Release:** [In Japanese](https://www.hiroshima-u.ac.jp/news/65243)
 
 <p align = "center">
 <a href="https://doi.org/10.1021/acs.orglett.1c01137"> <img src = '/assets/journal/ol_logo.png' alt = 'ol_logo' style="height:80px"></a>
