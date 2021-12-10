@@ -9,12 +9,15 @@ comments: false
 ## education 🏫
 
 - 2019.10 ~ now [**Hiroshima University**](https://www.hiroshima-u.ac.jp) (*Ph.D.* Student)
+
 **Graduate School of Science, Department of Chemistry,** Advisor: *Prof. Dr.* Manabu Abe
 
 - 2017.10 ~ 2019.09 [**Hiroshima University**](https://www.hiroshima-u.ac.jp) (*M.Sc.*)
+
 **Graduate School of Science, Department of Chemistry,** Advisor: *Prof. Dr.* Manabu Abe
 
 - 2013.09 ~ 2017.06 [**China University of Petroleum, East China**](http://www.upc.edu.cn) (*B.Eng.*)
+
 **Faculty of Chemical Engineering, Department of Chemical Engineering and Technology,** Advisor: *Prof. Dr.* Huie Liu
 
 ## language 🗣
