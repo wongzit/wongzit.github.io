@@ -25,5 +25,5 @@ comments: false
 - [**Japan Society of Theoretical Chemistry**](https://www.rkk-web.jp) (from 2020.08.21)
 
 <p align="center">
-<a img alt="jacs" class="img" src="/assets/img/53_avatar_middle.jpg"></a>
+<a> <img src="/assets/img/53_avatar_middle.jpg" alt = 'jacs'></a>
 </p>
