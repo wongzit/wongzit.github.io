@@ -23,3 +23,7 @@ comments: false
 - [**The Chemical Society of Japan**](https://www.chemistry.or.jp) (from 2018.04.01)
 - [**The Society of Pyhsical Organic Chemistry, Japan**](http://jpoc.ac) (from 2019.05.23)
 - [**Japan Society of Theoretical Chemistry**](https://www.rkk-web.jp) (from 2020.08.21)
+
+<p align="center">
+<a img alt="jacs" class="img" src="/assets/img/53_avatar_middle.jpg"></a>
+</p>
