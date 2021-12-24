@@ -5,7 +5,7 @@ layout: default
 
 ## about me 🤖
 
-Hello, I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, studying 👨🏻‍🔬 **organic chemistry**. I was born in [**Qingdao, P.R.China**](https://en.wikipedia.org/wiki/Qingdao) 🇨🇳, and now living in 📍 [**Hiroshima, Japan**](https://en.wikipedia.org/wiki/Higashihiroshima) 🇯🇵. My current research focuses on the kinetic stabilization of localized 1,3-diraricals.
+Hello, I am a 👨🏻‍🎓 **Ph.D. student** from **Hiroshima University**, studying 👨🏻‍🔬 **organic chemistry**. I was born in [**Qingdao, P.R.China**](https://en.wikipedia.org/wiki/Qingdao) 🇨🇳, and now living in 📍 [**Hiroshima, Japan**](https://en.wikipedia.org/wiki/Higashihiroshima) 🇯🇵. My current research focuses on the kinetic stabilization of localized singlet 1,3-diraricaloids.
 
 <br />
 <br />
@@ -20,9 +20,7 @@ Hello, I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, stu
 
 <a href="https://github.com/wongzit"> <img alt="github" class="icon" src="./assets/img/GitHub-Mark-120px-plus.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>GitHub</b> wongzit</a>
 
-<!--
 <a href="https://www.instagram.com/tetsu_____/"> <img alt="instagram" class="icon" src="./assets/img/Instagram_logo_2016.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>Instagram</b> tetsu_____</a>
--->
 
 <a href="https://twitter.com/oooooootetsu"> <img alt="twitter" class="icon" src="./assets/img/738px-Twitter_bird_logo_2012.png" style="width:20px; height:16px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>Twitter</b> @oooooootetsu</a>
 
@@ -37,7 +35,7 @@ Hello, I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, stu
 [**Old Version**](https://www.wangzhe95.net/) of my personal homepage.
 -->
 
-[**WebPlotDigitizer**](https://automeris.io/WebPlotDigitizer/) Web based tool to extract data from plots, images, and maps.
+[**WebPlotDigitizer**](https://automeris.io/WebPlotDigitizer/): Web based tool to extract data from plots, images, and maps.
 
 [**Unit Conversion & Calculation**](https://ha2.seikyou.ne.jp/home/Takehito.Senga/geocity/unitconversion.html#Photon): Java script for unit conversion.
 
@@ -53,3 +51,4 @@ Hello, I am a 👨🏻‍🎓 **PhD student** from **Hiroshima University**, stu
 <br />
 
 > Unless we change directions, we will end up where we are headed.   -- Confucius
+

@@ -14,6 +14,8 @@ comments: false
 
 - 2013.09 ~ 2017.06: *B.Eng.* in Chemical Engineering, [**China University of Petroleum (East China)**](http://www.upc.edu.cn) , *Prof. Dr.* Huie Liu
 
+- 2010.09 ~ 2013.06: **Shandong Jiaozhou No.1 High School**, @Qingdao
+
 ## language 🗣
 - 🇨🇳🇹🇼 Chinese, 🇺🇸 English, 🇯🇵 Japanese
 - 💻 C, C++, Python, Swift, Shell
