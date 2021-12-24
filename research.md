@@ -6,6 +6,8 @@ excerpt: research
 comments: false
 ---
 
+> Research keywords: Physical organic chemistry, Organic synthesis, Computational chemistry, Photochemistry, Open-shell species
+
 ## Kinetic Stabilization of Singlet Cyclopentane-1,3-diyl Diradicals
 
 <p align = "justify">
