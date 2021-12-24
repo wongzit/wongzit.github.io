@@ -6,9 +6,15 @@ excerpt: publication
 comments: false
 ---
 
-> [2021](https://wongzit.github.io/publication/#2021)&emsp;&emsp;[2018](https://wongzit.github.io/publication/#2018)  
+> [2022](https://wongzit.github.io/publication/#2022)&emsp;&emsp;[2021](https://wongzit.github.io/publication/#2021)&emsp;&emsp;[2018](https://wongzit.github.io/publication/#2018)  
 > [Articles](https://wongzit.github.io/publication/article/)&ensp;[Reviews](https://wongzit.github.io/publication/review/)
 
+<!--
+# 2022
+
+8.[ **Impacts of Solvent and Alkyl Chain Length on the Lifetime of Singlet Cyclopentane-1,3-diyl Diradicaloids with π-Single Bonding**](https://wongzit.github.io/publication/liu2022/)
+Q. Liu, <u>Z. Wang</u>, M. Abe\*. *J. Org. Chem.*, **2022**, *accepted manuscript*.
+-->
 
 # 2021
 
