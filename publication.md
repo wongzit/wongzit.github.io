@@ -11,7 +11,7 @@ comments: false
 
 # 2022
 
-8.[ **Impacts of Solvent and Alkyl Chain Length on the Lifetime of Singlet Cyclopentane-1,3-diyl Diradicaloids with π-single Bonding**](https://wongzit.github.io/publication/liu2022/)  
+8.[ **Impacts of Solvent and Alkyl Chain Length on the Lifetime of Singlet Cyclopentane-1,3-diyl Diradicaloids with π-Single Bonding**](https://wongzit.github.io/publication/liu2022/)  
 Q. Liu, <u>Z. Wang</u>, M. Abe\*, *J. Org. Chem.*, **2022**, *accepted manuscript*.
 
 # 2021
