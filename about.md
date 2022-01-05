@@ -8,8 +8,6 @@ comments: false
 
 ## education 🏫
 
-- 2010.09 ~ 2013.06: **Shandong Jiaozhou No.1 High School**, @Qingdao
-
 - 2013.09 ~ 2017.06: *B.Eng.* in Chemical Engineering, [**China University of Petroleum (East China)**](http://www.upc.edu.cn) , *Prof. Dr.* Huie Liu
 
 - 2017.10 ~ 2019.09: *M.Sc.* in Chemistry, [**Hiroshima University**](https://www.hiroshima-u.ac.jp) , *Prof. Dr.* Manabu Abe
