@@ -21,5 +21,5 @@ R. Murata, <u>Z. Wang</u>, Y. Miyazawa, I. Antol\*, S. Yamago, M. Abe\*, *Org. L
 5.[ **SOMO-HOMO Conversion in Triplet Cyclopentane-1,3-diyl Diradicals**](https://wongzit.github.io/publication/shc2021/)  
 <u>Z. Wang</u>, R. Murata, M. Abe\*, *ACS Omega*, **2021**, *6*(*35*), 22773–22779.
 
-6.[ **Impacts of Solvent and Alkyl Chain Length on the Lifetime of Singlet Cyclopentane-1,3-diyl Diradicaloids with π-Single Bonding**]()
+6.[ **Impacts of Solvent and Alkyl Chain Length on the Lifetime of Singlet Cyclopentane-1,3-diyl Diradicaloids with π-Single Bonding**]()  
 Q. Liu, <u>Z. Wang</u>, M. Abe\*, *J. Org. Chem.*, **2022**, *accepted manuscript*.
