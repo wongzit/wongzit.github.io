@@ -45,6 +45,8 @@ Hello, I am a 👨🏻‍🎓 **Ph.D. student** from **Hiroshima University**, s
 
 [**CHESHIRE**](http://cheshirenmr.info): Computed NMR scaling factors.
 
+[**Online Molecular Viewer**](https://liwt31.github.io/2022/01/02/online_viewer/) based on XYZ coordinates.
+
 [**Maze Generator**](https://www.mazegenerator.net): A maze generator.
 
 <br />
