@@ -14,7 +14,7 @@ comments: false
 <a href="https://github.com/wongzit/EnePro"> <img alt="enepro" class="icon" src="/assets/program/EnePro_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- **Generating energy profiles**.
+- **Creating energy profile from a simple Excel file**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/EnePro).
 
@@ -46,7 +46,7 @@ comments: false
 <a href="https://wongzit.github.io/program/pyaroma/"> <img alt="pyaroma" class="icon" src="/assets/program/pyAroma_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- **An aromaticity analyzer**.
+- **A multi-functional aromaticity analyzing tool**.
 - Supports **macOS**, **Linux** and **Microsoft Windows**.
 - User manual, source code and executable files are free available from [*GitHub*](https://github.com/wongzit/pyAroma).
 
@@ -63,7 +63,7 @@ comments: false
 <a href="https://wongzit.github.io/program/pykinetics/"> <img alt="pykinetics" class="icon" src="/assets/program/pyKinetics_icon.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
-- **Kinetics analyzing tool**.
+- **Kinetics analyzer, designed for UNISOKU S&K for Mac**.
 - Supports **macOS**.
 - Source code is free available from [*GitHub*](https://github.com/wongzit/pyKinetics).
 
