@@ -17,7 +17,7 @@ comments: false
 ## Abstract
 
 <p align = "center">
-<a href="https://doi.org/10.1039/d0sc05311b"> <img src = '/assets/journal/stretch2021.jpeg' alt = 'stretch2021' style="height:80px"></a>
+<a href="https://doi.org/10.1039/d0sc05311b"> <img src = '/assets/toc/stretch2021.png' alt = 'stretch2021' style="height:80px"></a>
 </p>
 
 <p align = "justify">
