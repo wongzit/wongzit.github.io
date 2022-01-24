@@ -67,6 +67,14 @@ comments: false
 - Supports **macOS**.
 - Source code is free available from [*GitHub*](https://github.com/wongzit/pyKinetics).
 
+<p align="left">
+<a href="https://wongzit.github.io/program/tmcalc/"> <img alt="tmcalc" class="icon" src="/assets/program/TmCalc_icon.png" style="height:86px; background-color:transparent;"></a>
+</p>
+
+- **Melting temperature calculator**.
+- Supports **macOS** and **Microsoft Windows**.
+- Source code is free available from [*GitHub*](https://github.com/wongzit/TmCalc).
+
 <br />
 
 ## minor scripts 🛠
