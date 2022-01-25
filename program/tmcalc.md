@@ -6,31 +6,73 @@ excerpt: tmcalc
 comments: false
 ---
 
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
- MathJax.Hub.Config({
- tex2jax: {
- inlineMath: [['$', '$'] ],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
- }
- });
-</script>
-
 <p align = "center">
 <img alt="tmcalc_wide" class="icon" src="/assets/program/TmCalc_wide.png">
 </p>
 
-Latest version: **1.0.0**, updated at 2022-01-23
+Latest version: **1.0.1**, updated at 2022-01-25
 
-## 1. Overview
+## Usage
 
-### 1.1 About Tm.Calc
+Input sequences separated by comma (','), and press ENTER key.
 
+```
+Input menu number to modify concentration, or input primer sequences:
+e.g.: ATCGGACTAGACGAT,AGGGTCTTACAGAGCT,GGGCTTTAGAATAGA
+>>> (User input) ATCGGACTAGACGAT,AGGGTCTTACAGAGCT
+```
 
+The GC% and Tm calculated with Nearest neighbor, Wallace and GC% methods would be displayed as following:
+```
+Sequence: ATCGGACTAGACGAT
+GC = 46.7%, Length = 15
+---------- Melting Temperature ----------
+      Nearest Neighbor Method: 46.4
+               Wallace Method: 44.0
+                   GC% Method: 45.7
+
+Sequence: AGGGTCTTACAGAGCT
+GC = 50.0%, Length = 16
+---------- Melting Temperature ----------
+      Nearest Neighbor Method: 48.3
+               Wallace Method: 48.0
+                   GC% Method: 49.2
+```
+
+## Modify Parameters
+
+The default concentrations are 50 mM of salt and 500 nM of primer. 
+Users can modify these concentration by input menu number at first.
+
+```
+===================================
+       Concentration Setting       
+-----------------------------------
+   1 - Salt conc. = 50 mM             <<<--- Default concentration of salt
+   2 - Primer conc. = 500 nM          <<<--- Default concentration of primer
+===================================
+Input menu number to modify concentration, or input primer sequences:
+e.g.: ATCGGACTAGACGAT,AGGGTCTTACAGAGCT,GGGCTTTAGAATAGA
+1       <<<--- Modify the salt concentration
+Input the concentration of salt, in mM:60       <<<--- Input the salt concentration
+
+===================================
+       Concentration Setting       
+-----------------------------------
+   1 - Salt conc. = 60.0 mM           <<<--- Modified concentration of salt
+   2 - Primer conc. = 500 nM
+===================================
+Input menu number to modify concentration, or input primer sequences:
+e.g.: ATCGGACTAGACGAT,AGGGTCTTACAGAGCT,GGGCTTTAGAATAGA
+
+```
+
+## Download
+
+Executable file for **macOS** could be download from [here](https://wongzit.github.io/program/TmCalc).
 
 ## LICENSE
-Tm.**Calc** is following MIT license.
+Tm.**Calc** is following MIT license. The LICENSE file could be found along with Tm.**Calc** source code.
 
 ```
 MIT License
