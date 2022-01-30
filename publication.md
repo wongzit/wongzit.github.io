@@ -11,10 +11,13 @@ comments: false
 
 # 2022
 
-8.[ **Impacts of Solvent and Alkyl Chain Length on the Lifetime of Singlet Cyclopentane-1,3-diyl Diradicaloids with π-Single Bonding**](https://wongzit.github.io/publication/liu2022/)  
+9.[ **Impacts of Solvent and Alkyl Chain Length on the Lifetime of Singlet Cyclopentane-1,3-diyl Diradicaloids with π-Single Bonding**](https://wongzit.github.io/publication/liu2022/)  
 Q. Liu, <u>Z. Wang</u>, M. Abe\*, *J. Org. Chem.*, **2022**, DOI: 10.1021/acs.joc.1c02895.
 
 # 2021
+
+8.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **New Insights into Bond Homolysis Process and Discovery of Novel Bonding System (C–π–C)**](https://wongzit.github.io/publication/acm2021/)  
+M. Abe\*, <u>Z. Wang</u>, R. Akisaka. *AsiaChem*, **2021**, *2*(*1*), 32–41.
 
 7.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **Singly Occupied Molecular Orbital–Highest Occupied Molecular Orbital (SOMO–HOMO) Conversion**](https://wongzit.github.io/publication/ajc2021/)  
 R. Murata, <u>Z. Wang</u>, M. Abe\*. *Aust. J. Chem.*, **2021**, *74*(*12*), 827–837.
