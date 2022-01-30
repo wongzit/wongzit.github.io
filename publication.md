@@ -17,10 +17,10 @@ Q. Liu, <u>Z. Wang</u>, M. Abe\*, *J. Org. Chem.*, **2022**, DOI: 10.1021/acs.jo
 # 2021
 
 8.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **New Insights into Bond Homolysis Process and Discovery of Novel Bonding System (C–π–C)**](https://wongzit.github.io/publication/acm2021/)  
-M. Abe\*, <u>Z. Wang</u>, R. Akisaka. *AsiaChem*, **2021**, *2*(*1*), 32–41.
+M. Abe\*, <u>Z. Wang</u>, R. Akisaka, *AsiaChem*, **2021**, *2*(*1*), 32–41.
 
 7.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **Singly Occupied Molecular Orbital–Highest Occupied Molecular Orbital (SOMO–HOMO) Conversion**](https://wongzit.github.io/publication/ajc2021/)  
-R. Murata, <u>Z. Wang</u>, M. Abe\*. *Aust. J. Chem.*, **2021**, *74*(*12*), 827–837.
+R. Murata, <u>Z. Wang</u>, M. Abe\*, *Aust. J. Chem.*, **2021**, *74*(*12*), 827–837.
 
 6.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **Long-lived Localised Singlet Diradicaloids with Carbon–Carbon π-Single Bonding (C–π–C)**](https://wongzit.github.io/publication/ccstretch2021/)  
 <u>Z. Wang</u>, P. Yadav, M. Abe\*, *Chem. Commun.*, **2021**, *57*(*86*), 11301–11309.
