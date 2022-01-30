@@ -16,7 +16,7 @@ Q. Liu, <u>Z. Wang</u>, M. Abe\*, *J. Org. Chem.*, **2022**, DOI: 10.1021/acs.jo
 
 # 2021
 
-8.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **New Insights into Bond Homolysis Process and Discovery of Novel Bonding System (C–π–C)**](https://wongzit.github.io/publication/acm2021/)  
+8.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **New Insights into Bond Homolysis Process and Discovery of Novel Bonding System (C–π–C) by Generating Long-lived Singlet Diradicals**](https://wongzit.github.io/publication/acm2021/)  
 M. Abe\*, <u>Z. Wang</u>, R. Akisaka, *AsiaChem*, **2021**, *2*(*1*), 32–41.
 
 7.&ensp;![](https://img.shields.io/badge/-Review-9cf?style=flat-square)&ensp;[ **Singly Occupied Molecular Orbital–Highest Occupied Molecular Orbital (SOMO–HOMO) Conversion**](https://wongzit.github.io/publication/ajc2021/)  
