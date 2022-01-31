@@ -72,7 +72,7 @@ comments: false
 </p>
 
 - **Melting temperature calculator**.
-- Supports **macOS** and **Microsoft Windows**.
+- Supports **macOS**.
 - Source code is free available from [*GitHub*](https://github.com/wongzit/TmCalc).
 
 <br />
