@@ -79,18 +79,18 @@ comments: false
 
 ## minor scripts 🛠
 
-> All scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
+> Following scripts could be downloaded from [*GitHub*](https://github.com/wongzit/minorScripts).
 
 - **xyz2cml** is a Python script for converting .xyz file to .cml file.
 - **RunGJF** is a Bash Shell script for running Gaussian jobs automatically.
 - **gimicInp** is a Python / Bash shell script for generating GIMIC input file.
 - **pdb2xyz** is a Python script for converting .pdb file to .xyz file.
 - **pdb2gjf** is a Python script for creating .gjf file from .pdb file.
+- **int.Scan** is a Python code kit for generating intermolecular rigid scan input files. Source code could be found [here](https://github.com/wongzit/intScan).
 
 <br />
 
-<!---
 ## end of support ⛔
 
 Check the [programs](https://wongzit.github.io/program/end-of-support) those end of support
--->
+
