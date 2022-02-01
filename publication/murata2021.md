@@ -1,5 +1,5 @@
 ---
-title: "SOMO-HOMO Conversion in Triplet Carbenes"
+title: "SOMO–HOMO Conversion in Triplet Carbenes"
 permalink: /publication/murata2021/
 layout: page
 excerpt: murata2021
