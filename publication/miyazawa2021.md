@@ -1,5 +1,5 @@
 ---
-title: "1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet and In-plane Aromaticity"
+title: "1,3-Diradicals Embedded in Curved Paraphenylene Units: Singlet versus Triplet State and In-plane Aromaticity"
 permalink: /publication/miyazawa2021/
 layout: page
 excerpt: miyazawa2021
@@ -8,7 +8,7 @@ comments: false
 
 Yuki Miyazawa, <u>Zhe Wang</u>, Misaki Matsumoto, Sayaka Hatano, Ivana Antol\*, Eiichi Kayahara, Shigeru Yamago\*, Manabu Abe\*, *Journal of the American Chemical Society*, **2021**, *143*(*19*), 7426–7439.&ensp;![](https://img.shields.io/badge/doi-10.1021%2Fjacs.1c01329-blue?style=flat-square)
 <p align = "right">
-<b>Submitted</b> 3rd Feb. 2021, <b>Accepted</b> 26th Apr. 2021
+<b>Submitted</b> 3rd Feb. 2021, <b>Published</b> 26th Apr. 2021
 </p>
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
