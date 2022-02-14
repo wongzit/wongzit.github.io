@@ -58,7 +58,7 @@ please make sure all of these *lib* are installed on your computer before runnin
 
 #### 2.2.1 Use Pre-packaged Executable File
 
-Executable file for macOS is pre-packaged. Download the executable file from [here](https://drive.google.com/file/d/1CnbJNQixZVmg1Vwqj_ugE8FcYVtoYuWp/view?usp=sharing) and save it in the `/Applications` 
+Executable file for macOS is pre-packaged. Download the executable file from [here](https://drive.google.com/file/d/1Xog0z_sVIo2iDa9iQV3b-HGQ-FvKBPe7/view?usp=sharing) and save it in the `/Applications` 
 folder, and you can run py.**Kinetics** from Launchpad.
 
 #### 2.2.2 Common Issues
