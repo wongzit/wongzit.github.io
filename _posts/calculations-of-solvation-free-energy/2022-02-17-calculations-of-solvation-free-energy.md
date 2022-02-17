@@ -118,3 +118,42 @@ About the geometry optimization, normally, use the optimized geometry at gas pha
 **Solute free energy (298.15 K, 1 M) in solution = Solute free energy (1 atm) at gas phase + Solvation Free Energy + 1.89 kcal/mol**
 
 The value of *1.89 kcal/mol* is the free energy change from 1 atm in gas phase to 1 M in solution phase.
+
+# Calculation Procedure
+
+
+A general procedure for calculation of solute free energy (in ethanol):
+```
+%chk=test.chk
+#p opt freq b3lyp/6-311g(d) em=gd3bj scrf=(smd,solvent=ethanol)
+
+[Geometry]
+
+--Link1--
+%oldche=test.chk
+#p b2plypd3/def2tzvp geom=allcheck
+
+--Link1--
+%oldchk=test.chk
+#p m052x/6-31g(d) geom=allcheck
+
+--Link1--
+%oldchk=test.chk
+#p m052x/6-31g(d) scrf=(smd,solvent=ethanol) geom=allcheck
+
+```
+
+In the first job, we could get the free energy in ethanol (in gas phase is also okay):
+```
+Thermal correction to Gibbs Free Energy=         (A)
+```
+
+In the second job, we could get the electroinc energy at high calculation level. In this example, the doubly 
+hybrid density functional is used, the electronic energy should be read from the archive part of output file, 
+marked with `|MP2=(B)|`, rather than reading from the Summary window in GaussView, since the later one is wrong.
+
+In the third job, we could get the electronic energy `SCF Done:  E(RM052X) =  (C)` at gas phase.
+
+In the forth job, we could get the electronic energy `SCF Done:  E(RM052X) =  (D)`at solution phase.
+
+So, the solvation free energy is `(D) - (C)`, solute free energy is `(B) + (A) + (D) - (C) + 1.89 kcal/mol`.
