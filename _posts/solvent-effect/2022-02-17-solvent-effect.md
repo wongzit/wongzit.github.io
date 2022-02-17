@@ -7,7 +7,7 @@ categories: computation
 
 # General
 
-For implicit solvation model, the solvent effect can be divided into polar and non-polar parts. The 
+For implicit solvation model, the solvent effect can be divided into **polar** and **non-polar** parts. The 
 polar part reflects the electrostatic interaction between solvent and solute molecules, and also includes 
 the polarization of the solvent on the electron distribution of the solute, which is the main body of 
 the implicit solvent model. The non-polar part is relatively minor, reflectin various non-electrostatic 
@@ -97,7 +97,24 @@ ElectronegativeHalogenicity=g
 
 `SurfaceTensionAtInterface` is the surface tension of solvent, in unit of *cal/mol/Å^2*. `CarbonAromaticity` is the number of aromatic carbon atoms as a percentage of the number of all carbon atoms. `ElectronegativeHalogenicity` is the number of halogen atoms as a percentage of the number of all non-hydrogen atoms. `HBondAcidity` and `HBondBasicity` are Abraham acidity and basicity.
 
+
 If it is hard to find all the parameters for a new solvent, it is a good choice to use a built-in solvent which 
 has similar properties with those of target solvent (e.g., hexane and heptane), and define the `eps` and 
 `epsinf` only.
 
+# Calculation of Solvation Free Energy
+
+**Solvation free energy = Single point energy with solvation model - Single point energy at gas phase**
+
+From the original paper of *SMD* model, the best calculaion level is **M052x/6-31g(d)**. Even for the anion, 
+use **6-31g(d)** rather than **6-31+g(d)**. Since the **M062x** is similar to **M052x** and both of them have 
+same HF components, so, the **M062x/6-31g(d)** should also okay for calculations of solvation free energy.
+
+About the geometry optimization, normally, use the optimized geometry at gas phase should be enough.
+
+
+# Calculation of Solute Free Energy
+
+**Solute free energy (298.15 K, 1 M) in solution = Solute free energy (1 atm) at gas phase + Solvation Free Energy + 1.89 kcal/mol**
+
+The value of *1.89 kcal/mol* is the free energy change from 1 atm in gas phase to 1 M in solution phase.
