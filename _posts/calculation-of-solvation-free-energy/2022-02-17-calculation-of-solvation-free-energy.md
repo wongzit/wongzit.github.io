@@ -149,8 +149,8 @@ Thermal correction to Gibbs Free Energy=         (A)
 ```
 
 In the second job, we could get the electroinc energy at high calculation level. In this example, the doubly 
-hybrid density functional is used, the electronic energy should be read from the archive part of output file, 
-marked with `|MP2=(B)|`, rather than reading from the Summary window in GaussView, since the later one is wrong.
+hybrid density functional (DHDFT) is used, the electronic energy should be read from the archive part of output file, 
+marked with `|MP2=(B)|`, rather than reading from the Summary window in GaussView, since the later one is wrong. This calculation maybe faster in ORCA than Gaussian. For the molecules with more than 50 atoms, M062x is a better choice than DHDFT.
 
 In the third job, we could get the electronic energy `SCF Done:  E(RM052X) =  (C)` at gas phase.
 
