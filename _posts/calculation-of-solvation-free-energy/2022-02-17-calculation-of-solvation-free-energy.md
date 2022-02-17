@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Calculations of Solvation Free Energy"
+title:  "Calculation of Solvation Free Energy"
 date:   2022-02-17 10:07:28 +0900
 categories: computation
 ---
