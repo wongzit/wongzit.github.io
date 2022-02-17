@@ -1,0 +1,103 @@
+---
+layout: post
+title:  "Solvent Effect"
+date:   2022-02-17 10:07:28 +0900
+categories: computation
+---
+
+# General
+
+For implicit solvation model, the solvent effect can be divided into polar and non-polar parts. The 
+polar part reflects the electrostatic interaction between solvent and solute molecules, and also includes 
+the polarization of the solvent on the electron distribution of the solute, which is the main body of 
+the implicit solvent model. The non-polar part is relatively minor, reflectin various non-electrostatic 
+nteractions betwen solvent and solute molecues, with more complex components. Only whtn the non-polar 
+part is also considered can the solvent free energy be calculated quantitatively and accurately.
+*PCM*, *CPCM*, *IPCM*, *COSMO* only define how to calculate the polar part of solvent effect, but the non-polar 
+part is not clearly given in the solvation model. In contrast, the *SMD* and *SMx* series clearly define how 
+to calculate the non-polar part and specifically fit the parameters under different calculation levels.
+
+# Implicit Solvation Model in Gaussian
+
+## Default: IEFPCM
+
+When use *IEFPCM* directly in Gaussian 16, the non-polar part is not calculate by default. To calculate the 
+non-polar part, you have to write `read` in `scrf` keyword and write a blank line at the end of the coordinates 
+and add following lines to the end of input file:
+
+```
+Dis
+Rep
+Cav
+```
+This means that the values of the non-polar part of the solvent effect are calculated and included in 
+the calculated single point energy.
+
+***If there are no special reason, it is always recommended to use SMD solvation model. If optimization does not
+converged with SMD model, try the optimization with IEFPCM model and calculated the single point energy with 
+SMD model.***
+
+## Use of Built-in Solvent
+
+Gaussian includes following built-in solvent when use `scrf=solvent=x`:
+
+```
+water (H2O)
+acetonitrile (CH3CN)
+methanol (CH3OH)
+ethanol (CH3CH2OH)
+diethylether (ethylether, ether)
+dichloromethane (methylenechloride, CH2Cl2)
+dichloroethane (1,2-dichloroethane, CH2ClCH2Cl)
+carbontetrachloride (CCl4)
+benzene (C6H6)
+toluene (C6H5CH3)
+chlorobenzene (C6H5Cl)
+nitromethane (CH3NO2)
+heptane (n-heptane)
+cyclohexane (C6H12)
+aniline (C6H5NH2)
+acetone (CH3COCH3)
+tetrahydrofuran (THF)
+dimethylsulfoxide (DMSO, CH3COCH3)
+n-octanol (1-octanol)
+```
+
+## Define New Solvent (Polar Part Only)
+
+Use `scrf=read` and add following part to the end of input file:
+
+```
+eps=x
+epsinf=y
+```
+
+This means the solvent static and dynamic dielectric constants are defined as *x* and *y*, respectively, which 
+are the two most important parameters of the implicit solvent model. For normal ground state calculations, it is 
+enough to only define the `eps`, but, for the TD-DFT calculations, `epsinf` is also important. If you could not 
+find the value for `epsinf`, the square of refractive index could be used instead of dynamic dielectric 
+constants. If you could not find the refractive index, for non-polar solvent, use the same value of `eps` for 
+`epsinf`, for polar solvent, use `epsinf=1.9`.
+
+For mixture solvent, mixing the `eps` and `epsinf` of several solvents in proportion to their volume.
+
+## Define New Solvent (Polar and Non-Polar Part)
+
+For *SMD* model, the non-polar part is also necessary when users try to define a new solvent. Use `scrf=(read,SMD,solvent=generic)` keyword and add following lines to the end of input file:
+
+```
+eps=a
+epsinf=b
+HBondAcidity=c
+HBondBasicity=d
+SurfaceTensionAtInterface=e
+CarbonAromaticity=f
+ElectronegativeHalogenicity=g
+```
+
+`SurfaceTensionAtInterface` is the surface tension of solvent, in unit of *cal/mol/Å^2*. `CarbonAromaticity` is the number of aromatic carbon atoms as a percentage of the number of all carbon atoms. `ElectronegativeHalogenicity` is the number of halogen atoms as a percentage of the number of all non-hydrogen atoms. `HBondAcidity` and `HBondBasicity` are Abraham acidity and basicity.
+
+If it is hard to find all the parameters for a new solvent, it is a good choice to use a built-in solvent which 
+has similar properties with those of target solvent (e.g., hexane and heptane), and define the `eps` and 
+`epsinf` only.
+
