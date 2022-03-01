@@ -15,7 +15,7 @@ categories: software install
 
 # 1. Unzip installation file
 
-1. Find the `M*.tbz` file and double-click, the `g16` folder would be generated at current dictionary after finishing the expanding.
+1. Find the `M*.tbz` file and double-click, the `g16` folder would be generated at current dictionary after finishing the decompressing.
 2. Create a `Scratch` folder in the `g16` folder.
 3. Move `g16` folder to the `/Application`.
 
