@@ -39,29 +39,8 @@ SMD model.***
 
 ## Use of Built-in Solvent
 
-Gaussian includes following built-in solvent when use `scrf=solvent=x`:
-
-```
-water (H2O)
-acetonitrile (CH3CN)
-methanol (CH3OH)
-ethanol (CH3CH2OH)
-diethylether (ethylether, ether)
-dichloromethane (methylenechloride, CH2Cl2)
-dichloroethane (1,2-dichloroethane, CH2ClCH2Cl)
-carbontetrachloride (CCl4)
-benzene (C6H6)
-toluene (C6H5CH3)
-chlorobenzene (C6H5Cl)
-nitromethane (CH3NO2)
-heptane (n-heptane)
-cyclohexane (C6H12)
-aniline (C6H5NH2)
-acetone (CH3COCH3)
-tetrahydrofuran (THF)
-dimethylsulfoxide (DMSO, CH3COCH3)
-n-octanol (1-octanol)
-```
+Gaussian includes several built-in solvents when use `scrf=solvent=x`, check [this page](https://gaussian.com/scrf/) to see the all supported 
+solvents.
 
 ## Define New Solvent (Polar Part Only)
 
