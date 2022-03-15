@@ -15,5 +15,5 @@ The usage of py.**Aroma** is similar to those previous program. I provided the s
 
 - Homepage of py.**Aroma**: [🍶](https://wongzit.github.io/program/pyaroma/)
 - GitHub page of py.**Aroma**: [🍾](https://github.com/wongzit/pyAroma)
-- User manual: [🍷](https://github.com/wongzit/pyAroma/blob/main/pyaroma_manual_1_0_0.pdf)
+- User manual: [🍷](/assets/blog/pyaroma_manual_1_0_0.pdf)
 - Executable files: [🍺](https://drive.google.com/drive/folders/1-EtvkVDkh5snZns4pKYs2QX1ddMZc1pt?usp=sharing)
