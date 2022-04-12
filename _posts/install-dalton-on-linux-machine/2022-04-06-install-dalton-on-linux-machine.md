@@ -14,6 +14,7 @@ Execute following commands:
 
 ```
 git clone --recursive https://gitlab.com/dalton/dalton.git
+cd dalton
 ./setup --mpi
 cd build
 make
