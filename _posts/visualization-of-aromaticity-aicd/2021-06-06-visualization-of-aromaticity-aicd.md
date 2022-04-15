@@ -9,7 +9,7 @@ categories: computation
 
 # Background
 
-Anisotropy of the Induced Current Density (AICD) has been widely used for aromaticity analyses. More basic knowledge about AICD, please refer to this [review paper](https://pubs.acs.org/doi/10.1021/cr0300901). In this blog, I will show you how to make the AICD plot and apply AICD to your research. AICD is a free and open source program, you can obtain the program freely from the [author](rherges@oc.uni-kiel.de).
+Anisotropy of the Induced Current Density (AICD) has been widely used for aromaticity analyses. More basic knowledge about AICD, please refer to this [review paper](https://pubs.acs.org/doi/10.1021/cr0300901). In this blog, I will show you how to make the AICD plot and apply AICD to your research. AICD is a free and open source program, you can obtain the program freely from the author (E-mail to Dr.Herges: rherges@oc.uni-kiel.de).
 
 The biggest feature of AICD is that it can separate the orbital contribution (from all molecular orbitals, or from π orbitals only), this is useful when analyze the aromaticity from the contribution of π electrons.
 
