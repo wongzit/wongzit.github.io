@@ -75,7 +75,7 @@ Now, you can copy the data to Excel etc., and plot the EPR spectrum.
 
 ## 3.1 Run Matlab
 
-Make sure the *XQuartz* has been installed on your computer (Mac), run following command to login:
+Make sure the [*XQuartz*](http://xquartz.org) has been installed on your computer (Mac), run following command to login:
 ```
 ssh -Y -i keydir/ito_id_rsa -l p10101b ito.cc.kyushu-u.ac.jp
 ```
