@@ -75,11 +75,11 @@ Now, you can copy the data to Excel etc., and plot the EPR spectrum.
 
 ## 3.1 Run Matlab
 
-Make sure the X11 has been installed on your computer (Mac), run following command to login:
+Make sure the *XQuartz* has been installed on your computer (Mac), run following command to login:
 ```
 ssh -Y -i keydir/ito_id_rsa -l p10101b ito.cc.kyushu-u.ac.jp
 ```
-where `p10101b` is your account ID. If you could see following error message in X11 terminal window, run `ssh-keygen -R ito.cc.kyushu-u.ac.jp` and then, try to login again.
+where `p10101b` is your account ID. If you could see following error message in *XQuartz* terminal window, run `ssh-keygen -R ito.cc.kyushu-u.ac.jp` and then, try to login again.
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
