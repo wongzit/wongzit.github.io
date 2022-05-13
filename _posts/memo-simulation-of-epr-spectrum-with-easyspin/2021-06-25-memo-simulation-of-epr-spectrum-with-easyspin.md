@@ -13,6 +13,9 @@ categories: software usage
 - [2.1 S = 0.5 Case](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#21-s--05-case)
 - [2.2 S > 0.5 Case](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#22-s--05-case)
 - [2.3 Save numeric data from MATLAB figure](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#23-save-numeric-data-from-matlab-figurem)
+- [3. Running Matlab and EasySpin on KYUSHU-ITO Computer]()
+- [3.1 Run Matlab]()
+- [3.2 Install EasySpin to Matlab Path (For first time running)]()
 
 # 1. Install EasySpin
 
@@ -67,3 +70,44 @@ The x axis and y axis data would be saved in `xc` and `yc` sheet, respectively.
 </p>
 
 Now, you can copy the data to Excel etc., and plot the EPR spectrum.
+
+# 3. Running Matlab and EasySpin on KYUSHU-ITO Computer
+
+## 3.1 Run Matlab
+
+Make sure the X11 has been installed on your computer (Mac), run following command to login:
+```
+ssh -Y -i keydir/ito_id_rsa -l p10101b ito.cc.kyushu-u.ac.jp
+```
+where `p10101b` is your account ID. If you could see following error message in X11 terminal window, run `ssh-keygen -R ito.cc.kyushu-u.ac.jp` and then, try to login again.
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+```
+
+Execute followinf commands to run Matlab:
+
+```
+ulimit -v 31457280
+module load matlab/R2019b
+matlab
+```
+
+Wait several minutes, the Matlab window would be popped-up.
+
+## 3.2 Install EasySpin to Matlab Path (For first time running)
+
+Download the EasySpin installer from [homepage](https://www.easyspin.org) and unzip it, and put the unzipped folder in your ITO folder, for example, the folder is located at`/home/usr1/p10101b`, execute command `addpath /home/usr1/p10101b/easyspin-5.2.28/easyspin`.
+
+Then, execute `easyspin` command, if you could see follwoing information, the EasySpin has been installed.
+```
+Release:          5.2.28 (2020-01-31)
+Expiry date:      31-Jan-2022
+Folder:           /home/usr1/p10101b/easyspin-5.2.28/easyspin
+MATLAB version:   9.7.0.1261785 (R2019b) Update 3
+Platform:         Linux 3.10.0-514.26.2.el7.x86_64
+mex-files:        mexa64, ok
+System date:      12-Oct-2020 22:07:17
+Temp dir:         /tmp/
+```
