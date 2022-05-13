@@ -13,9 +13,9 @@ categories: software usage
 - [2.1 S = 0.5 Case](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#21-s--05-case)
 - [2.2 S > 0.5 Case](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#22-s--05-case)
 - [2.3 Save numeric data from MATLAB figure](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#23-save-numeric-data-from-matlab-figurem)
-- [3. Running Matlab and EasySpin on KYUSHU-ITO Computer]()
-- [3.1 Run Matlab]()
-- [3.2 Install EasySpin to Matlab Path (For first time running)]()
+- [3. Running Matlab and EasySpin on KYUSHU-ITO Computer](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#3-running-matlab-and-easyspin-on-kyushu-ito-computer)
+- [3.1 Run Matlab](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#31-run-matlab)
+- [3.2 Install EasySpin to Matlab Path (For first time running)](https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/#32-install-easyspin-to-matlab-path-for-first-time-running)
 
 # 1. Install EasySpin
 
