@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MEMO: Install Gaussian and GaussView on Linux Machine"
-date:   2022-05-213 18:45:05 +0900
+date:   2022-05-13 18:45:05 +0900
 categories: software usage
 ---
 
