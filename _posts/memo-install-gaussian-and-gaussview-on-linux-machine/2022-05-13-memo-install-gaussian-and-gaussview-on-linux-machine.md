@@ -25,7 +25,9 @@ source /home/wangzhe/g16/bsd/g16.profile
 -M- 32GB
 -P- 8
 ```
-> 此文件中的设置优先级低于输入文件里的%mem和%nproc设置。因此，输入文件里没写%mem的时候才会用这里的-M-设置，输入文件里没写%nproc的时候才会使用这里的-P-设置（如果你既没在这里设-P-也没写%nproc，那么程序只用单核计算。如果你既没在这里设-M-也没写%mem，那么G09最多用256MB内存，G16最多用800MB内存）。
+> The settings in this file have a lower priority than the %mem and %nproc settings in the input file. Therefore, the -M- setting here is used only when %mem is not written in the input file, and the -P- setting here is used only when %nproc is not written in the input file (if you neither set -P- nor %nproc here, then the program uses only single-core computing. If you neither set -M- nor write %mem here, then the G09 uses up to 256MB of memory and the G16 uses up to 800MB of memory).
+
+Translated with www.DeepL.com/Translator (free version)
 
 (6) In termial, go to `/home/wangzhe/g16`, execute `chmod 750 -R *` command.
 
