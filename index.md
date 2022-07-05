@@ -18,7 +18,7 @@ Hello, I am a 👨🏻‍🎓 **Ph.D. student** from **Hiroshima University**, s
 
 <a href="https://www.researchgate.net/profile/Zhe-Wang-84"> <img alt="researchgate" class="icon" src="./assets/img/researchgate.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>ResearchGate</b> Zhe Wang</a>
 
-<a href="https://researchmap.jp/wangzhe"> <img alt="researchmap" class="icon" src="./assets/img/researchmap.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>researchmap</b> Zhe Wang</a>
+<a href="https://researchmap.jp/wangzhe"> <img alt="researchmap" class="icon" src="./assets/img/researchmap.gif" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>researchmap</b> Zhe Wang</a>
 
 <a href="https://github.com/wongzit"> <img alt="github" class="icon" src="./assets/img/GitHub-Mark-120px-plus.png" style="width:20px; height:20px; margin-right:4px; margin-left:4px;margin-bottom:4px; background-color:transparent;"> <b>GitHub</b> wongzit</a>
 
