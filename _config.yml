@@ -103,7 +103,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  Education is not the learning of facts, but the training of the mind To think.
+  Education is not the learning of facts, but the training of the mind to think.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -274,8 +274,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
+display_tags: ["Gaussian", "Software", "Computation"] # these tags will be displayed on the front page of your blog
+display_categories: # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
