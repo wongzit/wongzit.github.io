@@ -34,15 +34,15 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "Hiroshima University",
+      "location": "Hiroshima, Japan",
+      "url": "https://hiu-roc.webnode.jp",
+      "area": "Organic Chemistry",
+      "studyType": "Ph.D.",
+      "startDate": "2019-10-01",
+      "endDate": "2022-09-20",
       "score": "10",
-      "courses": ["Theory of Relativity"]
+      "courses": ["Physical Organic Chemistry", "Radical Chemistry"]
     }
   ],
   "awards": [
