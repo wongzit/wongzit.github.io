@@ -13,7 +13,7 @@ footer_text: >
   From <a href="https://www.icems.kyoto-u.ac.jp/en/" target="_blank">WPI-iCeMS</a>, <a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: /assets/img/ava_no_bg.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ava_no_bg.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://wongzit.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
