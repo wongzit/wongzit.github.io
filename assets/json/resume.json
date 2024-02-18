@@ -29,7 +29,7 @@
       "startDate": "2022-10-03",
       "endDate": "",
       "summary": "Working on fulvalene...",
-      "highlights": ["Physical Organic Chemistry, Non-benzenoid Aromatic Compounds"]
+      "highlights": ["Physical Organic Chemistry", "Non-benzenoid Aromatic Compounds"]
     }
   ],
   "education": [
@@ -41,6 +41,17 @@
       "studyType": "Ph.D.",
       "startDate": "2019-10-01",
       "endDate": "2022-09-20",
+      "score": "10",
+      "courses": ["Physical Organic Chemistry", "Radical Chemistry"]
+    },
+    {
+      "institution": "Hiroshima University",
+      "location": "Hiroshima, Japan",
+      "url": "https://hiu-roc.webnode.jp",
+      "area": "Organic Chemistry",
+      "studyType": "M.Sc.",
+      "startDate": "2017-10-01",
+      "endDate": "2019-09-20",
       "score": "10",
       "courses": ["Physical Organic Chemistry", "Radical Chemistry"]
     }
