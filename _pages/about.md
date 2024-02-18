@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>iCeMS-KUIAS Research Building</p>
+    <p>iCeMS, KUIAS, KU,</p>
     <p>Yoshida, Sakyo-ku,</p>
     <p>Kyoto 606-8501, JAPAN</p>
 
