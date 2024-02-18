@@ -54,6 +54,17 @@
       "endDate": "2019-09-20",
       "score": "10",
       "courses": ["Physical Organic Chemistry", "Radical Chemistry"]
+    },
+    {
+      "institution": "China University of Petroleum (East China)",
+      "location": "Qingdao, P.R.China",
+      "url": "https://english.upc.edu.cn",
+      "area": "Chemical Engineering and Technology",
+      "studyType": "B.Eng.",
+      "startDate": "2013-09-01",
+      "endDate": "2017-06-21",
+      "score": "10",
+      "courses": ["Chemical Engineering", "Chemical Technology", "Chemical Plant", "Petroleum Chemistry", "Graphene Aerogel"]
     }
   ],
   "awards": [
