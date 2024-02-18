@@ -1,16 +1,16 @@
 ---
 layout: page
-title: submenus
+title: programs
 nav: true
-nav_order: 8
+nav_order: 4
 dropdown: true
 children:
-  - title: publications
-    permalink: /publications/
+  - title: py.Aroma
+    permalink: /program/pyaroma/
   - title: divider
-  - title: projects
-    permalink: /projects/
+  - title: uv.Plotter
+    permalink: /program/uvplotter/
   - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: scripts
+    permalink: /program/script/
 ---
