@@ -72,8 +72,36 @@
       "title": "Excellent Student Scholarship",
       "date": "2021-12-13",
       "awarder": "Hiroshima University",
-      "url": "Hiroshima University",
+      "url": "https://www.hiroshima-u.ac.jp/en",
       "summary": "2021 Hiroshima University Excellent Student Scholarship"
+    },
+    {
+      "title": "Monbukagakusho Honors Scholarship",
+      "date": "2021-10-01",
+      "awarder": "MEXT",
+      "url": "https://www.mext.go.jp/a_menu/koutou/ryugaku/06032818.htm",
+      "summary": "Monbukagakusho Honors Scholarship for Privately-Financed International Students"
+    },
+    {
+      "title": "Research Scholarship",
+      "date": "2021-05-01",
+      "awarder": "Hiroshima University",
+      "url": "https://www.hiroshima-u.ac.jp/en",
+      "summary": "Research Scholarship from Hiroshima University"
+    },
+    {
+      "title": "Monbukagakusho Honors Scholarship",
+      "date": "2017-10-01",
+      "awarder": "MEXT",
+      "url": "https://www.mext.go.jp/a_menu/koutou/ryugaku/06032818.htm",
+      "summary": "Monbukagakusho Honors Scholarship for Privately-Financed International Students"
+    },
+    {
+      "title": "Excellent Graduation Research Award",
+      "date": "2017-06-01",
+      "awarder": "China University of Petroleum (East China)",
+      "url": "https://english.upc.edu.cn",
+      "summary": "Excellent Graduation Research Award, 1/20"
     }
   ],
   "degrees": [
