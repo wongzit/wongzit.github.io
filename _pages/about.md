@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. // D. Sc. @ <a href='https://www.icems.kyoto-u.ac.jp/en/'>iCeMS</a>.
+subtitle: Ph.D. = D.Sc., PostDoc@iCeMS.
 
 profile:
   align: right
