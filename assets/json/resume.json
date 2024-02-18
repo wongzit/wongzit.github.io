@@ -162,15 +162,20 @@
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Chemistry",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "QM calculation",
+        "Open-shell species",
+        "Novel compounds"
+      ]
+    },
+    {
+      "name": "Others",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Programming",
+        "Beer"
       ]
     }
   ]
