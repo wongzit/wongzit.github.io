@@ -31,6 +31,6 @@ If **py.Aroma 4** is utilized in your work, or the code is implied in your own c
 
 - Yuki Miyazawa, Zhe Wang, Misaki Matsumoto, Sayaka Hatano, Ivana Antol, Eiichi Kayahara, Shigeru Yamago, Manabu Abe, *Journal of the American Chemical Society*, **2021**, *143*(*19*), 7426-7439.
 
-- Zhe Wang, **py.Aroma 4**, A https://wongzit.github.io/program/pyaroma (accessed *data*, *month*, *year*).
+- Zhe Wang, **py.Aroma 4**, https://wongzit.github.io/program/pyaroma (accessed *data*, *month*, *year*).
 
 
