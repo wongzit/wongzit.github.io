@@ -11,7 +11,7 @@ permalink: /program/pyaroma/issue/
 ## "Launch Error" on macOS
 
 <p align="center">
-<img alt="launcherrir" src="/program/pyaroma/launch.png" style="width:300px;">
+<img alt="launcherrir" src="/_pages/program/pyaroma/launch.png" style="width:300px;">
 </p>
 
 If a **"Launch error"** (see above) popped up on a Mac computer with Apple Silicon, please force the **py.Aroma 4** run in Rosetta mode, as following procedure.
