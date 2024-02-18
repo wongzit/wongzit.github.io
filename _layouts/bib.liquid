@@ -140,10 +140,10 @@
       {% capture entrytype %}{% endcapture %}
     {% endif %}
     {% if entry.volume %}
-      {% capture entryvolume %}{{ " " }}{{ entry.volume}}{% endcapture %}
+      {% capture entryvolume %}{{ " " }}{{ entry.volume}}{{ "," }}{% endcapture %}
     {% endif %}
     {% if entry.pages %}
-      {% capture entrypages %}{{ " " }}{{ entry.pages}}{% endcapture %}
+      {% capture entrypages %}{{ " " }}{{ entry.pages}}{{ "." }}{% endcapture %}
     {% endif %}
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}<b>{{entry.year}}</b>{{ "," }}{% endcapture %}
