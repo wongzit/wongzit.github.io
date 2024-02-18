@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. = D.Sc., PostDoc@iCeMS.
+subtitle: Ph.D., PostDoc@iCeMS.
 
 profile:
   align: right
