@@ -138,13 +138,18 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "TOEIC: 850/990",
+      "icon": ""
+    },
+    {
+      "language": "Japanese",
+      "fluency": "JPLT N1: 166/180",
       "icon": ""
     }
   ],
