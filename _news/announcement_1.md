@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-ZW's HP is under construction now..
+ZW's HP is under construction now.
