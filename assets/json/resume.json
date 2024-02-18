@@ -1,35 +1,34 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Zhe WANG",
+    "label": "Chemist, Programmer (Self-Proclaimed)",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "wang.zhe.dr@gmail.com",
+    "url": "https://wongzit.github.io",
+    "summary": "A Chinese-born researcher",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "iCeMS, KUIAS, KU",
+      "postalCode": "606-8501",
+      "city": "Kyoto",
+      "countryCode": "JP",
+      "region": "Kyoto"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "oooooootetsu",
+        "url": "https://twitter.com/oooooootetsu"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
+      "name": "iCeMS, Institute for Advanced Study, Princeton University",
+      "position": "Postdoctoral Fellow",
       "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "startDate": "2022-10-03",
+      "endDate": "",
+      "summary": "PostDoc fellow in the research group of Prof. Dr. Aiko Fukazawa, Kyoto University.",
       "highlights": ["Relativity"]
     }
   ],
@@ -46,15 +45,15 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "Hiroshima University, Hiroshima, Japan",
+      "location": "Hiroshima, Japan",
+      "url": "https://www.hiroshima-u.ac.jp/en",
+      "area": "Organic Chemistry",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "startDate": "2019-10-01",
+      "endDate": "2022-09-20",
       "score": "10",
-      "courses": ["Theory of Relativity"]
+      "courses": ["Physical Organic Chemistry", "Radical Chemistry"]
     }
   ],
   "awards": [
