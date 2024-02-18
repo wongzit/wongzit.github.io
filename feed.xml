@@ -1,893 +1,323 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wongzit.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://wongzit.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-02-18T11:55:08+00:00</updated><id>https://wongzit.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">a post with code diff</title><link href="https://wongzit.github.io/code-diff/" rel="alternate" type="text/html" title="a post with code diff"/><published>2024-01-27T19:22:00+00:00</published><updated>2024-01-27T19:22:00+00:00</updated><id>https://wongzit.github.io/code-diff</id><content type="html" xml:base="https://wongzit.github.io/code-diff/"><![CDATA[<p>You can display diff code by using the regular markdown syntax:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff
-</span><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")
-</span></code></pre></div></div> <p>But this is difficult to read, specially if you have a large diff. You can use <a href="https://diff2html.xyz/">diff2html</a> to display a more readable version of the diff. For this, just use <code class="language-plaintext highlighter-rouge">diff2html</code> instead of <code class="language-plaintext highlighter-rouge">diff</code> for the code block language:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff2html
-</span><span class="sb">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
---- a/sample.js
-+++ b/sample.js
-@@ -1 +1 @@
--console.log("Hello World!")
-+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>If we use a longer example, for example <a href="https://github.com/rtfpessoa/diff2html/commit/c2c253d3e3f8b8b267f551e659f72b44ca2ac927">this commit from diff2html</a>, it will generate the following output:</p> <pre><code class="language-diff2html">From 2aaae31cc2a37bfff83430c2c914b140bee59b6a Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sun, 9 Oct 2016 16:41:54 +0100
-Subject: [PATCH 1/2] Initial template override support
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://wongzit.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://wongzit.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-02-18T12:01:25+00:00</updated><id>https://wongzit.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Gaussian 16 Calculation Task Continuation</title><link href="https://wongzit.github.io/gaussian-calculation-task-continuation/" rel="alternate" type="text/html" title="Gaussian 16 Calculation Task Continuation"/><published>2024-02-12T15:20:36+00:00</published><updated>2024-02-12T15:20:36+00:00</updated><id>https://wongzit.github.io/gaussian-calculation-task-continuation</id><content type="html" xml:base="https://wongzit.github.io/gaussian-calculation-task-continuation/"><![CDATA[<h3 id="1-geometry-optimization">1. Geometry Optimization</h3> <p><strong>Prerequisite:</strong> A checkpoint file (<em>.chk</em>) from a previous calculation is required.</p> <p><strong>Continuation Method:</strong> Add <code class="language-plaintext highlighter-rouge">opt=restart</code> to the route section.</p> <h5 id="example">Example</h5> <p><strong>Original input file:</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+#p opt=QST2 ...
+</code></pre></div></div> <p><strong>Continuation input file:</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+#p opt=(QST2,restart) ...
+</code></pre></div></div> <p><strong>Additional Notes:</strong></p> <ol> <li>If there are other options after the <code class="language-plaintext highlighter-rouge">opt</code> keyword in the original input file, you can simply add <code class="language-plaintext highlighter-rouge">restart</code>.</li> <li>If the original input file contains <code class="language-plaintext highlighter-rouge">CalcFC</code> or <code class="language-plaintext highlighter-rouge">RCFC</code> options, you can ignore them in the continuation input file and use the <code class="language-plaintext highlighter-rouge">restart</code> option directly.</li> <li>To resume geometry optimization from a specific step, use the <code class="language-plaintext highlighter-rouge">step=n</code> option in the <code class="language-plaintext highlighter-rouge">geom</code> keyword. For example: <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%oldchk=xxx.chk
+%chk=new_xxx.chk
+#p opt geom=(allcheck,step=6) guess=read
+</code></pre></div> </div> </li> </ol> <h3 id="2-irc">2. IRC</h3> <p><strong>Prerequisites:</strong></p> <ul> <li>The calculation is not finished.</li> <li>Or the calculation is finished, but you want to continue the calculation with more steps.</li> </ul> <p><strong>Continuation Method:</strong> Use the <code class="language-plaintext highlighter-rouge">IRC=restart</code> command.</p> <h5 id="examples">Examples</h5> <p><strong>For unfinished calculation:</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+#p IRC=restart ...
+</code></pre></div></div> <p><strong>Calculation finished, adding more steps:</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+#p IRC=(restart,maxpoint=20) ...
+</code></pre></div></div> <h3 id="3-vibrational-analysis">3. Vibrational Analysis</h3> <p><strong>Prerequisites:</strong></p> <ul> <li>In addition to the <em>.chk</em> file, you also need the <em>.rwf</em> file.</li> <li>The <em>.rwf</em> file is located in the <strong>Scratch</strong> folder.</li> </ul> <p><strong>Continuation Method:</strong></p> <ol> <li>Add the <code class="language-plaintext highlighter-rouge">%rwf</code> section to the input file to specify the path to the <em>.rwf</em> file.</li> <li>Use the <code class="language-plaintext highlighter-rouge">restart</code> keyword.</li> </ol> <h5 id="example-1">Example</h5> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+%rwf=/path/filename.rwf
+# restart
+</code></pre></div></div> <p><strong>Obtaining the .rwf File Path:</strong></p> <p>The <em>.rwf</em> file name is written at the beginning of the <em>.log</em> or <em>.out</em> output file, for example:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Entering Gaussian System, Link 0=g16
+Initial command:
+/home/wangzhe/g16/l1.exe "/home/wangzhe/g16/Scratch/Gau-73779.inp" -scrdir="/home/wangzhe/g16/Scratch/"
+Default is to use a total of  16 processors:
+                              16 via shared-memory
+                               1 via Linda
+Entering Link 1 = /home/wangzhe/g16/l1.exe PID=     73781.
+</code></pre></div></div> <p>In this example, the path to the <em>.rwf</em> file is:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/wangzhe/g16/Scratch/Gau-73781.rwf
+</code></pre></div></div>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="Computation"/><summary type="html"><![CDATA[1. Geometry Optimization]]></summary></entry><entry><title type="html">py.Aroma Version 4 Update</title><link href="https://wongzit.github.io/pyaroma-version-4-update/" rel="alternate" type="text/html" title="py.Aroma Version 4 Update"/><published>2023-12-29T07:22:06+00:00</published><updated>2023-12-29T07:22:06+00:00</updated><id>https://wongzit.github.io/pyaroma-version-4-update</id><content type="html" xml:base="https://wongzit.github.io/pyaroma-version-4-update/"><![CDATA[<p align="center"> <img alt="pyaroma" class="icon" src="/assets/pyAroma/hp_banner_v4.png"/> </p> <p><strong>py.Aroma</strong> has been updated to version 4.0.0 with a bunch of new features. For more details, please refer to following links.</p> <ul> <li>Homepage of <strong>py.Aroma</strong>: <a href="https://wongzit.github.io/program/pyaroma/">🍶</a></li> <li>GitHub page of <strong>py.Aroma</strong>: <a href="https://github.com/wongzit/pyAroma">🍾</a></li> <li>User manual: <a href="https://wongzit.github.io/program/pyaroma/manual_v4.pdf">🍷</a></li> <li>Download: <a href="https://wongzit.github.io/program/pyaroma/download/">🍺</a></li> </ul>]]></content><author><name>Zhe Wang</name></author><category term="Software"/><category term="Computation"/><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Analyze Intermolecular Interactions by SAPT</title><link href="https://wongzit.github.io/analyze-intermolecular-interactions-by-sapt/" rel="alternate" type="text/html" title="Analyze Intermolecular Interactions by SAPT"/><published>2023-11-09T07:26:56+00:00</published><updated>2023-11-09T07:26:56+00:00</updated><id>https://wongzit.github.io/analyze-intermolecular-interactions-by-sapt</id><content type="html" xml:base="https://wongzit.github.io/analyze-intermolecular-interactions-by-sapt/"><![CDATA[<p>This is a quick note of how to analyze intermolecular interaction by Sysmetry-Adapted Perturbation Theory (SAPT) using <em>Psi4</em>.</p> <h1 id="1-preface">1. Preface</h1> <p>SAPT can divide intermolecular interaction into 4 components:</p> <ol> <li><strong>Electrostatics</strong>: describes the classical Coulomb interaction between fragments, with positive or negative values.</li> <li><strong>Exchange</strong>: describes the short-range exchange repulsion between fragments, with positive values (i.e. unfavorable for binding).</li> <li><strong>Dispersion</strong>: has a negative value and acts as an attractive force.</li> <li><strong>Induction</strong>: reflects the polarization and transfer of charges between fragments, with a negative value.</li> </ol> <p>The SAPT theory involves intramolecular and intermolecular perturbations, and as the order of perturbations increases, the results get better. In principle (as the order of perturbations considered increases step by step), the accuracy order is <code class="language-plaintext highlighter-rouge">SAPT0</code>, <code class="language-plaintext highlighter-rouge">SAPT2</code>, <code class="language-plaintext highlighter-rouge">SAPT2+</code>, <code class="language-plaintext highlighter-rouge">SAPT2+(3)</code>, <code class="language-plaintext highlighter-rouge">SAPT2+3</code>. <code class="language-plaintext highlighter-rouge">SAPT0</code> can still be used for medium to moderately large systems, while <code class="language-plaintext highlighter-rouge">SAPT2+(3)</code> can only be used for small systems.</p> <p>In order to improve the accuracy of SAPT interaction calculations, the <code class="language-plaintext highlighter-rouge">SAPT0</code> in the <em>Psi4</em> program also includes the <code class="language-plaintext highlighter-rouge">δHF</code> term, which reflects the high-order induction effect. For high-order SAPT such as <code class="language-plaintext highlighter-rouge">SAPT2+</code>, <code class="language-plaintext highlighter-rouge">SAPT2+(3)</code>, <code class="language-plaintext highlighter-rouge">SAPT2+3</code>, the <code class="language-plaintext highlighter-rouge">δMP2</code> term can also be added to consider the high-order coupling between induction and dispersion, such as <code class="language-plaintext highlighter-rouge">SAPT2+(3)</code> combined with <code class="language-plaintext highlighter-rouge">δMP2</code> called <code class="language-plaintext highlighter-rouge">SAPT2+(3)δMP2</code>. However, the physical meaning of the <code class="language-plaintext highlighter-rouge">δ</code> term is not very clear and cannot be further divided. The numerical value of the δ term is usually small, and it is generally classified as an induction term.</p> <h1 id="2-input">2. Input</h1> <p>An example is shown following:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>memory 20 gb
 
----
- scripts/hulk.js                    |  4 ++--
- src/diff2html.js                   |  3 +--
- src/file-list-printer.js           | 11 ++++++++---
- src/hoganjs-utils.js               | 29 +++++++++++++++++------------
- src/html-printer.js                |  6 ++++++
- src/line-by-line-printer.js        |  6 +++++-
- src/side-by-side-printer.js        |  6 +++++-
- test/file-list-printer-tests.js    |  2 +-
- test/hogan-cache-tests.js          | 18 +++++++++++++++---
- test/line-by-line-tests.js         |  3 +--
- test/side-by-side-printer-tests.js |  3 +--
- 11 files changed, 62 insertions(+), 29 deletions(-)
+molecule　dimer {
+0 1
+S       1.318033    5.842267    2.881214
+N      -1.355505    5.579081    0.154536
+H      -1.976421    5.935383   -0.153845
+C      -0.705457    6.014672    1.291775
+C      -0.905384    7.050266    2.235758
+H      -1.629222    7.634376    2.237331
+C      -0.563794    4.592784   -0.398267
+C       0.472970    5.283299    1.488835
+C       0.120527    7.070918    3.149491
+H       0.169447    7.685226    3.846026
+S      -1.318033    3.137133   -2.881214
+N       1.355505    3.400319   -0.154536
+H       1.976421    3.044017    0.153845
+C       0.705457    2.964728   -1.291775
+C       0.905384    1.929134   -2.235758
+H       1.629222    1.345024   -2.237331
+C       0.563794    4.386616    0.398267
+C      -0.472970    3.696101   -1.488835
+C      -0.120527    1.908482   -3.149491
+H      -0.169447    1.294174   -3.846026
+     --
+     0 1
+S       4.174133   -1.352567   -2.881214
+N       1.500595   -1.089381   -0.154536
+H       0.879679   -1.445683    0.153845
+C       2.150643   -1.524972   -1.291775
+C       1.950716   -2.560566   -2.235758
+H       1.226878   -3.144676   -2.237331
+C       2.292306   -0.103084    0.398267
+C       3.329070   -0.793599   -1.488835
+C       2.976627   -2.581218   -3.149491
+H       3.025547   -3.195526   -3.846026
+S       1.538067    1.352567    2.881214
+N       4.211605    1.089381    0.154536
+H       4.832521    1.445683   -0.153845
+C       3.561557    1.524972    1.291775
+C       3.761484    2.560566    2.235758
+H       4.485322    3.144676    2.237331
+C       3.419894    0.103084   -0.398267
+C       2.383130    0.793599    1.488835
+C       2.735573    2.581218    3.149491
+H       2.686653    3.195526    3.846026
+     units angstrom
 
-diff --git a/scripts/hulk.js b/scripts/hulk.js
-index 5a793c18..a4b1a4d5 100755
---- a/scripts/hulk.js
-+++ b/scripts/hulk.js
-@@ -173,11 +173,11 @@ function namespace(name) {
- // write a template foreach file that matches template extension
- templates = extractFiles(options.argv.remain)
-   .map(function(file) {
--    var openedFile = fs.readFileSync(file, 'utf-8');
-+    var openedFile = fs.readFileSync(file, 'utf-8').trim();
-     var name;
-     if (!openedFile) return;
-     name = namespace(path.basename(file).replace(/\..*$/, ''));
--    openedFile = removeByteOrderMark(openedFile.trim());
-+    openedFile = removeByteOrderMark(openedFile);
-     openedFile = wrap(file, name, openedFile);
-     if (!options.outputdir) return openedFile;
-     fs.writeFileSync(path.join(options.outputdir, name + '.js')
-diff --git a/src/diff2html.js b/src/diff2html.js
-index 21b0119e..64e138f5 100644
---- a/src/diff2html.js
-+++ b/src/diff2html.js
-@@ -7,7 +7,6 @@
+}
+set {
+    basis jun-cc-pVDZ
+    scf_type DF
+    freeze_core True
+}
 
- (function() {
-   var diffParser = require('./diff-parser.js').DiffParser;
--  var fileLister = require('./file-list-printer.js').FileListPrinter;
-   var htmlPrinter = require('./html-printer.js').HtmlPrinter;
-
-   function Diff2Html() {
-@@ -43,7 +42,7 @@
-
-     var fileList = '';
-     if (configOrEmpty.showFiles === true) {
--      fileList = fileLister.generateFileList(diffJson, configOrEmpty);
-+      fileList = htmlPrinter.generateFileListSummary(diffJson, configOrEmpty);
-     }
-
-     var diffOutput = '';
-diff --git a/src/file-list-printer.js b/src/file-list-printer.js
-index e408d9b2..1e0a2c61 100644
---- a/src/file-list-printer.js
-+++ b/src/file-list-printer.js
-@@ -8,11 +8,16 @@
- (function() {
-   var printerUtils = require('./printer-utils.js').PrinterUtils;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var baseTemplatesPath = 'file-summary';
-   var iconsBaseTemplatesPath = 'icon';
-
--  function FileListPrinter() {
-+  function FileListPrinter(config) {
-+    this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   FileListPrinter.prototype.generateFileList = function(diffFiles) {
-@@ -38,5 +43,5 @@
-     });
-   };
-
--  module.exports.FileListPrinter = new FileListPrinter();
-+  module.exports.FileListPrinter = FileListPrinter;
- })();
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 9949e5fa..0dda08d7 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -8,18 +8,19 @@
- (function() {
-   var fs = require('fs');
-   var path = require('path');
--
-   var hogan = require('hogan.js');
-
-   var hoganTemplates = require('./templates/diff2html-templates.js');
-
--  var templatesPath = path.resolve(__dirname, 'templates');
-+  var extraTemplates;
-
--  function HoganJsUtils() {
-+  function HoganJsUtils(configuration) {
-+    this.config = configuration || {};
-+    extraTemplates = this.config.templates || {};
-   }
-
--  HoganJsUtils.prototype.render = function(namespace, view, params, configuration) {
--    var template = this.template(namespace, view, configuration);
-+  HoganJsUtils.prototype.render = function(namespace, view, params) {
-+    var template = this.template(namespace, view);
-     if (template) {
-       return template.render(params);
-     }
-@@ -27,17 +28,16 @@
-     return null;
-   };
-
--  HoganJsUtils.prototype.template = function(namespace, view, configuration) {
--    var config = configuration || {};
-+  HoganJsUtils.prototype.template = function(namespace, view) {
-     var templateKey = this._templateKey(namespace, view);
-
--    return this._getTemplate(templateKey, config);
-+    return this._getTemplate(templateKey);
-   };
-
--  HoganJsUtils.prototype._getTemplate = function(templateKey, config) {
-+  HoganJsUtils.prototype._getTemplate = function(templateKey) {
-     var template;
-
--    if (!config.noCache) {
-+    if (!this.config.noCache) {
-       template = this._readFromCache(templateKey);
-     }
-
-@@ -53,6 +53,7 @@
-
-     try {
-       if (fs.readFileSync) {
-+        var templatesPath = path.resolve(__dirname, 'templates');
-         var templatePath = path.join(templatesPath, templateKey);
-         var templateContent = fs.readFileSync(templatePath + '.mustache', 'utf8');
-         template = hogan.compile(templateContent);
-@@ -66,12 +67,16 @@
-   };
-
-   HoganJsUtils.prototype._readFromCache = function(templateKey) {
--    return hoganTemplates[templateKey];
-+    return extraTemplates[templateKey] || hoganTemplates[templateKey];
-   };
-
-   HoganJsUtils.prototype._templateKey = function(namespace, view) {
-     return namespace + '-' + view;
-   };
-
--  module.exports.HoganJsUtils = new HoganJsUtils();
-+  HoganJsUtils.prototype.compile = function(templateStr) {
-+    return hogan.compile(templateStr);
-+  };
-+
-+  module.exports.HoganJsUtils = HoganJsUtils;
- })();
-diff --git a/src/html-printer.js b/src/html-printer.js
-index 585d5b66..13f83047 100644
---- a/src/html-printer.js
-+++ b/src/html-printer.js
-@@ -8,6 +8,7 @@
- (function() {
-   var LineByLinePrinter = require('./line-by-line-printer.js').LineByLinePrinter;
-   var SideBySidePrinter = require('./side-by-side-printer.js').SideBySidePrinter;
-+  var FileListPrinter = require('./file-list-printer.js').FileListPrinter;
-
-   function HtmlPrinter() {
-   }
-@@ -22,5 +23,10 @@
-     return sideBySidePrinter.generateSideBySideJsonHtml(diffFiles);
-   };
-
-+  HtmlPrinter.prototype.generateFileListSummary = function(diffJson, config) {
-+    var fileListPrinter = new FileListPrinter(config);
-+    return fileListPrinter.generateFileList(diffJson);
-+  };
-+
-   module.exports.HtmlPrinter = new HtmlPrinter();
- })();
-diff --git a/src/line-by-line-printer.js b/src/line-by-line-printer.js
-index b07eb53c..d230bedd 100644
---- a/src/line-by-line-printer.js
-+++ b/src/line-by-line-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'line-by-line';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -19,6 +20,9 @@
-
-   function LineByLinePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   LineByLinePrinter.prototype.makeFileDiffHtml = function(file, diffs) {
-diff --git a/src/side-by-side-printer.js b/src/side-by-side-printer.js
-index bbf1dc8d..5e3033b3 100644
---- a/src/side-by-side-printer.js
-+++ b/src/side-by-side-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'side-by-side';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -26,6 +27,9 @@
-
-   function SideBySidePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   SideBySidePrinter.prototype.makeDiffHtml = function(file, diffs) {
-diff --git a/test/file-list-printer-tests.js b/test/file-list-printer-tests.js
-index a502a46f..60ea3208 100644
---- a/test/file-list-printer-tests.js
-+++ b/test/file-list-printer-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
-
--var fileListPrinter = require('../src/file-list-printer.js').FileListPrinter;
-+var fileListPrinter = new (require('../src/file-list-printer.js').FileListPrinter)();
-
- describe('FileListPrinter', function() {
-   describe('generateFileList', function() {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 190bf6f8..3bb754ac 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
-
--var HoganJsUtils = require('../src/hoganjs-utils.js').HoganJsUtils;
-+var HoganJsUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)();
- var diffParser = require('../src/diff-parser.js').DiffParser;
-
- describe('HoganJsUtils', function() {
-@@ -21,16 +21,28 @@ describe('HoganJsUtils', function() {
-       });
-       assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should render view without cache', function() {
-       var result = HoganJsUtils.render('generic', 'empty-diff', {
-         contentClass: 'd2h-code-line',
-         diffParser: diffParser
-       }, {noCache: true});
--      assert.equal(emptyDiffHtml + '\n', result);
-+      assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should return null if template is missing', function() {
--      var result = HoganJsUtils.render('generic', 'missing-template', {}, {noCache: true});
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)({noCache: true});
-+      var result = hoganUtils.render('generic', 'missing-template', {});
-       assert.equal(null, result);
-     });
-+
-+    it('should allow templates to be overridden', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+
-+      var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
+energy('sapt0')
+</code></pre></div></div> <ul> <li><code class="language-plaintext highlighter-rouge">freeze_core True</code> can save computational cost.</li> <li><code class="language-plaintext highlighter-rouge">scf_type DF</code> can utilize density fitting to accelerate the SCF process.</li> </ul> <p>Run command <code class="language-plaintext highlighter-rouge">psi4 xxx.inp xxx.out -n 8</code> to start the calculation using 8 cores.</p> <h1 id="3-output">3. Output</h1> <p>The SAPT results would be summarized as following.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Special recipe for scaled SAPT0 (see Manual):
+    Electrostatics sSAPT0         -24.34792103 [mEh]     -15.27855111 [kcal/mol]     -63.92545785 [kJ/mol]
+    Exchange sSAPT0                15.70145759 [mEh]       9.85281339 [kcal/mol]      41.22417122 [kJ/mol]
+    Induction sSAPT0               -5.93603581 [mEh]      -3.72491871 [kcal/mol]     -15.58505986 [kJ/mol]
+    Dispersion sSAPT0              -4.77805738 [mEh]      -2.99827627 [kcal/mol]     -12.54478793 [kJ/mol]
+  Total sSAPT0                    -19.36055663 [mEh]     -12.14893270 [kcal/mol]     -50.83113444 [kJ/mol]
+</code></pre></div></div>]]></content><author><name>Zhe Wang</name></author><category term="Psi4"/><category term="Computation"/><summary type="html"><![CDATA[This is a quick note of how to analyze intermolecular interaction by Sysmetry-Adapted Perturbation Theory (SAPT) using Psi4.]]></summary></entry><entry><title type="html">Computing Charge Transfer Rate Based on Marcus Theory Using Gaussian</title><link href="https://wongzit.github.io/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian/" rel="alternate" type="text/html" title="Computing Charge Transfer Rate Based on Marcus Theory Using Gaussian"/><published>2023-09-30T08:11:16+00:00</published><updated>2023-09-30T08:11:16+00:00</updated><id>https://wongzit.github.io/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian</id><content type="html" xml:base="https://wongzit.github.io/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian/"><![CDATA[<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"> </script> <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
  });
-diff --git a/test/line-by-line-tests.js b/test/line-by-line-tests.js
-index 1cd92073..8869b3df 100644
---- a/test/line-by-line-tests.js
-+++ b/test/line-by-line-tests.js
-@@ -14,7 +14,7 @@ describe('LineByLinePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
+</script> <h2 id="1-preface">1 Preface</h2> <p>This blog is introducing the method for computing charge transfer integral and charge transfer rate constant via <em>Gaussian 16</em>. Here, an open-source program <a href="https://joshuasbrown.github.io/docs/CATNIP/catnip_home.html"><strong>CATNIP</strong></a> would be used, this program could be downloaded freely from the <a href="https://github.com/JoshuaSBrown/QC_Tools/releases">GitHub page</a>.</p> <h2 id="2-gaussian-inputs--outputs">2 Gaussian Inputs &amp; Outputs</h2> <p>To calculate charge transfer integral between two molecules, three separate calculateions are needed:</p> <ul> <li>Monomer 1</li> <li>Monomer 2</li> <li>Dimer</li> </ul> <p>Following keywords should be also included to tell the <em>Gaussian</em> to output the minimized atomic orbital coefficients those are needed for calculating charge transfer integral:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nosymm pop=full iop(3/33=1) punch=mo
+</code></pre></div></div> <p>You will get a <em>.log</em> file and a <em>Fort.7</em> file after each calculation. To calculate transfer integral using CATNIP, you need to rename the <em>Fort.7</em> file to the same name as your <em>.log</em> file with a <em>.pun</em> extension.</p> <h2 id="3-charge-transfer-integral">3 Charge Transfer Integral</h2> <blockquote> <p>This is just a simple note, for more detail information of how to use CATNIP, please refer to its homepage.</p> </blockquote> <p>To run a calculation, three <em>.log</em> files and three <em>.pun</em> files are needed, for monomer 1, monomer 2 and dimer, for example:</p> <ul> <li>1mer_1.log</li> <li>1mer_1.pun</li> <li>1mer_2.log</li> <li>1mer_2.pun</li> <li>2mer.log</li> <li>2mer.pun</li> </ul> <p>To calculate the charge transfer integral for the HOMO between the monomers, run following command (Note that the <em>.log</em> files and <em>.pun</em> files should be located in the same folder):</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 1mer_1.pun -p_2 1mer_2.pun -p_P 2mer.pun
+</code></pre></div></div> <p>To calculate the charge transfer integral for the LUMO, the orbital types must be specified:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 1mer_1.pun -orb_ty_1 LUMO -p_2 1mer_2.pun -orb_ty_2 LUMO -p_P 2mer.pun
+</code></pre></div></div> <p>The effective (or generalized) charge transfer integral <em>J_eff</em> (also known as electronic coupling <strong><em>V</em></strong>) would be shown on the screen:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>J_eff -0.00190564 eV
+</code></pre></div></div> <h2 id="4-charge-transfer-rate-constant-based-on-marcus-theory">4 Charge Transfer Rate Constant Based on Marcus Theory</h2> <p>By Marcus theory, the rate constant of charge transfer <em>k_et</em> could be computed from electronic coupling <strong><em>V</em></strong> (<em>J_eff</em>) and reorganization energy λ:</p> \[k_{\rm et} = \sqrt { \frac {\pi}{\lambda k_{\rm B}T}} \frac{V^2}{\hbar} \exp {\left( - \frac {\lambda}{4k_{\rm B}T} \right)}\] <p>where, reduced Planck constant ħ, Boltzmann constant <em>k_B</em>, temperature T are also needed.</p> <p>The reorganization energy λ is defined as the energy difference between the charged and neutral systems at the two different geometries (adiabatic potential energy surface). To compute it, four separated calculations are needed, <em>e.g.</em> for eletron transfer:</p> <ul> <li>Geometry optimizaiton of neutral state (E_1)</li> <li>Single point calculation of anion state with neutral geometry (E_4)</li> <li>Geometry optimizaiton of anion state (E_3)</li> <li>Single point calculation of neutral state with anion geometry (E_2)</li> </ul> <p>and the reorganization energy is:</p> \[\lambda = \lambda_1 + \lambda_2\] \[\lambda_1 = E_2 - E_1\] \[\lambda_2 = E_4 - E_3\] <p align="center"> <img alt="reorganization" src="/assets/blog/re_en.png" style="height:366px;"/> </p> <p>Here I provided an Excel tool for computing the λ and <em>k_et</em> based on Marcus theory, download from <a href="https://wongzit.github.io/assets/blog/marcus_theory_zwang_20230929.xlsx">here</a>.</p> <h2 id="5-example">5 Example</h2> <p>Here is an example for a naphthalene dimer, the Cartesian coordinates were obtained from <a href="https://www.scm.com/doc/Tutorials/ElectronicTransport/ElectronAndHoleMobilities.html">ADF official tutorials page</a>. All files could be downloaded from <a href="https://github.com/wongzit/blogFiles/tree/main/blog_charge_transfer">here</a>.</p> <p>Monomer 1:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nprocshared=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
 
-       assert.equal(expected, fileHtml);
-     });
-@@ -422,7 +422,6 @@ describe('LineByLinePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                &lt;/tbody&gt;\n' +
-         '            &lt;/table&gt;\n' +
-         '        &lt;/div&gt;\n' +
-diff --git a/test/side-by-side-printer-tests.js b/test/side-by-side-printer-tests.js
-index 76625f8e..771daaa5 100644
---- a/test/side-by-side-printer-tests.js
-+++ b/test/side-by-side-printer-tests.js
-@@ -14,7 +14,7 @@ describe('SideBySidePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
+naphthalene monomer 1
 
-       assert.equal(expectedRight, fileHtml.right);
-       assert.equal(expectedLeft, fileHtml.left);
-@@ -324,7 +324,6 @@ describe('SideBySidePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                    &lt;/tbody&gt;\n' +
-         '                &lt;/table&gt;\n' +
-         '            &lt;/div&gt;\n' +
+0 1
+ C                 -2.96292735   -1.37776232    2.34412329
+ H                 -3.91358911   -3.24557560    2.36511160
+ C                 -2.19933829   -0.51291048    1.59118541
+ C                 -1.08607265   -1.59873768   -2.34412329
+ C                 -2.23157919   -2.11438654   -0.26513808
+ C                 -1.81742081   -0.86211346    0.26513808
+ H                 -2.14645018   -3.30748680   -1.93535091
+ H                 -0.80423336   -1.83888170   -3.25104686
+ H                 -0.76084457    0.83758710   -0.16847761
+ C                 -3.01509821   -2.98739399    0.54127003
+ H                 -3.28815543   -3.81408710    0.16847761
+ H                 -3.24476664   -1.13761830    3.25104686
+ C                 -1.03390179    0.01089399   -0.54127003
+ H                 -1.90254982    0.33098680    1.93535091
+ C                 -3.37590246   -2.62057013    1.81755935
+ C                 -0.67309754   -0.35592987   -1.81755935
+ H                 -0.13541089    0.26907560   -2.36511160
+ C                 -1.84966171   -2.46358952   -1.59118541
+</code></pre></div></div> <p>Monomer 2:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nprocshared=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
 
-From f3cadb96677d0eb82fc2752dc3ffbf35ca9b5bdb Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sat, 15 Oct 2016 13:21:22 +0100
-Subject: [PATCH 2/2] Allow uncompiled templates
+naphthalene momomer 2
 
----
- README.md                 |  3 +++
- src/hoganjs-utils.js      |  7 +++++++
- test/hogan-cache-tests.js | 24 +++++++++++++++++++++++-
- 3 files changed, 33 insertions(+), 1 deletion(-)
+0 1
+ C                  2.96292735    1.59873768   -2.34412329
+ C                  1.08607265    1.37776232    2.34412329
+ C                  1.84966171    0.51291048    1.59118541
+ H                  1.90254982    3.30748680   -1.93535091
+ C                  2.19933829    2.46358952   -1.59118541
+ C                  2.23157919    0.86211346    0.26513808
+ C                  1.03390179    2.98739399    0.54127003
+ C                  1.81742081    2.11438654   -0.26513808
+ C                  0.67309754    2.62057013    1.81755935
+ H                  3.28815543   -0.83758710   -0.16847761
+ H                  0.80423336    1.13761830    3.25104686
+ C                  3.01509821   -0.01089399   -0.54127003
+ H                  2.14645018   -0.33098680    1.93535091
+ H                  3.91358911   -0.26907560   -2.36511160
+ H                  0.76084457    3.81408710    0.16847761
+ C                  3.37590246    0.35592987   -1.81755935
+ H                  3.24476664    1.83888170   -3.25104686
+ H                  0.13541089    3.24557560    2.36511160
+</code></pre></div></div> <p>Dimer:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nproc=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
 
-diff --git a/README.md b/README.md
-index 132c8a28..46909f25 100644
---- a/README.md
-+++ b/README.md
-@@ -98,6 +98,9 @@ The HTML output accepts a Javascript object with configuration. Possible options
-   - `synchronisedScroll`: scroll both panes in side-by-side mode: `true` or `false`, default is `false`
-   - `matchWordsThreshold`: similarity threshold for word matching, default is 0.25
-   - `matchingMaxComparisons`: perform at most this much comparisons for line matching a block of changes, default is `2500`
-+  - `templates`: object with previously compiled templates to replace parts of the html
-+  - `rawTemplates`: object with raw not compiled templates to replace parts of the html
-+  &gt; For more information regarding the possible templates look into [src/templates](https://github.com/rtfpessoa/diff2html/tree/master/src/templates)
+naphthalene dimer
 
- ## Diff2HtmlUI Helper
+0 1
+ C                 -2.96292735   -1.37776232    2.34412329
+ H                 -3.91358911   -3.24557560    2.36511160
+ C                 -2.19933829   -0.51291048    1.59118541
+ C                 -1.08607265   -1.59873768   -2.34412329
+ C                 -2.23157919   -2.11438654   -0.26513808
+ C                 -1.81742081   -0.86211346    0.26513808
+ H                 -2.14645018   -3.30748680   -1.93535091
+ H                 -0.80423336   -1.83888170   -3.25104686
+ H                 -0.76084457    0.83758710   -0.16847761
+ C                 -3.01509821   -2.98739399    0.54127003
+ H                 -3.28815543   -3.81408710    0.16847761
+ H                 -3.24476664   -1.13761830    3.25104686
+ C                 -1.03390179    0.01089399   -0.54127003
+ H                 -1.90254982    0.33098680    1.93535091
+ C                 -3.37590246   -2.62057013    1.81755935
+ C                 -0.67309754   -0.35592987   -1.81755935
+ H                 -0.13541089    0.26907560   -2.36511160
+ C                 -1.84966171   -2.46358952   -1.59118541
+ C                  2.96292735    1.59873768   -2.34412329
+ C                  1.08607265    1.37776232    2.34412329
+ C                  1.84966171    0.51291048    1.59118541
+ H                  1.90254982    3.30748680   -1.93535091
+ C                  2.19933829    2.46358952   -1.59118541
+ C                  2.23157919    0.86211346    0.26513808
+ C                  1.03390179    2.98739399    0.54127003
+ C                  1.81742081    2.11438654   -0.26513808
+ C                  0.67309754    2.62057013    1.81755935
+ H                  3.28815543   -0.83758710   -0.16847761
+ H                  0.80423336    1.13761830    3.25104686
+ C                  3.01509821   -0.01089399   -0.54127003
+ H                  2.14645018   -0.33098680    1.93535091
+ H                  3.91358911   -0.26907560   -2.36511160
+ H                  0.76084457    3.81408710    0.16847761
+ C                  3.37590246    0.35592987   -1.81755935
+ H                  3.24476664    1.83888170   -3.25104686
+ H                  0.13541089    3.24557560    2.36511160
+</code></pre></div></div> <p>The command used for CATNIP:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 naph_mol1.pun -orb_ty_1 LUMO -p_2 naph_mol2.pun -orb_ty_2 LUMO -p_P naph_p.pun
+</code></pre></div></div> <p>and here is the output:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Running calc_J VERSION 1.9
+log file for first monomer is:      naph_mol1.log
+log file for second monomer is:     naph_mol2.log
+log file for dimer is:              naph_p.log
+pun file for the first monomer is:  naph_mol1.pun
+pun file for the second monomer is: naph_mol2.pun
+pun file for the dimer is:          naph_p.pun
 
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 0dda08d7..b2e9c275 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -17,6 +17,13 @@
-   function HoganJsUtils(configuration) {
-     this.config = configuration || {};
-     extraTemplates = this.config.templates || {};
-+
-+    var rawTemplates = this.config.rawTemplates || {};
-+    for (var templateName in rawTemplates) {
-+      if (rawTemplates.hasOwnProperty(templateName)) {
-+        if (!extraTemplates[templateName]) extraTemplates[templateName] = this.compile(rawTemplates[templateName]);
-+      }
-+    }
-   }
+Dimer     Spin Alpha
+Monomer 1 Spin Alpha Orbital LUMO
+Monomer 2 Spin Alpha Orbital LUMO
+J_ab  -0.0558655 eV
+e_a   -1.88656 eV
+e_b   -2.14962 eV
+S_ab  0.00943935
+J_eff -0.0368193 eV
+</code></pre></div></div> <p>For comparsion, the J_eff calculated at same level of theory by ADF was -0.03780 eV.</p> <p>FYI:</p> \[V = J_{\rm eff} = \frac{J_{\rm ab} - \frac{S_{\rm ab}(e_{\rm a} + e_{\rm b})}{2}}{1-S_{\rm ab}^2}\] \[\hbar = 1.054571817 \times 10 ^ {-34} \, \rm {J \cdot s} = 6.582119569 \times 10 ^{-16} \, \rm {eV \cdot s}\] \[k_{\rm B} = 1.380649 \times 10 ^ {-23} \, \rm {J \cdot K^{-1}} = 8.617333262 \times 10 ^{-5} \, \rm {eV \cdot K^{-1}}\] \[1 \, {\rm eV} = 1.60218 \times 10 ^ {-19} \, {\rm J}\] \[1 \, {\rm J} = 6.24151 \times 10 ^ {18} \, {\rm eV}\] <p>The reorganization energy λ was computed to 0.23 eV, thus, the <em>k_et</em> for electrons is 4.85E+12 / s at 300 K.</p>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="Computation"/><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Hartree-Fock Exchange of DFT Functionals</title><link href="https://wongzit.github.io/hartree-fock-exchange-of-dft-functionals/" rel="alternate" type="text/html" title="Hartree-Fock Exchange of DFT Functionals"/><published>2023-08-01T07:46:56+00:00</published><updated>2023-08-01T07:46:56+00:00</updated><id>https://wongzit.github.io/hartree-fock-exchange-of-dft-functionals</id><content type="html" xml:base="https://wongzit.github.io/hartree-fock-exchange-of-dft-functionals/"><![CDATA[<h1 id="global-hybrid-functionals">Global Hybrid Functionals</h1> <table> <thead> <tr> <th style="text-align: left">Functional</th> <th style="text-align: center">HF Exchange / %</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">GGA<br/><em>meta</em>-GGA</td> <td style="text-align: center">0</td> </tr> <tr> <td style="text-align: left">TPSSh<br/>r2SCANh</td> <td style="text-align: center">10</td> </tr> <tr> <td style="text-align: left">O3LYP</td> <td style="text-align: center">11.61</td> </tr> <tr> <td style="text-align: left">TPSS1KCIS</td> <td style="text-align: center">13</td> </tr> <tr> <td style="text-align: left">MPW1KCIS</td> <td style="text-align: center">15</td> </tr> <tr> <td style="text-align: left">(<em>hybrid</em>) B97</td> <td style="text-align: center">19.43</td> </tr> <tr> <td style="text-align: left">B3LYP<br/>B3P86<br/>B3PW91</td> <td style="text-align: center">20</td> </tr> <tr> <td style="text-align: left">B97-1<br/>B97-2<br/>HCTH93</td> <td style="text-align: center">21</td> </tr> <tr> <td style="text-align: left">MPW3LYP<br/>X3LYP</td> <td style="text-align: center">21.8</td> </tr> <tr> <td style="text-align: left">PBE1KCIS</td> <td style="text-align: center">22</td> </tr> <tr> <td style="text-align: left">APFD</td> <td style="text-align: center">23</td> </tr> <tr> <td style="text-align: left">PBE0<br/>TPSS0<br/>SCAN0<br/>r2SCAN0<br/>B1B95<br/>mPW1PW91</td> <td style="text-align: center">25</td> </tr> <tr> <td style="text-align: left">M06</td> <td style="text-align: center">27</td> </tr> <tr> <td style="text-align: left">PW6B95<br/>M05</td> <td style="text-align: center">28</td> </tr> <tr> <td style="text-align: left">MPW1B95</td> <td style="text-align: center">31</td> </tr> <tr> <td style="text-align: left">PBE0-1/3</td> <td style="text-align: center">33.33</td> </tr> <tr> <td style="text-align: left">PBE38</td> <td style="text-align: center">37.5</td> </tr> <tr> <td style="text-align: left">BB1K<br/>BMK</td> <td style="text-align: center">42</td> </tr> <tr> <td style="text-align: left">MPW1K</td> <td style="text-align: center">42.8</td> </tr> <tr> <td style="text-align: left">MPWB1K</td> <td style="text-align: center">44</td> </tr> <tr> <td style="text-align: left">MN15</td> <td style="text-align: center">44</td> </tr> <tr> <td style="text-align: left">PWB6K</td> <td style="text-align: center">46</td> </tr> <tr> <td style="text-align: left">BHandHLYP<br/>PBE50<br/>r2SCAN50</td> <td style="text-align: center">50</td> </tr> <tr> <td style="text-align: left">M08-HX</td> <td style="text-align: center">52.23</td> </tr> <tr> <td style="text-align: left">M06-2X</td> <td style="text-align: center">54</td> </tr> <tr> <td style="text-align: left">M05-2X</td> <td style="text-align: center">56</td> </tr> <tr> <td style="text-align: left">M08-SO</td> <td style="text-align: center">56.79</td> </tr> <tr> <td style="text-align: left">M06-HF</td> <td style="text-align: center">100</td> </tr> </tbody> </table> <h1 id="range-separated-functionals">Range Separated Functionals</h1> <table> <thead> <tr> <th style="text-align: left">Functional</th> <th style="text-align: center">Short Range / %</th> <th style="text-align: center">Long Range / %</th> <th style="text-align: center">ω</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">LC-ωPBE</td> <td style="text-align: center">0</td> <td style="text-align: center">100</td> <td style="text-align: center">0.4</td> </tr> <tr> <td style="text-align: left">LC-PBE0</td> <td style="text-align: center">25</td> <td style="text-align: center">100</td> <td style="text-align: center">0.3</td> </tr> <tr> <td style="text-align: left">ωB97</td> <td style="text-align: center">0</td> <td style="text-align: center">100</td> <td style="text-align: center">0.4</td> </tr> <tr> <td style="text-align: left">ωB97X</td> <td style="text-align: center">15.77</td> <td style="text-align: center">100</td> <td style="text-align: center">0.3</td> </tr> <tr> <td style="text-align: left">ωB97XD</td> <td style="text-align: center">22.2</td> <td style="text-align: center">100</td> <td style="text-align: center">0.2</td> </tr> <tr> <td style="text-align: left">ωB97X-D3(0)</td> <td style="text-align: center">19.57</td> <td style="text-align: center">100</td> <td style="text-align: center">0.25</td> </tr> <tr> <td style="text-align: left">ωB97X-V</td> <td style="text-align: center">16.7</td> <td style="text-align: center">100</td> <td style="text-align: center">0.3</td> </tr> <tr> <td style="text-align: left">ωB97M-V</td> <td style="text-align: center">15</td> <td style="text-align: center">100</td> <td style="text-align: center">0.3</td> </tr> <tr> <td style="text-align: left">CAM-B3LYP</td> <td style="text-align: center">19</td> <td style="text-align: center">65</td> <td style="text-align: center">0.33</td> </tr> <tr> <td style="text-align: left">M11</td> <td style="text-align: center">42.8</td> <td style="text-align: center">100</td> <td style="text-align: center">0.25</td> </tr> <tr> <td style="text-align: left">HSE03<br/>HSE06<br/>MN12-SX<br/>N12-SX</td> <td style="text-align: center">25</td> <td style="text-align: center">0</td> <td style="text-align: center"> </td> </tr> </tbody> </table>]]></content><author><name>Zhe Wang</name></author><category term="Computation"/><summary type="html"><![CDATA[Global Hybrid Functionals]]></summary></entry><entry><title type="html">Natural Transition Orbitals (NTO) Analysis</title><link href="https://wongzit.github.io/natural-transition-orbitals-(nto)-analysis/" rel="alternate" type="text/html" title="Natural Transition Orbitals (NTO) Analysis"/><published>2023-04-28T07:26:56+00:00</published><updated>2023-04-28T07:26:56+00:00</updated><id>https://wongzit.github.io/natural-transition-orbitals-(nto)-analysis</id><content type="html" xml:base="https://wongzit.github.io/natural-transition-orbitals-(nto)-analysis/"><![CDATA[<h1 id="1-preface">1. Preface</h1> <p>When computing excited sates using CIS, TDHF, TDDFT methods, the transition modes can be expressed as a linear combination of different ways of transition between the occupied orbitals in the ground state and the virtual orbitals. In many cases, only one type of transition has a larger contribution. For example, following is a <em>Gaussian</em> output of acrolein @<code class="language-plaintext highlighter-rouge">RIS/6-31+G*</code>.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Excited State   2:      Singlet-A'     7.0919 eV  174.83 nm  f=0.7713  &lt;S**2&gt;=0.000
+      15 -&gt; 16         0.66677
+      15 -&gt; 25        -0.13319
+</code></pre></div></div> <p>The MO15 -&gt; MO16 transition contributed 88.9% (= 2 x 0.66677^2 x 100%) for excited state S0 -&gt; S2. Therefore, the S0 -&gt; S2 transition can be elucidated by analyzing this dominant orbital transition pattern.</p> <p>On the other hand, for the excited state S0 -&gt; S1 of same molecule:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Excited State   1:      Singlet-A"     4.6966 eV  263.99 nm  f=0.0003  &lt;S**2&gt;=0.000
+      14 -&gt; 16         0.56407
+      14 -&gt; 20        -0.21920
+      14 -&gt; 25        -0.24192
+      14 -&gt; 29        -0.17712
+      14 -&gt; 33        -0.13568
+</code></pre></div></div> <p>Although MO14 -&gt; MO16 contributed 63.6% of S0 -&gt; S1 transition, this is not sufficient. However, if other orbital transitions with small coefficients are also considered, the analysis will be difficult to identify. Natural Transition Orbitals (NTO) can solve this problem by transforming the molecular orbitals. This allows describing the complex transition with just one transition from an occupied orbital to a virtual orbital, making the analysis much easier.</p> <h1 id="2-nto-analysis">2. NTO Analysis</h1> <h3 id="21-one-step-method">2.1 One-Step Method</h3> <p>As example, the route section of input file for NTO analysis (S0 -&gt; S1) is like:</p> <p><strong>TDDFT</strong>: <code class="language-plaintext highlighter-rouge">#p td b3lyp/6-31g(d) pop=(saveNTO,NTO) density=transition=1</code> <strong>CIS</strong>: <code class="language-plaintext highlighter-rouge">#p cis/6-31g(d) pop=(saveNTO,NTO) density=transition=1</code></p> <p>For further analysis of S0 -&gt; S2 transition, here are 2 options:</p> <ol> <li><code class="language-plaintext highlighter-rouge">#p cis/6-31g(d) pop=(saveNTO,NTO) density=transition=2</code></li> <li><code class="language-plaintext highlighter-rouge">#p cis(read)/6-31+G* guess=read pop=(saveNTO,NTO) density=transition=2</code>, this method should be faster.</li> </ol> <h3 id="22-multi-step-method">2.2 Multi-Step Method</h3> <p>This method requires an excited state calculation at first.</p> <p><strong>i) Excited State Calculation</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=es.chk
+#p td=(nstate=10) b3lyp/6-31g*
 
-   HoganJsUtils.prototype.render = function(namespace, view, params) {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 3bb754ac..a34839c0 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -36,7 +36,7 @@ describe('HoganJsUtils', function() {
-       assert.equal(null, result);
-     });
+[Molecule Specification]
+</code></pre></div></div> <p><strong>ii) NTO Calculation</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%oldchk=es.chk
+%chk=state_N.chk
+#p b3lyp/6-31g* geom=allcheck guess=(read,only) density=(check,transition=N) pop=(saveNTO,NTO)
+</code></pre></div></div> <p>For method <strong>2.1</strong> and <strong>2.2</strong>, convert the .chk file to .fchk file, and open it by <em>GaussView</em> to plot the MO. In this example, the transition 15 -&gt; 16 contributed 99.3% to S0 -&gt; S1.</p> <p align="center"> <img alt="nto" src="/assets/blog/nto.png"/> </p> <h3 id="23-via-multiwfn">2.3 via Multiwfn</h3> <p><a href="http://sobereva.com/multiwfn/">Multiwfn</a> also provides a function for NTO analysis. For more detail, please refer to the Section 4.18.6 in user manual.</p>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="Computation"/><summary type="html"><![CDATA[1. Preface]]></summary></entry><entry><title type="html">Impact Factor 2022</title><link href="https://wongzit.github.io/impact-factor-2022/" rel="alternate" type="text/html" title="Impact Factor 2022"/><published>2022-06-27T15:33:56+00:00</published><updated>2022-06-27T15:33:56+00:00</updated><id>https://wongzit.github.io/impact-factor-2022</id><content type="html" xml:base="https://wongzit.github.io/impact-factor-2022/"><![CDATA[<p>Impact factor 2022, download from <a href="/assets/blog/jcr_2022.xlsx">here</a>.</p>]]></content><author><name>Zhe Wang</name></author><category term="Journal"/><summary type="html"><![CDATA[Impact factor 2022, download from here.]]></summary></entry><entry><title type="html">MEMO: Install Gaussian and GaussView on Linux Machine</title><link href="https://wongzit.github.io/memo-install-gaussian-and-gaussview-on-linux-machine/" rel="alternate" type="text/html" title="MEMO: Install Gaussian and GaussView on Linux Machine"/><published>2022-05-13T09:45:05+00:00</published><updated>2022-05-13T09:45:05+00:00</updated><id>https://wongzit.github.io/memo-install-gaussian-and-gaussview-on-linux-machine</id><content type="html" xml:base="https://wongzit.github.io/memo-install-gaussian-and-gaussview-on-linux-machine/"><![CDATA[<h1 id="1-install-gaussian-16">1. Install Gaussian 16</h1> <p>(1) Unzip the installer with command <code class="language-plaintext highlighter-rouge">tar -xvf xxx.tbz</code>.</p> <p>(2) Move the decompressed folder to <code class="language-plaintext highlighter-rouge">/home/wangzhe</code>.</p> <p>(3) Create the <code class="language-plaintext highlighter-rouge">Scratch</code> folder in <code class="language-plaintext highlighter-rouge">/home/wangzhe/g16</code>.</p> <p>(4) Add following lines in <code class="language-plaintext highlighter-rouge">.bashrc</code> file:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export g16root=/home/wangzhe
+export GAUSS_SCRDIR=/home/wangzhe/g16/Scratch
+source /home/wangzhe/g16/bsd/g16.profile
+</code></pre></div></div> <p>(5) Create a <code class="language-plaintext highlighter-rouge">Default.Route</code> file including default CPU cores number and memory amount in <code class="language-plaintext highlighter-rouge">/home/wangzhe/g16</code>:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-M- 32GB
+-P- 8
+</code></pre></div></div> <blockquote> <p>The settings in this file have a lower priority than the %mem and %nproc settings in the input file. Therefore, the -M- setting here is used only when %mem is not written in the input file, and the -P- setting here is used only when %nproc is not written in the input file (if you neither set -P- nor %nproc here, then the program uses only single-core computing. If you neither set -M- nor write %mem here, then the G09 uses up to 256MB of memory and the G16 uses up to 800MB of memory).</p> </blockquote> <p>(6) In termial, go to <code class="language-plaintext highlighter-rouge">/home/wangzhe/g16</code>, execute <code class="language-plaintext highlighter-rouge">chmod 750 -R *</code> command.</p> <h1 id="2-install-gaussview-6">2. Install GaussView 6</h1> <p>(1) Unzip the installer with command <code class="language-plaintext highlighter-rouge">tar -xvf xxx.tbz</code>.</p> <p>(2) Move the decompressed folder to <code class="language-plaintext highlighter-rouge">/home/wangzhe</code>.</p> <p>(3) Run <code class="language-plaintext highlighter-rouge">sudo yum install csh</code> (for Ubuntu: <code class="language-plaintext highlighter-rouge">sudo apt-get install csh</code>) to install <strong>csh</strong>.</p> <p>(4) Add following lines in <code class="language-plaintext highlighter-rouge">.bashrc</code> file:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export GV_DIR=/home/wangzhe/gv/gview
+export PATH="$PATH:/home/wangzhe/gv/gview"
+alias gv=/home/wangzhe/gv/gview.sh
+</code></pre></div></div> <p>(5) Reboot the terminal window, run <em>GaussView</em> through command <code class="language-plaintext highlighter-rouge">gv</code>.</p> <p>(6) If error shows there is no dynamic library, execute <code class="language-plaintext highlighter-rouge">sudo yum install mesa-libGLU.x86_64</code> comand to install.</p>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="Computation"/><summary type="html"><![CDATA[1. Install Gaussian 16]]></summary></entry><entry><title type="html">Evaluating Dissected NICS with NBO Program</title><link href="https://wongzit.github.io/evaluating-dissected-nics-with-nbo-program/" rel="alternate" type="text/html" title="Evaluating Dissected NICS with NBO Program"/><published>2022-04-27T01:26:08+00:00</published><updated>2022-04-27T01:26:08+00:00</updated><id>https://wongzit.github.io/evaluating-dissected-nics-with-nbo-program</id><content type="html" xml:base="https://wongzit.github.io/evaluating-dissected-nics-with-nbo-program/"><![CDATA[<h1 id="general-information">General information</h1> <p>This blog is a memo for calculation NICS values from π-orbital contributions, so-called “dissected NICS values”. NBO 3.1, which is a built-in module in Gaussian 09/16 is not available for dissected NICS calculation. At least NBO 5.0+ is necessary.</p> <h1 id="computation">Computation</h1> <p>This memo is based on the paper <a href="https://doi.org/10.1021/ol0529546">“Which NICS Aromaticity Index for Planar π Ring is Best?”</a>. For more detail informations, please refer to the paper and supporting information.</p> <h2 id="input">Input</h2> <p>A general input file for evaluating dissected NICS values of biphenyl with NBO program is shown below, all input and output files of this example could be download from <a href="https://github.com/wongzit/blogFiles/tree/main/blog_NICS_NBO">here</a>.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#p nmr rb3lyp/6-31+g(d) iop(10/46=1) pop=nbo7read
 
--    it('should allow templates to be overridden', function() {
-+    it('should allow templates to be overridden with compiled templates', function() {
-       var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
+NICSinput//Created_by_py.Aroma
 
-       var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-@@ -44,5 +44,27 @@ describe('HoganJsUtils', function() {
-       var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-       assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-     });
-+
-+    it('should allow templates to be overridden with uncompiled templates', function() {
-+      var emptyDiffTemplate = '&lt;p&gt;&lt;/p&gt;';
-+
-+      var config = {rawTemplates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-+
-+    it('should allow templates to be overridden giving priority to compiled templates', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+      var emptyDiffTemplateUncompiled = '&lt;p&gt;Not used!&lt;/p&gt;';
-+
-+      var config = {
-+        templates: {'generic-empty-diff': emptyDiffTemplate},
-+        rawTemplates: {'generic-empty-diff': emptyDiffTemplateUncompiled}
-+      };
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is how you can display code diffs]]></summary></entry><entry><title type="html">a post with advanced image components</title><link href="https://wongzit.github.io/advanced-images/" rel="alternate" type="text/html" title="a post with advanced image components"/><published>2024-01-27T11:46:00+00:00</published><updated>2024-01-27T11:46:00+00:00</updated><id>https://wongzit.github.io/advanced-images</id><content type="html" xml:base="https://wongzit.github.io/advanced-images/"><![CDATA[<p>This is an example post with advanced image components.</p> <h2 id="image-slider">Image Slider</h2> <p>This is a simple image slider. It uses the <a href="https://swiperjs.com/">Swiper</a> library. Check the <a href="https://swiperjs.com/demos">examples page</a> for more information of what you can achieve with it.</p> <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true"> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/9-480.webp 480w,/assets/img/9-800.webp 800w,/assets/img/9-1400.webp 1400w," sizes="95vw" type="image/webp"/> <img src="/assets/img/9.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/7-480.webp 480w,/assets/img/7-800.webp 800w,/assets/img/7-1400.webp 1400w," sizes="95vw" type="image/webp"/> <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/8-480.webp 480w,/assets/img/8-800.webp 800w,/assets/img/8-1400.webp 1400w," sizes="95vw" type="image/webp"/> <img src="/assets/img/8.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/10-480.webp 480w,/assets/img/10-800.webp 800w,/assets/img/10-1400.webp 1400w," sizes="95vw" type="image/webp"/> <img src="/assets/img/10.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/12-480.webp 480w,/assets/img/12-800.webp 800w,/assets/img/12-1400.webp 1400w," sizes="95vw" type="image/webp"/> <img src="/assets/img/12.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> </swiper-container> <h2 id="image-comparison-slider">Image Comparison Slider</h2> <p>This is a simple image comparison slider. It uses the <a href="https://img-comparison-slider.sneas.io/">img-comparison-slider</a> library. Check the <a href="https://img-comparison-slider.sneas.io/examples.html">examples page</a> for more information of what you can achieve with it.</p> <img-comparison-slider> <figure slot="first"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," sizes="95vw" type="image/webp"/> <img src="/assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> <figure slot="second"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic_color-480.webp 480w,/assets/img/prof_pic_color-800.webp 800w,/assets/img/prof_pic_color-1400.webp 1400w," sizes="95vw" type="image/webp"/> <img src="/assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </img-comparison-slider>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what advanced image components could look like]]></summary></entry><entry><title type="html">a post with vega lite</title><link href="https://wongzit.github.io/vega-lite/" rel="alternate" type="text/html" title="a post with vega lite"/><published>2024-01-27T00:20:00+00:00</published><updated>2024-01-27T00:20:00+00:00</updated><id>https://wongzit.github.io/vega-lite</id><content type="html" xml:base="https://wongzit.github.io/vega-lite/"><![CDATA[<p>This is an example post with some <a href="https://vega.github.io/vega-lite/">vega lite</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">vega_lite
-</span><span class="sb">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-vega_lite">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}
-</code></pre> <p>This plot supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included vega lite code could look like]]></summary></entry><entry><title type="html">a post with geojson</title><link href="https://wongzit.github.io/geojson-map/" rel="alternate" type="text/html" title="a post with geojson"/><published>2024-01-26T17:57:00+00:00</published><updated>2024-01-26T17:57:00+00:00</updated><id>https://wongzit.github.io/geojson-map</id><content type="html" xml:base="https://wongzit.github.io/geojson-map/"><![CDATA[<p>This is an example post with some <a href="https://geojson.org/">geojson</a> code. The support is provided thanks to <a href="https://leafletjs.com/">Leaflet</a>. To create your own visualization, go to <a href="https://geojson.io/">geojson.io</a>.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">geojson
-</span><span class="sb">{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      }
-    }
-  ]
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-geojson">{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      }
-    }
-  ]
-}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><category term="maps"/><summary type="html"><![CDATA[this is what included geojson code could look like]]></summary></entry><entry><title type="html">a post with echarts</title><link href="https://wongzit.github.io/echarts/" rel="alternate" type="text/html" title="a post with echarts"/><published>2024-01-26T16:03:00+00:00</published><updated>2024-01-26T16:03:00+00:00</updated><id>https://wongzit.github.io/echarts</id><content type="html" xml:base="https://wongzit.github.io/echarts/"><![CDATA[<p>This is an example post with some <a href="https://echarts.apache.org/">echarts</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">echarts
-</span><span class="sb">{
-  "title": {
-    "text": "ECharts Getting Started Example"
-  },
-  "responsive": true,
-  "tooltip": {},
-  "legend": {
-    "top": "30px",
-    "data": ["sales"]
-  },
-  "xAxis": {
-    "data": ["Shirts", "Cardigans", "Chiffons", "Pants", "Heels", "Socks"]
-  },
-  "yAxis": {},
-  "series": [
-    {
-      "name": "sales",
-      "type": "bar",
-      "data": [5, 20, 36, 10, 10, 20]
-    }
-  ]
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-echarts">{
-  "title": {
-    "text": "ECharts Getting Started Example"
-  },
-  "responsive": true,
-  "tooltip": {},
-  "legend": {
-    "top": "30px",
-    "data": ["sales"]
-  },
-  "xAxis": {
-    "data": ["Shirts", "Cardigans", "Chiffons", "Pants", "Heels", "Socks"]
-  },
-  "yAxis": {},
-  "series": [
-    {
-      "name": "sales",
-      "type": "bar",
-      "data": [5, 20, 36, 10, 10, 20]
-    }
-  ]
-}
-</code></pre> <p>Note that this library offer support for both light and dark themes. You can switch between them using the theme switcher in the top right corner of the page.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included echarts code could look like]]></summary></entry><entry><title type="html">a post with chart.js</title><link href="https://wongzit.github.io/chartjs/" rel="alternate" type="text/html" title="a post with chart.js"/><published>2024-01-26T01:04:00+00:00</published><updated>2024-01-26T01:04:00+00:00</updated><id>https://wongzit.github.io/chartjs</id><content type="html" xml:base="https://wongzit.github.io/chartjs/"><![CDATA[<p>This is an example post with some <a href="https://www.chartjs.org/">chart.js</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">chartjs
-</span><span class="sb">{
-  "type": "line",
-  "data": {
-    "labels": [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July"
-    ],
-    "datasets": [
-      {
-        "label": "# of bugs",
-        "fill": false,
-        "lineTension": 0.1,
-        "backgroundColor": "rgba(75,192,192,0.4)",
-        "borderColor": "rgba(75,192,192,1)",
-        "borderCapStyle": "butt",
-        "borderDash": [],
-        "borderDashOffset": 0,
-        "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(75,192,192,1)",
-        "pointBackgroundColor": "#fff",
-        "pointBorderWidth": 1,
-        "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
-        "pointHoverBorderColor": "rgba(220,220,220,1)",
-        "pointHoverBorderWidth": 2,
-        "pointRadius": 1,
-        "pointHitRadius": 10,
-        "data": [
-          65,
-          59,
-          80,
-          81,
-          56,
-          55,
-          40
-        ],
-        "spanGaps": false
-      }
-    ]
-  },
-  "options": {}
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>This is how it looks like:</p> <pre><code class="language-chartjs">{
-  "type": "line",
-  "data": {
-    "labels": [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July"
-    ],
-    "datasets": [
-      {
-        "label": "# of bugs",
-        "fill": false,
-        "lineTension": 0.1,
-        "backgroundColor": "rgba(75,192,192,0.4)",
-        "borderColor": "rgba(75,192,192,1)",
-        "borderCapStyle": "butt",
-        "borderDash": [],
-        "borderDashOffset": 0,
-        "borderJoinStyle": "miter",
-        "pointBorderColor": "rgba(75,192,192,1)",
-        "pointBackgroundColor": "#fff",
-        "pointBorderWidth": 1,
-        "pointHoverRadius": 5,
-        "pointHoverBackgroundColor": "rgba(75,192,192,1)",
-        "pointHoverBorderColor": "rgba(220,220,220,1)",
-        "pointHoverBorderWidth": 2,
-        "pointRadius": 1,
-        "pointHitRadius": 10,
-        "data": [
-          65,
-          59,
-          80,
-          81,
-          56,
-          55,
-          40
-        ],
-        "spanGaps": false
-      }
-    ]
-  },
-  "options": {}
-}
-</code></pre> <p>Also another example chart.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">chartjs
-</span><span class="sb">{
-  "type": "doughnut",
-  "data": {
-    "labels": [
-      "Red",
-      "Blue",
-      "Yellow"
-    ],
-    "datasets": [
-      {
-        "data": [
-          300,
-          50,
-          100
-        ],
-        "backgroundColor": [
-          "#FF6384",
-          "#36A2EB",
-          "#FFCE56"
-        ],
-        "hoverBackgroundColor": [
-          "#FF6384",
-          "#36A2EB",
-          "#FFCE56"
-        ]
-      }
-    ]
-  },
-  "options": {}
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-chartjs">{
-  "type": "doughnut",
-  "data": {
-    "labels": [
-      "Red",
-      "Blue",
-      "Yellow"
-    ],
-    "datasets": [
-      {
-        "data": [
-          300,
-          50,
-          100
-        ],
-        "backgroundColor": [
-          "#FF6384",
-          "#36A2EB",
-          "#FFCE56"
-        ],
-        "hoverBackgroundColor": [
-          "#FF6384",
-          "#36A2EB",
-          "#FFCE56"
-        ]
-      }
-    ]
-  },
-  "options": {}
-}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included chart.js code could look like]]></summary></entry><entry><title type="html">a post with TikZJax</title><link href="https://wongzit.github.io/tikzjax/" rel="alternate" type="text/html" title="a post with TikZJax"/><published>2023-12-12T22:25:00+00:00</published><updated>2023-12-12T22:25:00+00:00</updated><id>https://wongzit.github.io/tikzjax</id><content type="html" xml:base="https://wongzit.github.io/tikzjax/"><![CDATA[<p>This is an example post with TikZ code. TikZJax converts script tags (containing TikZ code) into SVGs.</p> <script type="text/tikz">
-\begin{tikzpicture}
-    \draw[red,fill=black!60!red] (0,0) circle [radius=1.5];
-    \draw[green,fill=black!60!green] (0,0) circle [x radius=1.5cm, y radius=10mm];
-    \draw[blue,fill=black!60!blue] (0,0) circle [x radius=1cm, y radius=5mm, rotate=30];
-\end{tikzpicture}
-</script>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="diagrams"/><summary type="html"><![CDATA[this is what included TikZ code could look like]]></summary></entry><entry><title type="html">a post with bibliography</title><link href="https://wongzit.github.io/post-bibliography/" rel="alternate" type="text/html" title="a post with bibliography"/><published>2023-07-12T13:56:00+00:00</published><updated>2023-07-12T13:56:00+00:00</updated><id>https://wongzit.github.io/post-bibliography</id><content type="html" xml:base="https://wongzit.github.io/post-bibliography/"><![CDATA[<p>This post shows how to add bibliography to simple blog posts. We support every citation style that <a href="https://github.com/inukshuk/jekyll-scholar">jekyll-scholar</a> does. That means simple citation like <a class="citation" href="#einstein1950meaning">(Einstein &amp; Taub, 1950)</a>, multiple citations like <a class="citation" href="#einstein1950meaning">(Einstein &amp; Taub, 1950; Einstein, 1905)</a>, long references like <span id="einstein1905movement">Einstein, A. (1905). Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat. <i>Ann. Phys.</i>, <i>17</i>, 549–560.</span> or also quotes:</p> <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br/>sed do eiusmod tempor.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p><cite><a class="citation" href="#einstein1905electrodynamics">(Einstein, 1905)</a></cite></blockquote> <p>If you would like something more academic, check the <a href="/distill/">distill style post</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="bib"/><summary type="html"><![CDATA[an example of a blog post with bibliography]]></summary></entry><entry><title type="html">a post with jupyter notebook</title><link href="https://wongzit.github.io/jupyter-notebook/" rel="alternate" type="text/html" title="a post with jupyter notebook"/><published>2023-07-04T12:57:00+00:00</published><updated>2023-07-04T12:57:00+00:00</updated><id>https://wongzit.github.io/jupyter-notebook</id><content type="html" xml:base="https://wongzit.github.io/jupyter-notebook/"><![CDATA[<p>To include a jupyter notebook in a post, you can use the following code:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{::nomarkdown}
-<span class="cp">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">jupyter_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'assets/jupyter/blog.ipynb'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">relative_url</span><span class="w"> </span><span class="cp">%}</span>
-<span class="cp">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="nv">notebook_exists</span><span class="w"> </span><span class="cp">%}{%</span><span class="w"> </span><span class="nt">file_exists</span><span class="w"> </span>assets/jupyter/blog.ipynb<span class="w"> </span><span class="cp">%}{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="cp">%}</span>
-<span class="cp">{%</span><span class="w"> </span><span class="nt">if</span><span class="w"> </span><span class="nv">notebook_exists</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'true'</span><span class="w"> </span><span class="cp">%}</span>
-  <span class="cp">{%</span><span class="w"> </span><span class="nt">jupyter_notebook</span><span class="w"> </span><span class="nv">jupyter_path</span><span class="w"> </span><span class="cp">%}</span>
-<span class="cp">{%</span><span class="w"> </span><span class="nt">else</span><span class="w"> </span><span class="cp">%}</span>
-  &lt;p&gt;Sorry, the notebook you are looking for does not exist.&lt;/p&gt;
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endif</span><span class="w"> </span><span class="cp">%}</span>
-{:/nomarkdown}
-</code></pre></div></div> <p>Let’s break it down: this is possible thanks to <a href="https://github.com/red-data-tools/jekyll-jupyter-notebook">Jekyll Jupyter Notebook plugin</a> that allows you to embed jupyter notebooks in your posts. It basically calls <a href="https://nbconvert.readthedocs.io/en/latest/usage.html#convert-html"><code class="language-plaintext highlighter-rouge">jupyter nbconvert --to html</code></a> to convert the notebook to an html page and then includes it in the post. Since <a href="https://jekyllrb.com/docs/configuration/markdown/">Kramdown</a> is the default Markdown renderer for Jekyll, we need to surround the call to the plugin with the <a href="https://kramdown.gettalong.org/syntax.html#extensions">::nomarkdown</a> tag so that it stops processing this part with Kramdown and outputs the content as-is.</p> <p>The plugin takes as input the path to the notebook, but it assumes the file exists. If you want to check if the file exists before calling the plugin, you can use the <code class="language-plaintext highlighter-rouge">file_exists</code> filter. This avoids getting a 404 error from the plugin and ending up displaying the main page inside of it instead. If the file does not exist, you can output a message to the user. The code displayed above outputs the following:</p> <div class="jupyter-notebook" style="position: relative; width: 100%; margin: 0 auto;"> <div class="jupyter-notebook-iframe-container"> <iframe src="/assets/jupyter/blog.ipynb.html" style="position: absolute; top: 0; left: 0; border-style: none;" width="100%" height="100%" onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe> </div> </div> <p>Note that the jupyter notebook supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="jupyter"/><summary type="html"><![CDATA[an example of a blog post with jupyter notebook]]></summary></entry><entry><title type="html">a post with custom blockquotes</title><link href="https://wongzit.github.io/custom-blockquotes/" rel="alternate" type="text/html" title="a post with custom blockquotes"/><published>2023-05-12T19:53:00+00:00</published><updated>2023-05-12T19:53:00+00:00</updated><id>https://wongzit.github.io/custom-blockquotes</id><content type="html" xml:base="https://wongzit.github.io/custom-blockquotes/"><![CDATA[<p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook">jekyll-gitbook</a> implementation.</p> <p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss">_base.scss</a> file, more specifically:</p> <div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Tips, warnings, and dangers */</span>
-<span class="nc">.post</span> <span class="nc">.post-content</span> <span class="nt">blockquote</span> <span class="p">{</span>
-  <span class="k">&amp;</span><span class="nc">.block-tip</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-bg</span><span class="p">);</span>
+0 1
+ H                  1.90900000   -0.93500000    0.91600000
+ C                  1.07900000   -0.51700000    1.45200000
+ C                 -1.07900000    0.51700000    2.83500000
+ C                  0.00000000    0.00000000    0.74500000
+ C                  1.07900000   -0.51700000    2.83500000
+ C                  0.00000000    0.00000000    3.53100000
+ C                 -1.07900000    0.51700000    1.45200000
+ H                  1.91500000   -0.92500000    3.36700000
+ H                  0.00000000    0.00000000    4.60300000
+ H                 -1.90900000    0.93500000    0.91600000
+ H                 -1.91500000    0.92500000    3.36700000
+ C                  0.00000000    0.00000000   -0.74500000
+ C                  0.00000000    0.00000000   -3.53100000
+ C                  1.07900000    0.51700000   -1.45200000
+ C                 -1.07900000   -0.51700000   -1.45200000
+ C                 -1.07900000   -0.51700000   -2.83500000
+ C                  1.07900000    0.51700000   -2.83500000
+ H                  1.90900000    0.93500000   -0.91600000
+ H                 -1.90900000   -0.93500000   -0.91600000
+ H                 -1.91500000   -0.92500000   -3.36700000
+ H                  1.91500000    0.92500000   -3.36700000
+ H                  0.00000000    0.00000000   -4.60300000
+ Bq                    0.432106       0.901823       2.138333
+ Bq                   -0.432106      -0.901823       2.138333
+ Bq                    0.432106      -0.901823      -2.145000
+ Bq                   -0.432106       0.901823      -2.145000
+ Bq                    0.000000       0.000000       2.145000
 
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
+$NBO NPA NBO NBOSUM BNDIDX E2PERT NLMO DIPOLE CMO NRT NCS &lt;XYZ MO&gt; $END
 
-    <span class="nt">h1</span><span class="o">,</span>
-    <span class="nt">h2</span><span class="o">,</span>
-    <span class="nt">h3</span><span class="o">,</span>
-    <span class="nt">h4</span><span class="o">,</span>
-    <span class="nt">h5</span><span class="o">,</span>
-    <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
+</code></pre></div></div> <h2 id="output">Output</h2> <p>An example of output is shown below. Find the following table in the output file:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Principal components of the tensor (ppm) for atom gh( 26):
+ Canonical MO contributions
+ This tensor is non-symmetric.  The antisymmetric part will be printed.
 
-  <span class="k">&amp;</span><span class="nc">.block-warning</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-bg</span><span class="p">);</span>
-
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="nt">h1</span><span class="o">,</span>
-    <span class="nt">h2</span><span class="o">,</span>
-    <span class="nt">h3</span><span class="o">,</span>
-    <span class="nt">h4</span><span class="o">,</span>
-    <span class="nt">h5</span><span class="o">,</span>
-    <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-
-  <span class="k">&amp;</span><span class="nc">.block-danger</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-bg</span><span class="p">);</span>
-
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="nt">h1</span><span class="o">,</span>
-    <span class="nt">h2</span><span class="o">,</span>
-    <span class="nt">h3</span><span class="o">,</span>
-    <span class="nt">h4</span><span class="o">,</span>
-    <span class="nt">h5</span><span class="o">,</span>
-    <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div> <p>A regular blockquote can be used as following:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a regular blockquote</span>
-<span class="gt">&gt; and it can be used as usual</span>
-</code></pre></div></div> <blockquote> <p>This is a regular blockquote and it can be used as usual</p> </blockquote> <p>These custom styles can be used by adding the specific class to the blockquote, as follows:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; A tip can be used when you want to give advice</span>
-<span class="gt">&gt; related to a certain content.</span>
-{: .block-tip }
-</code></pre></div></div> <blockquote class="block-tip"> <h5 id="tip">TIP</h5> <p>A tip can be used when you want to give advice related to a certain content.</p> </blockquote> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; This is a warning, and thus should</span>
-<span class="gt">&gt; be used when you want to warn the user</span>
-{: .block-warning }
-</code></pre></div></div> <blockquote class="block-warning"> <h5 id="warning">WARNING</h5> <p>This is a warning, and thus should be used when you want to warn the user</p> </blockquote> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; This is a danger zone, and thus should</span>
-<span class="gt">&gt; be used carefully</span>
-{: .block-danger }
-</code></pre></div></div> <blockquote class="block-danger"> <h5 id="danger">DANGER</h5> <p>This is a danger zone, and thus should be used carefully</p> </blockquote> ]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="blockquotes"/><summary type="html"><![CDATA[an example of a blog post with custom blockquotes]]></summary></entry></feed>
+                      Principal components     Antisymmetric part
+        MO             11      22      33      12      13      23     CSA     ISO
+ =================================================================================
+    1.               -0.12    0.04   -0.11    0.04    0.03   -0.06   -0.07   -0.06
+    2.                0.94    0.02    0.51   -0.15   -0.15    0.36    0.02    0.49
+    3.                0.54    0.04    1.87    0.01   -0.02   -0.21    1.57    0.82
+    4.               -0.23   -0.04    1.01    0.00   -0.22   -0.15    1.15    0.25
+    5.                0.22    0.04    0.89   -0.10   -0.21   -0.46    0.75    0.38
+    6.               -0.06   -0.20    0.82    0.07   -0.02   -0.23    0.95    0.19
+    7.                0.35    0.02    1.76   -0.02   -0.07   -0.65    1.58    0.71
+    8.               -0.02    0.01    1.63    0.01   -0.22   -0.58    1.64    0.54
+    9.                0.15    0.35    0.43    0.18    0.07   -0.34    0.17    0.31
+   10.                0.00   -0.12    0.28   -0.24    0.05   -0.13    0.34    0.05
+   11.                0.19    0.13   -1.90    0.19    0.17   -0.12   -2.07   -0.53
+   12.                0.09   -0.03   -0.18   -0.04   -0.18   -0.21   -0.21   -0.04
+   13.               -1.71   -0.81    2.41    0.11   -1.50   -2.05    3.67   -0.04
+   14.                0.93   -0.66    5.42    0.04   -1.61   -4.67    5.29    1.90
+   15.               -0.20    0.56    5.55    0.02   -0.97   -1.87    5.37    1.97
+   16.                1.25   -0.03    6.01   -0.70   -0.42    0.37    5.40    2.41
+   17.                1.05    0.92    3.55    0.18    0.42   -1.06    2.56    1.84
+   18.               -1.07    0.36   -1.57   -0.18    0.32   -2.00   -1.22   -0.76
+   19.                1.16    0.78    2.51   -0.05   -0.08   -0.57    1.53    1.48
+   20.                1.55    0.91    2.59    0.51    0.12   -0.34    1.37    1.68
+   21.                0.65    0.67    2.53   -0.60   -0.22   -0.35    1.88    1.28
+   22.                0.65    1.00    2.22   -0.10   -0.41   -0.98    1.39    1.29
+   23.                0.36    0.28    2.70    0.25   -0.67   -3.77    2.38    1.12
+   24.               -0.21   -0.25    3.89   -0.06   -0.55   -2.25    4.13    1.14
+   25.               -0.27   -0.13    0.78    0.13   -0.12    0.14    0.99    0.13
+   26.               -2.15   -1.40    2.49    0.27   -0.26    1.89    4.27   -0.35
+   27.                0.13    0.02    1.02   -0.04   -0.59   -1.27    0.95    0.39
+   28.               -1.91   -1.11   -0.48   -0.40    0.55    2.11    1.03   -1.17
+   29.               -0.16   -0.46   -2.95    0.35    1.23    4.44   -2.64   -1.19
+   30.               -0.24   -1.07   -3.56    0.16    1.32    5.19   -2.90   -1.62
+   31.                0.00    0.46   -3.39    0.15   -0.32   -0.91   -3.62   -0.98
+   32.                3.17    1.94    3.43   -0.25   -0.41   -1.02    0.88    2.85
+   33.               -1.20   -0.26  -12.71   -0.07    0.75    2.42  -11.98   -4.72
+   34.                3.47    2.77    5.07   -0.06   -0.80   -1.51    1.95    3.77
+   35.               -1.48    0.09   -8.69   -0.30    0.87    3.42   -7.99   -3.36
+   36.               -0.56   -1.01   -7.56    0.08    1.07    2.92   -6.77   -3.04
+   37.               -0.97   -0.08   -6.94    0.11    0.27    1.12   -6.42   -2.66
+   38.               -2.65    0.58    6.40    0.23    1.69   -0.88    7.43    1.45
+   39.                0.88   -2.65    4.07   -0.02    0.37    1.72    4.95    0.77
+   40.               -0.59   -2.23    4.88    0.43   -0.08    2.04    6.29    0.68
+   41.               -2.09    2.02    1.22    0.18    0.66    0.64    1.26    0.38
+ ---------------------------------------------------------------------------------
+             Total   -0.19    1.47   27.87    0.31   -0.13    0.13   27.23    9.72
+ ---------------------------------------------------------------------------------
+</code></pre></div></div> <p>In this case, the π-orbitals could be identified to MO 32, 34, 38, 39 40 and 41 by examining the MO structure. So, we could calculated the NICS values:</p> <p><img src="/assets/blog/biphenyl_orbitals.png" alt=""/></p> <ul> <li>NICS(zz) = -27,87 ppm, showed in “Principal components - 33” column.</li> <li>NICS(iso) = -9.72 ppm, showed in “ISO” column.</li> <li>NICS(π,zz) = -(3.43 + 5.07 + 6.40 + 4.07 + 4.88 + 1.22) = -25.07 ppm.</li> <li>NICS(π,iso) = -(2.85 + 3.77 + 1.45 + 0.77 + 0.68 + 0.38) = -9.9 ppm.</li> </ul> <h1 id="processing-output-with-pyaroma">Processing output with py.Aroma</h1> <p>The upcoming py.Aroma v2.0 will add the support for NICS calculation with NBO program. By inputting the π-orbitals number, the NICS(zz), NICS(iso), NICS(π,zz) and NICS(π,iso) values of each ghost atom would be summarized in table.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   Atom      NICS(zz)    NICS(iso)    NICS(π,zz)    NICS(π,iso)
+==================================================================
+  Bq( 23)     -27.87        -9.71        -25.07           -9.9
+  Bq( 24)     -27.87        -9.71        -25.07           -9.9
+  Bq( 25)     -27.87        -9.72        -25.07           -9.9
+  Bq( 26)     -27.87        -9.72        -25.07           -9.9
+  Bq( 27)     -12.12        -7.74        -30.05         -22.12
+</code></pre></div></div>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="NBO"/><category term="Computation"/><summary type="html"><![CDATA[General information]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://wongzit.github.io/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog"/><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://wongzit.github.io/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://wongzit.github.io/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry></feed>
