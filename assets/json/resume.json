@@ -101,16 +101,40 @@
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Chemistry",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Organic Synthesis",
+        "QM Calculation",
+        "Flash Photolysis",
+        "Photo Reaction",
+        "EPR",
+        "Solvent Effect"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "C",
+        "C++",
+        "Bash Shell",
+        "Swift"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Mathematica",
+        "Matlab",
+        "Ps, Ai & Xd",
+        "GraphPad Prism",
+        "Origin"
       ]
     }
   ],
