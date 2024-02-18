@@ -1,12 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - wongzit
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - wongzit/pyAroma
+  - wongzit/O2Ig
+  - wongzit/EnePro
+  - wongzit/minorScripts
+  - wongzit/uvPlotter
+  - wongzit/gauMonitor
+  - wongzit/TmCalc
+  - wongzit/pyKinetics
+  - wongzit/intScan
