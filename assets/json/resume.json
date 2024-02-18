@@ -5,7 +5,7 @@
     "image": "",
     "email": "wang.zhe.dr@gmail.com",
     "url": "https://wongzit.github.io",
-    "summary": "A supramolecular doing research on organic chemistry.",
+    "summary": "A supramolecule doing research on organic chemistry.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -76,47 +76,26 @@
       "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
   ],
-  "certificates": [
+  "degrees": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Ph.D.",
+      "date": "2022-09-20",
+      "issuer": "Hiroshima University",
+      "url": "https://www.hiroshima-u.ac.jp/en",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "M.Sc.",
+      "date": "2019-09-20",
+      "issuer": "Hiroshima University",
+      "url": "https://www.hiroshima-u.ac.jp/en",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "B.Eng.",
+      "date": "2017-06-21",
+      "issuer": "China University of Petroleum (East China)",
+      "url": "https://english.upc.edu.cn",
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
