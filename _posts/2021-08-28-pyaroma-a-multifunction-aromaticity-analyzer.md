@@ -6,9 +6,9 @@ tags: [Software, Computation]
 author: Zhe Wang
 ---
 
-<p align = "center">
-<img alt="pyaroma" class="icon" src="/assets/program/pyAroma_rm.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/program/pyAroma_rm.png" class="img-fluid" zoomable=true %}
+</div>
 
 Several month ago, I released [NICSgen](https://github.com/wongzit/NICSgen), [ICSSgen](https://github.com/wongzit/ICSSgen), [ICSScsv](https://github.com/wongzit/ICSScsv), [HOMAcalc](https://github.com/wongzit/HOMAcalc), [ICSSgen3D](https://github.com/wongzit/ICSSgen3D) and [ICSScub3D](https://github.com/wongzit/ICSScub3D), for creating input files and processing output files of aromaticity analyses. Now, I combined these program, and improved the code efficiency, to a new program, the [py.**Aroma**](https://github.com/wongzit/pyAroma).
 

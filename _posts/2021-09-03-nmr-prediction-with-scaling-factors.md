@@ -87,15 +87,15 @@ Benzene//NMR
 Open the output file with *GaussView*, go to "Results -> NMR", choose "H" from "element", we could get the 
 magnetic shielding tensors σ (in ppm).
 
-<p align = "center">
-<img alt="nmt_output_sigma" src="/assets/blog/figure101.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure101.png" class="img-fluid" zoomable=true %}
+</div>
 
 You could also use "Reference" like TMS, to get the chemical shift δ, to compare with experimental data.
 
-<p align = "center">
-<img alt="nmt_output_delta" src="/assets/blog/figure102.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure102.png" class="img-fluid" zoomable=true %}
+</div>
 
 In this demo calculation, the computed shielding tensors *σ* for all protons are **24.0925**, **24.0931** and **24.1077** ppm, the 
 chemical shift *δ* are **7.7896**, **7.7890** and **7.7744**. The experimental chemica shift of benzene in *d*-chloroform is **7.36**.
@@ -132,9 +132,9 @@ at `/Applications/gv/data/nmr.data`.
 2. Add the references at the end of file, for example:  **H    32.3685  "TMS wB97XD/6-31+G(d,p) GIAO"**
 3. Re-open *GaussView*, you could find the new reference in NMR window.
 
-<p align = "center">
-<img alt="nmt_re" src="/assets/blog/figure103.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure103.png" class="img-fluid" zoomable=true %}
+</div>
 
 # 5. Apply scaling factor with py.NMR
 
@@ -153,6 +153,6 @@ $$ L(x) = \frac {FWHM}{2 \pi} \frac {1}{(x-x_i)^2 + 0.25 \times FWHM^2} $$
 
 Users can plot the scaled NMR spectrum with the data points in Excel file. More detail about usage of py.**NMR**, please refer to the user manual on [GitHub](https://github.com/wongzit/pyNMR).
 
-<p align = "center">
-<img alt="exnmr" src="/assets/blog/figure111.jpg">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure111.png" class="img-fluid" zoomable=true %}
+</div>
