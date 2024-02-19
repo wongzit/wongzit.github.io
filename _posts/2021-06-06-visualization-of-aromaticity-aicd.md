@@ -143,6 +143,10 @@ Molecular view in AICD plots, *n* = 1-4. (1: single view, surface only; 2: singl
 <img alt="aicdfig2" src="/assets/blog/figure82.png">
 </p>
 
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure82.png" class="img-fluid" zoomable=true %}
+</div>
+
 ### `-b x y z`
 Direction of external magnetic field (default is 0 0 1), the external magnetic field is defined in vector space with *x*, *y*, *z* direction. The external is only defined in direction, the magnitude is out of consideration (e.g.: 0 0 1 is same as 0 0 2).
 
