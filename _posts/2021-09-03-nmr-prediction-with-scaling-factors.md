@@ -154,5 +154,5 @@ $$ L(x) = \frac {FWHM}{2 \pi} \frac {1}{(x-x_i)^2 + 0.25 \times FWHM^2} $$
 Users can plot the scaled NMR spectrum with the data points in Excel file. More detail about usage of py.**NMR**, please refer to the user manual on [GitHub](https://github.com/wongzit/pyNMR).
 
 <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/blog/figure111.png" class="img-fluid" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/blog/figure111.jpg" class="img-fluid" zoomable=true %}
 </div>
