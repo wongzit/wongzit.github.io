@@ -72,9 +72,9 @@ This method requires an excited state calculation at first.
 For method **2.1** and **2.2**, convert the .chk file to .fchk file, and open it by *GaussView* to plot the MO. 
 In this example, the transition 15 -> 16 contributed 99.3% to S0 -> S1.
 
-<p align="center">
-<img alt="nto" src="/assets/blog/nto.png">
-</p>
+<div class=“col-sm mt-3 mt-md-0”>
+    {% include figure.liquid loading=“eager” path=“assets/blog/nto.png” class=“img-fluid” zoomable=true %}
+</div>
 
 ### 2.3 via Multiwfn
 
