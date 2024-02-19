@@ -147,39 +147,41 @@ Molecular view in AICD plots, *n* = 1-4. (1: single view, surface only; 2: singl
 Direction of external magnetic field (default is 0 0 1), the external magnetic field is defined in vector space with *x*, *y*, *z* direction. The external is only defined in direction, the magnitude is out of consideration (e.g.: 0 0 1 is same as 0 0 2).
 
 <div class="col-sm-7 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/blog/figure83.png" class="img-fluid mx-auto d-block" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/blog/figure83.png" class="img-fluid" zoomable=true %}
 </div>
 
 ### `-l r`
 
 Iso-surface value.
 
-<p align="center">
-<img alt="aicdfig4" src="/assets/blog/figure84.png" style="height:300px;">
-</p>
+<div class="col-sm-7 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure84.png" class="img-fluid" zoomable=true %}
+</div>
 
 ### `-p n`
 
 Number of data points, default is 40000, larger *n* value will generate more arrows and smoother iso-surface. More computational cost is needed.
 
-<p align="center">
-<img alt="aicdfig5" src="/assets/blog/figure85.png" style="height:300px;">
-</p>
+<div class="col-sm-7 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure85.png" class="img-fluid" zoomable=true %}
+</div>
 
 ### `--maxarrowlength f`
 
 Define the maximum of arrow length, the arrows longer than value *f* would not be displayed in AICD map (similar option: `--minarrowlength`)
 
-<p align="center">
-<img alt="aicdfig6" src="/assets/blog/figure86.png" style="height:300px;">
-</p>
+<div class="col-sm-7 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure86.png" class="img-fluid" zoomable=true %}
+</div>
 
 ### `-s`
 
 Smoothly graphical representation, needs more computational cost.
 
 <p align="center">
-<img alt="aicdfig7" src="/assets/blog/figure87.png" style="height:300px;">
+<div class="col-sm-7 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure87.png" class="img-fluid" zoomable=true %}
+</div>
 </p>
 
 More options can be found from `AICD -h` command. After AICD calculation, several files would be generated and we need the files in the folder named as “*xxxxxxxxxxxxxx.d*”. Copy this folder to a computer with POV-Ray installed.
@@ -194,9 +196,9 @@ Here are some common issues when using the POV-Ray:
 
 The following figure shows how the POV-Ray renders an image:
 
-<p align="center">
-<img alt="aicdfig8" src="/assets/blog/figure88.png" style="height:300px;">
-</p>
+<div class="col-sm-7 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure88.png" class="img-fluid" zoomable=true %}
+</div>
 
 If the molecule is not displayed in full, please modify the `camera - location` coordinate <*x*, *y*, *z*> in the “*RenderMich.pov*” file. More negative *z* value will give smaller size molecule. 
 
@@ -211,9 +213,9 @@ camera{
 }
 ```
 
-<p align="center">
-<img alt="aicdfig9" src="/assets/blog/figure89.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure89.png" class="img-fluid" zoomable=true %}
+</div>
 
 ### (2) Geometries are overlapping with others
 
@@ -271,6 +273,6 @@ object           // side view in the 3rd column
 
 ```
 
-<p align="center">
-<img alt="aicdfig10" src="/assets/blog/figure810.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure810.png" class="img-fluid" zoomable=true %}
+</div>
