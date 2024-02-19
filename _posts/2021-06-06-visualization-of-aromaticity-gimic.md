@@ -114,17 +114,17 @@ GIMIC and *ParaView* can do a lot, in this section I will only present how to dr
 
 1) Open *ParaView*, load plugins from **Tools -> Manage Plugins**, select the **StreamLinesRepresentation**, **StreamingParticles** and **SurfaceLIC**, and click **Load Selected**.
 
-<p align="center">
-<img alt="gimicfig1" src="/assets/blog/figure91.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure91.png" class="img-fluid" zoomable=true %}
+</div>
 
 2) Load mol-bohr.cml and jvec.vti files to the *ParaView*.
 
 3) Choose **Streame Lines** in the **Representation**.
 
-<p align="center">
-<img alt="gimicfig2" src="/assets/blog/figure92.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure92.png" class="img-fluid" zoomable=true %}
+</div>
 
 4) Set the coloring, step length, number of particles and max time to a proper value until you could see the ring current stream lines in the main window.
 
@@ -134,15 +134,15 @@ GIMIC and *ParaView* can do a lot, in this section I will only present how to dr
 
 1) Choose **View** -> **Animation View**, enlarge the number of frames (for example, 10000).
 
-<p align="center">
-<img alt="gimicfig3" src="/assets/blog/figure93.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure93.png" class="img-fluid" zoomable=true %}
+</div>
 
 2) Click **File** -> **Save Animation**, and save the .png files.
 
-<p align="center">
-<img alt="gimicfig4" src="/assets/blog/figure94.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure94.png" class="img-fluid" zoomable=true %}
+</div>
 
 3) I use [ffmpeg](https://www.ffmpeg.org) program to convert the .png images into .mp4 movie. The command is:
 
