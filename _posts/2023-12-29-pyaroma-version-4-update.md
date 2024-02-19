@@ -6,9 +6,9 @@ tags: [Software, Computation]
 author: Zhe Wang
 ---
 
-<p align = "center">
-<img alt="pyaroma" class="icon" src="/assets/pyAroma/hp_banner_v4.png">
-</p>
+<div class=“col-sm mt-3 mt-md-0”>
+    {% include figure.liquid loading=“lazy” path=“assets/pyAroma/hp_banner_v4.png” class=“img-fluid” %}
+</div>
 
 **py.Aroma** has been updated to version 4.0.0 with a bunch of new features.
 For more details, please refer to following links.
