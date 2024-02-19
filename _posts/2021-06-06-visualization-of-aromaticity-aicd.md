@@ -178,11 +178,9 @@ Define the maximum of arrow length, the arrows longer than value *f* would not b
 
 Smoothly graphical representation, needs more computational cost.
 
-<p align="center">
 <div class="col-sm-7 mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/blog/figure87.png" class="img-fluid" zoomable=true %}
 </div>
-</p>
 
 More options can be found from `AICD -h` command. After AICD calculation, several files would be generated and we need the files in the folder named as “*xxxxxxxxxxxxxx.d*”. Copy this folder to a computer with POV-Ray installed.
 
