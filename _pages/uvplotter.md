@@ -15,9 +15,9 @@ permalink: /program/uvplotter/
  });
 </script>
 
-<p align = "center">
-<img alt="uvPlotter" class="icon" src="/assets/uvPlotter/uvPlotter_wide.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/uvPlotter/uvPlotter_wide.png" class="img-fluid" %}
+</div>
 
 Latest version: **1.0.0**, updated at 2022-08-03
 
