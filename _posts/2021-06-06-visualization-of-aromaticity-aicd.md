@@ -120,9 +120,9 @@ There are several important points for the input file:
 4. A .txt file including ring current grid information would be saved during the NMR calculation, so, you need to specify a file name for it.
 5. Include the molecular orbital numbers (those will be considered for NMR calculation) in the end of input file if you use `IOp(10/93=2)`. (For unrestricted calculation, alpha orbitals and beta orbitals are separated, the orbital numbers of alpha orbital are same as those displayed in GaussView, but, the orbital numbers of beta orbitals are those in GaussView plus occupied orbital numbers. e.g., for the ith alpha and beta orbitals, and total *n* occupied orbitals, you need to write "*i*" and "*i+n*".)
 
-<p align="center">
-<img alt="aicdfig1" src="/assets/blog/figure81.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure81.png" class="img-fluid" zoomable=true %}
+</div>
 
 Submit this input file to Gaussian calculation. Once the calculation is completed, .log (or .out) and .txt files would be generated, these 2 files are necessary for next step AICD calculation.
 
@@ -139,10 +139,6 @@ There are some useful option for make high quality AICD plots:
 ### `-m n`
 Molecular view in AICD plots, *n* = 1-4. (1: single view, surface only; 2: single view, surface and arrows; 3: multi view, surface only; 4: multi view, surface and arrows)
 
-<p align="center">
-<img alt="aicdfig2" src="/assets/blog/figure82.png">
-</p>
-
 <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/blog/figure82.png" class="img-fluid" zoomable=true %}
 </div>
@@ -150,9 +146,9 @@ Molecular view in AICD plots, *n* = 1-4. (1: single view, surface only; 2: singl
 ### `-b x y z`
 Direction of external magnetic field (default is 0 0 1), the external magnetic field is defined in vector space with *x*, *y*, *z* direction. The external is only defined in direction, the magnitude is out of consideration (e.g.: 0 0 1 is same as 0 0 2).
 
-<p align="center">
-<img alt="aicdfig3" src="/assets/blog/figure83.png" style="height:300px;">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure83.png" class="img-fluid" zoomable=true %}
+</div>
 
 ### `-l r`
 
