@@ -48,9 +48,9 @@ optimized_1-methylazulene
 
 Next, we need to determine the calculation region. In this calculation, the ghost would be added in the cuboid with X (-7.5, 7.5), Y (-6.5, 6.5) and Z (-6, 6).
 
-<p align="center">
-<img alt="3dicssblogfig2" src="/assets/blog/figure42.png" style="height:350px;">
-</p>
+<div class="col-sm-7 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure42.png" class="img-fluid" zoomable=true %}
+</div>
 
 (For Gaussian 16, the maximum atom number is 8000, so, we need to separate the calculation into several input files. ICSSgen3D will add 7000 ghost atoms in each file, to make sure not to exceed the limitation.)
 
@@ -64,6 +64,6 @@ I wrote a Bash Shell script ([RunGJF](https://github.com/wongzit/minorScripts)) 
 
 After finishing all calculation, we need to extract the magnetic shielding tensors from the output files. ICSScub3D can do this job for us. We just need to tell the output file path to ICSScub3D, and determine which component (isotropic, anisotropy, ZZ and so on) would be used for 3D-ICSS plot, the program can save the shielding tensor into .cub file automatically. We can visualize the 3D-ICSS plot with the .cub file using GaussView, VMD, Chimera X, etc.
 
-<p align="center">
-<img alt="3dicssblogfig3" src="/assets/blog/figure43.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure43.png" class="img-fluid" zoomable=true %}
+</div>
