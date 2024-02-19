@@ -6,8 +6,8 @@ tags: [Software, Computation]
 author: Zhe Wang
 ---
 
-<div class=“col-sm mt-3 mt-md-0”>
-    {% include figure.liquid loading=“eager” path=“assets/pyAroma/hp_banner_v4.png” class=“img-fluid” %}
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/pyAroma/hp_banner_v4.png" class="img-fluid" zoomable=true %}
 </div>
 
 **py.Aroma** has been updated to version 4.0.0 with a bunch of new features.

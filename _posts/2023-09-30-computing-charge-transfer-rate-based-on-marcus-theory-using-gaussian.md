@@ -92,9 +92,9 @@ $$ \lambda_1 = E_2 - E_1 $$
 
 $$ \lambda_2 = E_4 - E_3 $$
 
-<div class=“col-sm-7 mt-3 mt-md-0”>
-    {% include figure.liquid loading=“eager” path=“assets/blog/re_en.png” class=“img-fluid” zoomable=true %}
-</div>
+<p align="center">
+<img alt="reorganization" src="/assets/blog/re_en.png" style="height:366px;">
+</p>
 
 Here I provided an Excel tool for computing the λ and *k_et* based on Marcus theory, download from [here](https://wongzit.github.io/assets/blog/marcus_theory_zwang_20230929.xlsx).
 
