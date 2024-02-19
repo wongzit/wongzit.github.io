@@ -117,8 +117,8 @@ Principal components of the tensor (ppm) for atom gh( 26):
 
 In this case, the π-orbitals could be identified to MO 32, 34, 38, 39 40 and 41 by examining the MO structure. So, we could calculated the NICS values:
 
-<div class=“col-sm mt-3 mt-md-0”>
-    {% include figure.liquid loading=“eager” path=“assets/blog/biphenyl_orbitals.png” class=“img-fluid” zoomable=true %}
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/biphenyl_orbitals.png" class="img-fluid" zoomable=true %}
 </div>
 
 - NICS(zz) = -27,87 ppm, showed in "Principal components - 33" column.
