@@ -50,7 +50,6 @@ HOMAcalc is a Python program for calculating the HOMA in cyclic system easily. A
 
 All calculation files could be download from [here](https://github.com/wongzit/blogFiles/tree/main/blog_HOMA). Benzene and [6]radialene were optimized at B3LYP/6-31G(d) level of theory, the output files were imported to HOMAcalc, the HOMA values were calculated to be 1 for benzene and 0.13 for [6]radialene.
 
-<p align="center">
-<img alt="homafig1" src="/assets/blog/figure51.png" style="height:500px;">
-</p>
-
+<div class="col-sm-7 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/blog/figure51.png" class="img-fluid" zoomable=true %}
+</div>
