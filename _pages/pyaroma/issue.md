@@ -8,7 +8,7 @@ permalink: /program/pyaroma/issue/
 > [**> Home**](https://wongzit.github.io/program/pyaroma)&emsp;&emsp;[**> Download**](https://wongzit.github.io/program/pyaroma/download)&emsp;&emsp;[**> Manual**](https://wongzit.github.io/program/pyaroma/manual_v41.pdf)&emsp;&emsp;[**> Issues**](https://wongzit.github.io/program/pyaroma/issue)
 
 
-## "Launch Error" on macOS
+## 1. "Launch Error" on macOS
 
 <p align="center">
 <img alt="launcherrir" src="/program/pyaroma/launch.png" style="width:300px;">
@@ -22,6 +22,6 @@ If a **"Launch error"** (see above) popped up on a Mac computer with Apple Silic
 4. Close the Info window.
 5. Quit **py.Aroma 4** and reopen it.
 
-## (Windows only) Crashing when save .txt of BLA data
+## 2. (Windows only) Crashing when save .txt of BLA data
 
 **py.Aroma 4** somehow crashes when trying to save the BLA data into .txt file. This problem only occurred when running prepackaged *.exe* file on Microsoft Windows.
