@@ -8,20 +8,20 @@ permalink: /program/pyaroma/download/
 > [**> Home**](https://wongzit.github.io/program/pyaroma)&emsp;&emsp;[**> Download**](https://wongzit.github.io/program/pyaroma/download)&emsp;&emsp;[**> Manual**](https://wongzit.github.io/program/pyaroma/manual_v41.pdf)&emsp;&emsp;[**> Issues**](https://wongzit.github.io/program/pyaroma/issue)
 
 
-### 💠 py.Aroma 4
+### py.Aroma 4
 
 #### Version 4.1.0, Build 3322  ![](https://img.shields.io/badge/-NEW-orange?style=flat-square)
 
-- [**macOS**](https://drive.google.com/file/d/1oSLwnfQz26CKVf-A-bfXVeffvMzX0ROt/view?usp=share_link)
-- [**Windows**](https://1drv.ms/u/s!AoEiFHul9zVelnfpqzj7tZLjCQQ6?e=H6kwc8)
-- [**Source Code**](https://wongzit.github.io/program/pyaroma/backup/py.Aroma-4.1.0-src.zip)
-- [**GitHub**](https://github.com/wongzit/pyAroma/releases/tag/v4.1.0)
-- [**Manual**](https://wongzit.github.io/program/pyaroma/manual_v41.pdf)
-- **Plugin/Module:** [CSV to Vis](https://wongzit.github.io/program/pyaroma/backup/contour.py) by Takuma Miyamura (Hiroshima University).
+- [macOS](https://drive.google.com/file/d/1oSLwnfQz26CKVf-A-bfXVeffvMzX0ROt/view?usp=share_link)
+- [Windows](https://1drv.ms/u/s!AoEiFHul9zVelnfpqzj7tZLjCQQ6?e=H6kwc8)
+- [Source Code](https://wongzit.github.io/program/pyaroma/backup/py.Aroma-4.1.0-src.zip)
+- [GitHub](https://github.com/wongzit/pyAroma/releases/tag/v4.1.0)
+- [Manual](https://wongzit.github.io/program/pyaroma/manual_v41.pdf)
+- Plugin/Module: [CSV to Vis](https://wongzit.github.io/program/pyaroma/backup/contour.py) by Takuma Miyamura (Hiroshima University).
 
 <br>
 
-### 🕸️ Old Version
+### Old Version
 
 | Version | Manual | macOS | Windows | Linux | Code |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -37,7 +37,7 @@ permalink: /program/pyaroma/download/
 
 <br>
 
-### 📝 Update History
+### Update History
 
 #### v4.1.0, Build 3322.
 
