@@ -19,6 +19,8 @@ permalink: /program/pyaroma/download/
 - [**Manual**](https://wongzit.github.io/program/pyaroma/manual_v41.pdf)
 - **Plugin/Module:** [CSV to Vis](https://wongzit.github.io/program/pyaroma/backup/contour.py) by Takuma Miyamura (Hiroshima University).
 
+<br>
+
 ### 🕸️ Old Version
 
 | Version | Manual | macOS | Windows | Linux | Code |
@@ -32,6 +34,8 @@ permalink: /program/pyaroma/download/
 | 1.0.0 (410) | [📖](https://wongzit.github.io/program/pyaroma/backup/pyaroma_manual_1_0_0.pdf) | [⬇️](https://drive.google.com/file/d/1kUUmd92kjTDCSBeg8YZ9ApBTkxalVmo4/view?usp=share_link) | [⬇️](https://drive.google.com/file/d/1FJjgeqKmBMAPhy95XGXDsJ6zneb4fBMS/view?usp=share_link) | [⬇️](https://drive.google.com/file/d/1BWip9lRFJD3f7yB4VwrrjKHRXKNHBypL/view?usp=share_link) | [⬇️](https://wongzit.github.io/program/pyaroma/backup/pyAroma-1.0.zip) |
 | 0.6.0 (409b) | ⛔️ | ⛔️ | ⛔️ | ⛔️ | [⬇️](https://wongzit.github.io/program/pyaroma/backup/pyAroma-0.6.zip) |
 | 0.3.0 (408b) | ⛔️ | ⛔️ | ⛔️ | ⛔️ | [⬇️](https://wongzit.github.io/program/pyaroma/backup/pyAroma-0.3.zip) |
+
+<br>
 
 ### 📝 Update History
 
