@@ -6,7 +6,7 @@ nav: true
 nav_order: 8
 ---
 
-# useful tools & websites 🌏
+### useful tools & websites 🌏
 
 - [**Online Molecular Viewer**](https://wongzit.github.io/program/online/molviewer.html) based on XYZ coordinates.
 - [**WebPlotDigitizer**](https://automeris.io/WebPlotDigitizer/): Web based tool to extract data from plots, images, and maps.
@@ -17,7 +17,7 @@ nav_order: 8
 - [**Maze Generator**](https://www.mazegenerator.net): A maze generator.
 - [**與佛論禪**](https://www.keyfc.net/bbs/tools/tudoucode.aspx)
 
-# universities 🏫
+### universities 🏫
 
 - [**China University of Petroleum (UPC, East China)**](https://www.upc.edu.cn)
 - [**College of Chemistry and Chemical Engineering, UPC**](http://cce.upc.edu.cn)
@@ -31,12 +31,12 @@ nav_order: 8
 - [**Faculty of Engineering and Graduate School of Engineering, KU**](https://www.t.kyoto-u.ac.jp/ja)
 - [**Department of Energy and Hydrocarbon Chemistry, KU**](https://www.eh.t.kyoto-u.ac.jp/ja)
 
-# research groups ⚗️
+### research groups ⚗️
 
 - [**Abe Lab, Hiroshima University**](https://hiu-roc.webnode.jp)
 - [**The Fukazawa Group, WPI-iCeMS, Kyoto University**](https://fukazawa.icems.kyoto-u.ac.jp)
 
-# societies 🏟️
+### societies 🏟️
 
 - [**Chinese Chemical Society**](https://www.chemsoc.org.cn)
 - [**The Chemical Society of Japan**](https://www.chemistry.or.jp)
@@ -44,7 +44,7 @@ nav_order: 8
 - [**Japan Society of Theoretical Chemistry**](https://www.rkk-web.jp)
 - [**American Chemical Society**](https://www.acs.org)
 
-# conferences & symposia 🔋
+### conferences & symposia 🔋
 
 - [**The 99th CSJ Annual Meeting**](https://www.csj.jp/nenkai/99haru/)
 - [**The 30th Symposium on Physical Organic Chemistry**](http://www.chem.sci.osaka-u.ac.jp/lab/kubo/poc30/index.html)

@@ -101,39 +101,4 @@ UV-vis absorption spectrum, while smaller value will give sharper peaks in spect
 
 If you want to change the plotting range, please modify the wavelength range in the setting window.
 
-## Appendix: Color
-
-### 1. Use color name colorpalette
-
-*Matplotlib* has several built-in colors, users can use these colors by inputting the color name directly.
-
-<p align="center">
-<img alt="pykinetics_colorpalette" src="/assets/pyKinetics/colorpalette.png">
-</p>
-
-### 2. Use single character
-
-The following eight major colors can be specified with a single character, consisting of the 
-three primary colors of light (RGB), the three primary colors of color (CMY), and black and white (KW).
-
-<p align="center">
-<img alt="pykinetics_onechar" src="/assets/pyKinetics/onechar.png">
-</p>
-
-### 3. Use HEX color codes
-
-*Matplotlib* allows users to use hexadecimal number those used in HTML and CSS, 
-such as `#ff0000` (red), `#000000` (black). Here are some examples:
-
-<p align="center">
-<img alt="pykinetics_hex" src="/assets/pyKinetics/hex.png">
-</p>
-
-### 4. Use greyscale
-
-Color can also be specified in a grayscale from 0.0 (black) to 1.0 (white).
-
-<p align="center">
-<img alt="pykinetics_grey" src="/assets/pyKinetics/grey.png">
-</p>
 
