@@ -3,7 +3,7 @@ layout: page
 permalink: /links/
 title: links
 nav: true
-nav_order: 8
+nav_order: 6
 ---
 
 ### useful tools & websites 🌏
