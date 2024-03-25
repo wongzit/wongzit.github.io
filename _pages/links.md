@@ -52,5 +52,6 @@ nav_order: 6
 - [**25th IUPAC International Conference on Physical Organic Chemistry (ICPOC-25)**](https://icpoc25.jp)
 - [**10th Pacific Symposium on Radical Chemistry (PSRC-10)**](http://os.kuicr.kyoto-u.ac.jp/PSRC10/index.html)
 - [**26th IUPAC International Conference on Physical Organic Chemistry (ICPOC-26)**](http://www.icpoc26.tsinghua.edu.cn)
+- [**20th International Symposium on Noval Aromatic Compounds**](https://www.isna2024.com)
 
 
