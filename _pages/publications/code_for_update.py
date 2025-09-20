@@ -9,10 +9,10 @@ for i in range(1993, 2026):
 	newbib.write('---\n\n')
 	newbib.write('<hr/>\n\n')
 
-	newbib.write('[all](https://morilab-uosaka.github.io/articles/)')
+	newbib.write('[all](https://wongzit.github.io/articles/)')
 	for j in range(2025, 1992, -1):
 		if j != i:
-			newbib.write(f' / [{j}](https://morilab-uosaka.github.io/articles/{j}/)')
+			newbib.write(f' / [{j}](https://wongzit.github.io/articles/{j}/)')
 		else:
 			newbib.write(f' / **{j}**')
 	newbib.write('\n\n')
