@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-08-30 22:27:00+0900
 inline: true
 related_posts: false
 ---
-
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Z.W. attended ISNA-20, thank you all for coming to my poster presentation. 
