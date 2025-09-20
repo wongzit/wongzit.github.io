@@ -11,9 +11,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  At <a href="https://www.applchem.eng.osaka-u.ac.jp" target="_blank">Graduate School of Engineering</a>, <a href="https://www.osaka-u.ac.jp/en">The University of Osaka</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ♓️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -54,7 +52,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1160px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -86,9 +84,9 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
+blog_name: blogs # blog_name will be displayed in your blog page
+blog_description: a collection of misc.
+permalink: /:title/
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -97,7 +95,7 @@ pagination:
 
 related_blog_posts:
   enabled: true
-  max_related: 5
+  max_related: 2
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
@@ -264,8 +262,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Wang]
+  first_name: [Zhe, Z.]
 
   style: apa
   locale: en
@@ -285,6 +283,8 @@ scholar:
   details_link: Details
 
   query: "@*"
+  sort_by: year,month
+  order: descending,descending
   group_by: year
   group_order: descending
 
