@@ -439,12 +439,7 @@ ninja.data = [{
             window.location.href = "/plot-odd-electron-density/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-z-w-will-attend-isna-20-at-toronto-and-give-poster-presentation",
+      },{id: "news-z-w-will-attend-isna-20-at-toronto-and-give-poster-presentation",
           title: 'Z.W. will attend ISNA-20 at Toronto and give poster presentation.',
           description: "",
           section: "News",},{id: "news-25-7k-visitors-in-last-month",
