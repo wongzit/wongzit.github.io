@@ -450,6 +450,9 @@ ninja.data = [{
           section: "News",},{id: "news-25-7k-visitors-in-last-month",
           title: '25.7k visitors in last month.',
           description: "",
+          section: "News",},{id: "news-z-w-attended-isna-20-thank-you-all-for-coming-to-my-poster-presentation",
+          title: 'Z.W. attended ISNA-20, thank you all for coming to my poster presentation.',
+          description: "",
           section: "News",},{id: "news-27-4k-visitors-in-last-month",
           title: '27.4k visitors in last month.',
           description: "",
@@ -503,13 +506,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_20/";
-            },},{id: "news-",
-          title: '',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_21/";
-            },},{id: "news-z-w-attended-isna-20-thank-you-all-for-coming-to-my-poster-presentation",
-          title: 'Z.W. attended ISNA-20, thank you all for coming to my poster presentation.',
+            },},{id: "news-notice-the-pages-are-currently-under-construction",
+          title: 'NOTICE: The pages are currently under construction.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
