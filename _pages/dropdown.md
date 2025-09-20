@@ -1,13 +1,17 @@
 ---
 layout: page
-title: submenus
+title: programs
 nav: true
-nav_order: 8
+nav_order: 6
+dropdown: true
 dropdown: true
 children:
-  - title: bookshelf
-    permalink: /books/
+  - title: py.Aroma
+    permalink: /program/pyaroma/
   - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: uv.Plotter
+    permalink: /program/uvplotter/
+  - title: divider
+  - title: scripts
+    permalink: /program/script/
 ---
