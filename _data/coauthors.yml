@@ -15,6 +15,29 @@
     url: https://www-chem.eng.osaka-u.ac.jp/~sakurai-lab/
 
 "yasui":
-  - firstname: ["Kosuke", "Yasui"]
+  - firstname: ["Kosuke", "K."]
     url: https://www-chem.eng.osaka-u.ac.jp/hirano-lab/index.html
-    
+
+"kitagawa":
+  - firstname: ["Yasutaka", "Y."]
+    url: http://www.cheng.es.osaka-u.ac.jp/kitagawa/index.html
+
+"usuba":
+  - firstname: ["Junichi", "J."]
+    url: https://www.chembio.nagoya-u.ac.jp/labhp/solid1/index.html
+
+"antol":
+  - firstname: ["Ivana", "I."]
+    url: https://www.irb.hr/eng/About-RBI/People/Ivana-Antol
+
+"matsuoka":
+  - firstname: ["Hideto", "H."]
+    url: https://h-matsuoka-lab.jp
+
+"takagi":
+  - firstname: ["Ryukichi", "R."]
+    url: https://www.abe-lab.com
+
+"kayahara":
+  - firstname: ["Eiichi", "E."]
+    url: https://www.abe-lab.com
