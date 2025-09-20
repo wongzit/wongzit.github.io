@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<meta name="description" content="Loading... Please refresh if this message persists.           const input_textarea = $(&quot;#coordinates&quot;);      let viewer;      let label_on = false;     let atoms = [];     // for different bond or">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Online Molecular Viewer based on XYZ Coordinates">
+<meta property="og:url" content="https://liwt31.github.io/2022/01/02/online_viewer/index.html">
+<meta property="og:site_name" content="Weitang Li&#39;s blog">
+<meta property="og:description" content="Loading... Please refresh if this message persists.           const input_textarea = $(&quot;#coordinates&quot;);      let viewer;      let label_on = false;     let atoms = [];     // for different bond or">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2022-05-11T10:59:59.136Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Online Molecular Viewer based on XYZ Coordinates">
+<meta name="twitter:description" content="Loading... Please refresh if this message persists.           const input_textarea = $(&quot;#coordinates&quot;);      let viewer;      let label_on = false;     let atoms = [];     // for different bond or">
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Online XYZ Coordinates Viewer</title>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112074287-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112074287-1');
+</script>
+
+<p>Click <a href="https://wongzit.github.io/links/">here</a> to go back.</p>
+
+<body bgcolor="#F5F5F5">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/1.4.0/3Dmol-min.js" onload="backend_loaded()"></script>
+
+<div id="container" class="mol-container" style="width:66%; height:0; position: relative; left: 50%; transform: translateX(-50%);"></div>
+<textarea id="coordinates" title="attributes" rows="10" style="width: 66%; max-width: 66%; position: relative; left: 50%; transform: translateX(-50%);">
+Loading... Please refresh if this message persists.
+</textarea>
+<br>
+<input type="button" id="toggle_label" value="Turn Label Off" style="position: relative; left: 50%; transform: translateX(-50%);">
+
+<script>
+
+    const input_textarea = $("#coordinates");
+
+    let viewer;
+
+    let label_on = false;
+    let atoms = [];
+    // for different bond order
+    const bond_length_database_array = [{}, {}, {}];
+    const bond_length_data_url = "https://wongzit.github.io/program/online/bond_length.json";
+    $.getJSON(bond_length_data_url, function(data) {
+        // load bond length data
+        for (const record of data){
+            if (record == "copied from pymatgen"){
+                continue;
+            }
+            let bond_length_database = bond_length_database_array[record.bond_order - 1];
+            bond_length_database[record.elements] = record.length;
+            bond_length_database[[record.elements[1], record.elements[0]]] = record.length;
+        }
+        if (!(viewer === undefined)){
+            // backend already loaded. Rerender
+            form_bonds(atoms);
+            input_textarea.trigger("change");
+        }
+    });
+
+    input_textarea.on('input change',function(e){
+        // main logic
+        const coordinates = e.target.value;
+        let success;
+        try{
+            atoms = parse_input(coordinates);
+            success = true;
+        }
+        catch (err) {
+            console.log("Error parsing coordinates: ", err);
+            atoms = [];
+            success = false;
+        }
+        form_bonds(atoms);
+        // rerender
+        viewer.removeAllLabels();
+        viewer.removeAllModels();
+        if (success){
+            const m = viewer.addModel();
+            m.addAtoms(atoms);
+            m.setStyle({},{sphere:{scale:0.3}, stick:{}});
+            if (label_on){
+                draw_label();
+            }
+        } else{
+            viewer.addLabel("Invalid input",{position: {x:0, y:0, z:0}, backgroundColor:"red"});
+        }
+        viewer.zoomTo();
+        viewer.render();
+    });
+
+    function parse_float_throw(s){
+        // parse float number but throws exception at NaN
+        let res = parseFloat(s);
+        if (isNaN(res)){
+            throw "invalid float number: " + s
+        }
+        return res
+    }
+
+    function parse_input(coord_str){
+        // get xyz coordinates for the atoms
+        let atoms = [];
+        const lines = coord_str.split("\n");
+        for (let line of lines){
+            line = line.trim();
+            if (line.length == 0){
+                continue;
+            }
+            const elems = line.split(/\s+/);
+            if (elems.length < 4){
+                throw "invalid line: " + line
+            }
+            atoms.push({elem: elems[0], x: parse_float_throw(elems[1]), y: parse_float_throw(elems[2]), z: parse_float_throw(elems[3])});
+        }
+        return atoms;
+    }
+
+    function is_bonding(atom_coordinate1, atom_coordinate2){
+        const x1 = atom_coordinate1.x;
+        const y1 = atom_coordinate1.y;
+        const z1 = atom_coordinate1.z;
+        const x2 = atom_coordinate2.x;
+        const y2 = atom_coordinate2.y;
+        const z2 = atom_coordinate2.z;
+        const length = Math.sqrt((x1 - x2)**2 + (y1 - y2)**2 + (z1 - z2) ** 2);
+        const key = [atom_coordinate1.elem, atom_coordinate2.elem];
+        const bond_length_database1 = bond_length_database_array[0];
+        const bond_length_database2 = bond_length_database_array[1];
+        const bond_length_database3 = bond_length_database_array[2];
+
+        if ((key in bond_length_database3) && (length < 1.05 * bond_length_database3[key])){
+            return 3
+        }
+        if ((key in bond_length_database2) && (length < 1.10 * bond_length_database2[key])){
+            return 2
+        }
+        if ((key in bond_length_database1) && (length < 1.20 * bond_length_database1[key])){
+            return 1
+        }
+        return 0
+    }
+
+    function form_bonds(atom_coordinates){
+        // add bond information in place
+        // stick to simple logic and avoid (premature) optimization
+        for (const atom_coordinate1 of atom_coordinates){
+            const bonds = [];
+            const bond_orders = [];
+            for (let i= 0; i < atom_coordinates.length; i++){
+                const atom_coordinate2 = atom_coordinates[i];
+                const bond_order = (is_bonding(atom_coordinate1, atom_coordinate2));
+                if (bond_order != 0){
+                    bonds.push(i);
+                    bond_orders.push(bond_order);
+                }
+            }
+            atom_coordinate1.bonds = bonds;
+            atom_coordinate1.bondOrder = bond_orders;
+        }
+    }
+
+    function draw_label(){
+        for (let i=0; i<atoms.length; i++){
+            let atom = atoms[i];
+            viewer.addLabel(`${atom["elem"]}${i+1}`, {position: {x: atom["x"], y: atom["y"], z: atom["z"]}, fontSize:12});
+        }
+    }
+
+    function backend_loaded(){
+        const container = $("#container");
+        const config = { backgroundColor: "white" };
+        container.height(container.width());
+        viewer = $3Dmol.createViewer( container, config );
+        // initial values for the textarea
+        // in angstrom
+        let d = 0.629;
+        input_textarea.val(`C                  4.50400000   13.04200000    1.62600000\nC                  6.74200000   12.10800000    2.75800000\nC                  5.24400000   12.09800000    2.62800000\nC                  0.04700000   14.26000000    0.59100000\nH                 -0.49200000   14.10200000   -0.17500000\nC                  0.28700000   17.58800000    4.20300000\nC                  4.40500000    9.75800000    3.49500000\nH                  4.75000000    8.87400000    3.21300000\nH                  4.94100000   10.07500000    4.26400000\nC                  8.20800000   20.48600000    7.98800000\nH                  9.07800000   20.65600000    8.32900000\nC                  9.51100000   12.21700000    3.13200000\nH                 10.45400000   12.25100000    3.24300000\nC                  4.66800000   21.51500000    8.60100000\nH                  4.75700000   22.11500000    9.33300000\nC                  2.18700000   10.47100000    3.10500000\nH                  1.24600000   10.53900000    3.20800000\nC                 10.49200000   19.25200000    6.35500000\nH                 10.67800000   20.10100000    6.73900000\nC                  4.51400000   15.28700000    0.77400000\nH                  4.67200000   14.93800000   -0.12800000\nH                  4.98200000   16.14100000    0.88100000\nH                  3.55200000   15.42300000    0.90800000\nC                 11.53700000   18.51400000    5.83700000\nC                 15.29900000   18.55200000    6.81100000\nH                 15.38100000   19.48700000    7.12400000\nH                 15.76800000   17.97200000    7.46400000\nC                 19.77400000   17.54600000    6.11500000\nH                 20.02300000   17.67800000    5.16500000\nH                 20.03300000   18.36800000    6.60500000\nC                 17.54200000   18.54700000    5.60800000\nH                 17.86500000   18.66800000    4.68000000\nH                 17.78800000   19.35800000    6.11800000\nC                 -1.65300000   21.57600000    6.51400000\nH                 -2.25300000   21.07100000    7.11900000\nH                 -1.29100000   22.33200000    7.04000000\nC                 20.59100000   16.37400000    6.67100000\nH                 20.39500000   16.26400000    7.62500000\nH                 21.54800000   16.55800000    6.55400000\nH                 20.35500000   15.55500000    6.19000000\nC                 -3.48900000   23.02900000    5.98200000\nH                 -3.28700000   23.41900000    6.86900000\nH                 -3.47500000   23.76800000    5.32400000\nC                 -2.36800000   22.06400000    5.62800000\nH                 -2.77500000   21.31100000    5.13200000\nH                 -1.76800000   22.53400000    4.99500000\nC                  3.11400000   12.77800000    2.28300000\nC                  5.73700000   12.54800000   -0.36900000\nH                  6.25500000   13.35400000   -0.16200000\nH                  5.59600000   12.49100000   -1.33800000\nH                  6.22600000   11.75700000   -0.06300000\nC                  8.91500000   11.09100000    2.60700000\nH                  9.45400000   10.34700000    2.36800000\nC                  8.71900000   13.31500000    3.50100000\nC                 11.25900000   17.27200000    5.24800000\nH                 11.96600000   16.75800000    4.87600000\nC                  5.64400000   20.01100000    6.97100000\nC                  0.77900000   20.94300000    6.67700000\nH                  0.90800000   21.72900000    7.19500000\nC                  8.03700000   19.56000000    6.90000000\nC                  3.03100000    9.66300000    3.85400000\nH                  2.71800000    9.09400000    4.54700000\nC                  1.61800000   14.71200000    2.78400000\nH                  2.16800000   14.87600000    3.54100000\nC                 -0.67100000   19.54100000    5.39200000\nH                 -1.53400000   19.33700000    5.05100000\nC                  8.93200000   17.54800000    5.74500000\nH                  8.04400000   17.21200000    5.71600000\nC                 12.96100000   19.00200000    5.87200000\nH                 13.33200000   18.98600000    4.95500000\nH                 12.97300000   19.94100000    6.18800000\nC                  1.88200000   20.11900000    6.42800000\nC                 -0.48600000   20.66700000    6.20500000\nC                  6.77400000   19.37800000    6.42200000\nH                  6.65100000   18.79600000    5.68100000\nC                  3.23200000   20.38700000    6.98800000\nC                  4.35600000   19.79600000    6.45700000\nH                  4.25500000   19.21700000    5.71100000\nC                  5.82200000   20.91100000    8.06200000\nC                  4.49100000   10.76200000    2.33300000\nH                  4.85900000   10.32300000    1.51400000\nC                 -0.25900000   15.32600000    1.42500000\nH                 -1.00200000   15.88700000    1.23700000\nC                  1.66100000   18.99600000    5.63100000\nH                  2.38100000   18.40200000    5.45700000\nC                  3.02400000   11.22600000    2.09500000\nH                  2.73400000   11.00300000    1.16400000\nC                 -8.31300000   23.94000000    7.01500000\nH                 -8.10200000   24.15700000    7.95800000\nH                 -8.21600000   24.77400000    6.49000000\nC                  9.27000000   14.49900000    4.09000000\nC                  0.41200000   18.72500000    5.08600000\nC                 -7.29500000   22.94100000    6.51600000\nH                 -7.34200000   22.12800000    7.08000000\nH                 -7.53200000   22.67900000    5.59100000\nC                  9.17700000   18.80000000    6.33500000\nC                  9.63700000   15.52200000    4.60100000\nC                 -5.90100000   23.44900000    6.52600000\nH                 -5.67100000   23.70900000    7.45400000\nH                 -5.86400000   24.26800000    5.97100000\nC                  1.11300000   13.42100000    0.84900000\nH                  1.29900000   12.69600000    0.26300000\nC                 13.83500000   18.16800000    6.77200000\nH                 13.76800000   17.22400000    6.48400000\nH                 13.47500000   18.22300000    7.69300000\nC                  7.54600000   11.02500000    2.42300000\nH                  7.15500000   10.23600000    2.06600000\nC                 -4.84600000   22.48200000    6.02400000\nH                 -4.84600000   21.68200000    6.60700000\nH                 -5.09600000   22.18700000    5.11200000\nC                  7.13400000   21.12100000    8.53100000\nH                  7.27300000   21.72600000    9.25000000\nC                 -9.73100000   23.49800000    6.94000000\nH                 -9.97600000   23.34300000    6.00300000\nH                -10.31100000   24.19100000    7.31800000\nH                 -9.84300000   22.66700000    7.44700000\nC                  9.96600000   16.79100000    5.20400000\nC                 18.24300000   17.38500000    6.20200000\nH                 17.97400000   16.56100000    5.72600000\nH                 17.97800000   17.29300000    7.15100000\nC                  3.42700000   21.25800000    8.10100000\nH                  2.67200000   21.67100000    8.50200000\nC                 15.91700000   18.43000000    5.57600000\nH                 15.56300000   19.13500000    4.97800000\nH                 15.67200000   17.55500000    5.18500000\nC                  7.33800000   13.23900000    3.29600000\nH                  6.79300000   13.98100000    3.53200000\nC                  0.54400000   15.56100000    2.54200000\nC                  1.91700000   13.63400000    1.96200000\nC                  0.32700000   16.67400000    3.42800000\nN                  4.64300000   12.57300000    3.92000000\nN                  3.46500000   12.94000000    3.72900000\nO                  4.46100000   12.61200000    0.29800000\nO                  5.00600000   14.34300000    1.74800000
+
+`);
+        input_textarea.trigger("change");
+    }
+
+    $("#toggle_label").on("click", function(e){
+        if (label_on){
+            viewer.removeAllLabels();
+            viewer.render();
+            label_on = false;
+            e.target.value = "Turn Label On";
+        } else{
+            draw_label();
+            viewer.render();
+            label_on = true;
+            e.target.value = "Turn Label Off";
+        }
+    })
+</script>
+
+<p>The unit is in Angstrom. Online molecular viewer based on Cartesian coordinates powered by <a href="https://github.com/3dmol/3Dmol.js" target="_blank" rel="noopener">3Dmol.js</a>. Auto-detects bond formation using bond length database from <a href="https://github.com/materialsproject/pymatgen" target="_blank" rel="noopener">pymatgen</a>. </p>
+
+</div>
