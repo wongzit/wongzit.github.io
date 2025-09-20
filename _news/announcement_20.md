@@ -11,6 +11,6 @@ ZW attended [The 35th Symposium on Physical Organic Chemistry](https://www.poc35
 Congratulations to Prof. Dr. Manabu ABE for the award!
 
 <div class="col-sm-7 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/blog/IMG_8633.jpg" class="img-fluid" zoomable=true %}
+    {% include figure.liquid loading="eager" path="assets/news/IMG_8633.jpg" class="img-fluid" zoomable=true %}
 </div>
 
