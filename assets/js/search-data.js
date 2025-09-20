@@ -72,26 +72,37 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-orbital-composition-analysis",
         
-          title: "a post with plotly.js",
+          title: "Orbital Composition Analysis",
         
-        description: "this is what included plotly.js code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/plotly/";
+            window.location.href = "/orbital-composition-analysis/";
           
         },
-      },{id: "post-a-post-with-image-galleries",
+      },{id: "post-list-of-all-posts",
         
-          title: "a post with image galleries",
+          title: "List of All Posts",
         
-        description: "this is what included image galleries could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/photo-gallery/";
+            window.location.href = "/list-of-all-posts/";
+          
+        },
+      },{id: "post-a-new-3d-nics-method-based-on-esp-mapping",
+        
+          title: "A New 3D NICS Method Based on ESP Mapping",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/a-new-3d-nics-method-based-on-esp-mapping/";
           
         },
       },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
@@ -105,224 +116,103 @@ ninja.data = [{
             window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
-      },{id: "post-a-post-with-tabs",
+      },{id: "post-gaussian-16-calculation-task-continuation",
         
-          title: "a post with tabs",
+          title: "Gaussian 16 Calculation Task Continuation",
         
-        description: "this is what included tabs in a post could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/tabs/";
+            window.location.href = "/gaussian-calculation-task-continuation/";
           
         },
-      },{id: "post-a-post-with-typograms",
+      },{id: "post-py-aroma-version-4-update",
         
-          title: "a post with typograms",
+          title: "py.Aroma Version 4 Update",
         
-        description: "this is what included typograms code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/typograms/";
+            window.location.href = "/pyaroma-version-4-update/";
           
         },
-      },{id: "post-a-post-that-can-be-cited",
+      },{id: "post-analyze-intermolecular-interactions-by-sapt",
         
-          title: "a post that can be cited",
+          title: "Analyze Intermolecular Interactions by SAPT",
         
-        description: "this is what a post that can be cited looks like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/post-citation/";
+            window.location.href = "/analyze-intermolecular-interactions-by-sapt/";
           
         },
-      },{id: "post-a-post-with-pseudo-code",
+      },{id: "post-computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian",
         
-          title: "a post with pseudo code",
+          title: "Computing Charge Transfer Rate Based on Marcus Theory Using Gaussian",
         
-        description: "this is what included pseudo code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/pseudocode/";
+            window.location.href = "/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian/";
           
         },
-      },{id: "post-a-post-with-code-diff",
+      },{id: "post-hartree-fock-exchange-of-dft-functionals",
         
-          title: "a post with code diff",
+          title: "Hartree-Fock Exchange of DFT Functionals",
         
-        description: "this is how you can display code diffs",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/code-diff/";
+            window.location.href = "/hartree-fock-exchange-of-dft-functionals/";
           
         },
-      },{id: "post-a-post-with-advanced-image-components",
+      },{id: "post-natural-transition-orbitals-nto-analysis",
         
-          title: "a post with advanced image components",
+          title: "Natural Transition Orbitals (NTO) Analysis",
         
-        description: "this is what advanced image components could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/advanced-images/";
+            window.location.href = "/natural-transition-orbitals-(nto)-analysis/";
           
         },
-      },{id: "post-a-post-with-vega-lite",
+      },{id: "post-impact-factor-2022",
         
-          title: "a post with vega lite",
+          title: "Impact Factor 2022",
         
-        description: "this is what included vega lite code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/vega-lite/";
+            window.location.href = "/impact-factor-2022/";
           
         },
-      },{id: "post-a-post-with-geojson",
+      },{id: "post-memo-install-gaussian-and-gaussview-on-linux-machine",
         
-          title: "a post with geojson",
+          title: "MEMO: Install Gaussian and GaussView on Linux Machine",
         
-        description: "this is what included geojson code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/geojson-map/";
+            window.location.href = "/memo-install-gaussian-and-gaussview-on-linux-machine/";
           
         },
-      },{id: "post-a-post-with-echarts",
+      },{id: "post-evaluating-dissected-nics-with-nbo-program",
         
-          title: "a post with echarts",
+          title: "Evaluating Dissected NICS with NBO Program",
         
-        description: "this is what included echarts code could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/echarts/";
-          
-        },
-      },{id: "post-a-post-with-chart-js",
-        
-          title: "a post with chart.js",
-        
-        description: "this is what included chart.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/chartjs/";
-          
-        },
-      },{id: "post-a-post-with-tikzjax",
-        
-          title: "a post with TikZJax",
-        
-        description: "this is what included TikZ code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tikzjax/";
-          
-        },
-      },{id: "post-a-post-with-bibliography",
-        
-          title: "a post with bibliography",
-        
-        description: "an example of a blog post with bibliography",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/post-bibliography/";
-          
-        },
-      },{id: "post-a-post-with-jupyter-notebook",
-        
-          title: "a post with jupyter notebook",
-        
-        description: "an example of a blog post with jupyter notebook",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/jupyter-notebook/";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/custom-blockquotes/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/sidebar-table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-audios",
-        
-          title: "a post with audios",
-        
-        description: "this is what included audios could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/audios/";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/videos/";
-          
-        },
-      },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-        
-          title: "displaying beautiful tables with Bootstrap Tables",
-        
-        description: "an example of how to use Bootstrap Tables",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/tables/";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents",
-        
-          title: "a post with table of contents",
-        
-        description: "an example of a blog post with table of contents",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/table-of-contents/";
-          
-        },
-      },{id: "post-a-post-with-giscus-comments",
-        
-          title: "a post with giscus comments",
-        
-        description: "an example of a blog post with giscus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2022/giscus-comments/";
+            window.location.href = "/evaluating-dissected-nics-with-nbo-program/";
           
         },
       },{id: "post-displaying-external-posts-on-your-al-folio-blog",
@@ -336,103 +226,246 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "post-a-post-with-redirect",
+      },{id: "post-install-dalton-on-linux-machine",
         
-          title: "a post with redirect",
+          title: "Install Dalton on Linux Machine",
         
-        description: "you can also redirect to assets like pdf",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/assets/pdf/example_pdf.pdf";
+            window.location.href = "/install-dalton-on-linux-machine/";
           
         },
-      },{id: "post-a-post-with-diagrams",
+      },{id: "post-calculation-of-solvation-free-energy",
         
-          title: "a post with diagrams",
+          title: "Calculation of Solvation Free Energy",
         
-        description: "an example of a blog post with diagrams",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/diagrams/";
+            window.location.href = "/calculation-of-solvation-free-energy/";
           
         },
-      },{id: "post-a-distill-style-blog-post",
+      },{id: "post-gaumonitor-v3-0-0-update",
         
-          title: "a distill-style blog post",
+          title: "gauMonitor v3.0.0 Update",
         
-        description: "an example of a distill-style blog post and main elements",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2021/distill/";
+            window.location.href = "/gaumonitor-v3-update/";
           
         },
-      },{id: "post-a-post-with-twitter",
+      },{id: "post-nmr-prediction-with-scaling-factors",
         
-          title: "a post with twitter",
+          title: "NMR Prediction with Scaling Factors",
         
-        description: "an example of a blog post with twitter",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2020/twitter/";
+            window.location.href = "/nmr-prediction-with-scaling-factors/";
           
         },
-      },{id: "post-a-post-with-disqus-comments",
+      },{id: "post-manual-for-calculating-nics-with-nbo-program",
         
-          title: "a post with disqus comments",
+          title: "Manual for Calculating NICS with NBO Program",
         
-        description: "an example of a blog post with disqus comments",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/disqus-comments/";
+            window.location.href = "/manual-for-calculating-nics-with-nbo-program/";
           
         },
-      },{id: "post-a-post-with-math",
+      },{id: "post-pyaroma-a-multifunction-aromaticity-analyser",
         
-          title: "a post with math",
+          title: "pyAroma: A Multifunction Aromaticity Analyser",
         
-        description: "an example of a blog post with some math",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/math/";
+            window.location.href = "/pyaroma-a-multifunction-aromaticity-analyzer/";
           
         },
-      },{id: "post-a-post-with-code",
+      },{id: "post-install-gaussian-16-on-a-mac",
         
-          title: "a post with code",
+          title: "Install Gaussian 16 on a Mac",
         
-        description: "an example of a blog post with some code",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/code/";
+            window.location.href = "/install-gaussian-16-on-a-mac/";
           
         },
-      },{id: "post-a-post-with-images",
+      },{id: "post-install-orca-5-on-linux-machine",
         
-          title: "a post with images",
+          title: "Install ORCA 5 on Linux Machine",
         
-        description: "this is what included images could look like",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/images/";
+            window.location.href = "/install-orca-5-on-linux-machine/";
           
         },
-      },{id: "post-a-post-with-formatting-and-links",
+      },{id: "post-memo-simulation-of-epr-spectrum-with-easyspin",
         
-          title: "a post with formatting and links",
+          title: "MEMO: Simulation of EPR Spectrum with EasySpin",
         
-        description: "march &amp; april, looking forward to summer",
+        description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2015/formatting-and-links/";
+            window.location.href = "/memo-simulation-of-epr-spectrum-with-easyspin/";
+          
+        },
+      },{id: "post-methods-to-solve-the-scf-not-converged",
+        
+          title: "Methods to Solve the SCF not Converged",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/method-to-solve-the-scf-not-converged/";
+          
+        },
+      },{id: "post-prepare-supporting-information-with-csigen",
+        
+          title: "Prepare Supporting Information with CSIgen",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/prepare-supporting-information-with-csigen/";
+          
+        },
+      },{id: "post-3d-icss-analyses-with-icssgen3d-and-icsscub3d",
+        
+          title: "3D-ICSS Analyses with ICSSgen3D and ICSScub3D",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/3d-icss-analyses-with-icssgen3d-and-icsscub3d/";
+          
+        },
+      },{id: "post-gaussian-common-errors-and-solutions",
+        
+          title: "Gaussian Common Errors and Solutions",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gaussian-common-errors-and-solutions/";
+          
+        },
+      },{id: "post-visualization-of-aromaticity-gimic",
+        
+          title: "Visualization of Aromaticity: GIMIC",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/visualization-of-aromaticity-gimic/";
+          
+        },
+      },{id: "post-visualization-of-aromaticity-aicd",
+        
+          title: "Visualization of Aromaticity: AICD",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/visualization-of-aromaticity-aicd/";
+          
+        },
+      },{id: "post-enepro-a-python-program-for-drawing-energy-profile",
+        
+          title: "EnePro: A Python Program for Drawing Energy Profile",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/enepro-a-python-program-for-drawing-energy-profile/";
+          
+        },
+      },{id: "post-nics-analyses-with-nicsgen",
+        
+          title: "NICS Analyses with NICSgen",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/nics-analyses-with-nicsgen/";
+          
+        },
+      },{id: "post-homa-calculation-with-homacalc",
+        
+          title: "HOMA Calculation with HOMAcalc",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/homa-calculation-with-homacalc/";
+          
+        },
+      },{id: "post-diradical-character-calculation",
+        
+          title: "Diradical Character Calculation",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/diradical-character-calculation/";
+          
+        },
+      },{id: "post-2d-icss-analyses-with-icssgen-and-icsscsv",
+        
+          title: "2D-ICSS Analyses with ICSSgen and ICSScsv",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/2d-icss-analyses-with-icssgen-and-icsscsv/";
+          
+        },
+      },{id: "post-epr-prediction-with-orca-program",
+        
+          title: "EPR Prediction with ORCA Program",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/epr-prediction-with-orca-program/";
+          
+        },
+      },{id: "post-plot-odd-electron-density",
+        
+          title: "Plot Odd Electron Density",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/plot-odd-electron-density/";
           
         },
       },{id: "books-the-godfather",

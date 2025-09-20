@@ -1,0 +1,142 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Orbital Composition Analysis | Dr. Zhe WANG </title> <meta name="author" content="Dr. Zhe WANG"> <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. "> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%99%93%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://wongzit.github.io/orbital-composition-analysis/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Dr.</span> Zhe WANG </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/books/">bookshelf</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Orbital Composition Analysis</h1> <p class="post-meta"> Created on June 03, 2025 by Zhe Wang </p> <p class="post-tags"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </p> </header> <article class="post-content"> <div id="markdown-content"> <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"> </script> <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script> <p>This blog shows how to perform orbial composition analysis based on Gaussian output files.</p> <h2 id="1-general-information">1. General Information</h2> <p>Orbital composition analysis is to evaluate the contributions of various components that make up an orbital.The orbitals could be any type of orbitals (MO, LMO, NO, etc). These components can be analyzed at different levels, from smallest to largest: (1) <strong>basis functions</strong>, (2) <strong>atomic orbitals</strong>, (3) <strong>atoms</strong>, (4) <strong>molecular fragments</strong>.</p> <h2 id="2-calculate-contributions-of-basis-functions">2. Calculate Contributions of Basis Functions</h2> <p>Here we will use a water molecule as example to explain. Input file is like this:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#p b3lyp/6-31(d) pop=full iop(3/33=1)
+
+Basis functions composition
+
+0 1
+O                     0.        0.        0.11972 
+H                     0.        0.76155  -0.47887 
+H                     0.       -0.76155  -0.47887 
+</code></pre></div></div> <p>Using the keyword <code class="language-plaintext highlighter-rouge">pop=full</code> prints out the orbital coefficient and <code class="language-plaintext highlighter-rouge">iop(3/33=1)</code> outputs the overlap matrix (see below).</p> <p>The orbital part in the output file appears as follows:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     Molecular Orbital Coefficients:
+                           1         2         3         4         5
+                        (A1)--O   (A1)--O   (B2)--O   (A1)--O   (B1)--O
+     Eigenvalues --   -19.13815  -0.99790  -0.51718  -0.37220  -0.29119
+   1 1   O  1S          0.99286  -0.20950   0.00000  -0.08809   0.00000
+   2        2S          0.02622   0.46921   0.00000   0.17724   0.00000
+   3        2PX         0.00000   0.00000   0.00000   0.00000   0.64458
+   4        2PY         0.00000   0.00000   0.51744   0.00000   0.00000
+   5        2PZ        -0.00110  -0.12769   0.00000   0.55184   0.00000
+   6        3S          0.01011   0.43950   0.00000   0.41041   0.00000
+   7        3PX         0.00000   0.00000   0.00000   0.00000   0.50605
+   8        3PY         0.00000   0.00000   0.26974   0.00000   0.00000
+   9        3PZ        -0.00000  -0.06064   0.00000   0.37218   0.00000
+  10        4XX        -0.00772  -0.01093   0.00000  -0.00026   0.00000
+  11        4YY        -0.00777   0.01879   0.00000   0.00089   0.00000
+  12        4ZZ        -0.00775   0.01607   0.00000  -0.05242   0.00000
+  13        4XY         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        4XZ         0.00000   0.00000   0.00000   0.00000  -0.03544
+  15        4YZ         0.00000   0.00000  -0.04127   0.00000   0.00000
+  16 2   H  1S          0.00037   0.13915   0.23745  -0.14372   0.00000
+  17        2S         -0.00103   0.00645   0.14193  -0.11426   0.00000
+  18 3   H  1S          0.00037   0.13915  -0.23745  -0.14372   0.00000
+  19        2S         -0.00103   0.00645  -0.14193  -0.11426   0.00000
+</code></pre></div></div> <p>From the output, the HOMO (No.5) wavefunction can be writen as:</p> \[\Psi _5 = 0.64458 \times \chi_3 + 0.50605 \times \chi _7 -0.03544 \times \chi _{14}\] <p>Since the orbital must be normalized:</p> \[\langle \Psi _5 | \Psi _5 \rangle = 1 = 0.64458^2 \times \langle \chi_3|\chi_3 \rangle + 0.50605^2 \times \langle \chi_7|\chi_7 \rangle + 0.03544^2 \times \langle \chi_{14}|\chi_{14} \rangle + 2 \times 0.64458 \times 0.50605 \langle \chi_3|\chi_7 \rangle - 2 \times 0.64458 \times 0.03544 \langle \chi_3|\chi_{14} \rangle - 2 \times 0.50605 \times 0.03544 \langle \chi_7|\chi_{14} \rangle\] <p>Thus,</p> \[1 = 0.41548 \times S_{3,3} + 0.25609 \times S_{7,7} + 0.00126 \times S_{14,14} + 0.65238 \times S_{3,7} - 0.04569 \times S_{3,14} - 0.03587 \times S_{7,14}\] <p>In the above equetion, <em>0.41548</em> represents the contribution of basis χ<sub>3</sub> to HOMO, while <em>0.65238</em> reflects the combined contribution of basis χ<sub>3</sub> and χ<sub>7</sub> to HOMO. Since, <i>S</i><sub>a,a</sub> = 1,</p> <p>Thus,</p> \[\langle \Psi _5 | \Psi _5 \rangle = 0.67283 + 0.65238 \times S_{3,7} - 0.04569 \times S_{3,14} - 0.03587 \times S_{7,14}\] <p>To calculate the contribution of each basis function, we need overlap integral <i>S</i><sub>3,7</sub>, <i>S</i><sub>3,14</sub>, and <i>S</i><sub>7,14</sub>. These overlap integral can be obtained using <code class="language-plaintext highlighter-rouge">iop(3/33=1)</code> keyword and aresummarized in the <strong>Overlap</strong> section:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> *** Overlap *** 
+                1             2             3             4             5 
+      1  0.100000D+01
+      2  0.233690D+00  0.100000D+01
+      3  0.000000D+00  0.000000D+00  0.100000D+01
+      4  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+      5  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+      6  0.167280D+00  0.763641D+00  0.000000D+00  0.000000D+00  0.000000D+00
+      7  0.000000D+00  0.000000D+00  0.501521D+00  0.000000D+00  0.000000D+00
+      8  0.000000D+00  0.000000D+00  0.000000D+00  0.501521D+00  0.000000D+00
+      9  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.501521D+00
+     10  0.335315D-01  0.547066D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     11  0.335315D-01  0.547066D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     12  0.335315D-01  0.547066D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     13  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     14  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     15  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     16  0.334348D-01  0.241296D+00  0.000000D+00  0.221010D+00 -0.173718D+00
+     17  0.681738D-01  0.376405D+00  0.000000D+00  0.116274D+00 -0.913932D-01
+     18  0.334348D-01  0.241296D+00  0.000000D+00 -0.221010D+00 -0.173718D+00
+     19  0.681738D-01  0.376405D+00  0.000000D+00 -0.116274D+00 -0.913932D-01
+                6             7             8             9            10 
+      6  0.100000D+01
+      7  0.000000D+00  0.100000D+01
+      8  0.000000D+00  0.000000D+00  0.100000D+01
+      9  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+     10  0.699015D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+     11  0.699015D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.333333D+00
+     12  0.699015D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.333333D+00
+     13  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     14  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     15  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     16  0.421231D+00  0.000000D+00  0.457410D+00 -0.359532D+00  0.162722D+00
+     17  0.678714D+00  0.000000D+00  0.379588D+00 -0.298363D+00  0.395977D+00
+     18  0.421231D+00  0.000000D+00 -0.457410D+00 -0.359532D+00  0.162722D+00
+     19  0.678714D+00  0.000000D+00 -0.379588D+00 -0.298363D+00  0.395977D+00
+               11            12            13            14            15 
+     11  0.100000D+01
+     12  0.333333D+00  0.100000D+01
+     13  0.000000D+00  0.000000D+00  0.100000D+01
+     14  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+     15  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+     16  0.401135D+00  0.310019D+00  0.000000D+00  0.000000D+00 -0.324581D+00
+     17  0.440358D+00  0.423396D+00  0.000000D+00  0.000000D+00 -0.604210D-01
+     18  0.401135D+00  0.310019D+00  0.000000D+00  0.000000D+00  0.324581D+00
+     19  0.440358D+00  0.423396D+00  0.000000D+00  0.000000D+00  0.604210D-01
+               16            17            18            19 
+     16  0.100000D+01
+     17  0.658292D+00  0.100000D+01
+     18  0.502482D-01  0.221846D+00  0.100000D+01
+     19  0.221846D+00  0.512715D+00  0.658292D+00  0.100000D+01
+</code></pre></div></div> <p>For this example, the <i>S</i><sub>3,7</sub> = 0.50152, and <i>S</i><sub>3,14</sub> = <i>S</i><sub>7,14</sub> = 0. Thus,</p> \[\langle \Psi _5 | \Psi _5 \rangle = 0.67283 + 0.65238 \times 0.50152 = 1.00002\] <p>To calculate the contribution of each basis function χ<sub>n</sub>, here are three methods:</p> <h4 id="1-mulliken-partition">(1) Mulliken Partition</h4> <p>In the Mulliken partition, when calculating the contribution of basis function χ<sub>n</sub> to an orbital, all the diagonal (localized, <em>i.e.</em>, <i>S</i><sub>n,n</sub>) terms of χ<sub>n</sub> are assigned entirely to χ<sub>n</sub>, while half of the off-diagonal (overlap, <em>i.e.</em>, <i>S</i><sub>n,m</sub>) terms between χ<sub>n</sub> and χ<sub>m</sub> are also attributed to χ<sub>n</sub>.</p> <p>In the above example, the contribution of χ<sub>3</sub> to HOMO is:</p> \[0.64458^2 + 0.64458 \times 0.50605 \times 0.50152 = 0.57907\] <p>Similar, the contribution of χ<sub>7</sub> and χ<sub>14</sub> to HOMO are 41.968% and 0.126%, respectively.</p> <h3 id="2-stout-politzer-partition">(2) Stout-Politzer Partition</h3> <p>The Stout–Politzer partition accounts for the inequality between basis functions by partitioning the overlap terms in proportion to the squared coefficients of the two involved basis functions. For above example, the contribution of χ<sub>3</sub> to HOMO is:</p> \[0.64458^2 + 2 \times 0.64458 \times 0.50605 \times 0.50152 \times \frac {0.64458^2}{0.64458^2+0.50605^2} = 0.61790\] <p>Similar, the contribution of χ<sub>7</sub> and χ<sub>14</sub> to HOMO are 38.085% and 0.126%, respectively.</p> <h3 id="3-ros-schuit-scpa-partition">(3) Ros-Schuit (SCPA) partition</h3> <p><em>skip for now, maybe added later</em></p> <h2 id="3-calculate-contributions-of-atomic-orbitals">3. Calculate Contributions of Atomic Orbitals</h2> <p>Here are several methods to do this, and in this blog, I will introducing the NAO approach.</p> <p>In Gaussian, using keyword <code class="language-plaintext highlighter-rouge">pop=nboread</code> and add <code class="language-plaintext highlighter-rouge">$NBO NAOMO $END</code> at the end of input file, the NBO module will print the NAO population results and orbital coefficient of NAO:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NATURAL POPULATIONS:  Natural atomic orbital occupancies 
+                                                          
+   NAO  Atom  No  lang   Type(AO)    Occupancy      Energy
+ ----------------------------------------------------------
+     1    O    1  S      Cor( 1S)     1.99992     -18.98955
+     2    O    1  S      Val( 2S)     1.76556      -0.88052
+     3    O    1  S      Ryd( 3S)     0.00271       1.19296
+     4    O    1  S      Ryd( 4S)     0.00000       3.53766
+     5    O    1  px     Val( 2p)     1.99661      -0.28809
+     6    O    1  px     Ryd( 3p)     0.00088       0.89052
+     7    O    1  py     Val( 2p)     1.45457      -0.25518
+     8    O    1  py     Ryd( 3p)     0.00287       1.02985
+     9    O    1  pz     Val( 2p)     1.69984      -0.28442
+    10    O    1  pz     Ryd( 3p)     0.00043       0.93030
+    11    O    1  dxy    Ryd( 3d)     0.00000       1.74635
+    12    O    1  dxz    Ryd( 3d)     0.00251       1.77697
+    13    O    1  dyz    Ryd( 3d)     0.00205       2.53155
+    14    O    1  dx2y2  Ryd( 3d)     0.00069       2.13328
+    15    O    1  dz2    Ryd( 3d)     0.00267       1.73849
+
+    16    H    2  S      Val( 1S)     0.53264       0.14162
+    17    H    2  S      Ryd( 2S)     0.00169       0.57225
+
+    18    H    3  S      Val( 1S)     0.53264       0.14162
+    19    H    3  S      Ryd( 2S)     0.00169       0.57225
+</code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MOs in the NAO basis:                                                         
+
+          NAO        1       2       3       4       5       6       7       8
+      ---------- ------- ------- ------- ------- ------- ------- ------- -------
+   1.  O 1 (S)    0.9959 -0.0875 -0.0000 -0.0218  0.0000  0.0042 -0.0000 -0.0000
+   2.  O 1 (S)    0.0840  0.8718 -0.0000  0.3402  0.0000  0.2404  0.0000  0.0000
+   3.  O 1 (S)    0.0004  0.0134  0.0000 -0.0343 -0.0000 -0.1941 -0.0000  0.0000
+   4.  O 1 (S)   -0.0000 -0.0000  0.0000  0.0000 -0.0000  0.0367 -0.0000  0.0000
+   5.  O 1 (px)   0.0000  0.0000  0.0000 -0.0000  0.9992  0.0000 -0.0000 -0.0000
+   6.  O 1 (px)  -0.0000 -0.0000 -0.0000  0.0000 -0.0210 -0.0000  0.0000  0.0000
+   7.  O 1 (py)   0.0000  0.0000  0.8528 -0.0000  0.0000 -0.0000 -0.3862 -0.3369
+   8.  O 1 (py)   0.0000 -0.0000  0.0379 -0.0000 -0.0000 -0.0000 -0.0097  0.3747
+   9.  O 1 (pz)   0.0023 -0.2020 -0.0000  0.8995 -0.0000 -0.3068  0.0000 -0.0000
+  10.  O 1 (pz)  -0.0010 -0.0051  0.0000 -0.0138  0.0000  0.0118  0.0000  0.0000
+  11.  O 1 (d1)   0.0000  0.0000 -0.0000 -0.0000 -0.0000 -0.0000  0.0000 -0.0000
+  12.  O 1 (d2)  -0.0000  0.0000  0.0000 -0.0000 -0.0354  0.0000 -0.0000  0.0000
+  13.  O 1 (d3)  -0.0000 -0.0000 -0.0320  0.0000 -0.0000 -0.0000  0.0143 -0.1522
+  14.  O 1 (d4)   0.0001 -0.0185 -0.0000  0.0023 -0.0000  0.0167  0.0000 -0.0000
+  15.  O 1 (d5)  -0.0000  0.0083  0.0000 -0.0356  0.0000  0.0129 -0.0000  0.0000
+  16.  H 2 (S)    0.0234  0.3082  0.3674 -0.1893 -0.0000 -0.4673  0.4331  0.3805
+  17.  H 2 (S)    0.0020 -0.0228  0.0122 -0.0131 -0.0000 -0.4312  0.4875 -0.4655
+  18.  H 3 (S)    0.0234  0.3082 -0.3674 -0.1893 -0.0000 -0.4673 -0.4331 -0.3805
+  19.  H 3 (S)    0.0020 -0.0228 -0.0122 -0.0131  0.0000 -0.4312 -0.4875  0.4655
+</code></pre></div></div> <p>In the first output section, the core (<code class="language-plaintext highlighter-rouge">Cor</code>), valence (<code class="language-plaintext highlighter-rouge">Val</code>) and Rydberg (<code class="language-plaintext highlighter-rouge">Ryd</code>) NAOs of the natural minimum basis are summarized. In most cases, only the contributions from <code class="language-plaintext highlighter-rouge">Cor</code> and <code class="language-plaintext highlighter-rouge">Val</code> NAOs are significant, as the <code class="language-plaintext highlighter-rouge">Ryd</code> NAOs are typically negligible.</p> <p>From the first table, we can see that the NAO orbital number for the 2p<sub>x</sub> orbital of the oxygen atom is <em>5</em> for <code class="language-plaintext highlighter-rouge">Val</code> and <em>6</em> for <code class="language-plaintext highlighter-rouge">Ryd</code>. These numbers can then be found in the second table. Focusing on the HOMO (No. 5) in this example, the contribution from O(2p<sub>x</sub>, Val) is 0.9992<sup>2</sup> = 99.84%, while that from O(2p<sub>x</sub>, Ryd) is (–0.0210)<sup>2</sup> = 0.04%. Since a polarization function is included in the <code class="language-plaintext highlighter-rouge">6-31G(d)</code> basis set, the O(3d<sub>xz</sub>, Ryd) also contributes 0.13% to the HOMO. In total, the oxygen atom accounts for 100% of the HOMO contribution.</p> <ul> <li>References: http://sobereva.com/131 (in Chinese)</li> </ul> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="external nofollow noopener">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Dr. Zhe WANG. At <a href="https://www.applchem.eng.osaka-u.ac.jp" target="_blank" rel="external nofollow noopener">Graduate School of Engineering</a>, <a href="https://www.osaka-u.ac.jp/en" rel="external nofollow noopener" target="_blank">The University of Osaka</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>

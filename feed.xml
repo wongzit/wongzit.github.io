@@ -1,84 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://wongzit.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://wongzit.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-09-20T12:09:21+00:00</updated><id>https://wongzit.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">a post with plotly.js</title><link href="https://wongzit.github.io/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js"/><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>https://wongzit.github.io/blog/2025/plotly</id><content type="html" xml:base="https://wongzit.github.io/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
-</span><span class="sb">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "type": "scatter"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [16, 5, 11, 9],
-      "type": "scatter"
-    }
-  ]
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-plotly">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "type": "scatter"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [16, 5, 11, 9],
-      "type": "scatter"
-    }
-  ]
-}
-</code></pre> <p>Also another example chart.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
-</span><span class="sb">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "mode": "markers"
-    },
-    {
-      "x": [2, 3, 4, 5],
-      "y": [16, 5, 11, 9],
-      "mode": "lines"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [12, 9, 15, 12],
-      "mode": "lines+markers"
-    }
-  ],
-  "layout": {
-    "title": {
-      "text": "Line and Scatter Plot"
-    }
-  }
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>This is how it looks like:</p> <pre><code class="language-plotly">{
-  "data": [
-    {
-      "x": [1, 2, 3, 4],
-      "y": [10, 15, 13, 17],
-      "mode": "markers"
-    },
-    {
-      "x": [2, 3, 4, 5],
-      "y": [16, 5, 11, 9],
-      "mode": "lines"
-    },
-    {
-      "x": [1, 2, 3, 4],
-      "y": [12, 9, 15, 12],
-      "mode": "lines+markers"
-    }
-  ],
-  "layout": {
-    "title": {
-      "text": "Line and Scatter Plot"
-    }
-  }
-}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included plotly.js code could look like]]></summary></entry><entry><title type="html">a post with image galleries</title><link href="https://wongzit.github.io/blog/2024/photo-gallery/" rel="alternate" type="text/html" title="a post with image galleries"/><published>2024-12-04T01:59:00+00:00</published><updated>2024-12-04T01:59:00+00:00</updated><id>https://wongzit.github.io/blog/2024/photo-gallery</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/photo-gallery/"><![CDATA[<p>The images in this post are all zoomable, arranged into different mini-galleries using different libraries.</p> <h2 id="lightbox2"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox2</a></h2> <p><a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p> <hr/> <h2 id="photoswipe"><a href="https://photoswipe.com/">PhotoSwipe</a></h2> <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started"> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt=""/> </a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" data-pswp-width="1875" data-pswp-height="2500" data-cropped="true" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt=""/> </a> <a href="https://unsplash.com" data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1666" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt=""/> </a> <div> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1667" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt=""/> </a> </div> </div> <hr/> <h2 id="spotlight-js"><a href="https://nextapps-de.github.io/spotlight/">Spotlight JS</a></h2> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/> </a> </div> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg"/> </a> </div> <hr/> <h2 id="venobox"><a href="https://veno.es/venobox/">Venobox</a></h2> <p><a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what included image galleries could look like]]></summary></entry><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://wongzit.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://wongzit.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[<p>May 14, 2024 We’re introducing a series of updates across the Gemini family of models, including the new 1.5 Flash, our lightweight model for speed and efficiency, and Project Astra, our vision for the future of AI assistants. In December, we launched our first natively multimodal model Gemini 1.0 in three sizes: Ultra, Pro and Nano. Just a few months later we released 1.5 Pro, with enhanced performance and a breakthrough long context window of 1 million tokens.Developers and enterprise customers have been putting 1.5 Pro to use in incredible ways and finding its long context window, multimodal reasoning capabilities and impressive overall performance incredibly useful.We know from user feedback that some applications need lower latency and a lower cost to serve. This inspired us to keep innovating, so today, we’re introducing Gemini 1.5 Flash: a model that’s lighter-weight than 1.5 Pro, and designed to be fast and efficient to serve at scale.Both 1.5 Pro and 1.5 Flash are available in public preview with a 1 million token context window in Google AI Studio and Vertex AI. And now, 1.5 Pro is also available with a 2 million token context window via waitlist to developers using the API and to Google Cloud customers.We’re also introducing updates across the Gemini family of models, announcing our next generation of open models, Gemma 2, and sharing progress on the future of AI assistants, with Project Astra.Context lengths of leading foundation models compared with Gemini 1.5’s 2 million token capability1.5 Flash is the newest addition to the Gemini model family and the fastest Gemini model served in the API. It’s optimized for high-volume, high-frequency tasks at scale, is more cost-efficient to serve and features our breakthrough long context window.While it’s a lighter weight model than 1.5 Pro, it’s highly capable of multimodal reasoning across vast amounts of information and delivers impressive quality for its size.The new Gemini 1.5 Flash model is optimized for speed and efficiency, is highly capable of multimodal reasoning and features our breakthrough long context window.1.5 Flash excels at summarization, chat applications, image and video captioning, data extraction from long documents and tables, and more. This is because it’s been trained by 1.5 Pro through a process called “distillation,” where the most essential knowledge and skills from a larger model are transferred to a smaller, more efficient model.Read more about 1.5 Flash in our updated Gemini 1.5 technical report, on the Gemini technology page, and learn about 1.5 Flash’s availability and pricing.Over the last few months, we’ve significantly improved 1.5 Pro, our best model for general performance across a wide range of tasks.Beyond extending its context window to 2 million tokens, we’ve enhanced its code generation, logical reasoning and planning, multi-turn conversation, and audio and image understanding through data and algorithmic advances. We see strong improvements on public and internal benchmarks for each of these tasks.1.5 Pro can now follow increasingly complex and nuanced instructions, including ones that specify product-level behavior involving role, format and style. We’ve improved control over the model’s responses for specific use cases, like crafting the persona and response style of a chat agent or automating workflows through multiple function calls. And we’ve enabled users to steer model behavior by setting system instructions.We added audio understanding in the Gemini API and Google AI Studio, so 1.5 Pro can now reason across image and audio for videos uploaded in Google AI Studio. And we’re now integrating 1.5 Pro into Google products, including Gemini Advanced and in Workspace apps.Read more about 1.5 Pro in our updated Gemini 1.5 technical report and on the Gemini technology page.Gemini Nano is expanding beyond text-only inputs to include images as well. Starting with Pixel, applications using Gemini Nano with Multimodality will be able to understand the world the way people do — not just through text, but also through sight, sound and spoken language.Read more about Gemini 1.0 Nano on Android.Today, we’re also sharing a series of updates to Gemma, our family of open models built from the same research and technology used to create the Gemini models.We’re announcing Gemma 2, our next generation of open models for responsible AI innovation. Gemma 2 has a new architecture designed for breakthrough performance and efficiency, and will be available in new sizes.The Gemma family is also expanding with PaliGemma, our first vision-language model inspired by PaLI-3. And we’ve upgraded our Responsible Generative AI Toolkit with LLM Comparator for evaluating the quality of model responses.Read more on the Developer blog.As part of Google DeepMind’s mission to build AI responsibly to benefit humanity, we’ve always wanted to develop universal AI agents that can be helpful in everyday life. That’s why today, we’re sharing our progress in building the future of AI assistants with Project Astra (advanced seeing and talking responsive agent).To be truly useful, an agent needs to understand and respond to the complex and dynamic world just like people do — and take in and remember what it sees and hears to understand context and take action. It also needs to be proactive, teachable and personal, so users can talk to it naturally and without lag or delay.While we’ve made incredible progress developing AI systems that can understand multimodal information, getting response time down to something conversational is a difficult engineering challenge. Over the past few years, we’ve been working to improve how our models perceive, reason and converse to make the pace and quality of interaction feel more natural.Building on Gemini, we’ve developed prototype agents that can process information faster by continuously encoding video frames, combining the video and speech input into a timeline of events, and caching this information for efficient recall.By leveraging our leading speech models, we also enhanced how they sound, giving the agents a wider range of intonations. These agents can better understand the context they’re being used in, and respond quickly, in conversation.With technology like this, it’s easy to envision a future where people could have an expert AI assistant by their side, through a phone or glasses. And some of these capabilities are coming to Google products, like the Gemini app and web experience, later this year.We’ve made incredible progress so far with our family of Gemini models, and we’re always striving to advance the state-of-the-art even further. By investing in a relentless production line of innovation, we’re able to explore new ideas at the frontier, while also unlocking the possibility of new and exciting Gemini use cases.Learn more about Gemini and its capabilities. Your information will be used in accordance with Google’s privacy policy.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Done. Just one step more.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://wongzit.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://wongzit.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-09-20T12:32:25+00:00</updated><id>https://wongzit.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Orbital Composition Analysis</title><link href="https://wongzit.github.io/orbital-composition-analysis/" rel="alternate" type="text/html" title="Orbital Composition Analysis"/><published>2025-06-03T01:25:25+00:00</published><updated>2025-06-03T01:25:25+00:00</updated><id>https://wongzit.github.io/orbital-composition-analysis</id><content type="html" xml:base="https://wongzit.github.io/orbital-composition-analysis/"><![CDATA[<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"> </script> <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script> <p>This blog shows how to perform orbial composition analysis based on Gaussian output files.</p> <h2 id="1-general-information">1. General Information</h2> <p>Orbital composition analysis is to evaluate the contributions of various components that make up an orbital.The orbitals could be any type of orbitals (MO, LMO, NO, etc). These components can be analyzed at different levels, from smallest to largest: (1) <strong>basis functions</strong>, (2) <strong>atomic orbitals</strong>, (3) <strong>atoms</strong>, (4) <strong>molecular fragments</strong>.</p> <h2 id="2-calculate-contributions-of-basis-functions">2. Calculate Contributions of Basis Functions</h2> <p>Here we will use a water molecule as example to explain. Input file is like this:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#p b3lyp/6-31(d) pop=full iop(3/33=1)
+
+Basis functions composition
+
+0 1
+O                     0.        0.        0.11972 
+H                     0.        0.76155  -0.47887 
+H                     0.       -0.76155  -0.47887 
+</code></pre></div></div> <p>Using the keyword <code class="language-plaintext highlighter-rouge">pop=full</code> prints out the orbital coefficient and <code class="language-plaintext highlighter-rouge">iop(3/33=1)</code> outputs the overlap matrix (see below).</p> <p>The orbital part in the output file appears as follows:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     Molecular Orbital Coefficients:
+                           1         2         3         4         5
+                        (A1)--O   (A1)--O   (B2)--O   (A1)--O   (B1)--O
+     Eigenvalues --   -19.13815  -0.99790  -0.51718  -0.37220  -0.29119
+   1 1   O  1S          0.99286  -0.20950   0.00000  -0.08809   0.00000
+   2        2S          0.02622   0.46921   0.00000   0.17724   0.00000
+   3        2PX         0.00000   0.00000   0.00000   0.00000   0.64458
+   4        2PY         0.00000   0.00000   0.51744   0.00000   0.00000
+   5        2PZ        -0.00110  -0.12769   0.00000   0.55184   0.00000
+   6        3S          0.01011   0.43950   0.00000   0.41041   0.00000
+   7        3PX         0.00000   0.00000   0.00000   0.00000   0.50605
+   8        3PY         0.00000   0.00000   0.26974   0.00000   0.00000
+   9        3PZ        -0.00000  -0.06064   0.00000   0.37218   0.00000
+  10        4XX        -0.00772  -0.01093   0.00000  -0.00026   0.00000
+  11        4YY        -0.00777   0.01879   0.00000   0.00089   0.00000
+  12        4ZZ        -0.00775   0.01607   0.00000  -0.05242   0.00000
+  13        4XY         0.00000   0.00000   0.00000   0.00000   0.00000
+  14        4XZ         0.00000   0.00000   0.00000   0.00000  -0.03544
+  15        4YZ         0.00000   0.00000  -0.04127   0.00000   0.00000
+  16 2   H  1S          0.00037   0.13915   0.23745  -0.14372   0.00000
+  17        2S         -0.00103   0.00645   0.14193  -0.11426   0.00000
+  18 3   H  1S          0.00037   0.13915  -0.23745  -0.14372   0.00000
+  19        2S         -0.00103   0.00645  -0.14193  -0.11426   0.00000
+</code></pre></div></div> <p>From the output, the HOMO (No.5) wavefunction can be writen as:</p> \[\Psi _5 = 0.64458 \times \chi_3 + 0.50605 \times \chi _7 -0.03544 \times \chi _{14}\] <p>Since the orbital must be normalized:</p> \[\langle \Psi _5 | \Psi _5 \rangle = 1 = 0.64458^2 \times \langle \chi_3|\chi_3 \rangle + 0.50605^2 \times \langle \chi_7|\chi_7 \rangle + 0.03544^2 \times \langle \chi_{14}|\chi_{14} \rangle + 2 \times 0.64458 \times 0.50605 \langle \chi_3|\chi_7 \rangle - 2 \times 0.64458 \times 0.03544 \langle \chi_3|\chi_{14} \rangle - 2 \times 0.50605 \times 0.03544 \langle \chi_7|\chi_{14} \rangle\] <p>Thus,</p> \[1 = 0.41548 \times S_{3,3} + 0.25609 \times S_{7,7} + 0.00126 \times S_{14,14} + 0.65238 \times S_{3,7} - 0.04569 \times S_{3,14} - 0.03587 \times S_{7,14}\] <p>In the above equetion, <em>0.41548</em> represents the contribution of basis χ<sub>3</sub> to HOMO, while <em>0.65238</em> reflects the combined contribution of basis χ<sub>3</sub> and χ<sub>7</sub> to HOMO. Since, <i>S</i><sub>a,a</sub> = 1,</p> <p>Thus,</p> \[\langle \Psi _5 | \Psi _5 \rangle = 0.67283 + 0.65238 \times S_{3,7} - 0.04569 \times S_{3,14} - 0.03587 \times S_{7,14}\] <p>To calculate the contribution of each basis function, we need overlap integral <i>S</i><sub>3,7</sub>, <i>S</i><sub>3,14</sub>, and <i>S</i><sub>7,14</sub>. These overlap integral can be obtained using <code class="language-plaintext highlighter-rouge">iop(3/33=1)</code> keyword and aresummarized in the <strong>Overlap</strong> section:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> *** Overlap *** 
+                1             2             3             4             5 
+      1  0.100000D+01
+      2  0.233690D+00  0.100000D+01
+      3  0.000000D+00  0.000000D+00  0.100000D+01
+      4  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+      5  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+      6  0.167280D+00  0.763641D+00  0.000000D+00  0.000000D+00  0.000000D+00
+      7  0.000000D+00  0.000000D+00  0.501521D+00  0.000000D+00  0.000000D+00
+      8  0.000000D+00  0.000000D+00  0.000000D+00  0.501521D+00  0.000000D+00
+      9  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.501521D+00
+     10  0.335315D-01  0.547066D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     11  0.335315D-01  0.547066D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     12  0.335315D-01  0.547066D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     13  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     14  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     15  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     16  0.334348D-01  0.241296D+00  0.000000D+00  0.221010D+00 -0.173718D+00
+     17  0.681738D-01  0.376405D+00  0.000000D+00  0.116274D+00 -0.913932D-01
+     18  0.334348D-01  0.241296D+00  0.000000D+00 -0.221010D+00 -0.173718D+00
+     19  0.681738D-01  0.376405D+00  0.000000D+00 -0.116274D+00 -0.913932D-01
+                6             7             8             9            10 
+      6  0.100000D+01
+      7  0.000000D+00  0.100000D+01
+      8  0.000000D+00  0.000000D+00  0.100000D+01
+      9  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+     10  0.699015D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+     11  0.699015D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.333333D+00
+     12  0.699015D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.333333D+00
+     13  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     14  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     15  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00
+     16  0.421231D+00  0.000000D+00  0.457410D+00 -0.359532D+00  0.162722D+00
+     17  0.678714D+00  0.000000D+00  0.379588D+00 -0.298363D+00  0.395977D+00
+     18  0.421231D+00  0.000000D+00 -0.457410D+00 -0.359532D+00  0.162722D+00
+     19  0.678714D+00  0.000000D+00 -0.379588D+00 -0.298363D+00  0.395977D+00
+               11            12            13            14            15 
+     11  0.100000D+01
+     12  0.333333D+00  0.100000D+01
+     13  0.000000D+00  0.000000D+00  0.100000D+01
+     14  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+     15  0.000000D+00  0.000000D+00  0.000000D+00  0.000000D+00  0.100000D+01
+     16  0.401135D+00  0.310019D+00  0.000000D+00  0.000000D+00 -0.324581D+00
+     17  0.440358D+00  0.423396D+00  0.000000D+00  0.000000D+00 -0.604210D-01
+     18  0.401135D+00  0.310019D+00  0.000000D+00  0.000000D+00  0.324581D+00
+     19  0.440358D+00  0.423396D+00  0.000000D+00  0.000000D+00  0.604210D-01
+               16            17            18            19 
+     16  0.100000D+01
+     17  0.658292D+00  0.100000D+01
+     18  0.502482D-01  0.221846D+00  0.100000D+01
+     19  0.221846D+00  0.512715D+00  0.658292D+00  0.100000D+01
+</code></pre></div></div> <p>For this example, the <i>S</i><sub>3,7</sub> = 0.50152, and <i>S</i><sub>3,14</sub> = <i>S</i><sub>7,14</sub> = 0. Thus,</p> \[\langle \Psi _5 | \Psi _5 \rangle = 0.67283 + 0.65238 \times 0.50152 = 1.00002\] <p>To calculate the contribution of each basis function χ<sub>n</sub>, here are three methods:</p> <h4 id="1-mulliken-partition">(1) Mulliken Partition</h4> <p>In the Mulliken partition, when calculating the contribution of basis function χ<sub>n</sub> to an orbital, all the diagonal (localized, <em>i.e.</em>, <i>S</i><sub>n,n</sub>) terms of χ<sub>n</sub> are assigned entirely to χ<sub>n</sub>, while half of the off-diagonal (overlap, <em>i.e.</em>, <i>S</i><sub>n,m</sub>) terms between χ<sub>n</sub> and χ<sub>m</sub> are also attributed to χ<sub>n</sub>.</p> <p>In the above example, the contribution of χ<sub>3</sub> to HOMO is:</p> \[0.64458^2 + 0.64458 \times 0.50605 \times 0.50152 = 0.57907\] <p>Similar, the contribution of χ<sub>7</sub> and χ<sub>14</sub> to HOMO are 41.968% and 0.126%, respectively.</p> <h3 id="2-stout-politzer-partition">(2) Stout-Politzer Partition</h3> <p>The Stout–Politzer partition accounts for the inequality between basis functions by partitioning the overlap terms in proportion to the squared coefficients of the two involved basis functions. For above example, the contribution of χ<sub>3</sub> to HOMO is:</p> \[0.64458^2 + 2 \times 0.64458 \times 0.50605 \times 0.50152 \times \frac {0.64458^2}{0.64458^2+0.50605^2} = 0.61790\] <p>Similar, the contribution of χ<sub>7</sub> and χ<sub>14</sub> to HOMO are 38.085% and 0.126%, respectively.</p> <h3 id="3-ros-schuit-scpa-partition">(3) Ros-Schuit (SCPA) partition</h3> <p><em>skip for now, maybe added later</em></p> <h2 id="3-calculate-contributions-of-atomic-orbitals">3. Calculate Contributions of Atomic Orbitals</h2> <p>Here are several methods to do this, and in this blog, I will introducing the NAO approach.</p> <p>In Gaussian, using keyword <code class="language-plaintext highlighter-rouge">pop=nboread</code> and add <code class="language-plaintext highlighter-rouge">$NBO NAOMO $END</code> at the end of input file, the NBO module will print the NAO population results and orbital coefficient of NAO:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NATURAL POPULATIONS:  Natural atomic orbital occupancies 
+                                                          
+   NAO  Atom  No  lang   Type(AO)    Occupancy      Energy
+ ----------------------------------------------------------
+     1    O    1  S      Cor( 1S)     1.99992     -18.98955
+     2    O    1  S      Val( 2S)     1.76556      -0.88052
+     3    O    1  S      Ryd( 3S)     0.00271       1.19296
+     4    O    1  S      Ryd( 4S)     0.00000       3.53766
+     5    O    1  px     Val( 2p)     1.99661      -0.28809
+     6    O    1  px     Ryd( 3p)     0.00088       0.89052
+     7    O    1  py     Val( 2p)     1.45457      -0.25518
+     8    O    1  py     Ryd( 3p)     0.00287       1.02985
+     9    O    1  pz     Val( 2p)     1.69984      -0.28442
+    10    O    1  pz     Ryd( 3p)     0.00043       0.93030
+    11    O    1  dxy    Ryd( 3d)     0.00000       1.74635
+    12    O    1  dxz    Ryd( 3d)     0.00251       1.77697
+    13    O    1  dyz    Ryd( 3d)     0.00205       2.53155
+    14    O    1  dx2y2  Ryd( 3d)     0.00069       2.13328
+    15    O    1  dz2    Ryd( 3d)     0.00267       1.73849
+
+    16    H    2  S      Val( 1S)     0.53264       0.14162
+    17    H    2  S      Ryd( 2S)     0.00169       0.57225
+
+    18    H    3  S      Val( 1S)     0.53264       0.14162
+    19    H    3  S      Ryd( 2S)     0.00169       0.57225
+</code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MOs in the NAO basis:                                                         
+
+          NAO        1       2       3       4       5       6       7       8
+      ---------- ------- ------- ------- ------- ------- ------- ------- -------
+   1.  O 1 (S)    0.9959 -0.0875 -0.0000 -0.0218  0.0000  0.0042 -0.0000 -0.0000
+   2.  O 1 (S)    0.0840  0.8718 -0.0000  0.3402  0.0000  0.2404  0.0000  0.0000
+   3.  O 1 (S)    0.0004  0.0134  0.0000 -0.0343 -0.0000 -0.1941 -0.0000  0.0000
+   4.  O 1 (S)   -0.0000 -0.0000  0.0000  0.0000 -0.0000  0.0367 -0.0000  0.0000
+   5.  O 1 (px)   0.0000  0.0000  0.0000 -0.0000  0.9992  0.0000 -0.0000 -0.0000
+   6.  O 1 (px)  -0.0000 -0.0000 -0.0000  0.0000 -0.0210 -0.0000  0.0000  0.0000
+   7.  O 1 (py)   0.0000  0.0000  0.8528 -0.0000  0.0000 -0.0000 -0.3862 -0.3369
+   8.  O 1 (py)   0.0000 -0.0000  0.0379 -0.0000 -0.0000 -0.0000 -0.0097  0.3747
+   9.  O 1 (pz)   0.0023 -0.2020 -0.0000  0.8995 -0.0000 -0.3068  0.0000 -0.0000
+  10.  O 1 (pz)  -0.0010 -0.0051  0.0000 -0.0138  0.0000  0.0118  0.0000  0.0000
+  11.  O 1 (d1)   0.0000  0.0000 -0.0000 -0.0000 -0.0000 -0.0000  0.0000 -0.0000
+  12.  O 1 (d2)  -0.0000  0.0000  0.0000 -0.0000 -0.0354  0.0000 -0.0000  0.0000
+  13.  O 1 (d3)  -0.0000 -0.0000 -0.0320  0.0000 -0.0000 -0.0000  0.0143 -0.1522
+  14.  O 1 (d4)   0.0001 -0.0185 -0.0000  0.0023 -0.0000  0.0167  0.0000 -0.0000
+  15.  O 1 (d5)  -0.0000  0.0083  0.0000 -0.0356  0.0000  0.0129 -0.0000  0.0000
+  16.  H 2 (S)    0.0234  0.3082  0.3674 -0.1893 -0.0000 -0.4673  0.4331  0.3805
+  17.  H 2 (S)    0.0020 -0.0228  0.0122 -0.0131 -0.0000 -0.4312  0.4875 -0.4655
+  18.  H 3 (S)    0.0234  0.3082 -0.3674 -0.1893 -0.0000 -0.4673 -0.4331 -0.3805
+  19.  H 3 (S)    0.0020 -0.0228 -0.0122 -0.0131  0.0000 -0.4312 -0.4875  0.4655
+</code></pre></div></div> <p>In the first output section, the core (<code class="language-plaintext highlighter-rouge">Cor</code>), valence (<code class="language-plaintext highlighter-rouge">Val</code>) and Rydberg (<code class="language-plaintext highlighter-rouge">Ryd</code>) NAOs of the natural minimum basis are summarized. In most cases, only the contributions from <code class="language-plaintext highlighter-rouge">Cor</code> and <code class="language-plaintext highlighter-rouge">Val</code> NAOs are significant, as the <code class="language-plaintext highlighter-rouge">Ryd</code> NAOs are typically negligible.</p> <p>From the first table, we can see that the NAO orbital number for the 2p<sub>x</sub> orbital of the oxygen atom is <em>5</em> for <code class="language-plaintext highlighter-rouge">Val</code> and <em>6</em> for <code class="language-plaintext highlighter-rouge">Ryd</code>. These numbers can then be found in the second table. Focusing on the HOMO (No. 5) in this example, the contribution from O(2p<sub>x</sub>, Val) is 0.9992<sup>2</sup> = 99.84%, while that from O(2p<sub>x</sub>, Ryd) is (–0.0210)<sup>2</sup> = 0.04%. Since a polarization function is included in the <code class="language-plaintext highlighter-rouge">6-31G(d)</code> basis set, the O(3d<sub>xz</sub>, Ryd) also contributes 0.13% to the HOMO. In total, the oxygen atom accounts for 100% of the HOMO contribution.</p> <ul> <li>References: http://sobereva.com/131 (in Chinese)</li> </ul>]]></content><author><name>Zhe Wang</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">List of All Posts</title><link href="https://wongzit.github.io/list-of-all-posts/" rel="alternate" type="text/html" title="List of All Posts"/><published>2025-05-12T07:35:16+00:00</published><updated>2025-05-12T07:35:16+00:00</updated><id>https://wongzit.github.io/list-of-all-posts</id><content type="html" xml:base="https://wongzit.github.io/list-of-all-posts/"><![CDATA[<p><strong>Jun. 03, 2025</strong> <a href="https://wongzit.github.io/orbital-composition-analysis/">Orbital Composition Analysis</a></p> <p><strong>Jan. 21, 2025</strong> <a href="https://wongzit.github.io/a-new-3d-nics-method-based-on-esp-mapping/">A New 3D NICS Method Based on ESP Mapping</a></p> <p><strong>Feb. 12, 2024</strong> <a href="https://wongzit.github.io/gaussian-calculation-task-continuation/">Gaussian 16 Calculation Task Continuation</a></p> <p><strong>Dec. 29, 2023</strong> <a href="https://wongzit.github.io/pyaroma-version-4-update/">py.Aroma Version 4 Update</a></p> <p><strong>Nov. 09, 2023</strong> <a href="https://wongzit.github.io/analyze-intermolecular-interactions-by-sapt/">Analyze Intermolecular Interactions by SAPT</a></p> <p><strong>Sep. 30, 2023</strong> <a href="https://wongzit.github.io/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian/">Computing Charge Transfer Rate Based on Marcus Theory Using Gaussian</a></p> <p><strong>Aug. 01, 2023</strong> <a href="https://wongzit.github.io/hartree-fock-exchange-of-dft-functionals/">Hartree-Fock Exchange of DFT Functionals</a></p> <p><strong>Apr. 28, 2023</strong> <a href="https://wongzit.github.io/natural-transition-orbitals-(nto)-analysis/">Natural Transition Orbitals (NTO) Analysis</a></p> <p><strong>Jun. 27, 2022</strong> <a href="https://wongzit.github.io/impact-factor-2022/">Impact Factor 2022</a></p> <p><strong>May 13, 2022</strong> <a href="https://wongzit.github.io/memo-install-gaussian-and-gaussview-on-linux-machine/">MEMO: Install Gaussian and GaussView on Linux Machine</a></p> <p><strong>Apr. 27, 2022</strong> <a href="https://wongzit.github.io/evaluating-dissected-nics-with-nbo-program/">Evaluating Dissected NICS with NBO Program</a></p> <p><strong>Apr. 06, 2022</strong> <a href="https://wongzit.github.io/install-dalton-on-linux-machine/">Install Dalton on Linux Machine</a></p> <p><strong>Feb. 17, 2022</strong> <a href="https://wongzit.github.io/calculation-of-solvation-free-energy/">Calculation of Solvation Free Energy</a></p> <p><strong>Spe. 12, 2021</strong> <a href="https://wongzit.github.io/gaumonitor-v3-update/">gauMonitor v3.0.0 Update</a></p> <p><strong>Sep. 03, 2021</strong> <a href="https://wongzit.github.io/nmr-prediction-with-scaling-factors/">NMR Prediction with Scaling Factors</a></p> <p><strong>Sep. 02, 2021</strong> <a href="https://wongzit.github.io/manual-for-calculating-nics-with-nbo-program/">Manual for Calculating NICS with NBO Program</a></p> <p><strong>Aug. 28, 2021</strong> <a href="https://wongzit.github.io/pyaroma-a-multifunction-aromaticity-analyzer/">pyAroma: A Multifunction Aromaticity Analyser</a></p> <p><strong>Aug. 25, 2021</strong> <a href="https://wongzit.github.io/install-gaussian-16-on-a-mac/">Install Gaussian 16 on a Mac</a></p> <p><strong>Jul. 02, 2021</strong> <a href="https://wongzit.github.io/install-orca-5-on-linux-machine/">Install ORCA 5 on Linux Machine</a></p> <p><strong>Jun. 25, 2021</strong> <a href="https://wongzit.github.io/memo-simulation-of-epr-spectrum-with-easyspin/">MEMO: Simulation of EPR Spectrum with EasySpin</a></p> <p><strong>Jun. 22, 2021</strong> <a href="https://wongzit.github.io/method-to-solve-the-scf-not-converged/">Methods to Solve the SCF not Converged</a></p> <p><strong>Jun. 13, 2021</strong> <a href="https://wongzit.github.io/prepare-supporting-information-with-csigen/">Prepare Supporting Information with CSIgen</a></p> <p><strong>Jun. 12, 2021</strong> <a href="https://wongzit.github.io/3d-icss-analyses-with-icssgen3d-and-icsscub3d/">3D-ICSS Analyses with ICSSgen3D and ICSScub3D</a></p> <p><strong>Jun. 06, 2021</strong> <a href="https://wongzit.github.io/gaussian-common-errors-and-solutions/">Gaussian Common Errors and Solutions</a></p> <p><strong>Jun. 05, 2021</strong> <a href="https://wongzit.github.io/visualization-of-aromaticity-gimic/">Visualization of Aromaticity: GIMIC</a></p> <p><strong>Jun. 05, 2021</strong> <a href="https://wongzit.github.io/visualization-of-aromaticity-aicd/">Visualization of Aromaticity: AICD</a></p> <p><strong>Jun. 03, 2021</strong> <a href="https://wongzit.github.io/enepro-a-python-program-for-drawing-energy-profile/">EnePro: A Python Program for Drawing Energy Profile</a></p> <p><strong>Jun. 03, 2021</strong> <a href="https://wongzit.github.io/nics-analyses-with-nicsgen/">NICS Analyses with NICSgen</a></p> <p><strong>Jun. 03, 2021</strong> <a href="https://wongzit.github.io/homa-calculation-with-homacalc/">HOMA Calculation with HOMAcalc</a></p> <p><strong>Jun. 02, 2021</strong> <a href="https://wongzit.github.io/diradical-character-calculation/">Diradical Character Calculation</a></p> <p><strong>May 30, 2021</strong> <a href="https://wongzit.github.io/2d-icss-analyses-with-icssgen-and-icsscsv/">2D-ICSS Analyses with ICSSgen and ICSScsv</a></p> <p><strong>May 27, 2021</strong> <a href="https://wongzit.github.io/epr-prediction-with-orca-program/">EPR Prediction with ORCA Program</a></p> <p><strong>Apr. 19, 2021</strong> <a href="https://wongzit.github.io/plot-odd-electron-density/">Plot Odd Electron Density</a></p>]]></content><author><name>Zhe Wang</name></author><summary type="html"><![CDATA[Jun. 03, 2025 Orbital Composition Analysis]]></summary></entry><entry><title type="html">A New 3D NICS Method Based on ESP Mapping</title><link href="https://wongzit.github.io/a-new-3d-nics-method-based-on-esp-mapping/" rel="alternate" type="text/html" title="A New 3D NICS Method Based on ESP Mapping"/><published>2025-01-21T06:53:36+00:00</published><updated>2025-01-21T06:53:36+00:00</updated><id>https://wongzit.github.io/a-new-3d-nics-method-based-on-esp-mapping</id><content type="html" xml:base="https://wongzit.github.io/a-new-3d-nics-method-based-on-esp-mapping/"><![CDATA[<h2 id="introduction">Introduction</h2> <p>Nucleus-Independent Chemical Shift (NICS) has become one of the most popular methods for assessing aromaticity, primarily due to its straightforward implementation. Despite its widespread use, evaluating the aromaticity of contorted molecules with NICS remains challenging. To address these difficulties, several three-dimensional approaches—such as <a href="DOI https://doi.org/10.1039/B204629F">3D-ICSS</a> and the <a href="https://doi.org/10.1039/d1sc03368a">3D IMS map</a>—have been proposed.</p> <p>In this blog, I introduce a new 3D NICS approach that maps NICS values onto an electrostatic potential surface, thereby offering a more comprehensive understanding of the relationship between aromaticity and electron density (currently I name it as <em>denNICS</em>). A brief guide on how to implement <em>denNICS</em> is provided below. The source code required to perform these calculations is available <a href="https://github.com/wongzit/minorScripts/blob/main/denNICS.py">here</a>.</p> <h2 id="method-overview">Method Overview</h2> <h4 id="1-compute-total-electron-density">1. Compute Total Electron Density</h4> <p>Use <strong>Gaussian</strong> to calculate the total electron density. Make sure to save the results in a <code class="language-plaintext highlighter-rouge">.fchk</code> file.</p> <h4 id="2-generate-a-cube-file">2. Generate a .cube File</h4> <p>From the <code class="language-plaintext highlighter-rouge">.fchk</code> file, create a <code class="language-plaintext highlighter-rouge">.cube</code> file for the total electron density using the <code class="language-plaintext highlighter-rouge">cubegen</code> module or <strong>GaussView</strong>.</p> <h4 id="3-run-the-script-first-pass">3. Run the Script (First Pass)</h4> <ul> <li>Execute the script and provide the path to the <code class="language-plaintext highlighter-rouge">.cube</code> file when prompted.</li> <li>Press <strong>Enter</strong>. The script will generate multiple <code class="language-plaintext highlighter-rouge">.gjf</code> files and a <code class="language-plaintext highlighter-rouge">.pm</code> file. <blockquote> <p><strong>Note:</strong> You can modify the computational method in the script at lines 77 and 79 to suit your needs.</p> </blockquote> </li> </ul> <h4 id="4-submit-the-gjf-files">4. Submit the .gjf Files</h4> <p>Run all generated <code class="language-plaintext highlighter-rouge">.gjf</code> files in <strong>Gaussian</strong>.</p> <h4 id="5-run-the-script-second-pass">5. Run the Script (Second Pass)</h4> <ul> <li>Once the <strong>Gaussian</strong> calculations are complete, rerun the script.</li> <li>Provide the path to any of the resulting <code class="language-plaintext highlighter-rouge">.log</code> files when prompted and press <strong>Enter</strong>.</li> <li>A new <code class="language-plaintext highlighter-rouge">.cube</code> file named <em>denNICS.cube</em> will be generated.</li> </ul> <h4 id="6-map-dennicscube">6. Map denNICS.cube</h4> <p>Finally, visualize <em>denNICS.cube</em> alongside the total electron density. This combined mapping allows for a clearer, more detailed picture of how aromaticity correlates with the underlying electron density distribution.</p> <p>Following is an example for a phenanthrene trimer (ref.: <a href="https://doi.org/10.1039/d1sc03368a">10.1039/d1sc03368a</a>).</p> <p align="center"> <img alt="reorganization" src="/assets/blog/dennics.png" style="height:366px;"/> </p> <p>This procedure offers a practical way to investigate the aromaticity of complex molecules by integrating NICS values onto an electrostatic potential surface. By following the steps outlined, researchers can gain deeper insight into the interplay between aromaticity and electron density in three-dimensional space.</p> <p>Currently, <em>denNICS</em> is still in development, and I plan to integrate it into the next version of <a href="https://wongzit.github.io/program/pyaroma/">py.Aroma</a>. In the meantime, if you encounter any issues with this method, please don’t hesitate to reach out.</p>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="Computation"/><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://wongzit.github.io/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://wongzit.github.io/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://wongzit.github.io/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[<p>May 14, 2024 We’re introducing a series of updates across the Gemini family of models, including the new 1.5 Flash, our lightweight model for speed and efficiency, and Project Astra, our vision for the future of AI assistants. In December, we launched our first natively multimodal model Gemini 1.0 in three sizes: Ultra, Pro and Nano. Just a few months later we released 1.5 Pro, with enhanced performance and a breakthrough long context window of 1 million tokens.Developers and enterprise customers have been putting 1.5 Pro to use in incredible ways and finding its long context window, multimodal reasoning capabilities and impressive overall performance incredibly useful.We know from user feedback that some applications need lower latency and a lower cost to serve. This inspired us to keep innovating, so today, we’re introducing Gemini 1.5 Flash: a model that’s lighter-weight than 1.5 Pro, and designed to be fast and efficient to serve at scale.Both 1.5 Pro and 1.5 Flash are available in public preview with a 1 million token context window in Google AI Studio and Vertex AI. And now, 1.5 Pro is also available with a 2 million token context window via waitlist to developers using the API and to Google Cloud customers.We’re also introducing updates across the Gemini family of models, announcing our next generation of open models, Gemma 2, and sharing progress on the future of AI assistants, with Project Astra.Context lengths of leading foundation models compared with Gemini 1.5’s 2 million token capability1.5 Flash is the newest addition to the Gemini model family and the fastest Gemini model served in the API. It’s optimized for high-volume, high-frequency tasks at scale, is more cost-efficient to serve and features our breakthrough long context window.While it’s a lighter weight model than 1.5 Pro, it’s highly capable of multimodal reasoning across vast amounts of information and delivers impressive quality for its size.The new Gemini 1.5 Flash model is optimized for speed and efficiency, is highly capable of multimodal reasoning and features our breakthrough long context window.1.5 Flash excels at summarization, chat applications, image and video captioning, data extraction from long documents and tables, and more. This is because it’s been trained by 1.5 Pro through a process called “distillation,” where the most essential knowledge and skills from a larger model are transferred to a smaller, more efficient model.Read more about 1.5 Flash in our updated Gemini 1.5 technical report, on the Gemini technology page, and learn about 1.5 Flash’s availability and pricing.Over the last few months, we’ve significantly improved 1.5 Pro, our best model for general performance across a wide range of tasks.Beyond extending its context window to 2 million tokens, we’ve enhanced its code generation, logical reasoning and planning, multi-turn conversation, and audio and image understanding through data and algorithmic advances. We see strong improvements on public and internal benchmarks for each of these tasks.1.5 Pro can now follow increasingly complex and nuanced instructions, including ones that specify product-level behavior involving role, format and style. We’ve improved control over the model’s responses for specific use cases, like crafting the persona and response style of a chat agent or automating workflows through multiple function calls. And we’ve enabled users to steer model behavior by setting system instructions.We added audio understanding in the Gemini API and Google AI Studio, so 1.5 Pro can now reason across image and audio for videos uploaded in Google AI Studio. And we’re now integrating 1.5 Pro into Google products, including Gemini Advanced and in Workspace apps.Read more about 1.5 Pro in our updated Gemini 1.5 technical report and on the Gemini technology page.Gemini Nano is expanding beyond text-only inputs to include images as well. Starting with Pixel, applications using Gemini Nano with Multimodality will be able to understand the world the way people do — not just through text, but also through sight, sound and spoken language.Read more about Gemini 1.0 Nano on Android.Today, we’re also sharing a series of updates to Gemma, our family of open models built from the same research and technology used to create the Gemini models.We’re announcing Gemma 2, our next generation of open models for responsible AI innovation. Gemma 2 has a new architecture designed for breakthrough performance and efficiency, and will be available in new sizes.The Gemma family is also expanding with PaliGemma, our first vision-language model inspired by PaLI-3. And we’ve upgraded our Responsible Generative AI Toolkit with LLM Comparator for evaluating the quality of model responses.Read more on the Developer blog.As part of Google DeepMind’s mission to build AI responsibly to benefit humanity, we’ve always wanted to develop universal AI agents that can be helpful in everyday life. That’s why today, we’re sharing our progress in building the future of AI assistants with Project Astra (advanced seeing and talking responsive agent).To be truly useful, an agent needs to understand and respond to the complex and dynamic world just like people do — and take in and remember what it sees and hears to understand context and take action. It also needs to be proactive, teachable and personal, so users can talk to it naturally and without lag or delay.While we’ve made incredible progress developing AI systems that can understand multimodal information, getting response time down to something conversational is a difficult engineering challenge. Over the past few years, we’ve been working to improve how our models perceive, reason and converse to make the pace and quality of interaction feel more natural.Building on Gemini, we’ve developed prototype agents that can process information faster by continuously encoding video frames, combining the video and speech input into a timeline of events, and caching this information for efficient recall.By leveraging our leading speech models, we also enhanced how they sound, giving the agents a wider range of intonations. These agents can better understand the context they’re being used in, and respond quickly, in conversation.With technology like this, it’s easy to envision a future where people could have an expert AI assistant by their side, through a phone or glasses. And some of these capabilities are coming to Google products, like the Gemini app and web experience, later this year.We’ve made incredible progress so far with our family of Gemini models, and we’re always striving to advance the state-of-the-art even further. By investing in a relentless production line of innovation, we’re able to explore new ideas at the frontier, while also unlocking the possibility of new and exciting Gemini use cases.Learn more about Gemini and its capabilities. Your information will be used in accordance with Google’s privacy policy.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Done. Just one step more.
     
       Check your inbox to confirm your subscription.
     You are already subscribed to our newsletter.
@@ -89,660 +146,225 @@
     
   Let’s stay in touch. Get the latest news from Google in your inbox.
           Follow Us
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.]]></summary></entry><entry><title type="html">a post with tabs</title><link href="https://wongzit.github.io/blog/2024/tabs/" rel="alternate" type="text/html" title="a post with tabs"/><published>2024-05-01T00:32:13+00:00</published><updated>2024-05-01T00:32:13+00:00</updated><id>https://wongzit.github.io/blog/2024/tabs</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/tabs/"><![CDATA[<p>This is how a post with <a href="https://github.com/Ovski4/jekyll-tabs">tabs</a> looks like. Note that the tabs could be used for different purposes, not only for code.</p> <h2 id="first-tabs">First tabs</h2> <p>To add tabs, use the following syntax:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">tabs</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="cp">%}</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.]]></summary></entry><entry><title type="html">Gaussian 16 Calculation Task Continuation</title><link href="https://wongzit.github.io/gaussian-calculation-task-continuation/" rel="alternate" type="text/html" title="Gaussian 16 Calculation Task Continuation"/><published>2024-02-12T15:20:36+00:00</published><updated>2024-02-12T15:20:36+00:00</updated><id>https://wongzit.github.io/gaussian-calculation-task-continuation</id><content type="html" xml:base="https://wongzit.github.io/gaussian-calculation-task-continuation/"><![CDATA[<h3 id="1-geometry-optimization">1. Geometry Optimization</h3> <p><strong>Prerequisite:</strong> A checkpoint file (<em>.chk</em>) from a previous calculation is required.</p> <p><strong>Continuation Method:</strong> Add <code class="language-plaintext highlighter-rouge">opt=restart</code> to the route section.</p> <h5 id="example">Example</h5> <p><strong>Original input file:</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+#p opt=QST2 ...
+</code></pre></div></div> <p><strong>Continuation input file:</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+#p opt=(QST2,restart) ...
+</code></pre></div></div> <p><strong>Additional Notes:</strong></p> <ol> <li>If there are other options after the <code class="language-plaintext highlighter-rouge">opt</code> keyword in the original input file, you can simply add <code class="language-plaintext highlighter-rouge">restart</code>.</li> <li>If the original input file contains <code class="language-plaintext highlighter-rouge">CalcFC</code> or <code class="language-plaintext highlighter-rouge">RCFC</code> options, you can ignore them in the continuation input file and use the <code class="language-plaintext highlighter-rouge">restart</code> option directly.</li> <li>To resume geometry optimization from a specific step, use the <code class="language-plaintext highlighter-rouge">step=n</code> option in the <code class="language-plaintext highlighter-rouge">geom</code> keyword. For example: <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%oldchk=xxx.chk
+%chk=new_xxx.chk
+#p opt geom=(allcheck,step=6) guess=read
+</code></pre></div> </div> </li> </ol> <h3 id="2-irc">2. IRC</h3> <p><strong>Prerequisites:</strong></p> <ul> <li>The calculation is not finished.</li> <li>Or the calculation is finished, but you want to continue the calculation with more steps.</li> </ul> <p><strong>Continuation Method:</strong> Use the <code class="language-plaintext highlighter-rouge">IRC=restart</code> command.</p> <h5 id="examples">Examples</h5> <p><strong>For unfinished calculation:</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+#p IRC=restart ...
+</code></pre></div></div> <p><strong>Calculation finished, adding more steps:</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+#p IRC=(restart,maxpoint=20) ...
+</code></pre></div></div> <h3 id="3-vibrational-analysis">3. Vibrational Analysis</h3> <p><strong>Prerequisites:</strong></p> <ul> <li>In addition to the <em>.chk</em> file, you also need the <em>.rwf</em> file.</li> <li>The <em>.rwf</em> file is located in the <strong>Scratch</strong> folder.</li> </ul> <p><strong>Continuation Method:</strong></p> <ol> <li>Add the <code class="language-plaintext highlighter-rouge">%rwf</code> section to the input file to specify the path to the <em>.rwf</em> file.</li> <li>Use the <code class="language-plaintext highlighter-rouge">restart</code> keyword.</li> </ol> <h5 id="example-1">Example</h5> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=xxx.chk
+%rwf=/path/filename.rwf
+# restart
+</code></pre></div></div> <p><strong>Obtaining the .rwf File Path:</strong></p> <p>The <em>.rwf</em> file name is written at the beginning of the <em>.log</em> or <em>.out</em> output file, for example:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Entering Gaussian System, Link 0=g16
+Initial command:
+/home/wangzhe/g16/l1.exe "/home/wangzhe/g16/Scratch/Gau-73779.inp" -scrdir="/home/wangzhe/g16/Scratch/"
+Default is to use a total of  16 processors:
+                              16 via shared-memory
+                               1 via Linda
+Entering Link 1 = /home/wangzhe/g16/l1.exe PID=     73781.
+</code></pre></div></div> <p>In this example, the path to the <em>.rwf</em> file is:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/wangzhe/g16/Scratch/Gau-73781.rwf
+</code></pre></div></div>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="Computation"/><summary type="html"><![CDATA[1. Geometry Optimization]]></summary></entry><entry><title type="html">py.Aroma Version 4 Update</title><link href="https://wongzit.github.io/pyaroma-version-4-update/" rel="alternate" type="text/html" title="py.Aroma Version 4 Update"/><published>2023-12-29T07:22:06+00:00</published><updated>2023-12-29T07:22:06+00:00</updated><id>https://wongzit.github.io/pyaroma-version-4-update</id><content type="html" xml:base="https://wongzit.github.io/pyaroma-version-4-update/"><![CDATA[<div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/pyAroma/hp_banner_v4-480.webp 480w,/assets/pyAroma/hp_banner_v4-800.webp 800w,/assets/pyAroma/hp_banner_v4-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/pyAroma/hp_banner_v4.png" class="img-fluid" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> <p><strong>py.Aroma</strong> has been updated to version 4.0.0 with a bunch of new features. For more details, please refer to following links.</p> <ul> <li>Homepage of <strong>py.Aroma</strong>: <a href="https://wongzit.github.io/program/pyaroma/">🍶</a></li> <li>GitHub page of <strong>py.Aroma</strong>: <a href="https://github.com/wongzit/pyAroma">🍾</a></li> <li>User manual: <a href="https://wongzit.github.io/program/pyaroma/manual_v4.pdf">🍷</a></li> <li>Download: <a href="https://wongzit.github.io/program/pyaroma/download/">🍺</a></li> </ul>]]></content><author><name>Zhe Wang</name></author><category term="Software"/><category term="Computation"/><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Analyze Intermolecular Interactions by SAPT</title><link href="https://wongzit.github.io/analyze-intermolecular-interactions-by-sapt/" rel="alternate" type="text/html" title="Analyze Intermolecular Interactions by SAPT"/><published>2023-11-09T07:26:56+00:00</published><updated>2023-11-09T07:26:56+00:00</updated><id>https://wongzit.github.io/analyze-intermolecular-interactions-by-sapt</id><content type="html" xml:base="https://wongzit.github.io/analyze-intermolecular-interactions-by-sapt/"><![CDATA[<p>This is a quick note of how to analyze intermolecular interaction by Sysmetry-Adapted Perturbation Theory (SAPT) using <em>Psi4</em>.</p> <h1 id="1-preface">1. Preface</h1> <p>SAPT can divide intermolecular interaction into 4 components:</p> <ol> <li><strong>Electrostatics</strong>: describes the classical Coulomb interaction between fragments, with positive or negative values.</li> <li><strong>Exchange</strong>: describes the short-range exchange repulsion between fragments, with positive values (i.e. unfavorable for binding).</li> <li><strong>Dispersion</strong>: has a negative value and acts as an attractive force.</li> <li><strong>Induction</strong>: reflects the polarization and transfer of charges between fragments, with a negative value.</li> </ol> <p>The SAPT theory involves intramolecular and intermolecular perturbations, and as the order of perturbations increases, the results get better. In principle (as the order of perturbations considered increases step by step), the accuracy order is <code class="language-plaintext highlighter-rouge">SAPT0</code>, <code class="language-plaintext highlighter-rouge">SAPT2</code>, <code class="language-plaintext highlighter-rouge">SAPT2+</code>, <code class="language-plaintext highlighter-rouge">SAPT2+(3)</code>, <code class="language-plaintext highlighter-rouge">SAPT2+3</code>. <code class="language-plaintext highlighter-rouge">SAPT0</code> can still be used for medium to moderately large systems, while <code class="language-plaintext highlighter-rouge">SAPT2+(3)</code> can only be used for small systems.</p> <p>In order to improve the accuracy of SAPT interaction calculations, the <code class="language-plaintext highlighter-rouge">SAPT0</code> in the <em>Psi4</em> program also includes the <code class="language-plaintext highlighter-rouge">δHF</code> term, which reflects the high-order induction effect. For high-order SAPT such as <code class="language-plaintext highlighter-rouge">SAPT2+</code>, <code class="language-plaintext highlighter-rouge">SAPT2+(3)</code>, <code class="language-plaintext highlighter-rouge">SAPT2+3</code>, the <code class="language-plaintext highlighter-rouge">δMP2</code> term can also be added to consider the high-order coupling between induction and dispersion, such as <code class="language-plaintext highlighter-rouge">SAPT2+(3)</code> combined with <code class="language-plaintext highlighter-rouge">δMP2</code> called <code class="language-plaintext highlighter-rouge">SAPT2+(3)δMP2</code>. However, the physical meaning of the <code class="language-plaintext highlighter-rouge">δ</code> term is not very clear and cannot be further divided. The numerical value of the δ term is usually small, and it is generally classified as an induction term.</p> <h1 id="2-input">2. Input</h1> <p>An example is shown following:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>memory 20 gb
 
-<span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-1</span><span class="w"> </span><span class="cp">%}</span>
+molecule　dimer {
+0 1
+S       1.318033    5.842267    2.881214
+N      -1.355505    5.579081    0.154536
+H      -1.976421    5.935383   -0.153845
+C      -0.705457    6.014672    1.291775
+C      -0.905384    7.050266    2.235758
+H      -1.629222    7.634376    2.237331
+C      -0.563794    4.592784   -0.398267
+C       0.472970    5.283299    1.488835
+C       0.120527    7.070918    3.149491
+H       0.169447    7.685226    3.846026
+S      -1.318033    3.137133   -2.881214
+N       1.355505    3.400319   -0.154536
+H       1.976421    3.044017    0.153845
+C       0.705457    2.964728   -1.291775
+C       0.905384    1.929134   -2.235758
+H       1.629222    1.345024   -2.237331
+C       0.563794    4.386616    0.398267
+C      -0.472970    3.696101   -1.488835
+C      -0.120527    1.908482   -3.149491
+H      -0.169447    1.294174   -3.846026
+     --
+     0 1
+S       4.174133   -1.352567   -2.881214
+N       1.500595   -1.089381   -0.154536
+H       0.879679   -1.445683    0.153845
+C       2.150643   -1.524972   -1.291775
+C       1.950716   -2.560566   -2.235758
+H       1.226878   -3.144676   -2.237331
+C       2.292306   -0.103084    0.398267
+C       3.329070   -0.793599   -1.488835
+C       2.976627   -2.581218   -3.149491
+H       3.025547   -3.195526   -3.846026
+S       1.538067    1.352567    2.881214
+N       4.211605    1.089381    0.154536
+H       4.832521    1.445683   -0.153845
+C       3.561557    1.524972    1.291775
+C       3.761484    2.560566    2.235758
+H       4.485322    3.144676    2.237331
+C       3.419894    0.103084   -0.398267
+C       2.383130    0.793599    1.488835
+C       2.735573    2.581218    3.149491
+H       2.686653    3.195526    3.846026
+     units angstrom
 
-Content 1
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-2</span><span class="w"> </span><span class="cp">%}</span>
-
-Content 2
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
-
-<span class="cp">{%</span><span class="w"> </span><span class="nt">endtabs</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="d4e13f6f-637b-4156-8b0d-7ee4a608cef3" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="d4e13f6f-637b-4156-8b0d-7ee4a608cef3" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
-</code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
-</code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pputs</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span>
-</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="0806d607-594c-41ef-932b-75002d36a931" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="0806d607-594c-41ef-932b-75002d36a931" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">whatsup"</span>
-  <span class="pi">-</span> <span class="s2">"</span><span class="s">hi"</span>
-</code></pre></div></div> </li> <li> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"hello"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"whatsup"</span><span class="p">,</span><span class="w"> </span><span class="s2">"hi"</span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="5834cece-8753-4f0c-bb24-30fb07787005" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="5834cece-8753-4f0c-bb24-30fb07787005" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://wongzit.github.io/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://wongzit.github.io/blog/2024/typograms</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
-</span><span class="sb">+----+
-|    |---&gt; My first diagram!
-+----+</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-typograms">+----+
-|    |---&gt; My first diagram!
-+----+
-</code></pre> <p>Another example:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
-</span><span class="sb">.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>which generates:</p> <pre><code class="language-typograms">.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.
-</code></pre> <p>For more examples, check out the <a href="https://google.github.io/typograms/#examples">typograms documentation</a>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="diagrams"/><summary type="html"><![CDATA[this is what included typograms code could look like]]></summary></entry><entry><title type="html">a post that can be cited</title><link href="https://wongzit.github.io/blog/2024/post-citation/" rel="alternate" type="text/html" title="a post that can be cited"/><published>2024-04-28T15:06:00+00:00</published><updated>2024-04-28T15:06:00+00:00</updated><id>https://wongzit.github.io/blog/2024/post-citation</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/post-citation/"><![CDATA[<p>This is an example post that can be cited. The content of the post ends here, while the citation information is automatically provided below. The only thing needed is for you to set the <code class="language-plaintext highlighter-rouge">citation</code> key in the front matter to <code class="language-plaintext highlighter-rouge">true</code>.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="citation"/><summary type="html"><![CDATA[this is what a post that can be cited looks like]]></summary></entry><entry><title type="html">a post with pseudo code</title><link href="https://wongzit.github.io/blog/2024/pseudocode/" rel="alternate" type="text/html" title="a post with pseudo code"/><published>2024-04-15T00:01:00+00:00</published><updated>2024-04-15T00:01:00+00:00</updated><id>https://wongzit.github.io/blog/2024/pseudocode</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/pseudocode/"><![CDATA[<p>This is an example post with some pseudo code rendered by <a href="https://github.com/SaswatPadhi/pseudocode.js">pseudocode</a>. The example presented here is the same as the one in the <a href="https://saswat.padhi.me/pseudocode.js/">pseudocode.js</a> documentation, with only one simple but important change: everytime you would use <code class="language-plaintext highlighter-rouge">$</code>, you should use <code class="language-plaintext highlighter-rouge">$$</code> instead. Also, note that the <code class="language-plaintext highlighter-rouge">pseudocode</code> key in the front matter is set to <code class="language-plaintext highlighter-rouge">true</code> to enable the rendering of pseudo code. As an example, using this code:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">pseudocode
-</span><span class="sb">% This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
-\begin{algorithm}
-\caption{Quicksort}
-\begin{algorithmic}
-\PROCEDURE{Quicksort}{$$A, p, r$$}
-    \IF{$$p &lt; r$$}
-        \STATE $$q = $$ \CALL{Partition}{$$A, p, r$$}
-        \STATE \CALL{Quicksort}{$$A, p, q - 1$$}
-        \STATE \CALL{Quicksort}{$$A, q + 1, r$$}
-    \ENDIF
-\ENDPROCEDURE
-\PROCEDURE{Partition}{$$A, p, r$$}
-    \STATE $$x = A[r]$$
-    \STATE $$i = p - 1$$
-    \FOR{$$j = p$$ \TO $$r - 1$$}
-        \IF{$$A[j] &lt; x$$}
-            \STATE $$i = i + 1$$
-            \STATE exchange
-            $$A[i]$$ with $$A[j]$$
-        \ENDIF
-        \STATE exchange $$A[i]$$ with $$A[r]$$
-    \ENDFOR
-\ENDPROCEDURE
-\end{algorithmic}
-\end{algorithm}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Generates:</p> <pre><code class="language-pseudocode">% This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
-\begin{algorithm}
-\caption{Quicksort}
-\begin{algorithmic}
-\PROCEDURE{Quicksort}{$$A, p, r$$}
-    \IF{$$p &lt; r$$}
-        \STATE $$q = $$ \CALL{Partition}{$$A, p, r$$}
-        \STATE \CALL{Quicksort}{$$A, p, q - 1$$}
-        \STATE \CALL{Quicksort}{$$A, q + 1, r$$}
-    \ENDIF
-\ENDPROCEDURE
-\PROCEDURE{Partition}{$$A, p, r$$}
-    \STATE $$x = A[r]$$
-    \STATE $$i = p - 1$$
-    \FOR{$$j = p$$ \TO $$r - 1$$}
-        \IF{$$A[j] &lt; x$$}
-            \STATE $$i = i + 1$$
-            \STATE exchange
-            $$A[i]$$ with $$A[j]$$
-        \ENDIF
-        \STATE exchange $$A[i]$$ with $$A[r]$$
-    \ENDFOR
-\ENDPROCEDURE
-\end{algorithmic}
-\end{algorithm}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included pseudo code could look like]]></summary></entry><entry><title type="html">a post with code diff</title><link href="https://wongzit.github.io/blog/2024/code-diff/" rel="alternate" type="text/html" title="a post with code diff"/><published>2024-01-27T19:22:00+00:00</published><updated>2024-01-27T19:22:00+00:00</updated><id>https://wongzit.github.io/blog/2024/code-diff</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/code-diff/"><![CDATA[<p>You can display diff code by using the regular markdown syntax:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff
-</span><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")
-</span></code></pre></div></div> <p>But this is difficult to read, specially if you have a large diff. You can use <a href="https://diff2html.xyz/">diff2html</a> to display a more readable version of the diff. For this, just use <code class="language-plaintext highlighter-rouge">diff2html</code> instead of <code class="language-plaintext highlighter-rouge">diff</code> for the code block language:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff2html
-</span><span class="sb">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
---- a/sample.js
-+++ b/sample.js
-@@ -1 +1 @@
--console.log("Hello World!")
-+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>If we use a longer example, for example <a href="https://github.com/rtfpessoa/diff2html/commit/c2c253d3e3f8b8b267f551e659f72b44ca2ac927">this commit from diff2html</a>, it will generate the following output:</p> <pre><code class="language-diff2html">From 2aaae31cc2a37bfff83430c2c914b140bee59b6a Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sun, 9 Oct 2016 16:41:54 +0100
-Subject: [PATCH 1/2] Initial template override support
-
----
- scripts/hulk.js                    |  4 ++--
- src/diff2html.js                   |  3 +--
- src/file-list-printer.js           | 11 ++++++++---
- src/hoganjs-utils.js               | 29 +++++++++++++++++------------
- src/html-printer.js                |  6 ++++++
- src/line-by-line-printer.js        |  6 +++++-
- src/side-by-side-printer.js        |  6 +++++-
- test/file-list-printer-tests.js    |  2 +-
- test/hogan-cache-tests.js          | 18 +++++++++++++++---
- test/line-by-line-tests.js         |  3 +--
- test/side-by-side-printer-tests.js |  3 +--
- 11 files changed, 62 insertions(+), 29 deletions(-)
-
-diff --git a/scripts/hulk.js b/scripts/hulk.js
-index 5a793c18..a4b1a4d5 100755
---- a/scripts/hulk.js
-+++ b/scripts/hulk.js
-@@ -173,11 +173,11 @@ function namespace(name) {
- // write a template foreach file that matches template extension
- templates = extractFiles(options.argv.remain)
-   .map(function(file) {
--    var openedFile = fs.readFileSync(file, 'utf-8');
-+    var openedFile = fs.readFileSync(file, 'utf-8').trim();
-     var name;
-     if (!openedFile) return;
-     name = namespace(path.basename(file).replace(/\..*$/, ''));
--    openedFile = removeByteOrderMark(openedFile.trim());
-+    openedFile = removeByteOrderMark(openedFile);
-     openedFile = wrap(file, name, openedFile);
-     if (!options.outputdir) return openedFile;
-     fs.writeFileSync(path.join(options.outputdir, name + '.js')
-diff --git a/src/diff2html.js b/src/diff2html.js
-index 21b0119e..64e138f5 100644
---- a/src/diff2html.js
-+++ b/src/diff2html.js
-@@ -7,7 +7,6 @@
-
- (function() {
-   var diffParser = require('./diff-parser.js').DiffParser;
--  var fileLister = require('./file-list-printer.js').FileListPrinter;
-   var htmlPrinter = require('./html-printer.js').HtmlPrinter;
-
-   function Diff2Html() {
-@@ -43,7 +42,7 @@
-
-     var fileList = '';
-     if (configOrEmpty.showFiles === true) {
--      fileList = fileLister.generateFileList(diffJson, configOrEmpty);
-+      fileList = htmlPrinter.generateFileListSummary(diffJson, configOrEmpty);
-     }
-
-     var diffOutput = '';
-diff --git a/src/file-list-printer.js b/src/file-list-printer.js
-index e408d9b2..1e0a2c61 100644
---- a/src/file-list-printer.js
-+++ b/src/file-list-printer.js
-@@ -8,11 +8,16 @@
- (function() {
-   var printerUtils = require('./printer-utils.js').PrinterUtils;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var baseTemplatesPath = 'file-summary';
-   var iconsBaseTemplatesPath = 'icon';
-
--  function FileListPrinter() {
-+  function FileListPrinter(config) {
-+    this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   FileListPrinter.prototype.generateFileList = function(diffFiles) {
-@@ -38,5 +43,5 @@
-     });
-   };
-
--  module.exports.FileListPrinter = new FileListPrinter();
-+  module.exports.FileListPrinter = FileListPrinter;
- })();
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 9949e5fa..0dda08d7 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -8,18 +8,19 @@
- (function() {
-   var fs = require('fs');
-   var path = require('path');
--
-   var hogan = require('hogan.js');
-
-   var hoganTemplates = require('./templates/diff2html-templates.js');
-
--  var templatesPath = path.resolve(__dirname, 'templates');
-+  var extraTemplates;
-
--  function HoganJsUtils() {
-+  function HoganJsUtils(configuration) {
-+    this.config = configuration || {};
-+    extraTemplates = this.config.templates || {};
-   }
-
--  HoganJsUtils.prototype.render = function(namespace, view, params, configuration) {
--    var template = this.template(namespace, view, configuration);
-+  HoganJsUtils.prototype.render = function(namespace, view, params) {
-+    var template = this.template(namespace, view);
-     if (template) {
-       return template.render(params);
-     }
-@@ -27,17 +28,16 @@
-     return null;
-   };
-
--  HoganJsUtils.prototype.template = function(namespace, view, configuration) {
--    var config = configuration || {};
-+  HoganJsUtils.prototype.template = function(namespace, view) {
-     var templateKey = this._templateKey(namespace, view);
-
--    return this._getTemplate(templateKey, config);
-+    return this._getTemplate(templateKey);
-   };
-
--  HoganJsUtils.prototype._getTemplate = function(templateKey, config) {
-+  HoganJsUtils.prototype._getTemplate = function(templateKey) {
-     var template;
-
--    if (!config.noCache) {
-+    if (!this.config.noCache) {
-       template = this._readFromCache(templateKey);
-     }
-
-@@ -53,6 +53,7 @@
-
-     try {
-       if (fs.readFileSync) {
-+        var templatesPath = path.resolve(__dirname, 'templates');
-         var templatePath = path.join(templatesPath, templateKey);
-         var templateContent = fs.readFileSync(templatePath + '.mustache', 'utf8');
-         template = hogan.compile(templateContent);
-@@ -66,12 +67,16 @@
-   };
-
-   HoganJsUtils.prototype._readFromCache = function(templateKey) {
--    return hoganTemplates[templateKey];
-+    return extraTemplates[templateKey] || hoganTemplates[templateKey];
-   };
-
-   HoganJsUtils.prototype._templateKey = function(namespace, view) {
-     return namespace + '-' + view;
-   };
-
--  module.exports.HoganJsUtils = new HoganJsUtils();
-+  HoganJsUtils.prototype.compile = function(templateStr) {
-+    return hogan.compile(templateStr);
-+  };
-+
-+  module.exports.HoganJsUtils = HoganJsUtils;
- })();
-diff --git a/src/html-printer.js b/src/html-printer.js
-index 585d5b66..13f83047 100644
---- a/src/html-printer.js
-+++ b/src/html-printer.js
-@@ -8,6 +8,7 @@
- (function() {
-   var LineByLinePrinter = require('./line-by-line-printer.js').LineByLinePrinter;
-   var SideBySidePrinter = require('./side-by-side-printer.js').SideBySidePrinter;
-+  var FileListPrinter = require('./file-list-printer.js').FileListPrinter;
-
-   function HtmlPrinter() {
-   }
-@@ -22,5 +23,10 @@
-     return sideBySidePrinter.generateSideBySideJsonHtml(diffFiles);
-   };
-
-+  HtmlPrinter.prototype.generateFileListSummary = function(diffJson, config) {
-+    var fileListPrinter = new FileListPrinter(config);
-+    return fileListPrinter.generateFileList(diffJson);
-+  };
-+
-   module.exports.HtmlPrinter = new HtmlPrinter();
- })();
-diff --git a/src/line-by-line-printer.js b/src/line-by-line-printer.js
-index b07eb53c..d230bedd 100644
---- a/src/line-by-line-printer.js
-+++ b/src/line-by-line-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'line-by-line';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -19,6 +20,9 @@
-
-   function LineByLinePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   LineByLinePrinter.prototype.makeFileDiffHtml = function(file, diffs) {
-diff --git a/src/side-by-side-printer.js b/src/side-by-side-printer.js
-index bbf1dc8d..5e3033b3 100644
---- a/src/side-by-side-printer.js
-+++ b/src/side-by-side-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'side-by-side';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -26,6 +27,9 @@
-
-   function SideBySidePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   SideBySidePrinter.prototype.makeDiffHtml = function(file, diffs) {
-diff --git a/test/file-list-printer-tests.js b/test/file-list-printer-tests.js
-index a502a46f..60ea3208 100644
---- a/test/file-list-printer-tests.js
-+++ b/test/file-list-printer-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
-
--var fileListPrinter = require('../src/file-list-printer.js').FileListPrinter;
-+var fileListPrinter = new (require('../src/file-list-printer.js').FileListPrinter)();
-
- describe('FileListPrinter', function() {
-   describe('generateFileList', function() {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 190bf6f8..3bb754ac 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
-
--var HoganJsUtils = require('../src/hoganjs-utils.js').HoganJsUtils;
-+var HoganJsUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)();
- var diffParser = require('../src/diff-parser.js').DiffParser;
-
- describe('HoganJsUtils', function() {
-@@ -21,16 +21,28 @@ describe('HoganJsUtils', function() {
-       });
-       assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should render view without cache', function() {
-       var result = HoganJsUtils.render('generic', 'empty-diff', {
-         contentClass: 'd2h-code-line',
-         diffParser: diffParser
-       }, {noCache: true});
--      assert.equal(emptyDiffHtml + '\n', result);
-+      assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should return null if template is missing', function() {
--      var result = HoganJsUtils.render('generic', 'missing-template', {}, {noCache: true});
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)({noCache: true});
-+      var result = hoganUtils.render('generic', 'missing-template', {});
-       assert.equal(null, result);
-     });
-+
-+    it('should allow templates to be overridden', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+
-+      var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-diff --git a/test/line-by-line-tests.js b/test/line-by-line-tests.js
-index 1cd92073..8869b3df 100644
---- a/test/line-by-line-tests.js
-+++ b/test/line-by-line-tests.js
-@@ -14,7 +14,7 @@ describe('LineByLinePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
-
-       assert.equal(expected, fileHtml);
-     });
-@@ -422,7 +422,6 @@ describe('LineByLinePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                &lt;/tbody&gt;\n' +
-         '            &lt;/table&gt;\n' +
-         '        &lt;/div&gt;\n' +
-diff --git a/test/side-by-side-printer-tests.js b/test/side-by-side-printer-tests.js
-index 76625f8e..771daaa5 100644
---- a/test/side-by-side-printer-tests.js
-+++ b/test/side-by-side-printer-tests.js
-@@ -14,7 +14,7 @@ describe('SideBySidePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
-
-       assert.equal(expectedRight, fileHtml.right);
-       assert.equal(expectedLeft, fileHtml.left);
-@@ -324,7 +324,6 @@ describe('SideBySidePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                    &lt;/tbody&gt;\n' +
-         '                &lt;/table&gt;\n' +
-         '            &lt;/div&gt;\n' +
-
-From f3cadb96677d0eb82fc2752dc3ffbf35ca9b5bdb Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sat, 15 Oct 2016 13:21:22 +0100
-Subject: [PATCH 2/2] Allow uncompiled templates
-
----
- README.md                 |  3 +++
- src/hoganjs-utils.js      |  7 +++++++
- test/hogan-cache-tests.js | 24 +++++++++++++++++++++++-
- 3 files changed, 33 insertions(+), 1 deletion(-)
-
-diff --git a/README.md b/README.md
-index 132c8a28..46909f25 100644
---- a/README.md
-+++ b/README.md
-@@ -98,6 +98,9 @@ The HTML output accepts a Javascript object with configuration. Possible options
-   - `synchronisedScroll`: scroll both panes in side-by-side mode: `true` or `false`, default is `false`
-   - `matchWordsThreshold`: similarity threshold for word matching, default is 0.25
-   - `matchingMaxComparisons`: perform at most this much comparisons for line matching a block of changes, default is `2500`
-+  - `templates`: object with previously compiled templates to replace parts of the html
-+  - `rawTemplates`: object with raw not compiled templates to replace parts of the html
-+  &gt; For more information regarding the possible templates look into [src/templates](https://github.com/rtfpessoa/diff2html/tree/master/src/templates)
-
- ## Diff2HtmlUI Helper
-
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 0dda08d7..b2e9c275 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -17,6 +17,13 @@
-   function HoganJsUtils(configuration) {
-     this.config = configuration || {};
-     extraTemplates = this.config.templates || {};
-+
-+    var rawTemplates = this.config.rawTemplates || {};
-+    for (var templateName in rawTemplates) {
-+      if (rawTemplates.hasOwnProperty(templateName)) {
-+        if (!extraTemplates[templateName]) extraTemplates[templateName] = this.compile(rawTemplates[templateName]);
-+      }
-+    }
-   }
-
-   HoganJsUtils.prototype.render = function(namespace, view, params) {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 3bb754ac..a34839c0 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -36,7 +36,7 @@ describe('HoganJsUtils', function() {
-       assert.equal(null, result);
-     });
-
--    it('should allow templates to be overridden', function() {
-+    it('should allow templates to be overridden with compiled templates', function() {
-       var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-
-       var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-@@ -44,5 +44,27 @@ describe('HoganJsUtils', function() {
-       var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-       assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-     });
-+
-+    it('should allow templates to be overridden with uncompiled templates', function() {
-+      var emptyDiffTemplate = '&lt;p&gt;&lt;/p&gt;';
-+
-+      var config = {rawTemplates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-+
-+    it('should allow templates to be overridden giving priority to compiled templates', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+      var emptyDiffTemplateUncompiled = '&lt;p&gt;Not used!&lt;/p&gt;';
-+
-+      var config = {
-+        templates: {'generic-empty-diff': emptyDiffTemplate},
-+        rawTemplates: {'generic-empty-diff': emptyDiffTemplateUncompiled}
-+      };
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is how you can display code diffs]]></summary></entry><entry><title type="html">a post with advanced image components</title><link href="https://wongzit.github.io/blog/2024/advanced-images/" rel="alternate" type="text/html" title="a post with advanced image components"/><published>2024-01-27T11:46:00+00:00</published><updated>2024-01-27T11:46:00+00:00</updated><id>https://wongzit.github.io/blog/2024/advanced-images</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/advanced-images/"><![CDATA[<p>This is an example post with advanced image components.</p> <h2 id="image-slider">Image Slider</h2> <p>This is a simple image slider. It uses the <a href="https://swiperjs.com/">Swiper</a> library. Check the <a href="https://swiperjs.com/demos">examples page</a> for more information of what you can achieve with it.</p> <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true"> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/9-480.webp 480w,/assets/img/9-800.webp 800w,/assets/img/9-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/9.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/7-480.webp 480w,/assets/img/7-800.webp 800w,/assets/img/7-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/8-480.webp 480w,/assets/img/8-800.webp 800w,/assets/img/8-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/8.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/10-480.webp 480w,/assets/img/10-800.webp 800w,/assets/img/10-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/10.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/12-480.webp 480w,/assets/img/12-800.webp 800w,/assets/img/12-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/12.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> </swiper-container> <h2 id="image-comparison-slider">Image Comparison Slider</h2> <p>This is a simple image comparison slider. It uses the <a href="https://img-comparison-slider.sneas.io/">img-comparison-slider</a> library. Check the <a href="https://img-comparison-slider.sneas.io/examples.html">examples page</a> for more information of what you can achieve with it.</p> <img-comparison-slider> <figure slot="first"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> <figure slot="second"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic_color-480.webp 480w,/assets/img/prof_pic_color-800.webp 800w,/assets/img/prof_pic_color-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </img-comparison-slider>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what advanced image components could look like]]></summary></entry><entry><title type="html">a post with vega lite</title><link href="https://wongzit.github.io/blog/2024/vega-lite/" rel="alternate" type="text/html" title="a post with vega lite"/><published>2024-01-27T00:20:00+00:00</published><updated>2024-01-27T00:20:00+00:00</updated><id>https://wongzit.github.io/blog/2024/vega-lite</id><content type="html" xml:base="https://wongzit.github.io/blog/2024/vega-lite/"><![CDATA[<p>This is an example post with some <a href="https://vega.github.io/vega-lite/">vega lite</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">vega_lite
-</span><span class="sb">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-vega_lite">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
 }
-</code></pre> <p>This plot supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included vega lite code could look like]]></summary></entry></feed>
+set {
+    basis jun-cc-pVDZ
+    scf_type DF
+    freeze_core True
+}
+
+energy('sapt0')
+</code></pre></div></div> <ul> <li><code class="language-plaintext highlighter-rouge">freeze_core True</code> can save computational cost.</li> <li><code class="language-plaintext highlighter-rouge">scf_type DF</code> can utilize density fitting to accelerate the SCF process.</li> </ul> <p>Run command <code class="language-plaintext highlighter-rouge">psi4 xxx.inp xxx.out -n 8</code> to start the calculation using 8 cores.</p> <h1 id="3-output">3. Output</h1> <p>The SAPT results would be summarized as following.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Special recipe for scaled SAPT0 (see Manual):
+    Electrostatics sSAPT0         -24.34792103 [mEh]     -15.27855111 [kcal/mol]     -63.92545785 [kJ/mol]
+    Exchange sSAPT0                15.70145759 [mEh]       9.85281339 [kcal/mol]      41.22417122 [kJ/mol]
+    Induction sSAPT0               -5.93603581 [mEh]      -3.72491871 [kcal/mol]     -15.58505986 [kJ/mol]
+    Dispersion sSAPT0              -4.77805738 [mEh]      -2.99827627 [kcal/mol]     -12.54478793 [kJ/mol]
+  Total sSAPT0                    -19.36055663 [mEh]     -12.14893270 [kcal/mol]     -50.83113444 [kJ/mol]
+</code></pre></div></div>]]></content><author><name>Zhe Wang</name></author><category term="Psi4"/><category term="Computation"/><summary type="html"><![CDATA[This is a quick note of how to analyze intermolecular interaction by Sysmetry-Adapted Perturbation Theory (SAPT) using Psi4.]]></summary></entry><entry><title type="html">Computing Charge Transfer Rate Based on Marcus Theory Using Gaussian</title><link href="https://wongzit.github.io/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian/" rel="alternate" type="text/html" title="Computing Charge Transfer Rate Based on Marcus Theory Using Gaussian"/><published>2023-09-30T08:11:16+00:00</published><updated>2023-09-30T08:11:16+00:00</updated><id>https://wongzit.github.io/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian</id><content type="html" xml:base="https://wongzit.github.io/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian/"><![CDATA[<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"> </script> <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script> <h2 id="1-preface">1 Preface</h2> <p>This blog is introducing the method for computing charge transfer integral and charge transfer rate constant via <em>Gaussian 16</em>. Here, an open-source program <a href="https://joshuasbrown.github.io/docs/CATNIP/catnip_home.html"><strong>CATNIP</strong></a> would be used, this program could be downloaded freely from the <a href="https://github.com/JoshuaSBrown/QC_Tools/releases">GitHub page</a>.</p> <h2 id="2-gaussian-inputs--outputs">2 Gaussian Inputs &amp; Outputs</h2> <p>To calculate charge transfer integral between two molecules, three separate calculateions are needed:</p> <ul> <li>Monomer 1</li> <li>Monomer 2</li> <li>Dimer</li> </ul> <p>Following keywords should be also included to tell the <em>Gaussian</em> to output the minimized atomic orbital coefficients those are needed for calculating charge transfer integral:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nosymm pop=full iop(3/33=1) punch=mo
+</code></pre></div></div> <p>You will get a <em>.log</em> file and a <em>Fort.7</em> file after each calculation. To calculate transfer integral using CATNIP, you need to rename the <em>Fort.7</em> file to the same name as your <em>.log</em> file with a <em>.pun</em> extension.</p> <h2 id="3-charge-transfer-integral">3 Charge Transfer Integral</h2> <blockquote> <p>This is just a simple note, for more detail information of how to use CATNIP, please refer to its homepage.</p> </blockquote> <p>To run a calculation, three <em>.log</em> files and three <em>.pun</em> files are needed, for monomer 1, monomer 2 and dimer, for example:</p> <ul> <li>1mer_1.log</li> <li>1mer_1.pun</li> <li>1mer_2.log</li> <li>1mer_2.pun</li> <li>2mer.log</li> <li>2mer.pun</li> </ul> <p>To calculate the charge transfer integral for the HOMO between the monomers, run following command (Note that the <em>.log</em> files and <em>.pun</em> files should be located in the same folder):</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 1mer_1.pun -p_2 1mer_2.pun -p_P 2mer.pun
+</code></pre></div></div> <p>To calculate the charge transfer integral for the LUMO, the orbital types must be specified:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 1mer_1.pun -orb_ty_1 LUMO -p_2 1mer_2.pun -orb_ty_2 LUMO -p_P 2mer.pun
+</code></pre></div></div> <p>The effective (or generalized) charge transfer integral <em>J_eff</em> (also known as electronic coupling <strong><em>V</em></strong>) would be shown on the screen:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>J_eff -0.00190564 eV
+</code></pre></div></div> <h2 id="4-charge-transfer-rate-constant-based-on-marcus-theory">4 Charge Transfer Rate Constant Based on Marcus Theory</h2> <p>By Marcus theory, the rate constant of charge transfer <em>k_et</em> could be computed from electronic coupling <strong><em>V</em></strong> (<em>J_eff</em>) and reorganization energy λ:</p> \[k_{\rm et} = \sqrt { \frac {\pi}{\lambda k_{\rm B}T}} \frac{V^2}{\hbar} \exp {\left( - \frac {\lambda}{4k_{\rm B}T} \right)}\] <p>where, reduced Planck constant ħ, Boltzmann constant <em>k_B</em>, temperature T are also needed.</p> <p>The reorganization energy λ is defined as the energy difference between the charged and neutral systems at the two different geometries (adiabatic potential energy surface). To compute it, four separated calculations are needed, <em>e.g.</em> for eletron transfer:</p> <ul> <li>Geometry optimizaiton of neutral state (E_1)</li> <li>Single point calculation of anion state with neutral geometry (E_4)</li> <li>Geometry optimizaiton of anion state (E_3)</li> <li>Single point calculation of neutral state with anion geometry (E_2)</li> </ul> <p>and the reorganization energy is:</p> \[\lambda = \lambda_1 + \lambda_2\] \[\lambda_1 = E_2 - E_1\] \[\lambda_2 = E_4 - E_3\] <p align="center"> <img alt="reorganization" src="/assets/blog/re_en.png" style="height:366px;"/> </p> <p>Here I provided an Excel tool for computing the λ and <em>k_et</em> based on Marcus theory, download from <a href="https://wongzit.github.io/assets/blog/marcus_theory_zwang_20230929.xlsx">here</a>.</p> <h2 id="5-example">5 Example</h2> <p>Here is an example for a naphthalene dimer, the Cartesian coordinates were obtained from <a href="https://www.scm.com/doc/Tutorials/ElectronicTransport/ElectronAndHoleMobilities.html">ADF official tutorials page</a>. All files could be downloaded from <a href="https://github.com/wongzit/blogFiles/tree/main/blog_charge_transfer">here</a>.</p> <p>Monomer 1:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nprocshared=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
+
+naphthalene monomer 1
+
+0 1
+ C                 -2.96292735   -1.37776232    2.34412329
+ H                 -3.91358911   -3.24557560    2.36511160
+ C                 -2.19933829   -0.51291048    1.59118541
+ C                 -1.08607265   -1.59873768   -2.34412329
+ C                 -2.23157919   -2.11438654   -0.26513808
+ C                 -1.81742081   -0.86211346    0.26513808
+ H                 -2.14645018   -3.30748680   -1.93535091
+ H                 -0.80423336   -1.83888170   -3.25104686
+ H                 -0.76084457    0.83758710   -0.16847761
+ C                 -3.01509821   -2.98739399    0.54127003
+ H                 -3.28815543   -3.81408710    0.16847761
+ H                 -3.24476664   -1.13761830    3.25104686
+ C                 -1.03390179    0.01089399   -0.54127003
+ H                 -1.90254982    0.33098680    1.93535091
+ C                 -3.37590246   -2.62057013    1.81755935
+ C                 -0.67309754   -0.35592987   -1.81755935
+ H                 -0.13541089    0.26907560   -2.36511160
+ C                 -1.84966171   -2.46358952   -1.59118541
+</code></pre></div></div> <p>Monomer 2:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nprocshared=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
+
+naphthalene momomer 2
+
+0 1
+ C                  2.96292735    1.59873768   -2.34412329
+ C                  1.08607265    1.37776232    2.34412329
+ C                  1.84966171    0.51291048    1.59118541
+ H                  1.90254982    3.30748680   -1.93535091
+ C                  2.19933829    2.46358952   -1.59118541
+ C                  2.23157919    0.86211346    0.26513808
+ C                  1.03390179    2.98739399    0.54127003
+ C                  1.81742081    2.11438654   -0.26513808
+ C                  0.67309754    2.62057013    1.81755935
+ H                  3.28815543   -0.83758710   -0.16847761
+ H                  0.80423336    1.13761830    3.25104686
+ C                  3.01509821   -0.01089399   -0.54127003
+ H                  2.14645018   -0.33098680    1.93535091
+ H                  3.91358911   -0.26907560   -2.36511160
+ H                  0.76084457    3.81408710    0.16847761
+ C                  3.37590246    0.35592987   -1.81755935
+ H                  3.24476664    1.83888170   -3.25104686
+ H                  0.13541089    3.24557560    2.36511160
+</code></pre></div></div> <p>Dimer:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nproc=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
+
+naphthalene dimer
+
+0 1
+ C                 -2.96292735   -1.37776232    2.34412329
+ H                 -3.91358911   -3.24557560    2.36511160
+ C                 -2.19933829   -0.51291048    1.59118541
+ C                 -1.08607265   -1.59873768   -2.34412329
+ C                 -2.23157919   -2.11438654   -0.26513808
+ C                 -1.81742081   -0.86211346    0.26513808
+ H                 -2.14645018   -3.30748680   -1.93535091
+ H                 -0.80423336   -1.83888170   -3.25104686
+ H                 -0.76084457    0.83758710   -0.16847761
+ C                 -3.01509821   -2.98739399    0.54127003
+ H                 -3.28815543   -3.81408710    0.16847761
+ H                 -3.24476664   -1.13761830    3.25104686
+ C                 -1.03390179    0.01089399   -0.54127003
+ H                 -1.90254982    0.33098680    1.93535091
+ C                 -3.37590246   -2.62057013    1.81755935
+ C                 -0.67309754   -0.35592987   -1.81755935
+ H                 -0.13541089    0.26907560   -2.36511160
+ C                 -1.84966171   -2.46358952   -1.59118541
+ C                  2.96292735    1.59873768   -2.34412329
+ C                  1.08607265    1.37776232    2.34412329
+ C                  1.84966171    0.51291048    1.59118541
+ H                  1.90254982    3.30748680   -1.93535091
+ C                  2.19933829    2.46358952   -1.59118541
+ C                  2.23157919    0.86211346    0.26513808
+ C                  1.03390179    2.98739399    0.54127003
+ C                  1.81742081    2.11438654   -0.26513808
+ C                  0.67309754    2.62057013    1.81755935
+ H                  3.28815543   -0.83758710   -0.16847761
+ H                  0.80423336    1.13761830    3.25104686
+ C                  3.01509821   -0.01089399   -0.54127003
+ H                  2.14645018   -0.33098680    1.93535091
+ H                  3.91358911   -0.26907560   -2.36511160
+ H                  0.76084457    3.81408710    0.16847761
+ C                  3.37590246    0.35592987   -1.81755935
+ H                  3.24476664    1.83888170   -3.25104686
+ H                  0.13541089    3.24557560    2.36511160
+</code></pre></div></div> <p>The command used for CATNIP:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 naph_mol1.pun -orb_ty_1 LUMO -p_2 naph_mol2.pun -orb_ty_2 LUMO -p_P naph_p.pun
+</code></pre></div></div> <p>and here is the output:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Running calc_J VERSION 1.9
+log file for first monomer is:      naph_mol1.log
+log file for second monomer is:     naph_mol2.log
+log file for dimer is:              naph_p.log
+pun file for the first monomer is:  naph_mol1.pun
+pun file for the second monomer is: naph_mol2.pun
+pun file for the dimer is:          naph_p.pun
+
+Dimer     Spin Alpha
+Monomer 1 Spin Alpha Orbital LUMO
+Monomer 2 Spin Alpha Orbital LUMO
+J_ab  -0.0558655 eV
+e_a   -1.88656 eV
+e_b   -2.14962 eV
+S_ab  0.00943935
+J_eff -0.0368193 eV
+</code></pre></div></div> <p>For comparsion, the J_eff calculated at same level of theory by ADF was -0.03780 eV.</p> <p>FYI:</p> \[V = J_{\rm eff} = \frac{J_{\rm ab} - \frac{S_{\rm ab}(e_{\rm a} + e_{\rm b})}{2}}{1-S_{\rm ab}^2}\] \[\hbar = 1.054571817 \times 10 ^ {-34} \, \rm {J \cdot s} = 6.582119569 \times 10 ^{-16} \, \rm {eV \cdot s}\] \[k_{\rm B} = 1.380649 \times 10 ^ {-23} \, \rm {J \cdot K^{-1}} = 8.617333262 \times 10 ^{-5} \, \rm {eV \cdot K^{-1}}\] \[1 \, {\rm eV} = 1.60218 \times 10 ^ {-19} \, {\rm J}\] \[1 \, {\rm J} = 6.24151 \times 10 ^ {18} \, {\rm eV}\] <p>The reorganization energy λ was computed to 0.23 eV, thus, the <em>k_et</em> for electrons is 4.85E+12 / s at 300 K.</p>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="Computation"/><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Hartree-Fock Exchange of DFT Functionals</title><link href="https://wongzit.github.io/hartree-fock-exchange-of-dft-functionals/" rel="alternate" type="text/html" title="Hartree-Fock Exchange of DFT Functionals"/><published>2023-08-01T07:46:56+00:00</published><updated>2023-08-01T07:46:56+00:00</updated><id>https://wongzit.github.io/hartree-fock-exchange-of-dft-functionals</id><content type="html" xml:base="https://wongzit.github.io/hartree-fock-exchange-of-dft-functionals/"><![CDATA[<h1 id="global-hybrid-functionals">Global Hybrid Functionals</h1> <table> <thead> <tr> <th style="text-align: left">Functional</th> <th style="text-align: center">HF Exchange / %</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">GGA<br/><em>meta</em>-GGA</td> <td style="text-align: center">0</td> </tr> <tr> <td style="text-align: left">TPSSh<br/>r2SCANh</td> <td style="text-align: center">10</td> </tr> <tr> <td style="text-align: left">O3LYP</td> <td style="text-align: center">11.61</td> </tr> <tr> <td style="text-align: left">TPSS1KCIS</td> <td style="text-align: center">13</td> </tr> <tr> <td style="text-align: left">MPW1KCIS</td> <td style="text-align: center">15</td> </tr> <tr> <td style="text-align: left">(<em>hybrid</em>) B97</td> <td style="text-align: center">19.43</td> </tr> <tr> <td style="text-align: left">B3LYP<br/>B3P86<br/>B3PW91</td> <td style="text-align: center">20</td> </tr> <tr> <td style="text-align: left">B97-1<br/>B97-2<br/>HCTH93</td> <td style="text-align: center">21</td> </tr> <tr> <td style="text-align: left">MPW3LYP<br/>X3LYP</td> <td style="text-align: center">21.8</td> </tr> <tr> <td style="text-align: left">PBE1KCIS</td> <td style="text-align: center">22</td> </tr> <tr> <td style="text-align: left">APFD</td> <td style="text-align: center">23</td> </tr> <tr> <td style="text-align: left">PBE0<br/>TPSS0<br/>SCAN0<br/>r2SCAN0<br/>B1B95<br/>mPW1PW91</td> <td style="text-align: center">25</td> </tr> <tr> <td style="text-align: left">M06</td> <td style="text-align: center">27</td> </tr> <tr> <td style="text-align: left">PW6B95<br/>M05</td> <td style="text-align: center">28</td> </tr> <tr> <td style="text-align: left">MPW1B95</td> <td style="text-align: center">31</td> </tr> <tr> <td style="text-align: left">PBE0-1/3</td> <td style="text-align: center">33.33</td> </tr> <tr> <td style="text-align: left">PBE38</td> <td style="text-align: center">37.5</td> </tr> <tr> <td style="text-align: left">BB1K<br/>BMK</td> <td style="text-align: center">42</td> </tr> <tr> <td style="text-align: left">MPW1K</td> <td style="text-align: center">42.8</td> </tr> <tr> <td style="text-align: left">MPWB1K</td> <td style="text-align: center">44</td> </tr> <tr> <td style="text-align: left">MN15</td> <td style="text-align: center">44</td> </tr> <tr> <td style="text-align: left">PWB6K</td> <td style="text-align: center">46</td> </tr> <tr> <td style="text-align: left">BHandHLYP<br/>PBE50<br/>r2SCAN50</td> <td style="text-align: center">50</td> </tr> <tr> <td style="text-align: left">M08-HX</td> <td style="text-align: center">52.23</td> </tr> <tr> <td style="text-align: left">M06-2X</td> <td style="text-align: center">54</td> </tr> <tr> <td style="text-align: left">M05-2X</td> <td style="text-align: center">56</td> </tr> <tr> <td style="text-align: left">M08-SO</td> <td style="text-align: center">56.79</td> </tr> <tr> <td style="text-align: left">M06-HF</td> <td style="text-align: center">100</td> </tr> </tbody> </table> <h1 id="range-separated-functionals">Range Separated Functionals</h1> <table> <thead> <tr> <th style="text-align: left">Functional</th> <th style="text-align: center">Short Range / %</th> <th style="text-align: center">Long Range / %</th> <th style="text-align: center">ω</th> </tr> </thead> <tbody> <tr> <td style="text-align: left">LC-ωPBE</td> <td style="text-align: center">0</td> <td style="text-align: center">100</td> <td style="text-align: center">0.4</td> </tr> <tr> <td style="text-align: left">LC-PBE0</td> <td style="text-align: center">25</td> <td style="text-align: center">100</td> <td style="text-align: center">0.3</td> </tr> <tr> <td style="text-align: left">ωB97</td> <td style="text-align: center">0</td> <td style="text-align: center">100</td> <td style="text-align: center">0.4</td> </tr> <tr> <td style="text-align: left">ωB97X</td> <td style="text-align: center">15.77</td> <td style="text-align: center">100</td> <td style="text-align: center">0.3</td> </tr> <tr> <td style="text-align: left">ωB97XD</td> <td style="text-align: center">22.2</td> <td style="text-align: center">100</td> <td style="text-align: center">0.2</td> </tr> <tr> <td style="text-align: left">ωB97X-D3(0)</td> <td style="text-align: center">19.57</td> <td style="text-align: center">100</td> <td style="text-align: center">0.25</td> </tr> <tr> <td style="text-align: left">ωB97X-V</td> <td style="text-align: center">16.7</td> <td style="text-align: center">100</td> <td style="text-align: center">0.3</td> </tr> <tr> <td style="text-align: left">ωB97M-V</td> <td style="text-align: center">15</td> <td style="text-align: center">100</td> <td style="text-align: center">0.3</td> </tr> <tr> <td style="text-align: left">CAM-B3LYP</td> <td style="text-align: center">19</td> <td style="text-align: center">65</td> <td style="text-align: center">0.33</td> </tr> <tr> <td style="text-align: left">M11</td> <td style="text-align: center">42.8</td> <td style="text-align: center">100</td> <td style="text-align: center">0.25</td> </tr> <tr> <td style="text-align: left">HSE03<br/>HSE06<br/>MN12-SX<br/>N12-SX</td> <td style="text-align: center">25</td> <td style="text-align: center">0</td> <td style="text-align: center"> </td> </tr> </tbody> </table>]]></content><author><name>Zhe Wang</name></author><category term="Computation"/><summary type="html"><![CDATA[Global Hybrid Functionals]]></summary></entry><entry><title type="html">Natural Transition Orbitals (NTO) Analysis</title><link href="https://wongzit.github.io/natural-transition-orbitals-(nto)-analysis/" rel="alternate" type="text/html" title="Natural Transition Orbitals (NTO) Analysis"/><published>2023-04-28T07:26:56+00:00</published><updated>2023-04-28T07:26:56+00:00</updated><id>https://wongzit.github.io/natural-transition-orbitals-(nto)-analysis</id><content type="html" xml:base="https://wongzit.github.io/natural-transition-orbitals-(nto)-analysis/"><![CDATA[<h1 id="1-preface">1. Preface</h1> <p>When computing excited sates using CIS, TDHF, TDDFT methods, the transition modes can be expressed as a linear combination of different ways of transition between the occupied orbitals in the ground state and the virtual orbitals. In many cases, only one type of transition has a larger contribution. For example, following is a <em>Gaussian</em> output of acrolein @<code class="language-plaintext highlighter-rouge">RIS/6-31+G*</code>.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Excited State   2:      Singlet-A'     7.0919 eV  174.83 nm  f=0.7713  &lt;S**2&gt;=0.000
+      15 -&gt; 16         0.66677
+      15 -&gt; 25        -0.13319
+</code></pre></div></div> <p>The MO15 -&gt; MO16 transition contributed 88.9% (= 2 x 0.66677^2 x 100%) for excited state S0 -&gt; S2. Therefore, the S0 -&gt; S2 transition can be elucidated by analyzing this dominant orbital transition pattern.</p> <p>On the other hand, for the excited state S0 -&gt; S1 of same molecule:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Excited State   1:      Singlet-A"     4.6966 eV  263.99 nm  f=0.0003  &lt;S**2&gt;=0.000
+      14 -&gt; 16         0.56407
+      14 -&gt; 20        -0.21920
+      14 -&gt; 25        -0.24192
+      14 -&gt; 29        -0.17712
+      14 -&gt; 33        -0.13568
+</code></pre></div></div> <p>Although MO14 -&gt; MO16 contributed 63.6% of S0 -&gt; S1 transition, this is not sufficient. However, if other orbital transitions with small coefficients are also considered, the analysis will be difficult to identify. Natural Transition Orbitals (NTO) can solve this problem by transforming the molecular orbitals. This allows describing the complex transition with just one transition from an occupied orbital to a virtual orbital, making the analysis much easier.</p> <h1 id="2-nto-analysis">2. NTO Analysis</h1> <h3 id="21-one-step-method">2.1 One-Step Method</h3> <p>As example, the route section of input file for NTO analysis (S0 -&gt; S1) is like:</p> <p><strong>TDDFT</strong>: <code class="language-plaintext highlighter-rouge">#p td b3lyp/6-31g(d) pop=(saveNTO,NTO) density=transition=1</code> <strong>CIS</strong>: <code class="language-plaintext highlighter-rouge">#p cis/6-31g(d) pop=(saveNTO,NTO) density=transition=1</code></p> <p>For further analysis of S0 -&gt; S2 transition, here are 2 options:</p> <ol> <li><code class="language-plaintext highlighter-rouge">#p cis/6-31g(d) pop=(saveNTO,NTO) density=transition=2</code></li> <li><code class="language-plaintext highlighter-rouge">#p cis(read)/6-31+G* guess=read pop=(saveNTO,NTO) density=transition=2</code>, this method should be faster.</li> </ol> <h3 id="22-multi-step-method">2.2 Multi-Step Method</h3> <p>This method requires an excited state calculation at first.</p> <p><strong>i) Excited State Calculation</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%chk=es.chk
+#p td=(nstate=10) b3lyp/6-31g*
+
+[Molecule Specification]
+</code></pre></div></div> <p><strong>ii) NTO Calculation</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%oldchk=es.chk
+%chk=state_N.chk
+#p b3lyp/6-31g* geom=allcheck guess=(read,only) density=(check,transition=N) pop=(saveNTO,NTO)
+</code></pre></div></div> <p>For method <strong>2.1</strong> and <strong>2.2</strong>, convert the .chk file to .fchk file, and open it by <em>GaussView</em> to plot the MO. In this example, the transition 15 -&gt; 16 contributed 99.3% to S0 -&gt; S1.</p> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/blog/nto-480.webp 480w,/assets/blog/nto-800.webp 800w,/assets/blog/nto-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/blog/nto.png" class="img-fluid" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </div> <h3 id="23-via-multiwfn">2.3 via Multiwfn</h3> <p><a href="http://sobereva.com/multiwfn/">Multiwfn</a> also provides a function for NTO analysis. For more detail, please refer to the Section 4.18.6 in user manual.</p>]]></content><author><name>Zhe Wang</name></author><category term="Gaussian"/><category term="Computation"/><summary type="html"><![CDATA[1. Preface]]></summary></entry></feed>

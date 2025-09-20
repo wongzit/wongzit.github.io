@@ -1,0 +1,126 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Computing Charge Transfer Rate Based on Marcus Theory Using Gaussian | Dr. Zhe WANG </title> <meta name="author" content="Dr. Zhe WANG"> <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. "> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%99%93%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://wongzit.github.io/computing-charge-transfer-rate-based-on-marcus-theory-using-gaussian/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Dr.</span> Zhe WANG </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/books/">bookshelf</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Computing Charge Transfer Rate Based on Marcus Theory Using Gaussian</h1> <p class="post-meta"> Created on September 30, 2023 by Zhe Wang </p> <p class="post-tags"> <i class="fa-solid fa-calendar fa-sm"></i> 2023   ·   <i class="fa-solid fa-hashtag fa-sm"></i> Gaussian   <i class="fa-solid fa-hashtag fa-sm"></i> Computation </p> </header> <article class="post-content"> <div id="markdown-content"> <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"> </script> <script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script> <h2 id="1-preface">1 Preface</h2> <p>This blog is introducing the method for computing charge transfer integral and charge transfer rate constant via <em>Gaussian 16</em>. Here, an open-source program <a href="https://joshuasbrown.github.io/docs/CATNIP/catnip_home.html" rel="external nofollow noopener" target="_blank"><strong>CATNIP</strong></a> would be used, this program could be downloaded freely from the <a href="https://github.com/JoshuaSBrown/QC_Tools/releases" rel="external nofollow noopener" target="_blank">GitHub page</a>.</p> <h2 id="2-gaussian-inputs--outputs">2 Gaussian Inputs &amp; Outputs</h2> <p>To calculate charge transfer integral between two molecules, three separate calculateions are needed:</p> <ul> <li>Monomer 1</li> <li>Monomer 2</li> <li>Dimer</li> </ul> <p>Following keywords should be also included to tell the <em>Gaussian</em> to output the minimized atomic orbital coefficients those are needed for calculating charge transfer integral:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nosymm pop=full iop(3/33=1) punch=mo
+</code></pre></div></div> <p>You will get a <em>.log</em> file and a <em>Fort.7</em> file after each calculation. To calculate transfer integral using CATNIP, you need to rename the <em>Fort.7</em> file to the same name as your <em>.log</em> file with a <em>.pun</em> extension.</p> <h2 id="3-charge-transfer-integral">3 Charge Transfer Integral</h2> <blockquote> <p>This is just a simple note, for more detail information of how to use CATNIP, please refer to its homepage.</p> </blockquote> <p>To run a calculation, three <em>.log</em> files and three <em>.pun</em> files are needed, for monomer 1, monomer 2 and dimer, for example:</p> <ul> <li>1mer_1.log</li> <li>1mer_1.pun</li> <li>1mer_2.log</li> <li>1mer_2.pun</li> <li>2mer.log</li> <li>2mer.pun</li> </ul> <p>To calculate the charge transfer integral for the HOMO between the monomers, run following command (Note that the <em>.log</em> files and <em>.pun</em> files should be located in the same folder):</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 1mer_1.pun -p_2 1mer_2.pun -p_P 2mer.pun
+</code></pre></div></div> <p>To calculate the charge transfer integral for the LUMO, the orbital types must be specified:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 1mer_1.pun -orb_ty_1 LUMO -p_2 1mer_2.pun -orb_ty_2 LUMO -p_P 2mer.pun
+</code></pre></div></div> <p>The effective (or generalized) charge transfer integral <em>J_eff</em> (also known as electronic coupling <strong><em>V</em></strong>) would be shown on the screen:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>J_eff -0.00190564 eV
+</code></pre></div></div> <h2 id="4-charge-transfer-rate-constant-based-on-marcus-theory">4 Charge Transfer Rate Constant Based on Marcus Theory</h2> <p>By Marcus theory, the rate constant of charge transfer <em>k_et</em> could be computed from electronic coupling <strong><em>V</em></strong> (<em>J_eff</em>) and reorganization energy λ:</p> \[k_{\rm et} = \sqrt { \frac {\pi}{\lambda k_{\rm B}T}} \frac{V^2}{\hbar} \exp {\left( - \frac {\lambda}{4k_{\rm B}T} \right)}\] <p>where, reduced Planck constant ħ, Boltzmann constant <em>k_B</em>, temperature T are also needed.</p> <p>The reorganization energy λ is defined as the energy difference between the charged and neutral systems at the two different geometries (adiabatic potential energy surface). To compute it, four separated calculations are needed, <em>e.g.</em> for eletron transfer:</p> <ul> <li>Geometry optimizaiton of neutral state (E_1)</li> <li>Single point calculation of anion state with neutral geometry (E_4)</li> <li>Geometry optimizaiton of anion state (E_3)</li> <li>Single point calculation of neutral state with anion geometry (E_2)</li> </ul> <p>and the reorganization energy is:</p> \[\lambda = \lambda_1 + \lambda_2\] \[\lambda_1 = E_2 - E_1\] \[\lambda_2 = E_4 - E_3\] <p align="center"> <img alt="reorganization" src="/assets/blog/re_en.png" style="height:366px;"> </p> <p>Here I provided an Excel tool for computing the λ and <em>k_et</em> based on Marcus theory, download from <a href="https://wongzit.github.io/assets/blog/marcus_theory_zwang_20230929.xlsx">here</a>.</p> <h2 id="5-example">5 Example</h2> <p>Here is an example for a naphthalene dimer, the Cartesian coordinates were obtained from <a href="https://www.scm.com/doc/Tutorials/ElectronicTransport/ElectronAndHoleMobilities.html" rel="external nofollow noopener" target="_blank">ADF official tutorials page</a>. All files could be downloaded from <a href="https://github.com/wongzit/blogFiles/tree/main/blog_charge_transfer" rel="external nofollow noopener" target="_blank">here</a>.</p> <p>Monomer 1:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nprocshared=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
+
+naphthalene monomer 1
+
+0 1
+ C                 -2.96292735   -1.37776232    2.34412329
+ H                 -3.91358911   -3.24557560    2.36511160
+ C                 -2.19933829   -0.51291048    1.59118541
+ C                 -1.08607265   -1.59873768   -2.34412329
+ C                 -2.23157919   -2.11438654   -0.26513808
+ C                 -1.81742081   -0.86211346    0.26513808
+ H                 -2.14645018   -3.30748680   -1.93535091
+ H                 -0.80423336   -1.83888170   -3.25104686
+ H                 -0.76084457    0.83758710   -0.16847761
+ C                 -3.01509821   -2.98739399    0.54127003
+ H                 -3.28815543   -3.81408710    0.16847761
+ H                 -3.24476664   -1.13761830    3.25104686
+ C                 -1.03390179    0.01089399   -0.54127003
+ H                 -1.90254982    0.33098680    1.93535091
+ C                 -3.37590246   -2.62057013    1.81755935
+ C                 -0.67309754   -0.35592987   -1.81755935
+ H                 -0.13541089    0.26907560   -2.36511160
+ C                 -1.84966171   -2.46358952   -1.59118541
+</code></pre></div></div> <p>Monomer 2:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nprocshared=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
+
+naphthalene momomer 2
+
+0 1
+ C                  2.96292735    1.59873768   -2.34412329
+ C                  1.08607265    1.37776232    2.34412329
+ C                  1.84966171    0.51291048    1.59118541
+ H                  1.90254982    3.30748680   -1.93535091
+ C                  2.19933829    2.46358952   -1.59118541
+ C                  2.23157919    0.86211346    0.26513808
+ C                  1.03390179    2.98739399    0.54127003
+ C                  1.81742081    2.11438654   -0.26513808
+ C                  0.67309754    2.62057013    1.81755935
+ H                  3.28815543   -0.83758710   -0.16847761
+ H                  0.80423336    1.13761830    3.25104686
+ C                  3.01509821   -0.01089399   -0.54127003
+ H                  2.14645018   -0.33098680    1.93535091
+ H                  3.91358911   -0.26907560   -2.36511160
+ H                  0.76084457    3.81408710    0.16847761
+ C                  3.37590246    0.35592987   -1.81755935
+ H                  3.24476664    1.83888170   -3.25104686
+ H                  0.13541089    3.24557560    2.36511160
+</code></pre></div></div> <p>Dimer:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%nproc=8
+%mem=10GB
+# pw91pw91/tzvp nosymm pop=full iop(3/33=1) punch=mo
+
+naphthalene dimer
+
+0 1
+ C                 -2.96292735   -1.37776232    2.34412329
+ H                 -3.91358911   -3.24557560    2.36511160
+ C                 -2.19933829   -0.51291048    1.59118541
+ C                 -1.08607265   -1.59873768   -2.34412329
+ C                 -2.23157919   -2.11438654   -0.26513808
+ C                 -1.81742081   -0.86211346    0.26513808
+ H                 -2.14645018   -3.30748680   -1.93535091
+ H                 -0.80423336   -1.83888170   -3.25104686
+ H                 -0.76084457    0.83758710   -0.16847761
+ C                 -3.01509821   -2.98739399    0.54127003
+ H                 -3.28815543   -3.81408710    0.16847761
+ H                 -3.24476664   -1.13761830    3.25104686
+ C                 -1.03390179    0.01089399   -0.54127003
+ H                 -1.90254982    0.33098680    1.93535091
+ C                 -3.37590246   -2.62057013    1.81755935
+ C                 -0.67309754   -0.35592987   -1.81755935
+ H                 -0.13541089    0.26907560   -2.36511160
+ C                 -1.84966171   -2.46358952   -1.59118541
+ C                  2.96292735    1.59873768   -2.34412329
+ C                  1.08607265    1.37776232    2.34412329
+ C                  1.84966171    0.51291048    1.59118541
+ H                  1.90254982    3.30748680   -1.93535091
+ C                  2.19933829    2.46358952   -1.59118541
+ C                  2.23157919    0.86211346    0.26513808
+ C                  1.03390179    2.98739399    0.54127003
+ C                  1.81742081    2.11438654   -0.26513808
+ C                  0.67309754    2.62057013    1.81755935
+ H                  3.28815543   -0.83758710   -0.16847761
+ H                  0.80423336    1.13761830    3.25104686
+ C                  3.01509821   -0.01089399   -0.54127003
+ H                  2.14645018   -0.33098680    1.93535091
+ H                  3.91358911   -0.26907560   -2.36511160
+ H                  0.76084457    3.81408710    0.16847761
+ C                  3.37590246    0.35592987   -1.81755935
+ H                  3.24476664    1.83888170   -3.25104686
+ H                  0.13541089    3.24557560    2.36511160
+</code></pre></div></div> <p>The command used for CATNIP:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calc_J -p_1 naph_mol1.pun -orb_ty_1 LUMO -p_2 naph_mol2.pun -orb_ty_2 LUMO -p_P naph_p.pun
+</code></pre></div></div> <p>and here is the output:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Running calc_J VERSION 1.9
+log file for first monomer is:      naph_mol1.log
+log file for second monomer is:     naph_mol2.log
+log file for dimer is:              naph_p.log
+pun file for the first monomer is:  naph_mol1.pun
+pun file for the second monomer is: naph_mol2.pun
+pun file for the dimer is:          naph_p.pun
+
+Dimer     Spin Alpha
+Monomer 1 Spin Alpha Orbital LUMO
+Monomer 2 Spin Alpha Orbital LUMO
+J_ab  -0.0558655 eV
+e_a   -1.88656 eV
+e_b   -2.14962 eV
+S_ab  0.00943935
+J_eff -0.0368193 eV
+</code></pre></div></div> <p>For comparsion, the J_eff calculated at same level of theory by ADF was -0.03780 eV.</p> <p>FYI:</p> \[V = J_{\rm eff} = \frac{J_{\rm ab} - \frac{S_{\rm ab}(e_{\rm a} + e_{\rm b})}{2}}{1-S_{\rm ab}^2}\] \[\hbar = 1.054571817 \times 10 ^ {-34} \, \rm {J \cdot s} = 6.582119569 \times 10 ^{-16} \, \rm {eV \cdot s}\] \[k_{\rm B} = 1.380649 \times 10 ^ {-23} \, \rm {J \cdot K^{-1}} = 8.617333262 \times 10 ^{-5} \, \rm {eV \cdot K^{-1}}\] \[1 \, {\rm eV} = 1.60218 \times 10 ^ {-19} \, {\rm J}\] \[1 \, {\rm J} = 6.24151 \times 10 ^ {18} \, {\rm eV}\] <p>The reorganization energy λ was computed to 0.23 eV, thus, the <em>k_et</em> for electrons is 4.85E+12 / s at 300 K.</p> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="external nofollow noopener">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Dr. Zhe WANG. At <a href="https://www.applchem.eng.osaka-u.ac.jp" target="_blank" rel="external nofollow noopener">Graduate School of Engineering</a>, <a href="https://www.osaka-u.ac.jp/en" rel="external nofollow noopener" target="_blank">The University of Osaka</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>

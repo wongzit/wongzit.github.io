@@ -1,0 +1,129 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> gauMonitor v3.0.0 Update | Dr. Zhe WANG </title> <meta name="author" content="Dr. Zhe WANG"> <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. "> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%99%93%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://wongzit.github.io/gaumonitor-v3-update/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Dr.</span> Zhe WANG </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/books/">bookshelf</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">gauMonitor v3.0.0 Update</h1> <p class="post-meta"> Created on September 12, 2021 by Zhe Wang </p> <p class="post-tags"> <i class="fa-solid fa-calendar fa-sm"></i> 2021   ·   <i class="fa-solid fa-hashtag fa-sm"></i> Software   <i class="fa-solid fa-hashtag fa-sm"></i> Computation </p> </header> <article class="post-content"> <div id="markdown-content"> <p>The <em>Gaussian</em> monitoring tool, <a href="https://github.com/wongzit/gauMonitor" rel="external nofollow noopener" target="_blank"><strong>gauMonitor</strong></a>, has been updated to version 3.0.0 on 12 Sep 2021. New user interface for improved readability and some new features have been added into gauMonitor v3.</p> <h1 id="new-fetures-in-v300">New fetures in v3.0.0</h1> <h3 id="updated-userinterface-for-scf-iteration-section-and-energy-section">Updated userinterface for SCF iteration section and energy section.</h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # SCF ITERATIONS
+ - Summary of SCF Iterations: 
+   Cycle    Max.Force     RMS.Force       Max.DP        RMS.DP    Converged?
+ -----------------------------------------------------------------------------
+            (0.000450)    (0.000300)    (0.001800)    (0.001200)  Threshold
+      1      0.016673      0.008912      0.044431      0.023749      NNNN
+      2      0.000166      0.000089      0.000468      0.000250      YYYY
+ ----------------------------------------------------------------------------- 
+
+
+ - Summary of electronic energy: 
+
+   Cycle      E (Hartree)       E.rel (kcal/mol)     Delta-E
+ -------------------------------------------------------------
+     1      -40.5169484086            0.000000
+     2      -40.5183831835           -0.900336          -
+ -------------------------------------------------------------
+</code></pre></div></div> <h3 id="now-the-directions-forward-and-reverse-will-be-displayed-for-irc-jobs-only-for-calulations-with-p">Now the directions (forward and reverse) will be displayed for IRC jobs. (only for calulations with <code class="language-plaintext highlighter-rouge">#p</code>)</h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># IRC STEPS
+- Summary of electronic energy:
+
+  Steps        E (Hartree)       E.rel (kcal/mol)     Delta-E
+---------------------------------------------------------------
+    1(TS)    -2617.24313084            0.000000
+
+                  --- Forward path direction ---
+    2        -2617.24551175           -1.494045          -
+    3        -2617.24907454           -3.729731          -
+    4        -2617.25336776           -6.423770          -
+    5        -2617.25804643           -9.359682          -
+    6        -2617.26280200          -12.343850          -
+    7        -2617.26732990          -15.185152          -
+    8        -2617.27132860          -17.694376          -
+    9        -2617.27458632          -19.738628          -
+   10        -2617.27711944          -21.328186          -
+   11        -2617.27910974          -22.577120          -
+   12        -2617.28070210          -23.576341          -
+   13        -2617.28198965          -24.384292          -
+   14        -2617.28301837          -25.029824          -
+   15        -2617.28374463          -25.485559          -
+   16        -2617.28404326          -25.672953          -
+   17        -2617.28471426          -26.094012          -
+   18        -2617.28514579          -26.364801          -
+   19        -2617.28548831          -26.579736          -
+   20        -2617.28581484          -26.784637          -
+
+                  --- Reverse path direction ---
+   21        -2617.24300980            0.075954          +
+   22        -2617.24463414           -0.943336          -
+   23        -2617.24657923           -2.163899          -
+   24        -2617.24854233           -3.395764          -
+   25        -2617.25049202           -4.619214          -
+   26        -2617.25249890           -5.878551          -
+   27        -2617.25470497           -7.262882          -
+   28        -2617.25733646           -8.914169          -
+   29        -2617.26068317          -11.014263          -
+   30        -2617.26450015          -13.409456          -
+   31        -2617.26857740          -15.967971          -
+   32        -2617.27294537          -18.708916          -
+   33        -2617.27758187          -21.618366          -
+   34        -2617.28247708          -24.690159          -
+   35        -2617.28757411          -27.888596          -
+   36        -2617.29278935          -31.161212          -
+   37        -2617.29801773          -34.442072          -
+   38        -2617.30313054          -37.650412          -
+   39        -2617.30797522          -40.690497          -
+   40        -2617.31239831          -43.466030          -
+---------------------------------------------------------------
+</code></pre></div></div> <h3 id="electronic-energies-of-stationary-points-for-scan-calculations-would-be-summarized-in-a-new-table">Electronic energies of stationary points for SCAN calculations would be summarized in a new table.</h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # SCAN STEP
+ - Summary of electronic energies for stationary points:
+
+   Steps      E (Hartree)       E.rel (kcal/mol)     Delta-E
+ -------------------------------------------------------------
+     1      -2008.05829512            0.000000 
+     2      -2008.05358381            2.956394          +
+     3      -2008.04263173            9.828934          +
+     4      -2008.02872412           18.556098          +
+     5      -2008.01380169           27.920072          +
+     6      -2007.99898817           37.215704          +
+ -------------------------------------------------------------
+</code></pre></div></div> <h3 id="document-has-been-added-use-command-guamonitor--h-to-check-the-user-document">Document has been added, use command <code class="language-plaintext highlighter-rouge">guamonitor -h</code> to check the user document.</h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                      |        D o c u m e n t s        |
+                      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+# General Information
+
+  gauMonitor is an open-source program for monitoring Gaussian jobs, it follows
+MIT license. In current version of gauMonitor, optimization, frequency analyses
+and IRC/SCAN calculation jobs are supported.
+
+...
+</code></pre></div></div> <h3 id="add-supporting-for-calculations-using-counterpoise-or-counter-keywords">Add supporting for calculations using <code class="language-plaintext highlighter-rouge">counterpoise</code> or <code class="language-plaintext highlighter-rouge">counter</code> keywords.</h3> <h3 id="improved-froce-constant-section-for-transition-state-calculations">Improved froce constant section for transition state calculations.</h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># FORCE CONSTANT
+- Summary of eigenvectors and eigenvalues
+
+ Cycle   Five minimum eigenvalues
+         Six eigenvectors required to have negative eigenvalues
+----------------------------------------------------------------
+    1   -0.02572   0.01727   0.01770   0.02530   0.03065
+         D(1,2,5,6)          L(1,2,6,5,-2)       A(5,2,6)            
+         L(1,2,6,5,-1)       R(2,5)              R(1,6)              
+
+    2   -0.02498   0.01303   0.01686   0.02454   0.02999
+         L(1,2,6,5,-2)       A(5,2,6)            L(1,2,6,5,-1)       
+         R(2,5)              R(1,6)              A(5,2,6)            
+
+    3   -0.02342   0.00198   0.01436   0.02299   0.02898
+         A(5,2,6)            L(1,2,6,5,-1)       R(2,5)              
+         R(1,6)              A(5,2,6)            L(1,2,6,5,-2)       
+
+    4   -0.01753  -0.00550   0.01272   0.02154   0.02816
+         L(1,2,6,5,-1)       R(2,5)              R(1,6)              
+         A(5,2,6)            L(1,2,6,5,-2)       D(1,2,5,6)          
+
+    5   -0.04729  -0.00134   0.01739   0.02883   0.03259
+         R(2,5)              R(1,6)              A(5,2,6)            
+         L(1,2,6,5,-2)       D(1,2,5,6)          L(1,2,6,5,-1)       
+
+    6   -0.05312   0.01114   0.02120   0.02858   0.04011
+         R(1,6)              A(5,2,6)            L(1,2,6,5,-2)       
+         D(1,2,5,6)          L(1,2,6,5,-1)       R(2,5)          
+</code></pre></div></div> <h3 id="a-new-termination-message">A new termination message.</h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+         Termination of gauMonitor at Mon Sep 12 18:25:56 JST 2021.
+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+</code></pre></div></div> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="external nofollow noopener">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Dr. Zhe WANG. At <a href="https://www.applchem.eng.osaka-u.ac.jp" target="_blank" rel="external nofollow noopener">Graduate School of Engineering</a>, <a href="https://www.osaka-u.ac.jp/en" rel="external nofollow noopener" target="_blank">The University of Osaka</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
