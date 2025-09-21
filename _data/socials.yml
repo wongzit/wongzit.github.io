@@ -7,10 +7,11 @@
 #  username:  AlbertEinstein # your username
 # acm_id: # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
+email: wang.zhe.dr@gmail.com
 bluesky_url: https://bsky.app/profile/wangzhe.bsky.social
+x_username: oooooootetsu
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
-email: wang.zhe.dr@gmail.com # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
 github_username: wongzit
@@ -33,7 +34,8 @@ orcid_id: 0000-0002-9996-586X
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
 research_gate_profile: Zhe-Wang-84
-scholar_userid: gzUh6CMAAAAJ # your Google Scholar ID
+scholar_userid: gzUh6CMAAAAJ
+zotero_username: zitwong
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
@@ -45,7 +47,5 @@ scholar_userid: gzUh6CMAAAAJ # your Google Scholar ID
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 # wikidata_id: # your wikidata id
 # wikipedia_id: # your wikipedia id (Case sensitive)
-work_url: https://morilab-uosaka.github.io
-x_username: oooooootetsu
+work_url: https://rd.iai.osaka-u.ac.jp/ja/137af188b80be1cd.html
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-# zotero_username: # your zotero username
