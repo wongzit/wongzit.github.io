@@ -4,7 +4,11 @@ layout: page
 permalink: /program/pyaroma/
 ---
 
-> [**> Home**](https://wongzit.github.io/program/pyaroma)&emsp;&emsp;[**> Download**](https://wongzit.github.io/program/pyaroma/download)&emsp;&emsp;[**> Manual**](https://wongzit.github.io/program/pyaroma/manual_v41.pdf)&emsp;&emsp;[**> Issues**](https://wongzit.github.io/program/pyaroma/issue)&emsp;&emsp;[**> Citations**](https://wongzit.github.io/program/pyaroma/citation)
+<hr/>
+
+**🏕️ home** / [⬇️ download](https://wongzit.github.io/program/pyaroma/download) / [📄 manual](https://wongzit.github.io/program/pyaroma/manual_v41.pdf) / [🔧 issues](https://wongzit.github.io/program/pyaroma/issue) / [💎 citations](https://wongzit.github.io/program/pyaroma/citation)
+
+<hr/>
 
 <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/pyAroma/hp_banner_v4.png" class="img-fluid" %}

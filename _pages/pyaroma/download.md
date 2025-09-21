@@ -5,8 +5,11 @@ layout: page
 permalink: /program/pyaroma/download/
 ---
 
-> [**> Home**](https://wongzit.github.io/program/pyaroma)&emsp;&emsp;[**> Download**](https://wongzit.github.io/program/pyaroma/download)&emsp;&emsp;[**> Manual**](https://wongzit.github.io/program/pyaroma/manual_v41.pdf)&emsp;&emsp;[**> Issues**](https://wongzit.github.io/program/pyaroma/issue)&emsp;&emsp;[**> Citations**](https://wongzit.github.io/program/pyaroma/citation)
+<hr/>
 
+[🏕️ home](https://wongzit.github.io/program/pyaroma) / **⬇️ download** / [📄 manual](https://wongzit.github.io/program/pyaroma/manual_v41.pdf) / [🔧 issues](https://wongzit.github.io/program/pyaroma/issue) / [💎 citations](https://wongzit.github.io/program/pyaroma/citation)
+
+<hr/>
 
 ### Current Version
 

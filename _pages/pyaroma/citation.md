@@ -4,7 +4,11 @@ layout: page
 permalink: /program/pyaroma/citation/
 ---
 
-> [**> Home**](https://wongzit.github.io/program/pyaroma)&emsp;&emsp;[**> Download**](https://wongzit.github.io/program/pyaroma/download)&emsp;&emsp;[**> Manual**](https://wongzit.github.io/program/pyaroma/manual_v41.pdf)&emsp;&emsp;[**> Issues**](https://wongzit.github.io/program/pyaroma/issue)&emsp;&emsp;[**> Citations**](https://wongzit.github.io/program/pyaroma/citation)
+<hr/>
+
+[🏕️ home](https://wongzit.github.io/program/pyaroma) / [⬇️ download](https://wongzit.github.io/program/pyaroma/download) / [📄 manual](https://wongzit.github.io/program/pyaroma/manual_v41.pdf) / [🔧 issues](https://wongzit.github.io/program/pyaroma/issue) / **💎 citations**
+
+<hr/>
 
 - M. Jana, G. Velmurugan, S. Sahoo, P. Comba,\* H. Rath,\* *Org. Chem. Front.*, **2025**, *Advance Article*. DOI: [10.1039/d5qo01088h](https://doi.org/10.1039/d5qo01088h)
 
