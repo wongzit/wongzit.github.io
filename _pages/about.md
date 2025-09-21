@@ -21,9 +21,12 @@ images:
   compare: true
 ---
 
-<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/1.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/2.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-</swiper-container>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/1.png" title="hp" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/prof_pic.png" title="profile" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
-updating from 9/20...
