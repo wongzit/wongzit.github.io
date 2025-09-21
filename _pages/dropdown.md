@@ -4,7 +4,6 @@ title: programs
 nav: true
 nav_order: 6
 dropdown: true
-dropdown: true
 children:
   - title: py.Aroma
     permalink: /program/pyaroma/

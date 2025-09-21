@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: 公表論文
-nav: true
+nav: false
 nav_order: 5
 ---
 
