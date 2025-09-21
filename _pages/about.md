@@ -16,6 +16,9 @@ latest_posts:
   enabled: true
   scrollable: true
   limit: 3
+
+images:
+  compare: true
 ---
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
