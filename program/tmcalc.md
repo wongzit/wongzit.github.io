@@ -6,9 +6,9 @@ excerpt: tmcalc
 comments: false
 ---
 
-<p align = "center">
-<img alt="tmcalc_wide" class="icon" src="/assets/program/TmCalc_wide.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/program/TmCalc_wide.png" class="img-fluid" %}
+</div>
 
 Latest version: **2.0.1**, updated at 2022-02-14
 
