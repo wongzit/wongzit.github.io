@@ -7,5 +7,15 @@ nav: true
 nav_order: 7
 ---
 
-🚧工事中🏗️
+*under construction*
+
+<hr/>
+<h2>2nd semester, AY2025</h2>
+<br>
+
+#### 有機化学演習I
+
+
+#### 化学実験
+
 
