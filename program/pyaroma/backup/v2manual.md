@@ -1,5 +1,5 @@
 ---
-title: "py.Aroma 2"
+title: "py.<b>Aroma</b> 2"
 subtitle: "Program User Manual"
 layout: page
 ---
@@ -30,7 +30,7 @@ The start window of py.**Aroma** is like following.
 User need to start from the ![](/assets/pyAroma/open_icon.png) **1. Open** icon to read a file, and click ![](/assets/pyAroma/read_icon.png) **2. Read** to display the structure.
 
 <p align="center">
-<img alt="pyaroma_win" src="/assets/pyAroma/fig_2.png" style="width:350px;>
+<img alt="pyaroma_win" src="/assets/pyAroma/fig_2.png" style="width:350px;">
 </p>
 
 ### 2.2 Creating NICS Input Files
@@ -41,7 +41,7 @@ of the specified atoms. By inputting the altitude, two ghost atoms would be adde
 Users can check the preview of ghost atom by clicking *update* button.
 
 <p align="center">
-<img alt="pyaroma_win" src="/assets/pyAroma/fig_3.png" style="width:350px;>
+<img alt="pyaroma_win" src="/assets/pyAroma/fig_3.png" style="width:350px;">
 </p>
 
 For the geometries inputted by .*pdb* and .*xyz* files, users can set the *Gaussian* calculation keywords in the 
@@ -53,14 +53,14 @@ For 2D-NICS, users need to specify the plane (XY, XZ or YZ), range, grid space a
 position of ghost atoms by clicking the *update* button.
 
 <p align="center">
-<img alt="pyaroma_win" src="/assets/pyAroma/fig_4.png" style="width:350px;>
+<img alt="pyaroma_win" src="/assets/pyAroma/fig_4.png" style="width:350px;">
 </p>
 
 For 3D-NICS, users need to specify the range and grid spacee. Users can preview the 
 cube of ghost atoms by clicking the *update* button.
 
 <p align="center">
-<img alt="pyaroma_win" src="/assets/pyAroma/fig_5.png" style="width:350px;>
+<img alt="pyaroma_win" src="/assets/pyAroma/fig_5.png" style="width:350px;">
 </p>
 
 ### 2.3 Processing NICS Output
@@ -73,7 +73,7 @@ Users can choose every component of their interests to plot the heat map. By cli
 file contain shelding tensors would be saved.
 
 <p align="center">
-<img alt="pyaroma_win" src="/assets/pyAroma/fig_6.png" style="width:350px;>
+<img alt="pyaroma_win" src="/assets/pyAroma/fig_6.png" style="width:350px;">
 </p>
 
 Similar to 2D-NICS, 3D-NICS output could also be processed by py.**Aroma**. User can also choose the component and save the 
