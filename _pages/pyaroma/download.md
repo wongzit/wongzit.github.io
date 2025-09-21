@@ -1,6 +1,6 @@
 ---
 title: py.<b>Aroma</b>
-description: Download
+description: download page
 layout: page
 permalink: /program/pyaroma/download/
 ---

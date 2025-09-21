@@ -1,6 +1,7 @@
 ---
 title: py.<b>Aroma</b>
 layout: page
+description: pubilications cited py.<b>Aroma</b>
 permalink: /program/pyaroma/citation/
 ---
 

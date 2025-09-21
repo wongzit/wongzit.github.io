@@ -1,5 +1,6 @@
 ---
 title: py.<b>Aroma</b>
+description: home
 layout: page
 permalink: /program/pyaroma/
 ---

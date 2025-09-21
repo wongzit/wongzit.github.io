@@ -18,4 +18,9 @@ latest_posts:
   limit: 3
 ---
 
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/1.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/2.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+</swiper-container>
+
 updating from 9/20...

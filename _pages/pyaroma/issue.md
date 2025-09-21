@@ -1,6 +1,6 @@
 ---
 title: py.<b>Aroma</b>
-description: Known Issues
+description: known issues
 layout: page
 permalink: /program/pyaroma/issue/
 ---
