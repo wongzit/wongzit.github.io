@@ -9,35 +9,35 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-news",
-          title: "news",
-          description: "ニュース",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/news/";
-          },
-        },{id: "nav-cv",
+  },{id: "nav-cv",
           title: "cv",
           description: "about ZW",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "dropdown-publications",
-              title: "publications",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/publications/";
-              },
-            },{id: "dropdown-presentations",
-              title: "presentations",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/presentations/";
-              },
-            },{id: "dropdown-py-aroma",
+        },{id: "nav-research",
+          title: "research",
+          description: "研究内容",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "公表論文",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-presentations",
+          title: "presentations",
+          description: "学会発表",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/presentations/";
+          },
+        },{id: "dropdown-py-aroma",
               title: "py.Aroma",
               description: "",
               section: "Dropdown",
@@ -58,7 +58,14 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/program/script/";
               },
-            },{id: "nav-links",
+            },{id: "nav-teaching",
+          title: "teaching",
+          description: "授業",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-links",
           title: "links",
           description: "リンク",
           section: "Navigation",
