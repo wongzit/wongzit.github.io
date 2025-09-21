@@ -5,7 +5,7 @@ permalink: /research/
 description: 研究内容
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [organic chemistry, computational chemistry]
 horizontal: false
 ---
 
