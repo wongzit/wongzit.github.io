@@ -554,6 +554,13 @@ ninja.data = [{
           window.open("https://orcid.org/0000-0002-9996-586X", "_blank");
         },
       },{
+        id: 'social-publons',
+        title: 'Publons',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://publons.com/a/JLL-8000-2023/", "_blank");
+        },
+      },{
         id: 'social-researchgate',
         title: 'ResearchGate',
         section: 'Socials',
@@ -568,11 +575,18 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=gzUh6CMAAAAJ", "_blank");
         },
       },{
-        id: 'social-zotero',
-        title: 'Zotero',
+        id: 'social-scopus',
+        title: 'Scopus',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.zotero.org/zitwong", "_blank");
+          window.open("https://www.scopus.com/authid/detail.uri?authorId=57203902612", "_blank");
+        },
+      },{
+        id: 'social-wechat_qr',
+        title: 'Wechat_qr',
+        section: 'Socials',
+        handler: () => {
+          window.open("", "_blank");
         },
       },{
         id: 'social-work',
