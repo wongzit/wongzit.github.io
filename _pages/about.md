@@ -2,7 +2,7 @@
 layout: about
 title: home
 permalink: /
-subtitle: a.k.a. <b> Zit Wong | 王哲 | 왕철 </b>, Assistant Prof. at <a href='http://www.chem.eng.osaka-u.ac.jp/mori-lab/'>Mori Lab.</a>, The University of Osaka. 
+subtitle: a.k.a. <b> Zit WONG | 王哲 | 왕철 </b>, Assistant Prof. at <a href='http://www.chem.eng.osaka-u.ac.jp/mori-lab/'>Mori Lab.</a>, The University of Osaka.
 
 selected_papers: true
 social: true
@@ -16,9 +16,6 @@ latest_posts:
   enabled: true
   scrollable: true
   limit: 3
-
-images:
-  compare: true
 ---
 
 <div class="row justify-content-sm-center">

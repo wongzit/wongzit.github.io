@@ -9,7 +9,6 @@ nav_order: 5
 
 <hr/>
 <h2>2024</h2>
-<br>
 
 #### domestic conferences
 
@@ -21,9 +20,9 @@ nav_order: 5
 
 - &ensp;![](https://img.shields.io/badge/-ENG-9cf?style=flat-square)&ensp;<u>Zhe Wang</u>, Shu I. Takagi, Aiko Fukazawa, **Exploring Electronic Structure of Multi-Electron Reduced Species of Oligo(pentafulvalene)s Bearing a 1D Fragment of C60**, 20th International Symposium on Novel Aromatic Compounds (ISNA-20), Poster Presentation, 12th Aug. 2024, Toronto, Canada
 
+<br>
 <hr/>
 <h2>2023</h2>
-<br>
 
 #### domestic conferences
 
@@ -31,25 +30,28 @@ nav_order: 5
 
 - &ensp;![](https://img.shields.io/badge/-JPN-9cf?style=flat-square)&ensp;<u>王哲</u>, **Is Carbon–Carbon π-Single Bond Possible?**, 令和4年度第2回高密度共役領域会議, 口頭発表, 2023年3月12日, 蒲郡
 
+<br>
+
 <hr/>
 <h2>2022</h2>
-<br>
 
 #### international conferences
 
 - &ensp;![](https://img.shields.io/badge/-ENG-9cf?style=flat-square)&ensp;<u>Zhe Wang</u>, Yuta Harada, Sayaka Hatano, Manabu Abe, **Long-lived Localized Singlet Diradicaloids with Carbon–Carbon π-Single Bonding (C–π–C) in Macrocyclic Structures**, 25th IUPAC Conference on Physical Organic Chemistry (ICPOC25), Poster Presentation (PP93), 14th July 2022, Hiroshima, Japan
 
+<br>
+
 <hr/>
 <h2>2020</h2>
-<br>
 
 #### domestic conferences
 
 - &ensp;![](https://img.shields.io/badge/-ENG-9cf?style=flat-square)&ensp;<u>Zhe Wang</u>, Manabu Abe, **Long-lived Localized Diradicals Using Stretch Effect Induced by Macrocyclic Structure**, Online Annual Meeting on Photochemistry, Poster Presentation (3P055), 11th Sept. 2020, Online
 
+<br>
+
 <hr/>
 <h2>2019</h2>
-<br>
 
 #### domestic conferences
 
