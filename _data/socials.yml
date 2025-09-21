@@ -3,8 +3,8 @@
 # the socials will be displayed in the order they are defined here
 
 # academia_edu:  your organization and your username Ex. https://organization.academia.edu/UserName
-#  organization: princeton # your organization as appears in the subdomain
-#  username:  AlbertEinstein # your username
+# organization: princeton # your organization as appears in the subdomain
+# username:  AlbertEinstein # your username
 # acm_id: # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
 email: wang.zhe.dr@gmail.com
@@ -31,19 +31,19 @@ github_username: wongzit
 orcid_id: 0000-0002-9996-586X
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
-# publons_id: # your ID on Publons
+publons_id: JLL-8000-2023
 # quora_username: # your Quora username
 research_gate_profile: Zhe-Wang-84
 scholar_userid: gzUh6CMAAAAJ
-zotero_username: zitwong
-# scopus_id: # your profile on Scopus
+# zotero_username: zitwong
+scopus_id: 57203902612
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
 # stackoverflow_id: # your stackoverflow id
 # strava_userid: # your strava user id
 # telegram_username: # your Telegram user name
 # unsplash_id: # your unsplash id
-# wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+wechat_qr: wechat.png
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 # wikidata_id: # your wikidata id
 # wikipedia_id: # your wikipedia id (Case sensitive)
