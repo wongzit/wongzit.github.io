@@ -37,6 +37,45 @@ nav_order: 8
 - [Abe Lab, Hiroshima University](https://hiu-roc.webnode.jp)
 - [The Fukazawa Group, WPI-iCeMS, Kyoto University](https://fukazawa.icems.kyoto-u.ac.jp)
 
+<hr />
+
+### jouranls 📚
+
+<p align="left">
+<a href="https://pubs.acs.org/journal/jacsat"> <img alt="jacs" class="icon" src="/assets/img/link/jacs.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://pubs.acs.org/journal/jaaucr"> <img alt="jacsau" class="icon" src="/assets/img/link/jacsau.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://pubs.acs.org/journal/joceah"> <img alt="joc" class="icon" src="/assets/img/link/joc.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://pubs.acs.org/journal/orlef7"> <img alt="ol" class="icon" src="/assets/img/link/ol.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://pubs.acs.org/journal/jpcafh"> <img alt="jpca" class="icon" src="/assets/img/link/jpca.png" style="height:66px; background-color:transparent;"></a>
+
+<a href="https://pubs.rsc.org/en/journals/journalissues/sc?_gl=1*1m9op06*_gcl_au*MTkzNTg3ODYxNS4xNzU0Mjg4NjIx#!recentarticles&adv"> <img alt="cs" class="icon" src="/assets/img/link/cs.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://pubs.rsc.org/en/journals/journalissues/cc#!recentarticles&adv"> <img alt="cc" class="icon" src="/assets/img/link/cc.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://pubs.rsc.org/en/journals/journalissues/cp?_gl=1*kq1s46*_gcl_au*MTkzNTg3ODYxNS4xNzU0Mjg4NjIx#!recentarticles"> <img alt="pccp" class="icon" src="/assets/img/link/pccp.png" style="height:66px; background-color:transparent;"></a>
+
+<a href="https://onlinelibrary.wiley.com/journal/15213773"> <img alt="acie" class="icon" src="/assets/img/link/acie.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://chemistry-europe.onlinelibrary.wiley.com/journal/15213765"> <img alt="cej" class="icon" src="/assets/img/link/cej.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://chemistry-europe.onlinelibrary.wiley.com/journal/10990690"> <img alt="ejoc" class="icon" src="/assets/img/link/ejoc.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://chemistry-europe.onlinelibrary.wiley.com/journal/1861471x"> <img alt="caj" class="icon" src="/assets/img/link/caj.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://chemistry-europe.onlinelibrary.wiley.com/journal/23670932"> <img alt="cpc" class="icon" src="/assets/img/link/cpc.png" style="height:66px; background-color:transparent;"></a>
+
+<a href="https://www.nature.com/nature/research-articles"> <img alt="nature" class="icon" src="/assets/img/link/nature.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://www.nature.com/nchem/research-articles"> <img alt="nchem" class="icon" src="/assets/img/link/nchem.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://www.nature.com/ncomms/research-articles"> <img alt="ncom" class="icon" src="/assets/img/link/ncom.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://www.nature.com/natsynth/research-articles"> <img alt="nsyn" class="icon" src="/assets/img/link/nsyn.png" style="height:66px; background-color:transparent;"></a>
+
+<a href="https://www.science.org/journal/science"> <img alt="science" class="icon" src="/assets/img/link/science.png" style="height:66px; background-color:transparent;"></a>
+
+<a href="https://academic.oup.com/bcsj"> <img alt="bcsj" class="icon" src="/assets/img/link/bcsj.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://academic.oup.com/chemlett"> <img alt="cl" class="icon" src="/assets/img/link/cl.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://www.cell.com/chem/home"> <img alt="chem" class="icon" src="/assets/img/link/chem.png" style="height:66px; background-color:transparent;"></a>
+
+<a href="https://pubs.acs.org/journal/achre4"> <img alt="acr" class="icon" src="/assets/img/link/acr.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://pubs.acs.org/journal/chreay"> <img alt="cr" class="icon" src="/assets/img/link/cr.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://pubs.rsc.org/en/journals/journalissues/cs#!recentarticles&adv"> <img alt="csr" class="icon" src="/assets/img/link/csr.png" style="height:66px; background-color:transparent;"></a>
+</p>
+
+<hr />
+
 ### societies 🏟️
 
 - [Chinese Chemical Society](https://www.chemsoc.org.cn)
