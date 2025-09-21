@@ -519,6 +519,13 @@ ninja.data = [{
           title: 'NOTICE: The pages are currently under construction.',
           description: "",
           section: "News",},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%77%61%6E%67.%7A%68%65.%64%72@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
         id: 'social-bluesky',
         title: 'Bluesky',
         section: 'Socials',
@@ -526,11 +533,11 @@ ninja.data = [{
           window.open("https://bsky.app/profile/wangzhe.bsky.social", "_blank");
         },
       },{
-        id: 'social-email',
-        title: 'email',
+        id: 'social-x',
+        title: 'X',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%77%61%6E%67.%7A%68%65.%64%72@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("https://twitter.com/oooooootetsu", "_blank");
         },
       },{
         id: 'social-github',
@@ -561,18 +568,18 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=gzUh6CMAAAAJ", "_blank");
         },
       },{
+        id: 'social-zotero',
+        title: 'Zotero',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.zotero.org/zitwong", "_blank");
+        },
+      },{
         id: 'social-work',
         title: 'Work',
         section: 'Socials',
         handler: () => {
-          window.open("https://morilab-uosaka.github.io", "_blank");
-        },
-      },{
-        id: 'social-x',
-        title: 'X',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://twitter.com/oooooootetsu", "_blank");
+          window.open("https://rd.iai.osaka-u.ac.jp/ja/137af188b80be1cd.html", "_blank");
         },
       },{
       id: 'light-theme',
