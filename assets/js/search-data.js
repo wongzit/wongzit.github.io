@@ -58,6 +58,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/program/script/";
               },
+            },{id: "dropdown-mol-viewer",
+              title: "mol.Viewer",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/program/online/molview.html";
+              },
             },{id: "nav-teaching",
           title: "teaching",
           description: "授業",
@@ -518,7 +525,12 @@ ninja.data = [{
             },},{id: "news-notice-the-pages-are-currently-under-construction",
           title: 'NOTICE: The pages are currently under construction.',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "news-a-new-version-of-the-online-molecular-viewer-has-been-released",
+          title: 'A new version of the Online Molecular Viewer has been released.',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_22/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
