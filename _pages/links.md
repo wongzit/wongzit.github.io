@@ -18,24 +18,30 @@ nav_order: 8
 - [Maze Generator](https://www.mazegenerator.net): *A maze generator.*
 - [與佛論禪](https://www.keyfc.net/bbs/tools/tudoucode.aspx)
 
+<hr />
+
 ### universities 🏫
 
-- [China University of Petroleum (UPC, East China)](https://www.upc.edu.cn)
 - [College of Chemistry and Chemical Engineering, UPC](http://cce.upc.edu.cn)
-- [Hiroshima University (HU)](https://www.hiroshima-u.ac.jp)
-- [School of Science and Graduate School of Science, HU](https://www.hiroshima-u.ac.jp/sci)
-- [Graduate School of Advanced Science and Engineering, HU](https://www.hiroshima-u.ac.jp/adse)
 - [Department of Chemistry, HU](https://chemistry.hiroshima-u.ac.jp)
-- [Kyoto University (KU)](https://www.kyoto-u.ac.jp/ja)
-- [Kyoto University Institute for Advance Study](https://kuias.kyoto-u.ac.jp/j/)
-- [Institute for Integrated Cell-Material Sciences (WPI-iCeMS)](https://www.icems.kyoto-u.ac.jp)
-- [Faculty of Engineering and Graduate School of Engineering, KU](https://www.t.kyoto-u.ac.jp/ja)
-- [Department of Energy and Hydrocarbon Chemistry, KU](https://www.eh.t.kyoto-u.ac.jp/ja)
+
+<p align="left">
+<a href="https://www.osaka-u.ac.jp/ja"> <img alt="uosaka" class="icon" src="/assets/img/link/uosaka.png" style="height:86px; background-color:transparent;"></a>
+<a href="http://www.epc.osaka-u.ac.jp"> <img alt="uoepc" class="icon" src="/assets/img/link/uoepc.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.applchem.eng.osaka-u.ac.jp"> <img alt="uoappchem" class="icon" src="/assets/img/link/uoappchem.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.kyoto-u.ac.jp/ja"> <img alt="ku" class="icon" src="/assets/img/link/ku.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.icems.kyoto-u.ac.jp"> <img alt="icems" class="icon" src="/assets/img/link/icems.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.hiroshima-u.ac.jp"> <img alt="hu" class="icon" src="/assets/img/link/hu.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.upc.edu.cn"> <img alt="upc" class="icon" src="/assets/img/link/upc.png" style="height:86px; background-color:transparent;"></a>
+</p>
+
+<hr />
 
 ### research groups ⚗️
 
 - [Abe Lab, Hiroshima University](https://hiu-roc.webnode.jp)
 - [The Fukazawa Group, WPI-iCeMS, Kyoto University](https://fukazawa.icems.kyoto-u.ac.jp)
+- [Mori Lab, UOsaka](http://www.chem.eng.osaka-u.ac.jp/mori-lab/)
 
 <hr />
 
@@ -78,11 +84,16 @@ nav_order: 8
 
 ### societies 🏟️
 
-- [Chinese Chemical Society](https://www.chemsoc.org.cn)
-- [The Chemical Society of Japan](https://www.chemistry.or.jp)
-- [The Society of Pyhsical Organic Chemistry, Japan](http://jpoc.ac)
-- [Japan Society of Theoretical Chemistry](https://www.rkk-web.jp)
-- [American Chemical Society](https://www.acs.org)
+<p align="left">
+<a href="https://www.chemistry.or.jp"> <img alt="csj" class="icon" src="/assets/img/link/csj.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://photochemistry.jp/index.html"> <img alt="jpa" class="icon" src="/assets/img/link/jpa.png" style="height:86px; background-color:transparent;"></a>
+<a href="http://jpoc.ac"> <img alt="jpoc" class="icon" src="/assets/img/link/jpoc.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.rkk-web.jp"> <img alt="rkk" class="icon" src="/assets/img/link/rkk.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.chemsoc.org.cn"> <img alt="ccs" class="icon" src="/assets/img/link/ccs.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.acs.org"> <img alt="acs" class="icon" src="/assets/img/link/acs.png" style="height:86px; background-color:transparent;"></a>
+</p>
+
+<hr />
 
 ### conferences & symposia 🔋
 
@@ -92,7 +103,9 @@ nav_order: 8
 - [25th IUPAC International Conference on Physical Organic Chemistry (ICPOC-25)](https://icpoc25.jp)
 - [10th Pacific Symposium on Radical Chemistry (PSRC-10)](http://os.kuicr.kyoto-u.ac.jp/PSRC10/index.html)
 - [The 104th CSJ Annual Meeting](https://pub.confit.atlas.jp/ja/event/csj104th)
-- [26th IUPAC International Conference on Physical Organic Chemistry (ICPOC-26)](http://www.icpoc26.tsinghua.edu.cn)
 - [20th International Symposium on Noval Aromatic Compounds](https://www.isna2024.com)
-
+- [The 105th CSJ Annual Meeting](https://pub.confit.atlas.jp/ja/event/csj105th)
+- [Annual Meeting on Photochemistry 2025](https://photochemistry.jp/2025/)
+- [The 35th Symposium on Physical Organic Chemistry](https://www.poc35-2025.org)
+- [International Conference on Chiroptical Science (ICCS-2025)](https://www.kitasato-u.ac.jp/iccs2025/index.html)
 
