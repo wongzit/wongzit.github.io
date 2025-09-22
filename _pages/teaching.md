@@ -18,9 +18,9 @@ nav_order: 7
 
 #### 有機化学演習I
 
-- [第1章演習問題および解答例]()
-- [第2章演習問題および解答例]()
-- [第3章演習問題および解答例]()
+- [第1章演習問題および解答例](https://wongzit.github.io/error1/)
+- [第2章演習問題および解答例](https://wongzit.github.io/error2/)
+- [第3章演習問題および解答例](https://wongzit.github.io/error3/)
 
 #### 有機化学実験
 
