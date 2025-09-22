@@ -11,7 +11,7 @@ nav_order: 8
 
 ### tools & websites 🌏
 
-- [Online Molecular Viewer](https://wongzit.github.io/program/online/molviewer.html) *based on XYZ coordinates.*
+- [Online Molecular Viewer](https://wongzit.github.io/program/online/molview.html) *by ZW*
 - [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/): *Web based tool to extract data from plots, images, and maps.*
 - [Pressure-Temperature Nomograph Interative Tool](https://www.sigmaaldrich.com/JP/ja/support/calculators-and-apps/pressure-temperature-nomograph-interactive-tool): *Boiling point vs pressure calculator.*
 - [CCCBDB](https://cccbdb.nist.gov/vibscalejustx.asp): *Precomputed vibrational scaling factors.*

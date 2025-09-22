@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Molecular Viewer by ZW</title>
+  <script src="https://3Dmol.org/build/3Dmol.js"></script>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121821;
+      --muted: #94a3b8;
+      --fg: #e6edf3;
+      --accent: #60a5fa;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--fg);
+      background: radial-gradient(1200px 800px at 20% -10%, #142032 0%, var(--bg) 40%),
+                  linear-gradient(180deg, #0b0f14 0%, #090d12 100%);
+    }
+    .app { display: grid; grid-template-columns: 420px 1fr; gap: 14px; height: 100vh; padding: 14px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); box-shadow: 0 10px 40px rgba(0,0,0,0.35); backdrop-filter: blur(6px); }
+    .left { padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+    .title { font-size: 18px; font-weight: 700; letter-spacing: .3px; }
+    .sub { color: var(--muted); font-size: 12.8px; line-height: 1.45; }
+    .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .btn { border: 1px solid rgba(255,255,255,0.12); background: #151b25; color: var(--fg); padding: 8px 12px; border-radius: 12px; cursor: pointer; font-weight: 600; font-size: 13px; text-decoration: none; }
+    .btn.secondary { background: #0f1520; }
+    .select, .file { appearance: none; background: #0f1520; color: var(--fg); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 8px 12px; font-weight: 600; font-size: 13px; }
+    .toggle { display: inline-flex; gap: 8px; align-items: center; cursor: pointer; font-weight: 600; font-size: 13px; }
+    .toggle input { appearance: none; width: 36px; height: 22px; border-radius: 999px; background: #1b2330; position: relative; outline: none; border: 1px solid rgba(255,255,255,0.12); }
+    .toggle input:checked { background: #243040; }
+    .toggle input::after { content: ""; position: absolute; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); top: 50%; left: 3px; transform: translateY(-50%); transition: left .2s ease; }
+    .toggle input:checked::after { left: 17px; }
+    textarea { width: 100%; min-height: 240px; resize: vertical; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); background: #0b1220; color: var(--fg); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 13px; line-height: 1.5; box-shadow: inset 0 1px 0 rgba(255,255,255,0.04); }
+    .hint { color: var(--muted); font-size: 12px; }
+    .viewer { position: relative; overflow: hidden; }
+    #viewer { width: 100%; height: 100%; border-radius: var(--radius); }
+    @media (max-width: 1000px) { .app { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: auto; } #viewer { min-height: 420px; } }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="card left">
+      <div class="row">
+        <a id="back" class="btn secondary" href="https://wongzit.github.io/">← Go to https://wongzit.github.io/</a>
+      </div>
+
+      <div class="title">Online Molecular Viewer by ZW</div>
+      <div class="sub">Paste or type atoms and Cartesian coordinates (case-insensitive), one atom per line, e.g. <code>C 0. 0. 0.</code> or <code>h,0,0.757,0.586</code>. Rendering updates as you type. Drag & drop a <code>.xyz/.txt</code> file, too.</div>
+
+      <div class="row">
+        <button id="ex-dr" class="btn">Load 2625812-13-5</button>
+        <button id="ex-c60" class="btn">Load C60</button>
+        <input id="file" class="file" type="file" accept=".xyz,.txt,.mol,.sdf" />
+      </div>
+
+      <label class="hint" for="coords">Coordinates</label>
+      <textarea id="coords" spellcheck="false" placeholder="Examples\nC 0. 0. 0.\nH 0. 0. 1.089\nH 1.026 0. -0.363\nH -0.513 -0.889 0.363\nH -0.513 0.889 -0.363"></textarea>
+
+      <div class="row">
+        <label class="toggle"><input id="autocenter" type="checkbox" checked><span>Auto-center</span></label>
+        <label class="toggle"><input id="darkbg" type="checkbox" checked><span>Dark background</span></label>
+        <label class="toggle"><input id="labels" type="checkbox"><span>Atom indices</span></label>
+        <select id="style" class="select" title="Render style">
+          <option value="ballstick">Ball & Sticks</option>
+          <option value="stick">Sticks</option>
+          <option value="sphere">Spacefill</option>
+          <option value="line">Lines</option>
+        </select>
+        <button id="clear" class="btn secondary">Clear</button>
+        <button id="copy" class="btn">Copy XYZ</button>
+      </div>
+
+      <div class="hint">Accepted delimiters: spaces, commas, or tabs. Comments and blank lines are ignored. Numbers like <code>0.</code> are OK.</div>
+    </div>
+
+    <div class="card viewer">
+      <div id="viewer"></div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const textarea = document.getElementById('coords');
+  const file = document.getElementById('file');
+  const styleSel = document.getElementById('style');
+  const autocenter = document.getElementById('autocenter');
+  const darkbg = document.getElementById('darkbg');
+  const labelsToggle = document.getElementById('labels');
+  const btnClear = document.getElementById('clear');
+  const btnCopy = document.getElementById('copy');
+  const exDr = document.getElementById('ex-dr');
+  const exC60 = document.getElementById('ex-c60');
+
+  const viewer = $3Dmol.createViewer('viewer', { backgroundColor: 'black' });
+  let model = null;
+  let typingTimer = null;
+  const debounce = (fn, ms)=>{ clearTimeout(typingTimer); typingTimer = setTimeout(fn, ms); };
+
+  const isNum = (s) => /^[-+]?\d*(?:\.\d+)?(?:[eE][-+]?\d+)?$/.test(s.trim());
+  const cleanNum = (s) => { const t = s.trim(); if (/^[-+]?\d+\.$/.test(t)) return t + '0'; if (/^[-+]?\.$/.test(t)) return '0.0'; return t; };
+  const canonElem = (sym) => { const s = sym.trim().toLowerCase(); if (!s) return ''; return s.length === 1 ? s.toUpperCase() : (s[0].toUpperCase()+s.slice(1)); };
+
+  function parseAtoms(text){
+    const atoms = [], bad=[];
+    const lines = text.split(/\r?\n/);
+    for (let i=0;i<lines.length;i++){
+      let line = lines[i];
+      if (!line) continue;
+      line = line.replace(/#.*/, '').replace(/\/\/.*$/, '');
+      if (!line.trim()) continue;
+      const tokens = line.trim().replace(/[;,]/g,' ').replace(/\s+/g,' ').split(' ');
+      if (tokens.length < 4){ bad.push({i,line}); continue; }
+      const elem = canonElem(tokens[0]);
+      const x = cleanNum(tokens[1]); const y = cleanNum(tokens[2]); const z = cleanNum(tokens[3]);
+      if (!elem || !isNum(x) || !isNum(y) || !isNum(z)) { bad.push({i,line}); continue; }
+      atoms.push({elem, x:parseFloat(x), y:parseFloat(y), z:parseFloat(z)});
+    }
+    return {atoms, bad};
+  }
+
+  function toXYZ(atoms, comment='generated by Online Molecular Viewer -> wongzit.github.io'){
+    const lines = [String(atoms.length), comment];
+    for (const a of atoms){ lines.push(`${a.elem}  ${a.x.toFixed(6)}  ${a.y.toFixed(6)}  ${a.z.toFixed(6)}`); }
+    return lines.join('\n');
+  }
+
+  function applyStyle(kind){
+    if (!model) return;
+    const styles = { stick:{stick:{radius:0.18}}, line:{line:{linewidth:1.5}}, sphere:{sphere:{scale:0.28}}, ballstick:{stick:{radius:0.18}, sphere:{scale:0.23}} };
+    model.setStyle({}, styles[kind] || styles.ballstick);
+  }
+  function setBackground(isDark){ viewer.setBackgroundColor(isDark ? 'black' : 'white'); }
+
+  function render(text){
+    const {atoms, bad} = parseAtoms(text);
+    viewer.removeAllModels();
+    viewer.removeAllLabels();
+    model = null;
+
+    if (atoms.length === 0){ viewer.render(); return; }
+
+    const xyz = toXYZ(atoms);
+    model = viewer.addModel(xyz, 'xyz');
+    applyStyle(styleSel.value);
+
+    if (labelsToggle.checked){
+      const fontColor = darkbg.checked ? 'black' : 'white';
+      atoms.forEach((a,i)=>{
+        viewer.addLabel(String(i+1), { position: {x:a.x,y:a.y,z:a.z}, fontSize: 14, fontColor, inFront: true });
+      });
+    }
+
+    if (autocenter.checked){ viewer.zoomTo(); }
+    viewer.render();
+  }
+
+  textarea.addEventListener('input', () => debounce(() => render(textarea.value), 160));
+  styleSel.addEventListener('change', () => { applyStyle(styleSel.value); viewer.render(); });
+  autocenter.addEventListener('change', () => { if (model) { viewer.zoomTo(); viewer.render(); } });
+  darkbg.addEventListener('change', () => { setBackground(darkbg.checked); render(textarea.value); });
+  labelsToggle.addEventListener('change', () => render(textarea.value));
+
+  btnClear.addEventListener('click', () => { textarea.value = ''; render(''); });
+  btnCopy.addEventListener('click', async () => {
+    const {atoms} = parseAtoms(textarea.value);
+    const xyz = toXYZ(atoms);
+    try { await navigator.clipboard.writeText(xyz); btnCopy.textContent = 'Copied ✓'; setTimeout(()=>btnCopy.textContent='Copy XYZ', 1000); }
+    catch { btnCopy.textContent = 'Copied'; setTimeout(()=>btnCopy.textContent='Copy XYZ', 1000); }
+  });
+
+  file.addEventListener('change', async (e) => { const f = e.target.files?.[0]; if (!f) return; const text = await f.text(); textarea.value = text; render(text); file.value=''; });
+  const viewDiv = document.getElementById('viewer');
+  ;['dragenter','dragover'].forEach(ev => viewDiv.addEventListener(ev, (e)=>{ e.preventDefault(); e.dataTransfer.dropEffect='copy'; viewDiv.style.outline='2px dashed #60a5fa'; viewDiv.style.outlineOffset='-8px'; }));
+  ;['dragleave','drop'].forEach(ev => viewDiv.addEventListener(ev, (e)=>{ e.preventDefault(); viewDiv.style.outline='none'; }));
+  viewDiv.addEventListener('drop', async (e)=>{ const f = e.dataTransfer.files?.[0]; if (!f) return; const text = await f.text(); textarea.value = text; render(text); });
+
+  exDr.addEventListener('click', () => { textarea.value = `C,-0.829,1.334,-0.004\nC,0.088,2.537,-0.049\nC,-0.862,3.718,-0.015\nC,-2.299,3.293,0.057\nC,-2.271,1.737,0.123\nC,-0.441,5.077,-0.131\nC,0.363,7.776,-0.375\nC,-1.388,6.124,-0.254\nC,0.927,5.432,-0.136\nC,1.328,6.762,-0.256\nC,-0.986,7.443,-0.374\nH,-2.447,5.891,-0.266\nH,1.675,4.657,-0.044\nH,-1.732,8.226,-0.470\nH,0.681,8.808,-0.467\nC,-0.383,-0.016,-0.101\nC,0.476,-2.702,-0.299\nC,0.993,-0.342,-0.134\nC,-1.309,-1.087,-0.172\nC,-0.880,-2.399,-0.270\nC,1.421,-1.665,-0.231\nH,1.725,0.452,-0.080\nH,-2.373,-0.878,-0.160\nH,-1.611,-3.200,-0.326\nH,0.814,-3.729,-0.374\nC,2.822,-1.951,-0.258\nC,4.014,-2.150,-0.282\nC,2.723,7.078,-0.261\nC,3.910,7.304,-0.270\nC,5.335,7.425,-0.279\nC,8.125,7.520,-0.318\nC,5.991,8.627,-0.568\nC,6.096,6.286,-0.000\nC,7.489,6.309,-0.029\nC,7.379,8.664,-0.580\nH,5.411,9.518,-0.782\nH,5.575,5.371,0.256\nH,7.888,9.595,-0.809\nH,9.208,7.563,-0.363\nC,5.441,-2.239,-0.304\nC,8.231,-2.271,-0.358\nC,6.177,-1.085,-0.020\nC,6.122,-3.423,-0.605\nC,7.510,-3.429,-0.625\nC,7.571,-1.077,-0.056\nH,5.638,-0.184,0.247\nH,5.560,-4.325,-0.823\nH,8.038,-4.347,-0.865\nH,9.316,-2.289,-0.409\nC,8.294,0.189,0.218\nH,6.816,1.405,-0.729\nC,7.744,1.388,-0.166\nC 10.153,1.390,1.224\nC,8.342,2.624,0.166\nC,9.534,0.208,0.913\nC,9.568,2.635,0.878\nC,7.716,3.848,-0.156\nH,9.978,-0.730,1.230\nH 11.063,3.910,1.781\nH 11.092,1.386,1.770\nC,8.239,5.057,0.237\nH,6.790,3.815,-0.721\nC,9.479,5.059,0.933\nH,9.902,6.005,1.258\nC 10.124,3.889,1.234\nO,0.943,2.542,-1.181\nO,1.063,2.554,0.980\nC,0.305,2.530,-2.438\nH,-0.308,1.631,-2.578\nH,-0.321,3.419,-2.588\nH,1.102,2.532,-3.182\nC,0.568,2.581,2.301\nH,-0.006,3.493,2.503\nH,1.444,2.563,2.952\nH,-0.061,1.711,2.522\nH,-2.835,3.625,-0.839\nH,-2.870,1.290,-0.683\nC,-2.891,1.423,1.470\nH,-2.959,0.409,1.850\nC,-3.305,2.511,2.108\nH,-3.770,2.515,3.089\nC,-3.068,3.774,1.327\nH,-2.491,4.509,1.900\nH,-4.015,4.261,1.064\n`; render(textarea.value); });
+  exC60.addEventListener('click', () => { textarea.value = `C,1.385,3.141,-0.903\nC,0.859,2.671,-2.174\nC,-0.519,2.590,-2.370\nC,-1.429,2.975,-1.304\nC,-0.923,3.426,-0.084\nC,0.512,3.510,0.120\nC,2.577,2.366,-0.597\nC,2.787,1.418,-1.679\nC,1.725,1.607,-2.653\nC,1.177,0.504,-3.310\nC,-1.090,1.442,-3.054\nC,-2.562,2.065,-1.329\nC,-3.144,1.642,-0.134\nC,-2.617,2.111,1.136\nC,-1.529,2.985,1.160\nC,-0.467,2.797,2.135\nC,0.794,3.121,1.492\nC,1.938,2.378,1.785\nC,2.848,1.993,0.719\nC,3.258,0.135,-1.401\nC,3.540,-0.253,-0.029\nC,3.339,0.656,1.009\nC,2.733,0.215,2.254\nC,1.867,1.279,2.734\nC,0.655,0.967,3.351\nC,-0.535,1.742,3.045\nC,-1.668,0.831,3.020\nC,-2.688,1.012,2.085\nC,-2.353,1.117,-2.411\nC,-2.577,-2.366,0.597\nC,-2.848,-1.993,-0.719\nC,-1.938,-2.378,-1.785\nC,-0.794,-3.121,-1.492\nC,-0.512,-3.510,-0.120\nC,-0.859,-2.671,2.174\nC,-1.725,-1.607,2.653\nC,-2.787,-1.418,1.679\nC,-3.259,-0.135,1.401\nC,-3.540,0.253,0.029\nC,-3.339,-0.656,-1.009\nC,-1.867,-1.279,-2.734\nC,-0.655,-0.968,-3.351\nC,0.536,-1.742,-3.046\nC,0.468,-2.797,-2.135\nC,1.530,-2.985,-1.161\nC,0.923,-3.426,0.084\nC,1.429,-2.976,1.304\nC,0.519,-2.591,2.370\nC,-1.177,-0.504,3.310\nC,0.259,-0.420,3.515\nC,1.090,-1.442,3.054\nC,2.352,-1.117,2.411\nC,2.562,-2.065,1.329\nC,3.144,-1.642,0.134\nC,2.617,-2.111,-1.136\nC,2.688,-1.012,-2.085\nC,1.668,-0.832,-3.020\nC,-2.733,-0.215,-2.254\nC,-0.259,0.420,-3.514\nC,-1.385,-3.141,0.903
+`; render(textarea.value); });
+
+  setBackground(true);
+  textarea.value = `C 0. 0. 0.\nH 0. 0. 1.089\nH 1.026 0. -0.363\nH -0.513 -0.889 -0.363\nH -0.513 0.889 -0.363`;
+  render(textarea.value);
+})();
+</script>
+</body>
+</html>
