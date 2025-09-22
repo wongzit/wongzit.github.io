@@ -4,4 +4,4 @@ permalink: /error3/
 title: "not available"
 ---
 
-not abailable befor 23th Octber, 2025.
+not abailable befor 23th Oct., 2025.
