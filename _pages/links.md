@@ -24,9 +24,11 @@ nav_order: 8
 
 ### research groups ⚗️
 
-- [Abe Lab, Hiroshima University](https://hiu-roc.webnode.jp)
-- [The Fukazawa Group, WPI-iCeMS, Kyoto University](https://fukazawa.icems.kyoto-u.ac.jp)
-- [Mori Lab, UOsaka](http://www.chem.eng.osaka-u.ac.jp/mori-lab/)
+<p align="left">
+<a href="https://hiu-roc.webnode.jp"> <img alt="abeg" class="icon" src="/assets/img/link/AbeG.png" style="height:66px; background-color:transparent;"></a>
+<a href="https://fukazawa.icems.kyoto-u.ac.jp"> <img alt="fukazawag" class="icon" src="/assets/img/link/FukazawaG.png" style="height:66px; background-color:transparent;"></a>
+<a href="http://www.chem.eng.osaka-u.ac.jp/mori-lab/"> <img alt="morig" class="icon" src="/assets/img/link/MoriG.png" style="height:66px; background-color:transparent;"></a>
+</p>
 
 <hr />
 
