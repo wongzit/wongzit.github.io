@@ -6,4 +6,4 @@ inline: false
 related_posts: false
 ---
 
-The Online Molecular Viewer has been updated! Check it out [here](https://wongzit.github.io/program/online/molviewer.html) or navigate to **program** → **mol.Viewer**. Enjoy!
+The Online Molecular Viewer has been updated! Check it out [here](https://wongzit.github.io/program/online/molview.html) or navigate to **program** → **mol.Viewer**. Enjoy!
