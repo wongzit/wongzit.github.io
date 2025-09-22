@@ -17,9 +17,9 @@ comments: false
  });
 </script>
 
-<p align = "center">
-<img alt="pykinetics" class="icon" src="/assets/program/pyKinetics_wide.png">
-</p>
+<div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/program/pyKinetics_wide.png" class="img-fluid" %}
+</div>
 
 Latest version: **1.0.0**, updated at 2021-11-10
 
@@ -105,7 +105,7 @@ If a multi-wavelength transient absorption data is read, 3D view plot will be di
 new window (Figure 3). If the .csv file is monochromic data, only time trace plot will be displayed (Figure 6, left).
 
 <p align="center">
-<img alt="pykinetics_fig_3" src="/assets/pyKinetics/fig3.png">
+<img alt="pykinetics_fig_3" src="/assets/pyKinetics/fig3.png" style="width:400px;">
 </p>
 
 > Figure 3. 3D view window of a transient absorption spectra data
@@ -119,9 +119,9 @@ Basic functions in 3D-view window:
 window, select the wavelength from the list box.  
 
 <p align="center">
-<img alt="pykinetics_fig_4" src="/assets/pyKinetics/fig4.png">
-<img alt="pykinetics_fig_5" src="/assets/pyKinetics/fig5.png">
-<img alt="pykinetics_fig_6" src="/assets/pyKinetics/fig6.png">
+<img alt="pykinetics_fig_4" src="/assets/pyKinetics/fig4.png" style="width:400px;">
+<img alt="pykinetics_fig_5" src="/assets/pyKinetics/fig5.png" style="width:400px;">
+<img alt="pykinetics_fig_6" src="/assets/pyKinetics/fig6.png" style="width:400px;">
 </p>
 
 > Figure 4. From top: heatmap, 2D transient absorption spectrum, time traces
@@ -130,8 +130,8 @@ For 2D transient absorption spectrum and time traces, user can highlight a singl
 curve by the slider at the bottom of the window (Figure 5).
 
 <p align="center">
-<img alt="pykinetics_fig_8" src="/assets/pyKinetics/fig8.png">
-<img alt="pykinetics_fig_7" src="/assets/pyKinetics/fig7.png">
+<img alt="pykinetics_fig_8" src="/assets/pyKinetics/fig8.png" style="width:400px;">
+<img alt="pykinetics_fig_7" src="/assets/pyKinetics/fig7.png" style="width:400px;">
 </p>
 
 > Figure 5. Highlight a single curve using slider
@@ -161,9 +161,11 @@ also be displayed on the screen (Figure 6). Initial guess of line fitting could 
 customized from setting panel (Section 3.4).
 
 <p align="center">
-<img alt="pykinetics_fig_9" src="/assets/pyKinetics/fig9.png">
-<img alt="pykinetics_fig_10" src="/assets/pyKinetics/fig10.png">
+<img alt="pykinetics_fig_9" src="/assets/pyKinetics/fig9.png" style="width:400px;">
+<img alt="pykinetics_fig_10" src="/assets/pyKinetics/fig10.png" style="width:400px;">
 </p>
+
+
 
 > Figure 6. (Top) Monochromic time trace, (bottom) line fitting window
 
@@ -174,7 +176,7 @@ the plot style and initial guess of line fitting (Figure 7). After setting the p
 parameters, click the “OK” button to save the changed parameters.
 
 <p align="center">
-<img alt="pykinetics_fig_11" src="/assets/pyKinetics/fig11.png">
+<img alt="pykinetics_fig_11" src="/assets/pyKinetics/fig11.png" style="width:400px;">
 </p>
 
 > Figure 7. Setting panel window of py.**Kinetics**
@@ -193,8 +195,8 @@ allowed by matplotlib. For more information, please refer to the **Appendix** an
 documents. The default line color is `tab:blue` and default colormap is `plasma`.
 
 <p align="center">
-<img alt="pykinetics_fig_12" src="/assets/pyKinetics/fig12.png">
-<img alt="pykinetics_fig_13" src="/assets/pyKinetics/fig13.png">
+<img alt="pykinetics_fig_12" src="/assets/pyKinetics/fig12.png" style="width:400px;">
+<img alt="pykinetics_fig_13" src="/assets/pyKinetics/fig13.png" style="width:400px;">
 </p>
 
 > Figure 8. Time traces with different line width: 0.5 (top) and 1.5 (bottom)
@@ -206,7 +208,7 @@ documents. The default line color is `tab:blue` and default colormap is `plasma`
 *Matplotlib* has several built-in colors, users can use these colors by inputting the color name directly.
 
 <p align="center">
-<img alt="pykinetics_colorpalette" src="/assets/pyKinetics/colorpalette.png">
+<img alt="pykinetics_colorpalette" src="/assets/pyKinetics/colorpalette.png" style="width:400px;">
 </p>
 
 ### 2. Use single character
@@ -215,7 +217,7 @@ The following eight major colors can be specified with a single character, consi
 three primary colors of light (RGB), the three primary colors of color (CMY), and black and white (KW).
 
 <p align="center">
-<img alt="pykinetics_onechar" src="/assets/pyKinetics/onechar.png">
+<img alt="pykinetics_onechar" src="/assets/pyKinetics/onechar.png" style="width:400px;">
 </p>
 
 ### 3. Use HEX color codes
@@ -224,7 +226,7 @@ three primary colors of light (RGB), the three primary colors of color (CMY), an
 such as `#ff0000` (red), `#000000` (black). Here are some examples:
 
 <p align="center">
-<img alt="pykinetics_hex" src="/assets/pyKinetics/hex.png">
+<img alt="pykinetics_hex" src="/assets/pyKinetics/hex.png" style="width:400px;">
 </p>
 
 ### 4. Use greyscale
@@ -232,7 +234,7 @@ such as `#ff0000` (red), `#000000` (black). Here are some examples:
 Color can also be specified in a grayscale from 0.0 (black) to 1.0 (white).
 
 <p align="center">
-<img alt="pykinetics_grey" src="/assets/pyKinetics/grey.png">
+<img alt="pykinetics_grey" src="/assets/pyKinetics/grey.png" style="width:400px;">
 </p>
 
 > Although RGB code (e.g.: `[1.0 0.5 0.0]`) is supported by matplotlib for color specifying, but due 
@@ -244,7 +246,7 @@ to variable type problem, RGB code is not allowed in py.**Kinetics**.
 these colormap by colormap code. All available colormap are listed following.
 
 <p align="center">
-<img alt="pykinetics_cmap" src="/assets/pyKinetics/cmap.png">
+<img alt="pykinetics_cmap" src="/assets/pyKinetics/cmap.png" style="width:400px;">
 </p>
 
 ## LICENSE
