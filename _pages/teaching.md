@@ -7,8 +7,6 @@ nav: true
 nav_order: 7
 ---
 
-*under construction*
-
 資料のダウンロードに必要なパスワードは，授業中に公開いたします．
 
 <hr/>
