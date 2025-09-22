@@ -7,6 +7,8 @@ nav: true
 nav_order: 8
 ---
 
+<hr />
+
 ### tools & websites 🌏
 
 - [Online Molecular Viewer](https://wongzit.github.io/program/online/molviewer.html) *based on XYZ coordinates.*
@@ -17,23 +19,6 @@ nav_order: 8
 - [BSE](http://basissetexchange.org): *Basis set exchange.*
 - [Maze Generator](https://www.mazegenerator.net): *A maze generator.*
 - [與佛論禪](https://www.keyfc.net/bbs/tools/tudoucode.aspx)
-
-<hr />
-
-### universities 🏫
-
-- [College of Chemistry and Chemical Engineering, UPC](http://cce.upc.edu.cn)
-- [Department of Chemistry, HU](https://chemistry.hiroshima-u.ac.jp)
-
-<p align="left">
-<a href="https://www.osaka-u.ac.jp/ja"> <img alt="uosaka" class="icon" src="/assets/img/link/uosaka.png" style="height:86px; background-color:transparent;"></a>
-<a href="http://www.epc.osaka-u.ac.jp"> <img alt="uoepc" class="icon" src="/assets/img/link/uoepc.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://www.applchem.eng.osaka-u.ac.jp"> <img alt="uoappchem" class="icon" src="/assets/img/link/uoappchem.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://www.kyoto-u.ac.jp/ja"> <img alt="ku" class="icon" src="/assets/img/link/ku.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://www.icems.kyoto-u.ac.jp"> <img alt="icems" class="icon" src="/assets/img/link/icems.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://www.hiroshima-u.ac.jp"> <img alt="hu" class="icon" src="/assets/img/link/hu.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://www.upc.edu.cn"> <img alt="upc" class="icon" src="/assets/img/link/upc.png" style="height:86px; background-color:transparent;"></a>
-</p>
 
 <hr />
 
@@ -91,6 +76,20 @@ nav_order: 8
 <a href="https://www.rkk-web.jp"> <img alt="rkk" class="icon" src="/assets/img/link/rkk.png" style="height:86px; background-color:transparent;"></a>
 <a href="https://www.chemsoc.org.cn"> <img alt="ccs" class="icon" src="/assets/img/link/ccs.png" style="height:86px; background-color:transparent;"></a>
 <a href="https://www.acs.org"> <img alt="acs" class="icon" src="/assets/img/link/acs.png" style="height:86px; background-color:transparent;"></a>
+</p>
+
+<hr />
+
+### universities 🏫
+
+<p align="left">
+<a href="https://www.osaka-u.ac.jp/ja"> <img alt="uosaka" class="icon" src="/assets/img/link/uosaka.png" style="height:86px; background-color:transparent;"></a>
+<a href="http://www.epc.osaka-u.ac.jp"> <img alt="uoepc" class="icon" src="/assets/img/link/uoepc.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.applchem.eng.osaka-u.ac.jp"> <img alt="uoappchem" class="icon" src="/assets/img/link/uoappchem.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.kyoto-u.ac.jp/ja"> <img alt="ku" class="icon" src="/assets/img/link/ku.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.icems.kyoto-u.ac.jp"> <img alt="icems" class="icon" src="/assets/img/link/icems.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.hiroshima-u.ac.jp"> <img alt="hu" class="icon" src="/assets/img/link/hu.png" style="height:86px; background-color:transparent;"></a>
+<a href="https://www.upc.edu.cn"> <img alt="upc" class="icon" src="/assets/img/link/upc.png" style="height:86px; background-color:transparent;"></a>
 </p>
 
 <hr />
