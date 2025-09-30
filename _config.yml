@@ -14,7 +14,7 @@ footer_text: >
   At <a href="https://www.applchem.eng.osaka-u.ac.jp" target="_blank">Graduate School of Engineering</a>, <a href="https://www.osaka-u.ac.jp/en">The University of Osaka</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon_2.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://wongzit.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
