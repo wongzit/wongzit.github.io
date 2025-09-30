@@ -25,13 +25,13 @@ nav_order: 8
 ### inside 🔐
 
 <p align="left">
-<a href="http://www.chem.eng.osaka-u.ac.jp/mori-lab/labware.html"> <img alt="labware" class="icon" src="/assets/img/link/labware.png" style="height:86px; background-color:transparent;"></a>
-<a href="http://www.chem.eng.osaka-u.ac.jp/mori-lab/shilcos.html"> <img alt="shilcos" class="icon" src="/assets/img/link/shilcos.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://www-aif.eng.osaka-u.ac.jp"> <img alt="aif" class="icon" src="/assets/img/link/aif.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://www.opf.osaka-u.ac.jp/home"> <img alt="ressys" class="icon" src="/assets/img/link/ressys.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://occs.epc.osaka-u.ac.jp/"> <img alt="occs" class="icon" src="/assets/img/link/occs.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://ogcs.epc.osaka-u.ac.jp/"> <img alt="ogcs" class="icon" src="/assets/img/link/ogcs.png" style="height:86px; background-color:transparent;"></a>
-<a href="https://my.osaka-u.ac.jp"> <img alt="myhandai" class="icon" src="/assets/img/link/myhandai.png" style="height:86px; background-color:transparent;"></a>
+<a href="http://www.chem.eng.osaka-u.ac.jp/mori-lab/labware.html"> <img alt="labware" class="icon" src="/assets/img/link/labware.png" style="height:76px; background-color:transparent;"></a>
+<a href="http://www.chem.eng.osaka-u.ac.jp/mori-lab/shilcos.html"> <img alt="shilcos" class="icon" src="/assets/img/link/shilcos.png" style="height:76px; background-color:transparent;"></a>
+<a href="https://www-aif.eng.osaka-u.ac.jp"> <img alt="aif" class="icon" src="/assets/img/link/aif.png" style="height:76px; background-color:transparent;"></a>
+<a href="https://www.opf.osaka-u.ac.jp/home"> <img alt="ressys" class="icon" src="/assets/img/link/ressys.png" style="height:76px; background-color:transparent;"></a>
+<a href="https://occs.epc.osaka-u.ac.jp/"> <img alt="occs" class="icon" src="/assets/img/link/occs.png" style="height:76px; background-color:transparent;"></a>
+<a href="https://ogcs.epc.osaka-u.ac.jp/"> <img alt="ogcs" class="icon" src="/assets/img/link/ogcs.png" style="height:76px; background-color:transparent;"></a>
+<a href="https://my.osaka-u.ac.jp"> <img alt="myhandai" class="icon" src="/assets/img/link/myhandai.png" style="height:76px; background-color:transparent;"></a>
 </p>
 
 <hr />
