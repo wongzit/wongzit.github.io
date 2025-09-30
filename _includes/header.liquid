@@ -3,6 +3,7 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
+        <img src="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}" alt="Site Icon" style="height: 70px;">
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
@@ -20,7 +21,6 @@
             {{- site.title -}}
           {% endif %}
         </a>
-        <img src="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}" alt="Site Icon" style="height: 70px;">
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
