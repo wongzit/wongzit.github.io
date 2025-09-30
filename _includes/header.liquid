@@ -20,6 +20,7 @@
             {{- site.title -}}
           {% endif %}
         </a>
+        <img src="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}" alt="Site Icon" style="height: 70px;">
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
