@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Dr.
-middle_name: Zhe
-last_name: WANG
+first_name: Zhe
+middle_name: WANG,
+last_name: Dr.
 contact_note: >
   Unless we change directions, we will end up where we are headed.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
