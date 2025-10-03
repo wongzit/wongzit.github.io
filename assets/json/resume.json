@@ -24,51 +24,51 @@
     {
       "name": "Research Center for Environmental Preservation, Division of Applied Chemistry, Graduate School of Engineering, The University of Osaka",
       "position": "Assistant Professor",
+      "location": "Suita, Japan",
       "url": "http://www.chem.eng.osaka-u.ac.jp/mori-lab/",
       "startDate": "2025-08-01",
       "endDate": "",
-      "summary": "Suita City, Osaka, Japan",
-      "highlights": ["Physical Organic Chemistry", "PhotoChemistry"]
+      "highlights": ["Photochemistry", "Circularly Polarized Luminescence", "Open-shell Species"]
     },
     {
       "name": "WPI-iCeMS, KUIAS, Kyoto University",
       "position": "Program-Specific Researcher",
+      "location": "Kyoto, Japan",
       "url": "https://fukazawa.icems.kyoto-u.ac.jp",
       "startDate": "2022-10-01",
       "endDate": "2025-07-31",
-      "summary": "Kyoto City, Kyoto, Japan",
-      "highlights": ["Physical Organic Chemistry", "Non-benzenoid Aromatic Compounds"]
+      "highlights": ["Non-benzenoid Aromatic Compounds"]
     }
   ],
   "education": [
     {
       "institution": "Hiroshima University",
-      "location": "Hiroshima, Japan",
+      "location": "Department of Chemistry, Graduate School of Science, Hiroshima, Japan",
       "url": "https://hiu-roc.webnode.jp",
-      "area": "Graduate School of Science",
-      "studyType": "Ph.D., Supervisor: Prof. Dr. Manabu Abe",
+      "area": "Supervisor: Prof. Dr. Manabu Abe",
+      "studyType": "Ph.D.",
       "startDate": "2019-10-01",
       "endDate": "2022-09-20",
       "score": "10",
-      "courses": ["Physical Organic Chemistry", "Radical Chemistry"]
+      "courses": ["Photochemistry", "Diradicals", "Reactive Species"]
     },
     {
       "institution": "Hiroshima University",
-      "location": "Hiroshima, Japan",
+      "location": "Department of Chemistry, Graduate School of Science, Hiroshima, Japan",
       "url": "https://hiu-roc.webnode.jp",
-      "area": "Graduate School of Science",
-      "studyType": "M.Sc., Supervisor: Prof. Dr. Manabu Abe",
+      "area": "Supervisor: Prof. Dr. Manabu Abe",
+      "studyType": "M.Sc.",
       "startDate": "2017-10-01",
       "endDate": "2019-09-20",
       "score": "10",
       "courses": ["Physical Organic Chemistry", "Radical Chemistry"]
     },
     {
-      "institution": "China University of Petroleum (East China)",
+      "institution": "Faculty of Chemical Engineering, China University of Petroleum (East China)",
       "location": "Qingdao, P.R.China",
       "url": "https://english.upc.edu.cn",
-      "area": "Faculty of Chemical Engineering",
-      "studyType": "B.Eng., Supervisor: Prof. Dr. Huie Liu",
+      "area": "Supervisor: Prof. Dr. Huie Liu",
+      "studyType": "B.Eng.",
       "startDate": "2013-09-01",
       "endDate": "2017-06-21",
       "score": "10",
