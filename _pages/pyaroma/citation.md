@@ -11,7 +11,7 @@ permalink: /program/pyaroma/citation/
 
 <hr/>
 
-- D. Gibney, J.-N. Boyn,\* *J. Phys. Chem. A*, **2025**, *ASAP*. DOI: [10.1021/acs.jpca.5c05283](https://doi.org/10.1021/acs.jpca.5c05283)
+- D. Gibney, J.-N. Boyn,\* *J. Phys. Chem. A*, **2025**, *A129*, 9001-9010. DOI: [10.1021/acs.jpca.5c05283](https://doi.org/10.1021/acs.jpca.5c05283)
 
 - M. Jana, G. Velmurugan, S. Sahoo, P. Comba,\* H. Rath,\* *Org. Chem. Front.*, **2025**, *Advance Article*. DOI: [10.1039/d5qo01088h](https://doi.org/10.1039/d5qo01088h)
 
