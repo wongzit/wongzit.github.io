@@ -17,7 +17,7 @@ nav_order: 7
 
 #### 有機化学演習I
 
-- [第1章演習問題および解答例](https://wongzit.github.io/error1/)
+- [第1章演習問題および解答例](https://wongzit.github.io/assets/pdf/2025_exoc1.pdf)
 - [第2章演習問題および解答例](https://wongzit.github.io/error2/)
 - [第3章演習問題および解答例](https://wongzit.github.io/error3/)
 
