@@ -11,6 +11,8 @@ permalink: /program/pyaroma/citation/
 
 <hr/>
 
+- C.-L. Deng, B. Y. E. Tra, X. Zhang, C. Zhang, R. J. Gilliard Jr.,\* *Nat. Chem.*, **2025**, DOI: [10.1038/s41557-025-01941-6](https://doi.org/10.1038/s41557-025-01941-6)
+
 - K. Sharma, H. B. Deore, V. D. Ghule,\* S. Dharavath, *Comput. Theor. Chem.*, **2025**, *In Press*. DOI: [10.1016/j.comptc.2025.115530](https://doi.org/10.1016/j.comptc.2025.115530)
 
 - D. Gibney, J.-N. Boyn,\* *J. Phys. Chem. A*, **2025**, *A129*, 9001-9010. DOI: [10.1021/acs.jpca.5c05283](https://doi.org/10.1021/acs.jpca.5c05283)
