@@ -11,13 +11,15 @@ permalink: /program/pyaroma/citation/
 
 <hr/>
 
-**21 citations by Oct. 8, 2025**
+**22 citations by Oct. 8, 2025**
 
 - S. Senn, J.-M. Mörsdorf,\* M.-S. Bertrams, C. Kerzig,\* J. Ballmann, *Chem. Sci.*, **2025**, *Advance Article*. DOI: [10.1039/d5sc03752b](https://doi.org/10.1039/d5sc03752b)
 
 - C.-L. Deng, B. Y. E. Tra, X. Zhang, C. Zhang, R. J. Gilliard Jr.,\* *Nat. Chem.*, **2025**, DOI: [10.1038/s41557-025-01941-6](https://doi.org/10.1038/s41557-025-01941-6)
 
 - K. Sharma, H. B. Deore, V. D. Ghule,\* S. Dharavath, *Comput. Theor. Chem.*, **2025**, *In Press*. DOI: [10.1016/j.comptc.2025.115530](https://doi.org/10.1016/j.comptc.2025.115530)
+
+- W. Kies, E. Misselwitz, J. Borstelmann, G. Berger, F. Rominger, M. Kivala,\* *Synlett*, **2025**, *Accepted Manuscript*. DOI: [10.1055/a-2698-2720](10.1055/a-2698-2720)
 
 - D. Gibney, J.-N. Boyn,\* *J. Phys. Chem. A*, **2025**, *129*, 9001-9010. DOI: [10.1021/acs.jpca.5c05283](https://doi.org/10.1021/acs.jpca.5c05283)
 
