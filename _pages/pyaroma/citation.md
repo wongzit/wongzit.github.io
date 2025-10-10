@@ -11,8 +11,6 @@ permalink: /program/pyaroma/citation/
 
 <hr/>
 
-**22 citations by Oct. 8, 2025**
-
 1. B. Miroslaw,\* P. Rejmak, I. Dybala, U. Kosikowska, S. Andrzejczuk, Łukasz Światek, K. Salwa, O. M. Demchuk,\* *Molecules*, **2025**, *30*, 4018. DOI: [10.3390/molecules30194018](https://doi.org/10.3390/molecules30194018)
 
 1. S. Senn, J.-M. Mörsdorf,\* M.-S. Bertrams, C. Kerzig,\* J. Ballmann, *Chem. Sci.*, **2025**, *Advance Article*. DOI: [10.1039/d5sc03752b](https://doi.org/10.1039/d5sc03752b)
