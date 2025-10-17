@@ -11,10 +11,6 @@ permalink: /program/pyaroma/
 
 <hr/>
 
-<div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/pyAroma/hp_banner_v4.png" class="img-fluid" %}
-</div>
-
 <p><img src="assets/pyAroma/hp_banner_v4.png" alt="py.Aroma 4"></p>
 
 **py.Aroma 4** is a free, open-source program kit for analyses of aromaticity. It supports BLA, HOMA, HOMER, POAV and NICS (ICSS), and also combined the basic function of [**py.NMR**](https://github.com/wongzit/pyNMR) and [**CSIgen**](https://github.com/wongzit/CSIgen).
