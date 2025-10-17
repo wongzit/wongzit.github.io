@@ -20,9 +20,9 @@ nav_order: 7
 - [第1章演習問題および解答例](https://wongzit.github.io/assets/pdf/2025_exoc1.pdf)
 - [第2章演習問題および解答例](https://wongzit.github.io/assets/pdf/2025_exoc2.pdf)
 - [第3章演習問題および解答例](https://wongzit.github.io/assets/pdf/2025_exoc3.pdf)
-- [第3章演習問題解説]()
+- [演習問題解説]()
 
 #### 有機化学実験
 
-- [SN2反応](https://wongzit.github.io/error4/)
-- [シリカゲルカラム](https://wongzit.github.io/error5/)
+- [SN2反応]()
+- [シリカゲルカラム]()
