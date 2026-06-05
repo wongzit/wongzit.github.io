@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog · Zhe WANG</title>
+  <meta name="description" content="Notes on computational chemistry, tools and methods by Zhe WANG.">
+  <link rel="stylesheet" href="assets/css/style.css?v=8">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container reading">
+    <div class="page-head">
+      <div class="kicker">// blog</div>
+      <h1>Blog</h1>
+      <p class="lead">Notes, methods and walkthroughs. Search or filter by tag below.</p>
+    </div>
+
+    <div class="blog-toolbar">
+      <input id="post-search" class="search-box" type="search" placeholder="Search posts…">
+    </div>
+    <div id="tag-filter" class="tag-filter" style="margin-bottom:22px"></div>
+
+    <div id="post-list"></div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script src="assets/js/site.js?v=8"></script>
+  <script src="assets/js/blog.js?v=8"></script>
+  <script>renderBlogIndex();</script>
+</body>
+</html>
