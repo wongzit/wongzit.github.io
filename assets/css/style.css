@@ -188,6 +188,13 @@ main { padding: 46px 0 70px; min-height: 60vh; }
   border-radius: var(--radius); padding: 22px 24px; transition: border-color .2s, transform .2s;
 }
 .card:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+
+/* concept image inside a research card (sits between title and text) */
+.res-img {
+  display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover;
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  margin: 14px 0 16px;
+}
 .grid { display: grid; gap: 18px; }
 .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
 .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
@@ -282,7 +289,7 @@ main { padding: 46px 0 70px; min-height: 60vh; }
   padding: 26px 0; align-items: start;
 }
 .pub__thumb {
-  width: 100%; aspect-ratio: 4 / 3; object-fit: contain;
+  width: 100%; height: auto; display: block;   /* take the image's own aspect ratio */
   background: var(--bg-elev); border: 1px solid var(--border);
   border-radius: var(--radius-sm); padding: 6px;
   cursor: zoom-in; transition: border-color .18s, transform .18s;
