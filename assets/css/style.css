@@ -195,6 +195,41 @@ main { padding: 46px 0 70px; min-height: 60vh; }
   border: 1px solid var(--border); border-radius: var(--radius-sm);
   margin: 14px 0 16px;
 }
+
+/* ---- Compound gallery (CAS No.) ---------------------------------------- */
+.cas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.cas-card {
+  position: relative;
+  background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; transition: border-color .18s, transform .18s, box-shadow .18s;
+}
+.cas-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow); }
+.cas-card__img {                      /* animated preview (.gif): crystal or QM-optimized structure */
+  display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain;
+  background: #fff; padding: 8px; border-bottom: 1px solid var(--border);
+}
+.cas-card__body { padding: 12px 14px 14px; }
+.cas-card__name { font-weight: 700; color: var(--text); margin: 0 0 4px; }
+.cas-card__meta { color: var(--text-faint); font-size: 0.84rem; font-family: var(--font-mono); }
+.cas-card__links { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.cas-card__links a {
+  font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em;
+  padding: 4px 9px; border-radius: 6px; border: 1px solid var(--border); color: var(--text-dim);
+}
+.cas-card__links a:hover { border-color: var(--accent); color: var(--accent); }
+
+/* structure-type badge, sits on the top-left of the preview */
+.cas-badge {
+  position: absolute; top: 8px; left: 8px; z-index: 1;
+  font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  padding: 3px 8px; border-radius: 100px; border: 1px solid;
+}
+.cas-badge.xrd  { color: var(--accent);   background: var(--accent-soft);
+                  border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+.cas-badge.calc { color: var(--accent-2); background: color-mix(in srgb, var(--accent-2) 14%, transparent);
+                  border-color: color-mix(in srgb, var(--accent-2) 35%, transparent); }
+
 .grid { display: grid; gap: 18px; }
 .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
 .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }

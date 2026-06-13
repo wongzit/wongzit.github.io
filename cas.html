@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
+  <title>CAS No. · Zhe WANG</title>
+  <meta name="description" content="CAS numbers and structures of compounds from Zhe WANG's publications.">
+  <link rel="stylesheet" href="assets/css/style.css?v=11">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container reading" style="max-width:900px">
+    <div class="page-head">
+      <div class="kicker">// research</div>
+      <h1>CAS No.</h1>
+      <p class="lead">Compounds from my publications. The preview shows the
+        single-crystal structure where one was determined, otherwise the
+        QM-optimized geometry.</p>
+    </div>
+
+    <p class="pub-nav">
+      <a href="research.html">← research</a>
+    </p>
+
+    <hr class="divider">
+
+    <!-- ====================================================================
+         COMPOUNDS
+         One <div class="cas-card"> per compound. Copy a block to add more.
+
+         • Preview: an animated .gif (e.g. a rotating molecule) in
+           assets/img/cas/<name>.gif
+         • Badge: use class "xrd" for a single-crystal structure, or "calc"
+           for a QM-optimized structure — and set its label text accordingly.
+         • CAS link points to CAS Common Chemistry; change/remove as you like.
+         ==================================================================== -->
+    <div class="cas-grid">
+
+      <!-- Example: published WITH a single-crystal structure -->
+      <div class="cas-card">
+        <span class="cas-badge xrd">SCXRD</span>
+        <img class="cas-card__img" src="assets/img/cas/compound-1.gif" alt="Crystal structure animation"
+             onerror="this.style.opacity=.25">
+        <div class="cas-card__body">
+          <p class="cas-card__name">Compound name / label</p>
+          <p class="cas-card__meta">CAS 000000-00-0</p>
+          <div class="cas-card__links">
+            <a href="https://commonchemistry.cas.org/results?q=000000-00-0" target="_blank" rel="noopener">CAS</a>
+            <a href="https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=0000000" target="_blank" rel="noopener">CCDC</a>
+            <a href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example: QM-optimized structure only -->
+      <div class="cas-card">
+        <span class="cas-badge calc">QM-opt</span>
+        <img class="cas-card__img" src="assets/img/cas/compound-2.gif" alt="Optimized structure animation"
+             onerror="this.style.opacity=.25">
+        <div class="cas-card__body">
+          <p class="cas-card__name">Compound name / label</p>
+          <p class="cas-card__meta">CAS 000000-00-0</p>
+          <div class="cas-card__links">
+            <a href="https://commonchemistry.cas.org/results?q=000000-00-0" target="_blank" rel="noopener">CAS</a>
+            <a href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cas-card">
+        <span class="cas-badge calc">QM-opt</span>
+        <img class="cas-card__img" src="assets/img/cas/compound-3.gif" alt="Optimized structure animation"
+             onerror="this.style.opacity=.25">
+        <div class="cas-card__body">
+          <p class="cas-card__name">Compound name / label</p>
+          <p class="cas-card__meta">CAS 000000-00-0</p>
+          <div class="cas-card__links">
+            <a href="https://commonchemistry.cas.org/results?q=000000-00-0" target="_blank" rel="noopener">CAS</a>
+            <a href="#" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/site.js?v=11"></script>
+</body>
+</html>
