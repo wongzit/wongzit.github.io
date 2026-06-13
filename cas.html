@@ -33,7 +33,8 @@
            assets/img/cas/<name>.gif
          • Badge: use class "xrd" for a single-crystal structure, or "calc"
            for a QM-optimized structure — and set its label text accordingly.
-         • CAS link points to CAS Common Chemistry; change/remove as you like.
+         • XYZ button: downloads assets/cas/<name>.xyz (Cartesian coordinates).
+           Put the matching .xyz file there; the "download" attribute saves it.
          ==================================================================== -->
     <div class="cas-grid">
 
@@ -46,7 +47,7 @@
           <p class="cas-card__name">Compound name / label</p>
           <p class="cas-card__meta">CAS 000000-00-0</p>
           <div class="cas-card__links">
-            <a href="https://commonchemistry.cas.org/results?q=000000-00-0" target="_blank" rel="noopener">CAS</a>
+            <a href="assets/cas/compound-1.xyz" download>XYZ</a>
             <a href="https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=0000000" target="_blank" rel="noopener">CCDC</a>
             <a href="#" target="_blank" rel="noopener">DOI</a>
           </div>
@@ -55,28 +56,28 @@
 
       <!-- Example: QM-optimized structure only -->
       <div class="cas-card">
-        <span class="cas-badge calc">QM-opt</span>
+        <span class="cas-badge calc">QM</span>
         <img class="cas-card__img" src="assets/img/cas/compound-2.gif" alt="Optimized structure animation"
              onerror="this.style.opacity=.25">
         <div class="cas-card__body">
           <p class="cas-card__name">Compound name / label</p>
           <p class="cas-card__meta">CAS 000000-00-0</p>
           <div class="cas-card__links">
-            <a href="https://commonchemistry.cas.org/results?q=000000-00-0" target="_blank" rel="noopener">CAS</a>
+            <a href="assets/cas/compound-2.xyz" download>XYZ</a>
             <a href="#" target="_blank" rel="noopener">DOI</a>
           </div>
         </div>
       </div>
 
       <div class="cas-card">
-        <span class="cas-badge calc">QM-opt</span>
+        <span class="cas-badge calc">QM</span>
         <img class="cas-card__img" src="assets/img/cas/compound-3.gif" alt="Optimized structure animation"
              onerror="this.style.opacity=.25">
         <div class="cas-card__body">
           <p class="cas-card__name">Compound name / label</p>
           <p class="cas-card__meta">CAS 000000-00-0</p>
           <div class="cas-card__links">
-            <a href="https://commonchemistry.cas.org/results?q=000000-00-0" target="_blank" rel="noopener">CAS</a>
+            <a href="assets/cas/compound-3.xyz" download>XYZ</a>
             <a href="#" target="_blank" rel="noopener">DOI</a>
           </div>
         </div>
