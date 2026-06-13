@@ -52,9 +52,9 @@
 }
 
 [data-theme="light"] {
-  --accent:        #0fa78f;
+  --accent:        #0284c7;   /* ocean blue (light mode only; dark mode stays teal) */
   --accent-2:      #2563eb;
-  --accent-soft:   rgba(15, 167, 143, 0.12);
+  --accent-soft:   rgba(2, 132, 199, 0.13);
 
   --bg:            #f7f8fa;
   --bg-elev:       #ffffff;
