@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
   <title>Publications · Zhe WANG</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=12">
+  <link rel="stylesheet" href="assets/css/style.css?v=13">
 </head>
 <body>
   <div id="site-header"></div>
@@ -15,11 +15,22 @@
     <div class="page-head">
       <div class="kicker">// publications</div>
       <h1>Publications</h1>
-      <p class="lead">公表論文 · also on
-        <a href="https://scholar.google.com/citations?user=gzUh6CMAAAAJ">Google Scholar</a> /
-        <a href="https://orcid.org/0000-0002-9996-586X">ORCID</a>
-      </p>
+      <p class="lead">公表論文</p>
     </div>
+
+    <!-- ====================================================================
+         METRICS  —  "publications" auto-fills from your data. Edit the
+         h-index, i10-index, citations and the "Updated" date below by hand
+         (these come from Google Scholar, which has no public API).
+         ==================================================================== -->
+    <div class="pub-metrics">
+      <div class="pub-metric"><div class="pub-metric__n" id="m-pubs">—</div><div class="pub-metric__l">publications</div></div>
+      <div class="pub-metric"><div class="pub-metric__n">9</div><div class="pub-metric__l">h-index</div></div>
+      <div class="pub-metric"><div class="pub-metric__n">8</div><div class="pub-metric__l">i10-index</div></div>
+      <div class="pub-metric"><div class="pub-metric__n">191</div><div class="pub-metric__l">citations</div></div>
+    </div>
+    <p class="pub-metrics__note">Updated 2026-06-15 · source:
+      <a href="https://scholar.google.com/citations?user=gzUh6CMAAAAJ">Google Scholar</a></p>
 
     <hr class="divider">
 
@@ -44,9 +55,9 @@
   <script async src="https://badge.dimensions.ai/badge.js"></script>
   <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 
-  <script src="data/publications.js?v=12"></script>
-  <script src="assets/js/site.js?v=12"></script>
-  <script src="assets/js/pubs.js?v=12"></script>
+  <script src="data/publications.js?v=13"></script>
+  <script src="assets/js/site.js?v=13"></script>
+  <script src="assets/js/pubs.js?v=13"></script>
   <script>renderPublications(["paper", "review"]);</script>
 </body>
 </html>

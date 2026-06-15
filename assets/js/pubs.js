@@ -159,6 +159,10 @@ function renderPublications(type) {
   const items = all.filter(p => !want || want.includes(p.type || "paper"))
                    .sort((a, b) => b.year - a.year);
 
+  // Auto-fill the publication count in the metrics strip, if present.
+  const countEl = document.getElementById("m-pubs");
+  if (countEl) countEl.textContent = items.length;
+
   if (!items.length) { listEl.innerHTML = `<p class="muted">Nothing here yet.</p>`; return; }
 
   // Year navigation links
