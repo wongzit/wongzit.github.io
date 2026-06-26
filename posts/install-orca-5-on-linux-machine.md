@@ -30,10 +30,10 @@ make install
 
 (2) Add following environmental variables to `~/.bashrc`:
 
-{% highlight xml %}
+```
 export PATH=/home/wangzhe/openmpi411/bin:$PATH
 export LD_LIBRARY_PATH=/home/wangzhe/openmpi411/lib:$LD_LIBRARY_PATH
-{% endhighlight %}
+```
 
 (3) Execute `mpiexec -V` to check the installation was succeeded or not.
 
