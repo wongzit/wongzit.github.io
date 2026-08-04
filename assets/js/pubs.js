@@ -7,7 +7,7 @@
    ========================================================================== */
 
 // Order action buttons are shown in (left → right).
-const BTN_ORDER = ["DOI", "ABS", "BIB", "HTML", "PREPRINT", "PDF", "CODE", "SI"];
+const BTN_ORDER = ["DOI", "ABS", "BIB", "HTML", "PREPRINT", "PDF", "ESI", "CODE", "SI"];
 
 // Data is loaded via <script src="data/publications.js"> as window.PUBLICATIONS.
 // (Using a script tag instead of fetch() means the pages also work when opened
@@ -27,7 +27,9 @@ function pubButtons(p, uid) {
   if (has("DOI"))                     out.push(`<a class="pub-btn" href="${links.DOI}" target="_blank" rel="noopener">DOI</a>`);
   if (p.abstract)                     out.push(`<button class="pub-btn" onclick="togglePanel('abs-${uid}')">ABS</button>`);
   if (p.bibtex)                       out.push(`<button class="pub-btn" onclick="togglePanel('bib-${uid}')">BIB</button>`);
-  ["HTML", "PREPRINT", "PDF", "CODE", "SI"].forEach(k => {
+  // ESI (electronic supporting information) shows right after PDF, only when
+  // the entry has an "ESI" link in data/publications.js.
+  ["HTML", "PREPRINT", "PDF", "ESI", "CODE", "SI"].forEach(k => {
     if (has(k)) out.push(`<a class="pub-btn" href="${links[k]}" target="_blank" rel="noopener">${k}</a>`);
   });
   // any custom link keys not already handled
