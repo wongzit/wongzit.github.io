@@ -33,6 +33,23 @@ window.PUBLICATIONS = [
   {
     "type": "paper",
     "year": 2026,
+    "title": "Controlling through-space spin coupling via spin-density contact in helical diradicaloids: Insights from fluoreno[3,4-<i>c</i>]fluorene",
+    "authors": "<span class=\"me\">Zhe Wang</span><sup>*</sup>, Nobuhito Kishimoto, Koki Nakatsu, Tadashi Mori<sup>*</sup>",
+    "venue": "<i>ChemRxiv</i>, <b>2026</b>.",
+    "image": "assets/img/pubs/wang2026controlling.png",
+    "doi": "",
+    "links": {
+      "DOI": "https://doi.org/10.26434/chemrxiv.15007137/v1",
+      "PREPRINT": "https://doi.org/10.26434/chemrxiv.15007137/v1",
+      "PDF": "https://wongzit.github.io/assets/pdf/wang2026controlling.pdf",
+      "ESI": "https://wongzit.github.io/assets/pdf/wang2026controlling_esi.pdf"
+    },
+    "abstract": "Harnessing through-space interaction for organic spintronics requires a clear understanding of how spatial overlap dictates spin–spin coupling. We synthesised a helical singlet diradicaloid, fluoreno[3,4-<i>c</i>]fluorene, and decoupled its through-space and through-bond exchange interactions. We demonstrate that effective through-space exchange requires bringing regions of the highest spin density into direct contact, rather than merely maximising π-surface area.",
+    "bibtex": "@article{wang2026controlling,\n  title  = {Controlling through-space spin coupling via spin-density contact in helical diradicaloids: Insights from fluoreno[3,4-c]fluorene},\n  author = {Wang, Zhe and Kishimoto, Nobuhito and Nakatsu, Koki and Mori, Tadashi},\n  journal= {ChemRxiv},\n  year   = {2026},\n  volume = {},\n  pages  = {},\n  doi  = {10.26434/chemrxiv.15007137/v1}\n}"
+  },
+  {
+    "type": "paper",
+    "year": 2026,
     "title": "A Persistent Ni(0)–Pentalene Complex with High Fluxionality: Does Stronger Antiaromaticity Promote Metal–Ligand Interactions?",
     "authors": "Riina Kuwata, Takefumi Imanishi, Shota Hasegawa, <span class=\"me\">Zhe Wang</span>, Junichi Usuba, Kosuke Yasui, Muhammad Usama Gul Khan, Judy I. Wu, Yuta Uetake<sup>*</sup>, Aiko Fukazawa<sup>*</sup>",
     "venue": "<i>J. Am. Chem. Soc.</i>, <b>2026</b>, <i>148</i>, 20974–20984.",
