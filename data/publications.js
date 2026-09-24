@@ -278,7 +278,7 @@ window.PUBLICATIONS = [
   },
   {
     "type": "paper",
-    "year": 2021,
+    "year": 2018,
     "title": "Extremely Long Lived Localized Singlet Diradicals in a Macrocyclic Structure: A Case Study on the Stretch Effect",
     "authors": "Yuta Harada, <span class=\"me\">Zhe Wang</span>, Shunsuke Kumashiro, Sayaka Hatano, Manabu Abe<sup>*</sup>",
     "venue": "<i>Chem. Eur. J.</i>, <b>2018</b>, <i>24</i>, 14808–14815.",
