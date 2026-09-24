@@ -33,6 +33,22 @@ window.PUBLICATIONS = [
   {
     "type": "paper",
     "year": 2026,
+    "title": "Photophysical properties, halochromism and applications of novel Lophines as inkless writing material and in pH responsive fluorescent calcium alginate hydrogel beads",
+    "authors": "Subhash B. Patel, Vidhi V. Bhopekar, Bharvi M. Patel, <span class=\"me\">Zhe Wang</span>, Tadashi Mori, Gajendrasinh B. Raolji, Sasikumar T. Kuttappan, Paresh D. Zalavadiya, Sachin G. Modha<sup>*</sup>",
+    "venue": "<i>J. Lumin.</i>, <b>2026</b>, <i>Accepted manuscript</i>.",
+    "image": "assets/img/pubs/patel2026photophysical.png",
+    "doi": "10.1016/j.jlumin.2026.",
+    "links": {
+      "DOI": "https://doi.org/10.1016/j.jlumin.2026.",
+      "PDF": "https://wongzit.github.io/assets/pdf/patel2026photophysical.pdf",
+      "ESI": "https://wongzit.github.io/assets/pdf/patel2026photophysical_esi.pdf"
+    },
+    "abstract": "Acetylene-containing lophines were synthesized through a sequential approach involving triaryl imidazole formation followed by Sonogashira coupling. The compounds displayed pronounced halochromic behaviour in DMSO solution, emitting bright blue fluorescence in acidic conditions and bright green fluorescence in alkaline media under long-wavelength UV light. Solvatochromic and halochromic properties were systematically investigated across various solvents and pH conditions, and their acid-base dissociation constants were determined. The compounds were successfully applied in an ‘inkless’ secret messaging system on paper, where messages written with the lophine solutions remained invisible under visible light but revealed bright blue fluorescent patterns under long UV illumination. Additionally, the halochromic response enabled the preparation of pH-responsive fluorescent calcium alginate hydrogel beads, which exhibited distinct blue-to-green fluorescence transitions from acidic to alkaline pH. This work highlights the potential of TMS-acetylene and terminal acetylene-functionalized lophines as versatile stimuli-responsive fluorophores for smart materials and forensic applications.",
+    "bibtex": "@article{patel2026photophysical,\n  title  = {Photophysical properties, halochromism and applications of novel Lophines as inkless writing material and in pH responsive fluorescent calcium alginate hydrogel beads},\n  author = {Patel, Subhash B. and Bhopekar, Vidhi V. and Patel, Bharvi M. and Wang, Zhe and Mori, Tadashi and Raolji, Gajendrasinh B. and Kuttappan, Sasikumar T. and Zalavadiya, Paresh D. and Modha, Sachin G.},\n  journal= {J. Lumin.},\n  year   = {2026},\n  volume = {},\n  pages  = {},\n  doi  = {}\n}"
+  },
+  {
+    "type": "paper",
+    "year": 2026,
     "title": "Controlling through-space spin coupling via spin-density contact in helical diradicaloids: Insights from fluoreno[3,4-<i>c</i>]fluorene",
     "authors": "<span class=\"me\">Zhe Wang</span><sup>*</sup>, Nobuhito Kishimoto, Koki Nakatsu, Tadashi Mori<sup>*</sup>",
     "venue": "<i>ChemRxiv</i>, <b>2026</b>.",
