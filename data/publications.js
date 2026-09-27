@@ -53,7 +53,7 @@ window.PUBLICATIONS = [
     "authors": "<span class=\"me\">Zhe Wang</span><sup>*</sup>, Nobuhito Kishimoto, Koki Nakatsu, Tadashi Mori<sup>*</sup>",
     "venue": "<i>Chem. Commun.</i>, <b>2026</b>, <i>Accepted Manuscripts</i>.",
     "image": "assets/img/pubs/wang2026controlling.png",
-    "doi": "",
+    "doi": "10.1039/d6cc05316e",
     "links": {
       "DOI": "https://doi.org/10.1039/d6cc05316e",
       "PREPRINT": "https://doi.org/10.26434/chemrxiv.15007137/v1",
