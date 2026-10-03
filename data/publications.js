@@ -51,7 +51,7 @@ window.PUBLICATIONS = [
     "year": 2026,
     "title": "Controlling through-space spin coupling <i>via</i> spin-density contact in helical diradicaloids: insights from fluoreno[3,4-<i>c</i>]fluorene",
     "authors": "<span class=\"me\">Zhe Wang</span><sup>*</sup>, Nobuhito Kishimoto, Koki Nakatsu, Tadashi Mori<sup>*</sup>",
-    "venue": "<i>Chem. Commun.</i>, <b>2026</b>, <i>Accepted Manuscripts</i>.",
+    "venue": "<i>Chem. Commun.</i>, <b>2026</b>, <i>Advanced Article</i>.",
     "image": "assets/img/pubs/wang2026controlling.png",
     "doi": "10.1039/d6cc05316e",
     "links": {
