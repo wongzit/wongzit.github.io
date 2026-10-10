@@ -35,16 +35,16 @@ window.PUBLICATIONS = [
     "year": 2026,
     "title": "Photophysical properties, halochromism and applications of novel Lophines as inkless writing material and in pH responsive fluorescent calcium alginate hydrogel beads",
     "authors": "Subhash B. Patel, Vidhi V. Bhopekar, Bharvi M. Patel, <span class=\"me\">Zhe Wang</span>, Tadashi Mori, Gajendrasinh B. Raolji, Sasikumar T. Kuttappan, Paresh D. Zalavadiya, Sachin G. Modha<sup>*</sup>",
-    "venue": "<i>J. Lumin.</i>, <b>2026</b>, <i>Accepted Manuscript</i>.",
+    "venue": "<i>J. Lumin.</i>, <b>2026</b>, <i>In Press</i>.",
     "image": "assets/img/pubs/patel2026photophysical.png",
-    "doi": "10.1016/j.jlumin.2026.",
+    "doi": "10.1016/j.jlumin.2026.122227",
     "links": {
-      "DOI": "https://doi.org/10.1016/j.jlumin.2026.",
+      "DOI": "https://doi.org/10.1016/j.jlumin.2026.122227",
       "PDF": "https://wongzit.github.io/assets/pdf/patel2026photophysical.pdf",
       "ESI": "https://wongzit.github.io/assets/pdf/patel2026photophysical_esi.pdf"
     },
     "abstract": "Acetylene-containing lophines were synthesized through a sequential approach involving triaryl imidazole formation followed by Sonogashira coupling. The compounds displayed pronounced halochromic behaviour in DMSO solution, emitting bright blue fluorescence in acidic conditions and bright green fluorescence in alkaline media under long-wavelength UV light. Solvatochromic and halochromic properties were systematically investigated across various solvents and pH conditions, and their acid-base dissociation constants were determined. The compounds were successfully applied in an ‘inkless’ secret messaging system on paper, where messages written with the lophine solutions remained invisible under visible light but revealed bright blue fluorescent patterns under long UV illumination. Additionally, the halochromic response enabled the preparation of pH-responsive fluorescent calcium alginate hydrogel beads, which exhibited distinct blue-to-green fluorescence transitions from acidic to alkaline pH. This work highlights the potential of TMS-acetylene and terminal acetylene-functionalized lophines as versatile stimuli-responsive fluorophores for smart materials and forensic applications.",
-    "bibtex": "@article{patel2026photophysical,\n  title  = {Photophysical properties, halochromism and applications of novel Lophines as inkless writing material and in pH responsive fluorescent calcium alginate hydrogel beads},\n  author = {Patel, Subhash B. and Bhopekar, Vidhi V. and Patel, Bharvi M. and Wang, Zhe and Mori, Tadashi and Raolji, Gajendrasinh B. and Kuttappan, Sasikumar T. and Zalavadiya, Paresh D. and Modha, Sachin G.},\n  journal= {J. Lumin.},\n  year   = {2026},\n  volume = {},\n  pages  = {},\n  doi  = {}\n}"
+    "bibtex": "@article{patel2026photophysical,\n  title  = {Photophysical properties, halochromism and applications of novel Lophines as inkless writing material and in pH responsive fluorescent calcium alginate hydrogel beads},\n  author = {Patel, Subhash B. and Bhopekar, Vidhi V. and Patel, Bharvi M. and Wang, Zhe and Mori, Tadashi and Raolji, Gajendrasinh B. and Kuttappan, Sasikumar T. and Zalavadiya, Paresh D. and Modha, Sachin G.},\n  journal= {J. Lumin.},\n  year   = {2026},\n  volume = {},\n  pages  = {},\n  doi  = {10.1016/j.jlumin.2026.122227}\n}"
   },
   {
     "type": "paper",
@@ -60,7 +60,7 @@ window.PUBLICATIONS = [
       "PDF": "https://wongzit.github.io/assets/pdf/wang2026controlling.pdf",
       "ESI": "https://wongzit.github.io/assets/pdf/wang2026controlling_esi.pdf"
     },
-    "abstract": "Harnessing through-space interaction for organic spintronics requires a clear understanding of how spatial overlap dictates spin–spin coupling. We synthesised a helical singlet diradicaloid, fluoreno[3,4-<i>c</i>]fluorene, and decoupled its through-space and through-bond exchange interactions. We demonstrate that effective through-space exchange requires bringing regions of the highest spin density into direct contact, rather than merely maximising π-surface area.",
+    "abstract": "Harnessing through-space interaction for organic spintronics requires a clear understanding of how spatial overlap dictates spin–spin coupling.",
     "bibtex": "@article{wang2026controlling,\n  title  = {Controlling through-space spin coupling via spin-density contact in helical diradicaloids: insights from fluoreno[3,4-c]fluorene},\n  author = {Wang, Zhe and Kishimoto, Nobuhito and Nakatsu, Koki and Mori, Tadashi},\n  journal= {Chem. Commun.},\n  year   = {2026},\n  volume = {},\n  pages  = {},\n  doi  = {10.1039/d6cc05316e}\n}"
   },
   {
