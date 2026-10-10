@@ -85,7 +85,7 @@ window.PUBLICATIONS = [
     "year": 2026,
     "title": "Conformational Landscapes in the Ground and Excited States Dictate Circularly Polarized Excimer Emission: A Thermodynamic–Kinetic Interplay in Carbazole Dimer Systems",
     "authors": "Tomohiro Kujime, <span class=\"me\">Zhe Wang</span>, Tadashi Mori<sup>*</sup>",
-    "venue": "<i>Angew. Chem. Int. Ed.</i>, <b>2026</b>, <i>65</i>, e6661486.\n<i>Angew. Chem.</i>, <b>2026</b>, <i>138</i>, e6661486.",
+    "venue": "<i>Angew. Chem. Int. Ed.</i>, <b>2026</b>, <i>65</i>, e6661486.",
     "image": "assets/img/pubs/kujime2026conformational.png",
     "doi": "10.1002/anie.6661486",
     "links": {
