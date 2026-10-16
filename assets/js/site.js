@@ -35,7 +35,7 @@ const SITE = {
       label: "programs", href: "/programs.html",
       children: [
         { label: "py.Aroma",   href: "/program/pyaroma" },
-        { label: "uv.Plotter", href: "/program/uvplotter" },
+        { label: "Excitation Studio", href: "/program/online/tddft/" },
         { label: "mol.Viewer", href: "/program/online/molview.html" },
         { label: "scripts",    href: "/programs.html#scripts" },
       ],
