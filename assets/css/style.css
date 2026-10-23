@@ -373,6 +373,7 @@ main { padding: 46px 0 70px; min-height: 60vh; }
 .pub-group--flat { margin-top: 16px; }                 /* "Most cited": one list, no year headings */
 @media (max-width: 600px) {
   .pub-select { flex: 1 1 auto; font-size: 0.88rem; padding: 11px 34px 11px 14px; background-position: right 14px center; }
+}
 
 /* one year group with the big faded year watermark on the right */
 .pub-group { position: relative; border-top: 1px solid var(--border-soft); padding-top: 22px; margin-top: 48px; }
