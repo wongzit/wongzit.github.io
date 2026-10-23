@@ -51,7 +51,7 @@ window.PUBLICATIONS = [
     "year": 2026,
     "title": "Controlling through-space spin coupling <i>via</i> spin-density contact in helical diradicaloids: insights from fluoreno[3,4-<i>c</i>]fluorene",
     "authors": "<span class=\"me\">Zhe Wang</span><sup>*</sup>, Nobuhito Kishimoto, Koki Nakatsu, Tadashi Mori<sup>*</sup>",
-    "venue": "<i>Chem. Commun.</i>, <b>2026</b>, <i>Advanced Article</i>.",
+    "venue": "<i>Chem. Commun.</i>, <b>2026</b>, <i>62</i>, 21047-21051.",
     "image": "assets/img/pubs/wang2026controlling.png",
     "doi": "10.1039/d6cc05316e",
     "links": {
@@ -61,7 +61,7 @@ window.PUBLICATIONS = [
       "ESI": "https://wongzit.github.io/assets/pdf/wang2026controlling_esi.pdf"
     },
     "abstract": "Harnessing through-space interaction for organic spintronics requires a clear understanding of how spatial overlap dictates spin–spin coupling.",
-    "bibtex": "@article{wang2026controlling,\n  title  = {Controlling through-space spin coupling via spin-density contact in helical diradicaloids: insights from fluoreno[3,4-c]fluorene},\n  author = {Wang, Zhe and Kishimoto, Nobuhito and Nakatsu, Koki and Mori, Tadashi},\n  journal= {Chem. Commun.},\n  year   = {2026},\n  volume = {},\n  pages  = {},\n  doi  = {10.1039/d6cc05316e}\n}"
+    "bibtex": "@article{wang2026controlling,\n  title  = {Controlling through-space spin coupling via spin-density contact in helical diradicaloids: insights from fluoreno[3,4-c]fluorene},\n  author = {Wang, Zhe and Kishimoto, Nobuhito and Nakatsu, Koki and Mori, Tadashi},\n  journal= {Chem. Commun.},\n  year   = {2026},\n  volume = {62},\n  pages  = {21047-21051},\n  doi  = {10.1039/d6cc05316e}\n}"
   },
   {
     "type": "paper",
