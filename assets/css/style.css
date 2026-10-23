@@ -348,6 +348,32 @@ main { padding: 46px 0 70px; min-height: 60vh; }
 }
 .pub-filter:focus { outline: none; border-color: var(--accent); }
 
+/* toolbar: search box + year / sort pull-downs (pubs.js fills the menus) */
+.pub-toolbar { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 4px; }
+.pub-toolbar .pub-filter { flex: 1 1 260px; width: auto; margin: 0; border-radius: 100px; padding: 12px 20px; }
+.pub-select {
+  flex: 0 0 auto; appearance: none; -webkit-appearance: none; cursor: pointer;
+  color: var(--text); background-color: var(--bg-elev);
+  border: 1px solid var(--border); border-radius: 100px;
+  padding: 12px 42px 12px 18px; font-family: var(--font-sans); font-size: 0.95rem;
+  /* ⌄ chevron; its colour is --text-dim written as %23rrggbb (one per theme) */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1.5 1.5l4.5 4.5 4.5-4.5' fill='none' stroke='%239aa7b5' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: right 18px center; background-size: 12px 8px; background-repeat: no-repeat;
+  color-scheme: dark;                                  /* dark menu list in dark mode */
+}
+[data-theme="light"] .pub-select {
+  color-scheme: light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1.5 1.5l4.5 4.5 4.5-4.5' fill='none' stroke='%234a5566' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.pub-select:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
+.pub-toolbar .pub-filter:focus, .pub-select:focus-visible {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.pub-sort-note { font-size: 0.82rem; color: var(--text-faint); margin: 8px 4px 0; min-height: 1.2em; }
+.pub-group--flat { margin-top: 16px; }                 /* "Most cited": one list, no year headings */
+@media (max-width: 600px) {
+  .pub-select { flex: 1 1 auto; font-size: 0.88rem; padding: 11px 34px 11px 14px; background-position: right 14px center; }
+
 /* one year group with the big faded year watermark on the right */
 .pub-group { position: relative; border-top: 1px solid var(--border-soft); padding-top: 22px; margin-top: 48px; }
 .pub-group:first-of-type { border-top: 0; }

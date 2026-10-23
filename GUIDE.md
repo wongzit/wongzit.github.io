@@ -61,7 +61,7 @@ Only five files contain machinery. Everything else is content.
 | --- | --- |
 | `assets/js/site.js` | Navbar, footer, dark/light theme, cursor glow, base-path detection |
 | `assets/js/blog.js` | Blog index, tag filter, Markdown→HTML rendering, math, latest-posts table |
-| `assets/js/pubs.js` | Publication list rendering, year grouping, buttons, cover slideshow, lightbox |
+| `assets/js/pubs.js` | Publication list rendering, year grouping, search / year / sort pull-downs, buttons, cover slideshow, lightbox |
 | `assets/js/cas.js` | Rotatable 3D molecule viewers on the compound gallery (`cas.html`) |
 | `assets/css/style.css` | All styling for the entire site |
 
@@ -302,7 +302,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=15`, test repo at `?v=23`. They are
+Current state: live repo is at `?v=16`, test repo at `?v=24`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -467,7 +467,7 @@ Field by field:
 
 - **`year`** — a number, not a string. Entries are grouped by year automatically
   (newest first), the large faded year number is drawn once per group, and the
-  "List by Year" links are generated for you.
+  year pull-down above the list is filled in for you.
 - **`title`** — HTML allowed (`<i>`, `<sub>`, `<sup>`) for italicised locants
   such as `fluoreno[3,4-<i>c</i>]fluorene`.
 - **`authors`** — HTML string. Wrap your own name in
@@ -529,6 +529,37 @@ the arrows, dots or ← → keys, and click a cover to enlarge it.
 > If the page goes blank, this is the first thing to check — open the browser
 > console (⌥⌘I on macOS) and you will see the syntax error and its line number.
 > You can also check from the terminal: `node --check data/publications.js`.
+
+**Search, year and sort.** Above the list on `publications.html`,
+`papers.html` and `reviews.html` sits a toolbar: a search box (title, authors,
+journal, year), a **year** pull-down and a **sort** pull-down
+(新しい順 Newest first / 古い順 Oldest first / 被引用数順 Most cited).
+Nothing needs maintaining:
+
+- The year menu lists whichever years occur in `data/publications.js`.
+- **Most cited** uses the number in each entry's Dimensions badge (total
+  citations), read from the badge after it loads. Entries without a `doi`, or
+  whose badge did not load (e.g. an ad blocker), go to the end, and the line
+  under the toolbar says how many. Ties stay newest first. In this mode the
+  list is one block without year headings.
+- The choice is kept in the address bar, so a link such as
+  `publications.html?year=2024` or `papers.html?sort=cited` opens the page that
+  way. Old `#y2024` links still work.
+- The menu labels are `ALL_YEARS_LABEL` and `SORT_OPTIONS` at the top of
+  `assets/js/pubs.js`.
+- Searching or filtering never reloads the Altmetric / Dimensions badges:
+  entries are built once and only moved or hidden.
+
+The toolbar markup (leave the two `<select>`s empty — `pubs.js` fills them;
+delete one to hide that control):
+
+```html
+<div class="pub-toolbar">
+  <input id="pub-filter" class="pub-filter" type="search" placeholder="Search by title, author, journal or year" aria-label="Search publications">
+  <select id="pub-year" class="pub-select" aria-label="Publication year"></select>
+  <select id="pub-sort" class="pub-select" aria-label="Sort order"></select>
+</div>
+```
 
 **After editing `data/publications.js`, bump `?v=`** (§5).
 
@@ -896,6 +927,7 @@ git push
 | Math renders as literal `$…$` | KaTeX script failed to load, or `$` mismatched | Check the console; make sure delimiters are paired |
 | Menu item not highlighted | `href` in `site.js` doesn't match the filename | Use the exact filename, root-relative (`/talks.html`) |
 | Links break in the test site only | Path written with a leading slash in an `.html` page | Use relative paths in HTML; leading slashes only in Markdown and in `site.js` nav |
+| "Most cited" lists some papers last with "N without a count" | Entry has no `doi`, or the Dimensions badge was blocked/slow | Add the `doi`; check the page without an ad blocker |
 
 ---
 
@@ -917,6 +949,7 @@ git push
 | Programs | `programs.html`, `program/<name>/index.html` |
 | CV, teaching, links | `cv.html`, `teaching.html`, `links.html` |
 | Button order on publications | `BTN_ORDER` in `assets/js/pubs.js` |
+| Year / sort menu labels on publications | `ALL_YEARS_LABEL`, `SORT_OPTIONS` in `assets/js/pubs.js` |
 
 **Non-negotiable rules**
 

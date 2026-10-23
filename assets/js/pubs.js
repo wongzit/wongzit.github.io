@@ -1,13 +1,23 @@
 /* ==========================================================================
    pubs.js — renders the publications / reviews / covers pages.
    --------------------------------------------------------------------------
-   You never edit this file. To add or change a publication, edit
-   data/publications.json (see GUIDE.md). Each page calls
-   renderPublications("paper" | "review" | "cover").
+   You rarely edit this file. To add or change a publication, edit
+   data/publications.js (see GUIDE.md). Each page calls
+   renderPublications("paper" | "review" | ["paper","review"]) or renderCovers().
+   The labels of the year / sort pull-downs are set just below.
    ========================================================================== */
 
 // Order action buttons are shown in (left → right).
 const BTN_ORDER = ["DOI", "ABS", "BIB", "HTML", "PREPRINT", "PDF", "ESI", "CODE", "SI"];
+
+// Pull-downs above the publication list (labels are free to edit).
+const ALL_YEARS_LABEL = "All years";
+const SORT_OPTIONS = [
+  { value: "new",   label: "Newest first" },
+  { value: "old",   label: "Oldest first" },
+  { value: "cited", label: "Most cited" },   // uses the Dimensions badge counts
+];
+const CITATION_WAIT_MS = 8000;   // how long "Most cited" waits for the Dimensions badges to load
 
 // Data is loaded via <script src="data/publications.js"> as window.PUBLICATIONS.
 // (Using a script tag instead of fetch() means the pages also work when opened
@@ -148,10 +158,15 @@ function renderCovers() {
 
 // `type` may be a single type ("paper"), several (["paper","review"]),
 // or "all" to show everything.
+//
+// Every entry is built ONCE. Searching, the year pull-down and the sort
+// pull-down only move or hide those elements, so the Altmetric and Dimensions
+// badges inside them are never thrown away and re-loaded.
 function renderPublications(type) {
   const listEl = document.getElementById("pub-list");
-  const yearNavEl = document.getElementById("pub-year-nav");
   const filterEl = document.getElementById("pub-filter");
+  const yearEl = document.getElementById("pub-year");
+  const sortEl = document.getElementById("pub-sort");
 
   let all;
   try { all = loadPubs(); }
@@ -159,7 +174,8 @@ function renderPublications(type) {
 
   const want = type === "all" ? null : (Array.isArray(type) ? type : [type]);
   const items = all.filter(p => !want || want.includes(p.type || "paper"))
-                   .sort((a, b) => b.year - a.year);
+                   .sort((a, b) => b.year - a.year)              // newest first, file order within a year
+                   .map((p, i) => ({ p, i }));
 
   // Auto-fill the publication count in the metrics strip, if present.
   const countEl = document.getElementById("m-pubs");
@@ -167,30 +183,123 @@ function renderPublications(type) {
 
   if (!items.length) { listEl.innerHTML = `<p class="muted">Nothing here yet.</p>`; return; }
 
-  // Year navigation links
-  const years = [...new Set(items.map(p => p.year))].sort((a, b) => b - a);
-  if (yearNavEl) {
-    yearNavEl.innerHTML = `<b>List by Year:</b> ` +
-      years.map(y => `<a href="#y${y}">${y}</a>`).join(`<span class="sep">/</span>`);
+  const tpl = document.createElement("template");
+  items.forEach(it => {
+    tpl.innerHTML = pubHTML(it.p, it.i).trim();
+    it.el = tpl.content.firstElementChild;
+    it.text = [it.p.title, it.p.authors, it.p.venue, it.p.year].join(" ")
+                .replace(/<[^>]+>/g, "").toLowerCase();
+  });
+
+  // ---- pull-downs -------------------------------------------------------
+  const years = [...new Set(items.map(it => it.p.year))].sort((a, b) => b - a);
+  if (yearEl) yearEl.innerHTML = `<option value="">${ALL_YEARS_LABEL}</option>` +
+    years.map(y => `<option value="${y}">${y}</option>`).join("");
+  if (sortEl) sortEl.innerHTML = SORT_OPTIONS.map(o => `<option value="${o.value}">${o.label}</option>`).join("");
+
+  // Small status line under the toolbar (used by "Most cited").
+  const noteEl = document.createElement("p");
+  noteEl.className = "pub-sort-note";
+  const toolbar = (sortEl || yearEl || filterEl);
+  if (toolbar) (toolbar.closest(".pub-toolbar") || toolbar).after(noteEl);
+
+  // Start from the address bar: ?year=2024&sort=cited, or an old #y2024 link.
+  const params = new URLSearchParams(location.search);
+  const legacy = (location.hash.match(/^#y(\d{4})$/) || [])[1];
+  if (yearEl) yearEl.value = years.map(String).includes(params.get("year") || legacy) ? (params.get("year") || legacy) : "";
+  if (sortEl && SORT_OPTIONS.some(o => o.value === params.get("sort"))) sortEl.value = params.get("sort");
+
+  // ---- citation counts, read from each entry's Dimensions badge ----------
+  const badgeOf = it => it.el.querySelector(".__dimensions_badge_embed__");
+  const badgeDone = it => !badgeOf(it) || citations(it) !== null;     // no badge, or its number has arrived
+  function citations(it) {
+    const b = badgeOf(it);
+    if (!b || b.dataset.dimensionsBadgeInstalled !== "true") return null;
+    const n = b.querySelector(".__dimensions_Badge_stat_total_citations .__dimensions_Badge_stat_count");
+    const a = b.querySelector("[aria-label]");                // e.g. "41 total citations on Dimensions."
+    const m = ((n && n.textContent) || (a && a.getAttribute("aria-label")) || "").replace(/,/g, "").match(/\d+/);
+    return m ? +m[0] : null;
   }
 
-  function draw(q = "") {
-    q = q.trim().toLowerCase();
-    let globalIdx = 0;
-    const html = years.map(year => {
-      const inYear = items.filter(p => p.year === year)
-        .filter(p => !q || (p.title + " " + (p.authors||"") + " " + (p.venue||"")).toLowerCase().includes(q));
-      if (!inYear.length) return "";
-      const body = inYear.map(p => pubHTML(p, globalIdx++)).join("");
-      return `<div class="pub-group" id="y${year}">
-                <span class="pub-year-mark">${year}</span>${body}
-              </div>`;
-    }).join("");
-    listEl.innerHTML = html || `<p class="muted">No publications match your search.</p>`;
-    if (window._dimensions_embed) window.__dimensions_embed.addBadges();
+  // ---- draw ---------------------------------------------------------------
+  const stash = document.createElement("div");                // hidden home for filtered-out entries
+  stash.hidden = true;                                         // (kept in the page so their badges still load)
+
+  function group(year) {
+    const g = document.createElement("div");
+    g.className = year == null ? "pub-group pub-group--flat" : "pub-group";
+    if (year != null) { g.id = "y" + year; g.innerHTML = `<span class="pub-year-mark">${year}</span>`; }
+    return g;
   }
 
-  if (filterEl) filterEl.addEventListener("input", e => draw(e.target.value));
+  function draw() {
+    const q = filterEl ? filterEl.value.trim().toLowerCase() : "";
+    const year = yearEl ? yearEl.value : "";
+    const sort = sortEl ? sortEl.value : "new";
+    const visible = it => (!year || String(it.p.year) === year) && (!q || it.text.includes(q));
+
+    let order = items.slice();
+    if (sort === "old") order.reverse();
+    if (sort === "cited") {
+      order.forEach(it => { it.c = citations(it); });
+      order.sort((a, b) => (b.c ?? -1) - (a.c ?? -1) || a.i - b.i);  // unknown last, ties newest first
+    }
+
+    const out = [];
+    let g = null, gYear = null;
+    order.forEach(it => {
+      if (!visible(it)) { stash.append(it.el); return; }
+      if (sort === "cited") { if (!g) out.push(g = group(null)); }
+      else if (it.p.year !== gYear) { gYear = it.p.year; out.push(g = group(gYear)); }
+      g.append(it.el);
+    });
+    if (!out.length) {
+      const msg = document.createElement("p");
+      msg.className = "muted";
+      msg.textContent = "No publications match your search.";
+      out.push(msg);
+    }
+    listEl.replaceChildren(...out, stash);
+
+    if (sort === "cited") {
+      const missing = items.filter(visible).filter(it => citations(it) === null).length;
+      noteEl.innerHTML = waiting
+        ? "Loading citation counts from Dimensions…"
+        : `Sorted by total citations on <a href="https://www.dimensions.ai/" target="_blank" rel="noopener">Dimensions</a>` +
+          (missing ? ` · ${missing} without a count listed last` : "") + ".";
+    } else noteEl.textContent = "";
+  }
+
+  // "Most cited" right after the page opens: badges may still be loading.
+  // Draw at once, then once more when every badge has its number (or after a timeout).
+  let waiting = false, waitTimer = null;
+  function waitForBadges() {
+    clearInterval(waitTimer);
+    waiting = !items.every(badgeDone);
+    if (!waiting) return;
+    const t0 = Date.now();
+    waitTimer = setInterval(() => {
+      if (items.every(badgeDone) || Date.now() - t0 > CITATION_WAIT_MS) {
+        clearInterval(waitTimer); waiting = false;
+        if (sortEl && sortEl.value === "cited") draw();
+      }
+    }, 250);
+  }
+
+  function saveToAddressBar() {
+    const u = new URL(location.href);
+    const set = (k, v) => v ? u.searchParams.set(k, v) : u.searchParams.delete(k);
+    set("year", yearEl && yearEl.value);
+    set("sort", sortEl && sortEl.value !== "new" ? sortEl.value : "");
+    u.hash = "";
+    history.replaceState(null, "", u);
+  }
+
+  if (filterEl) filterEl.addEventListener("input", draw);
+  [yearEl, sortEl].forEach(el => el && el.addEventListener("change", () => {
+    if (el === sortEl && sortEl.value === "cited") waitForBadges();
+    saveToAddressBar(); draw();
+  }));
 
   // Click a TOC thumbnail to zoom it in a lightbox.
   listEl.addEventListener("click", e => {
@@ -198,5 +307,11 @@ function renderPublications(type) {
     if (t) openPubLightbox(t.src, t.alt);
   });
 
+  if (sortEl && sortEl.value === "cited") waitForBadges();
   draw();
+
+  // Badge scripts load asynchronously. If they arrived before the list existed,
+  // ask them to look again; if they arrive later, they find the entries themselves.
+  if (window.__dimensions_embed && window.__dimensions_embed.addBadges) window.__dimensions_embed.addBadges();
+  if (typeof window._altmetric_embed_init === "function") window._altmetric_embed_init();
 }

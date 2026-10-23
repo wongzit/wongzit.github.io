@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
   <title>Original Papers · Zhe WANG</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=15">
+  <link rel="stylesheet" href="assets/css/style.css?v=16">
 </head>
 <body>
   <div id="site-header"></div>
@@ -26,9 +26,12 @@
       <a href="reviews.html">accounts &amp; reviews</a><span class="sep">/</span>
       <a href="covers.html">cover pictures</a>
     </p>
-    <p class="pub-nav" id="pub-year-nav"></p>
-
-    <input id="pub-filter" class="pub-filter" type="search" placeholder="Type to filter…">
+    <!-- Search box + year and sort pull-downs. pubs.js fills in the menus. -->
+    <div class="pub-toolbar">
+      <input id="pub-filter" class="pub-filter" type="search" placeholder="Search by title, author, journal or year" aria-label="Search publications">
+      <select id="pub-year" class="pub-select" aria-label="Publication year"></select>
+      <select id="pub-sort" class="pub-select" aria-label="Sort order"></select>
+    </div>
 
     <div id="pub-list"></div>
   </main>
@@ -38,9 +41,9 @@
   <script async src="https://badge.dimensions.ai/badge.js"></script>
   <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 
-  <script src="data/publications.js?v=15"></script>
-  <script src="assets/js/site.js?v=15"></script>
-  <script src="assets/js/pubs.js?v=15"></script>
+  <script src="data/publications.js?v=16"></script>
+  <script src="assets/js/site.js?v=16"></script>
+  <script src="assets/js/pubs.js?v=16"></script>
   <script>renderPublications("paper");</script>
 </body>
 </html>
