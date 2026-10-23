@@ -304,7 +304,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=18`, test repo at `?v=26`. They are
+Current state: live repo is at `?v=20`, test repo at `?v=28`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -685,7 +685,8 @@ block, edit the text.
   appointments, education, awards.
 - **`research.html`** — one `<div class="card">` per theme, each with a
   `<span class="tag">` label, `<h3>` title, `<img class="res-img">` concept
-  figure (`assets/img/research/`) and a `<p class="muted">` description. Copy a
+  figure (`assets/img/research/`; shown centred at its own proportions, at most
+  200 px tall) and a `<p class="muted">` description. Copy a
   card to add a theme; give it a unique `id`.
 - **`teaching.html`**, **`links.html`** — `<div class="card">` blocks; copy one.
 - **`programs.html`** — one `<section class="card" id="…">` per program. The

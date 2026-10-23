@@ -210,10 +210,10 @@ main { padding: 46px 0 70px; min-height: 60vh; }
 .card:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
 
 /* concept image inside a research card (sits between title and text) */
-.res-img {
-  display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover;
+.res-img {                        /* concept figure: keeps its own proportions, at most 200 px tall, centred */
+  display: block; width: auto; height: auto; max-width: 100%; max-height: 200px;
   border: 1px solid var(--border); border-radius: var(--radius-sm);
-  margin: 14px 0 16px;
+  margin: 14px auto 16px;
 }
 
 /* ---- Compound gallery (CAS No.) ---------------------------------------- */
