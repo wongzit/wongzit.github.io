@@ -25,7 +25,7 @@
 window.NEWS = [
   { date: "2026-10-11", id: "261011-story", title: `Abe Laboratory Alumni Reunion`, body: `
       <p>Happy 60th Birthday, Prof. Abe!</p>
-      <img src="assets/news/261011.jpg" alt="reunion">
+      <img src="assets/news/261011.png" alt="reunion">
     ` },
   { date: "2026-10-13", text: `py.Aroma has been cited 50 times, most recently in a <a href="https://doi.org/10.1007/s00214-026-03342-5">mini-review</a> by Sílvia Escayola, Miquel Solà, and Albert Poater in <em>Theor. Chem. Acc.</em>.` },
   { date: "2026-09-25", text: `Two papers have recently been accepted for publication.` },
