@@ -141,6 +141,7 @@ wongzit.github.io/
 ├── programs.html             ← program index (cards link to program/ pages)
 ├── teaching.html             ← teaching
 ├── links.html                ← useful links
+├── 404.html                  ← "page not found" page, 6 languages (§6.7)
 ├── blog.html                 ← blog index (search + tag filter)
 ├── post.html                 ← legacy post viewer (?p=slug). Keep for old links.
 │
@@ -690,6 +691,19 @@ block, edit the text.
 - **`programs.html`** — one `<section class="card" id="…">` per program. The
   `id` lets the navbar's "scripts" dropdown item jump straight to
   `programs.html#scripts`.
+
+**`404.html`** — the "page not found" page. GitHub Pages shows it
+automatically for any address that does not exist. It shows the same short
+text in six languages, one after another (English, 日本語, 简体中文, 繁體中文,
+粵語, 한국어); each language is one `<section class="nf-text">` you can edit
+directly, and two plain text links, "‹ Go back" and "Home", sit at the top
+(the English text is justified; the other languages are not). Two things
+are different from the other pages: a small script at the top of `<head>` sets
+the base address (because the page can appear at any depth, e.g. `/a/b/c/`),
+and its few page-only styles sit in a `<style>` block in the page itself. The
+same file works unchanged in both repositories. To see it locally, open
+`localhost:8000/404.html` — the local preview server does not show it for
+missing addresses the way GitHub Pages does.
 
 Every `<img>` on these pages carries an `onerror` attribute that hides it
 gracefully if the file is missing — so a broken path fails quietly rather than
