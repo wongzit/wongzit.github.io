@@ -304,7 +304,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=20`, test repo at `?v=28`. They are
+Current state: live repo is at `?v=22`, test repo at `?v=30`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -384,9 +384,9 @@ Open **`assets/css/style.css`**. Lines 27–70 hold every color the site uses:
 
 ```css
 :root {                          /* DARK theme (the default) */
-  --accent:      #38e1c4;        /* teal — links, highlights, cursor glow */
+  --accent:      #ffbdc8;        /* blush pink — links, highlights, cursor glow */
   --accent-2:    #6aa9ff;
-  --accent-soft: rgba(56, 225, 196, 0.14);
+  --accent-soft: rgba(255, 189, 200, 0.14);
   --bg:          #0d1117;        /* page background */
   --bg-elev:     #161b22;        /* cards */
   --text:        #e6edf3;
@@ -402,7 +402,7 @@ Open **`assets/css/style.css`**. Lines 27–70 hold every color the site uses:
 }
 ```
 
-The two themes are deliberately different accents: **teal in dark mode, ocean
+The two themes are deliberately different accents: **blush pink in dark mode, ocean
 blue in light mode**. If you change `--accent`, change `--accent-soft` to the
 same hue (it is the same color at ~13% opacity, used for the cursor halo and
 hover backgrounds).
@@ -750,7 +750,7 @@ does both jobs. Each card is one self-contained block:
   from distances, so no connectivity is needed. GaussView, Avogadro, Mercury
   and Multiwfn all export XYZ. For a crystal structure, export one molecule
   (no solvent, no disorder components) from Mercury.
-- **Badge:** `class="cas-badge xrd"` (teal) for a single-crystal structure,
+- **Badge:** `class="cas-badge xrd"` (accent colour) for a single-crystal structure,
   `class="cas-badge calc"` (blue) for a QM-optimised structure. Change the text
   inside to match (`SCXRD` / `QM`).
 - **CCDC / DOI:** plain links; delete the line if not applicable.

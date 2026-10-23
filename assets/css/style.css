@@ -7,7 +7,7 @@
    You normally never need to touch anything else in this file.
    ========================================================================== */
 
-/* ---- CURSOR GLOW (light-green dot that trails the mouse) ----------------- */
+/* ---- CURSOR GLOW (accent-coloured dot that trails the mouse) -------------- */
 #cursor-dot, #cursor-glow {
   position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;
   border-radius: 50%; transform: translate(-50%, -50%);
@@ -46,9 +46,9 @@ input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type
 
 /* ---- THEME TOKENS (edit these to recolor the whole site) ---------------- */
 :root {
-  --accent:        #38e1c4;   /* primary accent (teal) */
+  --accent:        #ffbdc8;   /* primary accent (blush pink) */
   --accent-2:      #6aa9ff;   /* secondary accent (blue) */
-  --accent-soft:   rgba(56, 225, 196, 0.14);
+  --accent-soft:   rgba(255, 189, 200, 0.14);
 
   --bg:            #0d1117;   /* page background */
   --bg-elev:       #161b22;   /* cards / elevated panels */
@@ -72,7 +72,7 @@ input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type
 }
 
 [data-theme="light"] {
-  --accent:        #0284c7;   /* ocean blue (light mode only; dark mode stays teal) */
+  --accent:        #0284c7;   /* ocean blue (light mode only; dark mode stays blush pink) */
   --accent-2:      #2563eb;
   --accent-soft:   rgba(2, 132, 199, 0.13);
 
