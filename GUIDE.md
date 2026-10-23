@@ -55,7 +55,7 @@ Three consequences worth internalising:
 
 ### Where the "logic" lives
 
-Only five files contain machinery. Everything else is content.
+Only six files contain machinery. Everything else is content.
 
 | File | Responsibility |
 | --- | --- |
@@ -63,6 +63,7 @@ Only five files contain machinery. Everything else is content.
 | `assets/js/blog.js` | Blog index, tag filter, Markdown→HTML rendering, math, latest-posts table |
 | `assets/js/pubs.js` | Publication list rendering, year grouping, search / year / sort pull-downs, buttons, cover slideshow, lightbox |
 | `assets/js/cas.js` | Rotatable 3D molecule viewers on the compound gallery (`cas.html`) |
+| `assets/js/news.js` | News list on the home page (5 newest) and `news.html` (all) |
 | `assets/css/style.css` | All styling for the entire site |
 
 Content lives in:
@@ -140,13 +141,15 @@ wongzit.github.io/
 ├── covers.html               ← cover pictures (slideshow)
 ├── programs.html             ← program index (cards link to program/ pages)
 ├── teaching.html             ← teaching
+├── news.html                 ← all news, by year (filled from data/news.js)
 ├── links.html                ← useful links
 ├── 404.html                  ← "page not found" page, 6 languages (§6.7)
 ├── blog.html                 ← blog index (search + tag filter)
 ├── post.html                 ← legacy post viewer (?p=slug). Keep for old links.
 │
 ├── data/
-│   └── publications.js       ← THE publication list. All 3 pub pages read this.
+│   ├── publications.js       ← THE publication list. All 3 pub pages read this.
+│   └── news.js               ← every news item (home shows 5 newest; news.html all)
 │
 ├── posts/
 │   ├── posts.json            ← blog index: slug, title, date, tags, summary
@@ -170,6 +173,7 @@ wongzit.github.io/
     ├── js/blog.js            ← blog engine
     ├── js/pubs.js            ← publications engine
     ├── js/cas.js             ← 3D molecule viewers for cas.html
+    ├── js/news.js            ← shows data/news.js on index.html and news.html
     ├── img/
     │   ├── prof_pic.png      ← your photo (home page)
     │   ├── favicon/          ← favicon.svg + favicon.png
@@ -304,7 +308,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=22`, test repo at `?v=30`. They are
+Current state: live repo is at `?v=23`, test repo at `?v=31`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -315,21 +319,46 @@ independent counters; do not try to make them match.
 
 Everything on the home page is in **`index.html`**, in clearly-commented blocks.
 
-**Add a news item** — add a row at the *top* of the news table:
+**News** lives in **`data/news.js`** (not in `index.html`). The home page
+shows the 5 newest items with a "view all →" link; `news.html` lists every
+item, grouped by year. Add an item anywhere in the list — it is sorted by date:
 
-```html
-<table class="info-table">
-  <tr><td>Aug 18, 2026</td><td>Our paper is accepted in <i>JACS</i>.</td></tr>
-  <tr><td>Jun 6, 2026</td><td>New page has been released.</td></tr>
+```js
+window.NEWS = [
+  { date: "2026-11-02", text: `Our paper is accepted in <i>JACS</i>.` },
+  { date: "2026-10-13", text: `py.Aroma has been cited 50 times, …` },
   ...
-</table>
+];
 ```
 
-Free-form date text; HTML (`<i>`, `<a>`) is allowed in the second cell.
+- `date` is `YYYY-MM-DD`; it is shown as "Nov 2, 2026".
+- **Story items.** For news with more to say, give a `title` and a `body`
+  instead of `text`. Only the title is shown on the home page and in the list,
+  as a link; clicking it opens the full story at `news.html?id=<id>`, laid out
+  like a blog post:
+
+  ```js
+  { date: "2026-11-02", id: "jacs-2026", title: `Our paper is out in JACS`, body: `
+      <p>First paragraph …</p>
+      <img src="assets/news/jacs-2026.png" alt="">
+    ` },
+  ```
+
+  `id` is the story's address — lowercase letters, numbers and dashes; don't
+  change it once shared (if left out, one is made from the date and title).
+  Put pictures in `assets/news/`.
+- `text` goes between backticks `` ` … ` `` so quotes and apostrophes need no
+  escaping; HTML (`<i>`, `<a href="…">`) is allowed.
+- Comma after every item except the last (`node --check data/news.js` checks it).
+- No `?v=` bump is needed for news: `data/news.js` is loaded without one, so
+  visitors see new items within about 10 minutes (hard-reload to see them at once).
+- To show more or fewer items on the home page, change the `5` in
+  `renderNews("home-news", 5)` at the bottom of `index.html`.
 
 **Other blocks in `index.html`:**
 
 - *Hero* — your name, alias line, role, and the social button row.
+- *News* — automatic, from `data/news.js` (above).
 - *Latest posts* — automatic. `renderLatestPosts("home-latest-posts", 3)` at the
   bottom pulls the 3 newest posts. Change `3` to show more.
 - *Contact* — postal address and the embedded Google map. To move the map,
@@ -969,7 +998,8 @@ git push
 | --- | --- |
 | Name, menu, dropdowns, footer, logo | `assets/js/site.js` (top) |
 | Colors, fonts, page width, corners | `assets/css/style.css` (lines 27–70) |
-| News, hero, photo, address, map | `index.html` |
+| News (home shows 5 newest, news.html all) | `data/news.js` |
+| Hero, photo, address, map | `index.html` |
 | Any publication, review or cover | `data/publications.js` |
 | h-index / i10 / citations / update date | `publications.html` (metrics strip) |
 | A blog post | `posts/<slug>.md` + `<slug>/` folder + `posts/posts.json` |

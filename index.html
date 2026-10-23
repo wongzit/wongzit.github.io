@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
   <title>Zhe WANG, Ph.D.</title>
   <meta name="description" content="Personal homepage of Zhe WANG — computational chemistry, The University of Osaka.">
-  <link rel="stylesheet" href="assets/css/style.css?v=22">
+  <link rel="stylesheet" href="assets/css/style.css?v=23">
 </head>
 <body>
   <div id="site-header"></div>
@@ -67,15 +67,12 @@
     <hr class="divider">
 
     <!-- ====================================================================
-         NEWS  —  add a row at the TOP for each new item. Date | text.
+         NEWS  —  the 5 newest items from data/news.js (add news there).
+         "view all" opens news.html with every item.
          ==================================================================== -->
     <section>
-      <h2>News</h2>
-      <table class="info-table">
-        <tr><td>Oct 13, 2026</td><td>py.Aroma has been cited 50 times, most recently in a <a href="https://doi.org/10.1007/s00214-026-03342-5">mini-review</a> by Sílvia Escayola, Miquel Solà, and Albert Poater in <em>Theor. Chem. Acc.</em>.</td></tr>
-        <tr><td>Sep 25, 2026</td><td>Two papers have recently been accepted for publication.</td></tr>
-        <tr><td>Aug 18, 2026</td><td>ZW was selected for the <a href="https://www.mext.go.jp/aifors_spread/">SPReAD 1000 </a> (2nd round) grant!</td></tr>
-      </table>
+      <h2>News <a class="mono faint" style="font-size:.7em" href="news.html">view all →</a></h2>
+      <table class="info-table"><tbody id="home-news"></tbody></table>
     </section>
 
     <!-- ====================================================================
@@ -105,8 +102,10 @@
 
   <div id="site-footer"></div>
 
-  <script src="assets/js/site.js?v=22"></script>
-  <script src="assets/js/blog.js?v=22"></script>
-  <script>renderLatestPosts("home-latest-posts", 3);</script>
+  <script src="assets/js/site.js?v=23"></script>
+  <script src="assets/js/blog.js?v=23"></script>
+  <script src="data/news.js"></script>
+  <script src="assets/js/news.js?v=23"></script>
+  <script>renderLatestPosts("home-latest-posts", 3); renderNews("home-news", 5);</script>
 </body>
 </html>

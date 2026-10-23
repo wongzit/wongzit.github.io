@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
+  <title>News · Zhe WANG</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=23">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container reading">
+    <div class="page-head">
+      <div class="kicker">// news</div>
+      <h1>News</h1>
+      <p class="lead">お知らせ</p>
+    </div>
+
+    <p class="pub-nav news-nav"><a href="index.html">← home</a></p>
+
+    <!-- ====================================================================
+         Filled in automatically from data/news.js — add news there, not here.
+         ==================================================================== -->
+    <div id="news-list"></div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data/news.js"></script>
+  <script src="assets/js/site.js?v=23"></script>
+  <script src="assets/js/news.js?v=23"></script>
+  <script>renderNewsPage("news-list");</script>
+</body>
+</html>
