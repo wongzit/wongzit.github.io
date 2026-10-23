@@ -208,6 +208,27 @@ main { padding: 46px 0 70px; min-height: 60vh; }
   display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain;
   background: #fff; padding: 8px; border-bottom: 1px solid var(--border);
 }
+/* rotatable 3D structure, built by assets/js/cas.js from the card's .xyz file */
+.cas-card__viewer {
+  position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden;
+  background: var(--bg-elev-2);           /* cas.js paints the molecule onto this colour */
+  border-bottom: 1px solid var(--border); cursor: grab;
+}
+.cas-card__viewer:active { cursor: grabbing; }
+.cas-card__viewer.is-active { outline: 2px solid var(--accent); outline-offset: -2px; touch-action: none; }
+.cas-card__stage { position: absolute; inset: 0; }
+.cas-card__hint {                       /* "drag to rotate" label, fades after first use */
+  position: absolute; right: 8px; bottom: 8px; z-index: 1; pointer-events: none;
+  font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.03em; color: var(--text-faint);
+  background: color-mix(in srgb, var(--bg-elev-2) 85%, transparent);
+  padding: 2px 8px; border-radius: 100px; transition: opacity .3s;
+}
+.cas-card__hint.is-hidden { opacity: 0; }
+.cas-card__viewer.is-empty { cursor: default; }
+.cas-card__viewer.is-empty::after {     /* shown when the .xyz file is missing */
+  content: attr(data-msg); position: absolute; inset: 0; display: grid; place-items: center;
+  font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-faint);
+}
 .cas-card__body { padding: 12px 14px 14px; }
 .cas-card__name { font-weight: 700; color: var(--text); margin: 0 0 4px; }
 .cas-card__meta { color: var(--text-faint); font-size: 0.84rem; font-family: var(--font-mono); }

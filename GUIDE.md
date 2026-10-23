@@ -55,13 +55,14 @@ Three consequences worth internalising:
 
 ### Where the "logic" lives
 
-Only four files contain machinery. Everything else is content.
+Only five files contain machinery. Everything else is content.
 
 | File | Responsibility |
 | --- | --- |
 | `assets/js/site.js` | Navbar, footer, dark/light theme, cursor glow, base-path detection |
 | `assets/js/blog.js` | Blog index, tag filter, Markdown→HTML rendering, math, latest-posts table |
 | `assets/js/pubs.js` | Publication list rendering, year grouping, buttons, cover slideshow, lightbox |
+| `assets/js/cas.js` | Rotatable 3D molecule viewers on the compound gallery (`cas.html`) |
 | `assets/css/style.css` | All styling for the entire site |
 
 Content lives in:
@@ -132,7 +133,7 @@ wongzit.github.io/
 ├── index.html                ← home: hero, news, latest posts, contact + map
 ├── cv.html                   ← CV
 ├── research.html             ← research themes (3 cards) + link to cas.html
-├── cas.html                  ← compound gallery (structures, XYZ, CCDC)
+├── cas.html                  ← compound gallery (rotatable 3D structures, XYZ, CCDC)
 ├── publications.html         ← papers + reviews, with metrics strip
 ├── papers.html               ← original papers only
 ├── reviews.html              ← accounts & reviews only
@@ -167,6 +168,7 @@ wongzit.github.io/
     ├── js/site.js            ← navbar, footer, theme
     ├── js/blog.js            ← blog engine
     ├── js/pubs.js            ← publications engine
+    ├── js/cas.js             ← 3D molecule viewers for cas.html
     ├── img/
     │   ├── prof_pic.png      ← your photo (home page)
     │   ├── favicon/          ← favicon.svg + favicon.png
@@ -175,10 +177,10 @@ wongzit.github.io/
     │   ├── pubs/             ← TOC graphics for publications
     │   ├── covers/           ← journal cover artwork
     │   ├── research/         ← concept images on research.html
-    │   ├── cas/              ← animated .gif previews for cas.html
+    │   ├── cas/              ← (optional) .gif previews, if a card uses an image instead of 3D
     │   └── feat/             ← feature icons on program pages
     ├── pdf/                  ← paper PDFs and ESI PDFs
-    ├── cas/                  ← .xyz coordinate files for cas.html
+    ├── cas/                  ← .xyz files for cas.html (3D viewer + download)
     ├── blog/                 ← figures and files used inside blog posts
     ├── program/              ← program icons
     ├── pyAroma/, pyKinetics/ ← program-page screenshots
@@ -260,7 +262,7 @@ Notes:
 
 ## 5. The `?v=` cache rule
 
-Every reference to `style.css`, `site.js`, `blog.js`, `pubs.js` and
+Every reference to `style.css`, `site.js`, `blog.js`, `pubs.js`, `cas.js` and
 `data/publications.js` ends with a query string:
 
 ```html
@@ -274,7 +276,7 @@ The number itself has no meaning — only "different from last time" matters.
 
 > ### The rule
 >
-> **If you edited `style.css`, `site.js`, `blog.js`, `pubs.js` or
+> **If you edited `style.css`, `site.js`, `blog.js`, `pubs.js`, `cas.js` or
 > `data/publications.js`, increase `?v=` by one across the whole repository
 > before you push.**
 >
@@ -295,12 +297,12 @@ grep -roh '?v=[0-9]*' --include='*.html' . | sort | uniq -c
 ```
 
 You should see **one** number, with a count equal to the number of asset
-references (currently 153 in the live repo — most of them are the per-post
+references (currently 154 in the live repo — most of them are the per-post
 `index.html` files). If you see two different numbers,
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=14`, test repo at `?v=22`. They are
+Current state: live repo is at `?v=15`, test repo at `?v=23`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -665,13 +667,24 @@ invisible: check that your image actually appears.
 ### 6.8 The compound gallery
 
 `cas.html` shows compounds from the publications as a grid of cards. Each card
-is one self-contained block:
+has a **3D structure that visitors can rotate themselves**:
+
+- mouse: drag = rotate, shift-drag = zoom, right-drag = move, pinch or
+  ⌘/Ctrl + scroll = zoom, double-click = reset. A plain scroll over a viewer
+  still scrolls the page.
+- touch: tap a viewer first, then drag to rotate; tap outside it to scroll the
+  page again (so swiping down a phone screen full of molecules still works).
+
+The viewers are drawn by `assets/js/cas.js` using
+[3Dmol.js](https://3dmol.csb.pitt.edu/), loaded from jsDelivr and pinned to
+version 2.5.5 in a `<script>` tag at the bottom of `cas.html`. **Each viewer
+shows the same `.xyz` file that its card's XYZ button downloads**, so one file
+does both jobs. Each card is one self-contained block:
 
 ```html
 <div class="cas-card">
   <span class="cas-badge xrd">SCXRD</span>          <!-- or: calc → QM -->
-  <img class="cas-card__img" src="assets/img/cas/compound-1.gif"
-       alt="Crystal structure animation" onerror="this.style.opacity=.25">
+  <div class="cas-card__viewer" role="img" aria-label="Rotatable 3D structure"></div>
   <div class="cas-card__body">
     <p class="cas-card__name">Compound name / label</p>
     <p class="cas-card__meta">CAS 000000-00-0</p>
@@ -684,17 +697,34 @@ is one self-contained block:
 </div>
 ```
 
+- **Structure file:** put it in `assets/cas/<name>.xyz` and point the XYZ link
+  at it. Standard XYZ: line 1 = number of atoms, line 2 = a title, then one
+  `El  x  y  z` line per atom in Å, hydrogens included. Bonds are worked out
+  from distances, so no connectivity is needed. GaussView, Avogadro, Mercury
+  and Multiwfn all export XYZ. For a crystal structure, export one molecule
+  (no solvent, no disorder components) from Mercury.
 - **Badge:** `class="cas-badge xrd"` (teal) for a single-crystal structure,
   `class="cas-badge calc"` (blue) for a QM-optimised structure. Change the text
   inside to match (`SCXRD` / `QM`).
-- **Preview:** an animated `.gif` (e.g. a rotating molecule) in
-  `assets/img/cas/`.
-- **XYZ button:** put the Cartesian-coordinate file in `assets/cas/<name>.xyz`.
-  The `download` attribute makes the browser save it rather than display it.
 - **CCDC / DOI:** plain links; delete the line if not applicable.
+- **Showing a different file than the download** (rare): give the viewer its
+  own path, `<div class="cas-card__viewer" data-xyz="assets/cas/other.xyz">`.
+- **A missing or misspelt file** does not break the page: that card shows
+  "structure file not found". File names are case-sensitive on GitHub Pages.
+- **Look and feel:** the molecule spins slowly until someone grabs it (paused
+  off-screen, and off for visitors whose system asks for reduced motion).
+  Spin speed, bond thickness, atom size, the light-mode hydrogen colour and
+  the margin around the molecule are constants at the top of `cas.js`. Atom
+  colours follow Jmol; the panel colour is `--bg-elev-2` from `style.css`, and
+  everything re-colours when the ☀️/🌙 toggle is used.
+- **Upgrading 3Dmol.js:** change the version number in the `<script>` URL in
+  `cas.html` and check the page in both themes.
 
 Add a compound by copying a whole `<div class="cas-card">` block inside
 `<div class="cas-grid">`.
+
+A card can still use a picture instead of a 3D viewer: replace the viewer
+`<div>` with `<img class="cas-card__img" src="assets/img/cas/<name>.gif" alt="…">`.
 
 ### 6.9 Program pages
 
@@ -861,6 +891,8 @@ git push
 | Some pages styled, others not | Mixed `?v=` numbers | `grep -roh '?v=[0-9]*' --include='*.html' .` — should be one value |
 | GitHub emails a Jekyll build failure | `.nojekyll` missing | Restore the empty `.nojekyll` at the repo root and push |
 | Image missing but no broken icon | `onerror` hid it | Check the path and the actual filename case |
+| A compound card says "structure file not found" | `.xyz` path in the XYZ link is wrong | Check the path and filename case in `assets/cas/` |
+| All compound cards say "3D viewer failed to load" | 3Dmol.js could not be fetched (offline, or the CDN URL is wrong) | Check the 3Dmol `<script>` URL at the bottom of `cas.html` |
 | Math renders as literal `$…$` | KaTeX script failed to load, or `$` mismatched | Check the console; make sure delimiters are paired |
 | Menu item not highlighted | `href` in `site.js` doesn't match the filename | Use the exact filename, root-relative (`/talks.html`) |
 | Links break in the test site only | Path written with a leading slash in an `.html` page | Use relative paths in HTML; leading slashes only in Markdown and in `site.js` nav |
@@ -880,7 +912,8 @@ git push
 | h-index / i10 / citations / update date | `publications.html` (metrics strip) |
 | A blog post | `posts/<slug>.md` + `<slug>/` folder + `posts/posts.json` |
 | Research themes | `research.html` |
-| Compounds, XYZ files, CCDC links | `cas.html` + `assets/cas/` + `assets/img/cas/` |
+| Compounds, 3D structures, XYZ files, CCDC links | `cas.html` + `assets/cas/*.xyz` |
+| 3D viewer behaviour (spin, atom size, colours) | top of `assets/js/cas.js` |
 | Programs | `programs.html`, `program/<name>/index.html` |
 | CV, teaching, links | `cv.html`, `teaching.html`, `links.html` |
 | Button order on publications | `BTN_ORDER` in `assets/js/pubs.js` |
@@ -888,7 +921,7 @@ git push
 **Non-negotiable rules**
 
 1. `.nojekyll` must exist at the repo root.
-2. Bump `?v=` everywhere after editing CSS/JS/`publications.js`.
+2. Bump `?v=` everywhere after editing CSS/JS (incl. `cas.js`)/`publications.js`.
 3. Comma after every entry except the last, in `publications.js` and `posts.json`.
 4. Relative paths in `.html`; leading-slash paths in Markdown posts and in
    `site.js` nav.

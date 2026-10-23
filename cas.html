@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
   <title>CAS No. · Zhe WANG</title>
   <meta name="description" content="CAS numbers and structures of compounds from Zhe WANG's publications.">
-  <link rel="stylesheet" href="assets/css/style.css?v=14">
+  <link rel="stylesheet" href="assets/css/style.css?v=15">
 </head>
 <body>
   <div id="site-header"></div>
@@ -29,20 +29,20 @@
          COMPOUNDS
          One <div class="cas-card"> per compound. Copy a block to add more.
 
-         • Preview: an animated .gif (e.g. a rotating molecule) in
-           assets/img/cas/<name>.gif
+         • 3D preview: the <div class="cas-card__viewer"> shows the .xyz file
+           that this card's XYZ button downloads — visitors can rotate it.
+           Just put the file in assets/cas/<name>.xyz; nothing else to set.
          • Badge: use class "xrd" for a single-crystal structure, or "calc"
            for a QM-optimized structure — and set its label text accordingly.
          • XYZ button: downloads assets/cas/<name>.xyz (Cartesian coordinates).
-           Put the matching .xyz file there; the "download" attribute saves it.
+           Line 1 = number of atoms, line 2 = a title, then "El  x  y  z" in Å.
          ==================================================================== -->
     <div class="cas-grid">
 
       <!-- Example: published WITH a single-crystal structure -->
       <div class="cas-card">
         <span class="cas-badge xrd">SCXRD</span>
-        <img class="cas-card__img" src="assets/img/cas/compound-1.gif" alt="Crystal structure animation"
-             onerror="this.style.opacity=.25">
+        <div class="cas-card__viewer" role="img" aria-label="Rotatable 3D structure"></div>
         <div class="cas-card__body">
           <p class="cas-card__name">Compound name / label</p>
           <p class="cas-card__meta">CAS 000000-00-0</p>
@@ -57,8 +57,7 @@
       <!-- Example: QM-optimized structure only -->
       <div class="cas-card">
         <span class="cas-badge calc">QM</span>
-        <img class="cas-card__img" src="assets/img/cas/compound-2.gif" alt="Optimized structure animation"
-             onerror="this.style.opacity=.25">
+        <div class="cas-card__viewer" role="img" aria-label="Rotatable 3D structure"></div>
         <div class="cas-card__body">
           <p class="cas-card__name">Compound name / label</p>
           <p class="cas-card__meta">CAS 000000-00-0</p>
@@ -71,8 +70,7 @@
 
       <div class="cas-card">
         <span class="cas-badge calc">QM</span>
-        <img class="cas-card__img" src="assets/img/cas/compound-3.gif" alt="Optimized structure animation"
-             onerror="this.style.opacity=.25">
+        <div class="cas-card__viewer" role="img" aria-label="Rotatable 3D structure"></div>
         <div class="cas-card__body">
           <p class="cas-card__name">Compound name / label</p>
           <p class="cas-card__meta">CAS 000000-00-0</p>
@@ -88,6 +86,8 @@
 
   <div id="site-footer"></div>
 
-  <script src="assets/js/site.js?v=14"></script>
+  <script src="assets/js/site.js?v=15"></script>
+  <script src="https://cdn.jsdelivr.net/npm/3dmol@2.5.5/build/3Dmol-min.js"></script>
+  <script src="assets/js/cas.js?v=15"></script>
 </body>
 </html>
