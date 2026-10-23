@@ -24,6 +24,26 @@
 @media (pointer: coarse) { #cursor-dot, #cursor-glow { display: none; } }
 @media (prefers-reduced-motion: reduce) { #cursor-dot, #cursor-glow { display: none; } }
 
+/* ---- MOUSE POINTER (electron-spin arrows) --------------------------------
+   Dark mode: red spin-down arrow. Light mode: blue spin-up arrow.
+   Images: assets/img/cursor/spin-{down,up}.png (18×38 px) + @2x (36×76, Retina).
+   The two numbers after each image are the click point ("hotspot") in px
+   from the image's top-left corner — set on the tip of each arrow.
+   "?38" makes browsers fetch new images: change it whenever you replace them.
+   Pointers over 32 px fall back to the system arrow at the very window edge.
+   Links keep the normal hand; text fields keep the I-beam. */
+html {
+  cursor: url("../img/cursor/spin-down.png?38") 3 37, auto;
+  cursor: -webkit-image-set(url("../img/cursor/spin-down.png?38") 1x, url("../img/cursor/spin-down@2x.png?38") 2x) 3 37, auto;
+  cursor: image-set(url("../img/cursor/spin-down.png?38") 1x, url("../img/cursor/spin-down@2x.png?38") 2x) 3 37, auto;
+}
+html[data-theme="light"] {
+  cursor: url("../img/cursor/spin-up.png?38") 15 1, auto;
+  cursor: -webkit-image-set(url("../img/cursor/spin-up.png?38") 1x, url("../img/cursor/spin-up@2x.png?38") 2x) 15 1, auto;
+  cursor: image-set(url("../img/cursor/spin-up.png?38") 1x, url("../img/cursor/spin-up@2x.png?38") 2x) 15 1, auto;
+}
+input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]), textarea { cursor: text; }
+
 /* ---- THEME TOKENS (edit these to recolor the whole site) ---------------- */
 :root {
   --accent:        #38e1c4;   /* primary accent (teal) */
@@ -224,7 +244,7 @@ main { padding: 46px 0 70px; min-height: 60vh; }
   padding: 2px 8px; border-radius: 100px; transition: opacity .3s;
 }
 .cas-card__hint.is-hidden { opacity: 0; }
-.cas-card__viewer.is-empty { cursor: default; }
+.cas-card__viewer.is-empty { cursor: inherit; }
 .cas-card__viewer.is-empty::after {     /* shown when the .xyz file is missing */
   content: attr(data-msg); position: absolute; inset: 0; display: grid; place-items: center;
   font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-faint);

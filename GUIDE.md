@@ -22,7 +22,7 @@ Read this once and you can maintain the whole site without asking anyone.
    - [6.7 Simple content pages (CV, research, teaching, links)](#67-simple-content-pages)
    - [6.8 The compound gallery (`cas.html`)](#68-the-compound-gallery)
    - [6.9 Program pages](#69-program-pages)
-   - [6.10 Social icons and favicon](#610-social-icons-and-favicon)
+   - [6.10 Social icons, favicon and mouse pointer](#610-social-icons-favicon-and-mouse-pointer)
 7. [Previewing on your own computer](#7-previewing-on-your-own-computer)
 8. [Publishing workflow (test → live)](#8-publishing-workflow)
 9. [Troubleshooting](#9-troubleshooting)
@@ -172,6 +172,7 @@ wongzit.github.io/
     ├── img/
     │   ├── prof_pic.png      ← your photo (home page)
     │   ├── favicon/          ← favicon.svg + favicon.png
+    │   ├── cursor/           ← mouse pointer images (spin-up = light, spin-down = dark)
     │   ├── social/dark/*.png ← social icons, dark theme
     │   ├── social/light/*.png← social icons, light theme
     │   ├── pubs/             ← TOC graphics for publications
@@ -302,7 +303,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=17`, test repo at `?v=24`. They are
+Current state: live repo is at `?v=18`, test repo at `?v=26`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -778,7 +779,7 @@ Because these pages sit two folders deep, their asset paths start with `../../`.
 Feature icons come from `assets/img/feat/<name>.png`; if a file is missing, the
 emoji in the `onerror` attribute is shown instead.
 
-### 6.10 Social icons and favicon
+### 6.10 Social icons, favicon and mouse pointer
 
 The home-page social buttons swap their icon with the theme. Each needs **two**
 files with the *same name*:
@@ -799,6 +800,20 @@ To add a network: add both PNGs, then add a button to the `.socials` block:
 ```
 
 The `onerror` text is the fallback if the image is missing.
+
+**Mouse pointer:** the site uses electron-spin arrows as the mouse pointer —
+a red spin-down arrow in dark mode and a blue spin-up arrow in light mode. They
+switch with the ☀️/🌙 toggle; links keep the normal hand and text boxes the
+I-beam. The images are `assets/img/cursor/spin-down.png` / `spin-up.png`
+(18 × 38 px) plus `@2x` versions (36 × 76 px) for Retina screens. Pointers
+larger than 32 px work, but Chrome and Firefox show the normal system arrow
+while the image would stick out past the window edge; don't go much bigger
+than this. The rules are in the
+"MOUSE POINTER" block at the top of `style.css`; the two numbers after each
+image (`3 37`, `15 1`) are the click point, in pixels from the image's top-left
+corner — they sit on the arrow tips. If you redraw the arrows, update those
+numbers, change the `?38` after the image names (so browsers fetch the new
+images) and bump `?v=` (§5).
 
 **Favicon:** `assets/img/favicon/favicon.svg` (preferred) and `favicon.png`
 (fallback), referenced from the `<head>` of every page. The navbar logo is a
@@ -949,6 +964,7 @@ git push
 | Programs | `programs.html`, `program/<name>/index.html` |
 | CV, teaching, links | `cv.html`, `teaching.html`, `links.html` |
 | Button order on publications | `BTN_ORDER` in `assets/js/pubs.js` |
+| Mouse pointer (spin arrows) | `assets/img/cursor/` + "MOUSE POINTER" block at the top of `style.css` |
 | Year / sort menu labels on publications | `ALL_YEARS_LABEL`, `SORT_OPTIONS` in `assets/js/pubs.js` |
 
 **Non-negotiable rules**
