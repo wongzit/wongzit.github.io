@@ -25,22 +25,22 @@
 @media (prefers-reduced-motion: reduce) { #cursor-dot, #cursor-glow { display: none; } }
 
 /* ---- MOUSE POINTER (electron-spin arrows) --------------------------------
-   Dark mode: red spin-down arrow. Light mode: blue spin-up arrow.
+   Dark mode: teal spin-down arrow. Light mode: blue spin-up arrow.
    Images: assets/img/cursor/spin-{down,up}.png (18×38 px) + @2x (36×76, Retina).
    The two numbers after each image are the click point ("hotspot") in px
    from the image's top-left corner — set on the tip of each arrow.
-   "?38" makes browsers fetch new images: change it whenever you replace them.
+   "?39" makes browsers fetch new images: change it whenever you replace them.
    Pointers over 32 px fall back to the system arrow at the very window edge.
    Links keep the normal hand; text fields keep the I-beam. */
 html {
-  cursor: url("../img/cursor/spin-down.png?38") 3 37, auto;
-  cursor: -webkit-image-set(url("../img/cursor/spin-down.png?38") 1x, url("../img/cursor/spin-down@2x.png?38") 2x) 3 37, auto;
-  cursor: image-set(url("../img/cursor/spin-down.png?38") 1x, url("../img/cursor/spin-down@2x.png?38") 2x) 3 37, auto;
+  cursor: url("../img/cursor/spin-down.png?39") 2 36, auto;
+  cursor: -webkit-image-set(url("../img/cursor/spin-down.png?39") 1x, url("../img/cursor/spin-down@2x.png?39") 2x) 2 36, auto;
+  cursor: image-set(url("../img/cursor/spin-down.png?39") 1x, url("../img/cursor/spin-down@2x.png?39") 2x) 2 36, auto;
 }
 html[data-theme="light"] {
-  cursor: url("../img/cursor/spin-up.png?38") 15 1, auto;
-  cursor: -webkit-image-set(url("../img/cursor/spin-up.png?38") 1x, url("../img/cursor/spin-up@2x.png?38") 2x) 15 1, auto;
-  cursor: image-set(url("../img/cursor/spin-up.png?38") 1x, url("../img/cursor/spin-up@2x.png?38") 2x) 15 1, auto;
+  cursor: url("../img/cursor/spin-up.png?39") 15 1, auto;
+  cursor: -webkit-image-set(url("../img/cursor/spin-up.png?39") 1x, url("../img/cursor/spin-up@2x.png?39") 2x) 15 1, auto;
+  cursor: image-set(url("../img/cursor/spin-up.png?39") 1x, url("../img/cursor/spin-up@2x.png?39") 2x) 15 1, auto;
 }
 input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]), textarea { cursor: text; }
 
@@ -617,6 +617,7 @@ main { padding: 46px 0 70px; min-height: 60vh; }
   background: var(--bg-elev); cursor: pointer; transition: all .15s;
 }
 .pub-btn:hover { border-color: var(--accent); color: var(--accent); }
+.pub-btn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }  /* ABS/BIB whose panel is open */
 
 /* collapsible abstract / bibtex panels */
 .pub__panel {

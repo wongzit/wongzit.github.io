@@ -35,8 +35,8 @@ function pubButtons(p, uid) {
   const has = k => links[k] && links[k] !== "";
 
   if (has("DOI"))                     out.push(`<a class="pub-btn" href="${links.DOI}" target="_blank" rel="noopener">DOI</a>`);
-  if (p.abstract)                     out.push(`<button class="pub-btn" onclick="togglePanel('abs-${uid}')">ABS</button>`);
-  if (p.bibtex)                       out.push(`<button class="pub-btn" onclick="togglePanel('bib-${uid}')">BIB</button>`);
+  if (p.abstract)                     out.push(`<button class="pub-btn" data-panel="abs-${uid}" aria-expanded="false" onclick="togglePanel('abs-${uid}')">ABS</button>`);
+  if (p.bibtex)                       out.push(`<button class="pub-btn" data-panel="bib-${uid}" aria-expanded="false" onclick="togglePanel('bib-${uid}')">BIB</button>`);
   // ESI (electronic supporting information) shows right after PDF, only when
   // the entry has an "ESI" link in data/publications.js.
   ["HTML", "PREPRINT", "PDF", "ESI", "CODE", "SI"].forEach(k => {
@@ -80,9 +80,17 @@ function escapeHTML(s) {
   return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 }
 
+// ABS / BIB: click to open, click again to close. Only one panel per
+// publication is open at a time — opening one closes the other.
 function togglePanel(id) {
   const el = document.getElementById(id);
-  if (el) el.classList.toggle("open");
+  if (!el) return;
+  const opening = !el.classList.contains("open");
+  const pub = el.closest(".pub") || document;
+  pub.querySelectorAll(".pub__panel.open").forEach(x => x.classList.remove("open"));
+  if (opening) el.classList.add("open");
+  pub.querySelectorAll(".pub-btn[data-panel]").forEach(b =>
+    b.setAttribute("aria-expanded", String(opening && b.dataset.panel === id)));
 }
 
 /* ---------- TOC image lightbox ------------------------------------------ */

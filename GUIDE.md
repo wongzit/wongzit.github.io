@@ -308,7 +308,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=24`, test repo at `?v=32`. They are
+Current state: live repo is at `?v=25`, test repo at `?v=34`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -514,8 +514,9 @@ Field by field:
   Altmetric doughnut and Dimensions citation badge. Leave it `""` to hide both
   (preprints usually should).
 - **`links`** — see below.
-- **`abstract`** / **`bibtex`** — optional; each adds a toggle button that
-  expands a panel in place.
+- **`abstract`** / **`bibtex`** — optional; each adds a toggle button (ABS /
+  BIB) that expands a panel in place. Only one of the two is open at a time:
+  clicking the other one switches, clicking the same one again closes it.
 
 **Buttons.** One button is generated per entry in `links`, in this fixed order:
 
@@ -846,7 +847,7 @@ To add a network: add both PNGs, then add a button to the `.socials` block:
 The `onerror` text is the fallback if the image is missing.
 
 **Mouse pointer:** the site uses electron-spin arrows as the mouse pointer —
-a red spin-down arrow in dark mode and a blue spin-up arrow in light mode. They
+a teal spin-down arrow in dark mode and a blue spin-up arrow in light mode. They
 switch with the ☀️/🌙 toggle; links keep the normal hand and text boxes the
 I-beam. The images are `assets/img/cursor/spin-down.png` / `spin-up.png`
 (18 × 38 px) plus `@2x` versions (36 × 76 px) for Retina screens. Pointers
@@ -854,9 +855,9 @@ larger than 32 px work, but Chrome and Firefox show the normal system arrow
 while the image would stick out past the window edge; don't go much bigger
 than this. The rules are in the
 "MOUSE POINTER" block at the top of `style.css`; the two numbers after each
-image (`3 37`, `15 1`) are the click point, in pixels from the image's top-left
+image (`2 36`, `15 1`) are the click point, in pixels from the image's top-left
 corner — they sit on the arrow tips. If you redraw the arrows, update those
-numbers, change the `?38` after the image names (so browsers fetch the new
+numbers, change the `?39` after the image names (so browsers fetch the new
 images) and bump `?v=` (§5).
 
 **Favicon:** `assets/img/favicon/favicon.svg` (preferred) and `favicon.png`
