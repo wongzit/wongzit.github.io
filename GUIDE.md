@@ -308,7 +308,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=23`, test repo at `?v=31`. They are
+Current state: live repo is at `?v=24`, test repo at `?v=32`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -413,9 +413,9 @@ Open **`assets/css/style.css`**. Lines 27–70 hold every color the site uses:
 
 ```css
 :root {                          /* DARK theme (the default) */
-  --accent:      #ffbdc8;        /* blush pink — links, highlights, cursor glow */
+  --accent:      #38e1c4;        /* teal — links, highlights, cursor glow */
   --accent-2:    #6aa9ff;
-  --accent-soft: rgba(255, 189, 200, 0.14);
+  --accent-soft: rgba(56, 225, 196, 0.14);
   --bg:          #0d1117;        /* page background */
   --bg-elev:     #161b22;        /* cards */
   --text:        #e6edf3;
@@ -431,7 +431,7 @@ Open **`assets/css/style.css`**. Lines 27–70 hold every color the site uses:
 }
 ```
 
-The two themes are deliberately different accents: **blush pink in dark mode, ocean
+The two themes are deliberately different accents: **teal in dark mode, ocean
 blue in light mode**. If you change `--accent`, change `--accent-soft` to the
 same hue (it is the same color at ~13% opacity, used for the cursor halo and
 hover backgrounds).
