@@ -18,7 +18,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg">
   <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png">
   <title>404 Not Found · Zhe WANG</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=25">
+  <link rel="stylesheet" href="assets/css/style.css?v=26">
   <style>
     /* page-only styles for the 404 page */
     .nf-breath {                      /* soft circle that "breathes" in 4 s, out 4 s */
@@ -36,9 +36,7 @@
     .nf-text p:last-child { color: var(--text); margin-bottom: 0; }
     .nf-text + .divider { margin: 44px 0; }
     .nf-text[lang="en"] p { text-align: justify; }          /* English only: justified to the column width */
-    .nf-actions { display: flex; flex-wrap: wrap; gap: 28px; margin: 10px 0 40px; font-size: 1.1rem; }
-    .nf-actions a { color: var(--accent); text-decoration: none; }   /* plain text links */
-    .nf-actions a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .nf-home { margin: 10px 0 40px; }                        /* space below the "← home" button */
   </style>
 </head>
 <body>
@@ -51,9 +49,7 @@
       <h1>404 Not Found</h1>
     </div>
 
-    <div class="nf-actions">
-      <a class="nf-back" href="./">‹ home</a>
-    </div>
+    <p class="pub-nav nf-home"><a href="./">← home</a></p>
 
     <!-- ====================================================================
          One <section> per language, in this order. Edit the text freely.
@@ -113,12 +109,6 @@
   </main>
 
   <div id="site-footer"></div>
-  <script src="assets/js/site.js?v=25"></script>
-  <script>
-    // "Go back" returns to the previous page if there is one, otherwise home.
-    document.querySelector(".nf-back").addEventListener("click", function (e) {
-      if (history.length > 1 && document.referrer) { e.preventDefault(); history.back(); }
-    });
-  </script>
+  <script src="assets/js/site.js?v=26"></script>
 </body>
 </html>

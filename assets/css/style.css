@@ -63,7 +63,7 @@ input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type
   --radius:        14px;
   --radius-sm:     9px;
   --maxw:          1080px;
-  --maxw-read:     900px;     /* content column width (matches publications) */
+  --maxw-read:     var(--maxw); /* content column = same width as the top bar */
 
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", ui-monospace, Menlo, Consolas, monospace;

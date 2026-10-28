@@ -236,9 +236,9 @@ Notes:
 - `<div id="site-header">` and `<div id="site-footer">` are **empty on purpose**.
   `site.js` fills them at load time, which is why the menu is identical on every
   page and only needs editing in one place.
-- `class="container"` = full width (1080px). `class="container reading"` =
-  narrower reading column (900px). Publication pages add
-  `style="max-width:900px"`.
+- `class="container"` and `class="container reading"` are both 1080px wide —
+  exactly the width of the top bar, so every page lines up with it. To change
+  the width of the whole site, edit `--maxw` in `style.css` (§6.3).
 - Pages one folder deep (e.g. `program/pyaroma/index.html`) use `../../assets/…`;
   post folders use `../assets/…`. Count the folders.
 
@@ -308,7 +308,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=25`, test repo at `?v=34`. They are
+Current state: live repo is at `?v=26`, test repo at `?v=35`. They are
 independent counters; do not try to make them match.
 
 ---
