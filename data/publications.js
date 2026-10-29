@@ -36,7 +36,7 @@ window.PUBLICATIONS = [
     "title": "Poly(pentafulvalene)s: One-Dimensional Conjugated Hydrocarbons toward Stable and Narrow-Bandgap Polyenes",
     "authors": "Shu I. Takagi, Ibuki Nakamura, <span class=\"me\">Zhe Wang</span>, Masahiro Hayakawa, Ryosuke Kamimura, Akinori Saeki, Yuh Hijikata, Aiko Fukazawa<sup>*</sup>",
     "venue": "<i>ChemRxiv</i>, <b>2026</b>.",
-    "image": "assets/img/pubs/takagi2026poly.png",
+    "image": "assets/img/pubs/cr_logo.png",
     "doi": "10.26434/chemrxiv.15011251/v1",
     "links": {
       "DOI": "https://doi.org/10.26434/chemrxiv.15011251/v1",
@@ -53,7 +53,7 @@ window.PUBLICATIONS = [
     "title": "Interplay of Aromaticity and Coulomb Repulsion in the Electronic Structure of a Dimeric Pentafulvalene Upon Multi-Electron Uptake",
     "authors": "<span class=\"me\">Zhe Wang</span>, Yikun Zhu, Zheng Wei, Herdya S. Torchon, Shu I. Takagi, Marina A. Petrukhina,<sup>*</sup> Aiko Fukazawa<sup>*</sup>",
     "venue": "<i>ChemRxiv</i>, <b>2026</b>.",
-    "image": "assets/img/pubs/wang2026interplay.png",
+    "image": "assets/img/pubs/cr_logo.png",
     "doi": "10.26434/chemrxiv.15011124/v1",
     "links": {
       "DOI": "https://doi.org/10.26434/chemrxiv.15011124/v1",
