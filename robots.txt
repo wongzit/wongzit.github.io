@@ -1,0 +1,6 @@
+# robots.txt for https://wongzit.github.io/
+User-agent: *
+# The test site is a copy of this site; keep it out of search results.
+Disallow: /wongzit-new.github.io/
+
+Sitemap: https://wongzit.github.io/sitemap.xml

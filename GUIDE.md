@@ -130,6 +130,9 @@ wongzit.github.io/
 ├── .nojekyll                 ← MUST EXIST. Disables Jekyll on GitHub Pages.
 ├── GUIDE.md                  ← this file
 ├── preview.command           ← double-click to preview locally (macOS)
+├── sitemap.xml               ← list of all pages for Google (rebuild with tools/make_sitemap.py)
+├── robots.txt                ← points search engines to the sitemap; hides the test site
+├── tools/make_sitemap.py     ← rebuilds sitemap.xml (live repo only)
 │
 ├── index.html                ← home: hero, news, latest posts, contact + map
 ├── cv.html                   ← CV
@@ -673,7 +676,8 @@ Add an entry at the **top** of `posts/posts.json`:
   only.**
 
 That is all. The post appears at `/my-new-method/`, on `blog.html`, in the tag
-filters, and in "Latest posts" on the home page.
+filters, and in "Latest posts" on the home page. On the live site, also rebuild
+the sitemap (§8): `python3 tools/make_sitemap.py`.
 
 #### What you can write in a post
 
@@ -904,6 +908,26 @@ grep -roh '?v=[0-9]*' --include='*.html' . | sort | uniq -c   # one version only
 
 ## 8. Publishing workflow
 
+### Sitemap (live site)
+
+`sitemap.xml` tells Google which pages exist. **Whenever you add, rename or
+delete a page, a blog post or a news story, rebuild it before you commit:**
+
+```bash
+cd ~/wongzit.github.io
+python3 tools/make_sitemap.py      # prints e.g. "sitemap.xml: 56 pages"
+```
+
+The script finds every page by itself (top-level pages, blog posts from
+`posts/posts.json`, program pages, news stories with an `id` and a `body`) and
+dates each one from git. Pages it skips on purpose: `404.html`, `post.html` and
+the Google verification file (edit `EXCLUDE` at the top of the script to change
+that). Editing the text of an existing page needs no rebuild. Submit
+`https://wongzit.github.io/sitemap.xml` once in Google Search Console
+(Sitemaps → Add a new sitemap); Google re-reads it by itself after that.
+`robots.txt` points search engines to the sitemap and keeps the test site
+(`/wongzit-new.github.io/`) out of search results.
+
 ### Everyday change (content only, low risk)
 
 Adding a news line, a publication or a blog post can go straight to live:
@@ -1010,6 +1034,7 @@ git push
 | Programs | `programs.html`, `program/<name>/index.html` |
 | CV, teaching, links | `cv.html`, `teaching.html`, `links.html` |
 | Button order on publications | `BTN_ORDER` in `assets/js/pubs.js` |
+| Sitemap for Google (after adding/removing pages) | run `python3 tools/make_sitemap.py` (live repo) |
 | Mouse pointer (spin arrows) | `assets/img/cursor/` + "MOUSE POINTER" block at the top of `style.css` |
 | Year / sort menu labels on publications | `ALL_YEARS_LABEL`, `SORT_OPTIONS` in `assets/js/pubs.js` |
 
