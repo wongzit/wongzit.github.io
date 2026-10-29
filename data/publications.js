@@ -33,6 +33,23 @@ window.PUBLICATIONS = [
   {
     "type": "paper",
     "year": 2026,
+    "title": "Poly(pentafulvalene)s: One-Dimensional Conjugated Hydrocarbons toward Stable and Narrow-Bandgap Polyenes",
+    "authors": "Shu I. Takagi, Ibuki Nakamura, <span class=\"me\">Zhe Wang</span>, Masahiro Hayakawa, Ryosuke Kamimura, Akinori Saeki, Yuh Hijikata, Aiko Fukazawa<sup>*</sup>",
+    "venue": "<i>ChemRxiv</i>, <b>2026</b>.",
+    "image": "assets/img/pubs/takagi2026poly.png",
+    "doi": "10.26434/chemrxiv.15011251/v1",
+    "links": {
+      "DOI": "https://doi.org/10.26434/chemrxiv.15011251/v1",
+      "PREPRINT": "https://doi.org/10.26434/chemrxiv.15011251/v1",
+      "PDF": "https://wongzit.github.io/assets/pdf/takagi2026poly.pdf",
+      "ESI": "https://wongzit.github.io/assets/pdf/takagi2026poly_esi.pdf"
+    },
+    "abstract": "Polyacetylene is the archetypal narrow-bandgap conjugated polymer, yet its high-lying HOMO renders it air-sensitive, and aromatic alternatives sacrifice the small bandgap inherent to a polyene backbone. Here we show that embedding the polyene in a dibenzopentafulvalene (DBF) framework affords a stable, narrow-bandgap polyene analog. Poly(dibenzopentafulvalene) (polyDBF) was synthesized by Kosugi–Migita–Stille polycondensation; its thin film absorbed up to 995 nm (optical bandgap 1.25 eV) and, unlike polyacetylene, persisted for days in air. Because intermolecular interactions in the solid state and chain-length dispersity preclude isolating the intrinsic electronic structure of each polymer, we synthesized soluble, monodisperse oligomers [1]DBF–[5]DBF up to the pentamer. Extrapolation of their longest-wavelength absorptions yielded an intrinsic optical bandgap of 1.64 eV for the ideal polymer, which is substantially narrower than that of polyene (2.03 eV) and even than PEDOT (1.92 eV), a benchmark narrow-bandgap homopolymer, as obtained by the same analysis. Quantum-chemical calculations trace this narrowing to the combined effects of cross-conjugation and five-membered-ring cyclization, which selectively lower the LUMO. Consistent with our earlier oligomer series up to [3]DBF, the longer oligomers further sustain reversible multi-electron reduction, reaching an eight-electron reduction in [4]DBF. These results establish DBF as a building block that narrows the polyene bandgap while conferring ambient stability, and provide a design principle for stable narrow-bandgap hydrocarbon homopolymers grounded in their intrinsic electronic structure.",
+    "bibtex": "@article{takagi2026poly,\n  title  = {Poly(pentafulvalene)s: One-Dimensional Conjugated Hydrocarbons toward Stable and Narrow-Bandgap Polyenes},\n  author = {Takagi, Shu I. and Nakamura, Ibuki and Wang, Zhe and Hayakawa, Masahiro and Kamimura, Ryosuke and Saeki, Akinori and Hijikata, Yuh and Fukazawa Aiko},\n  journal= {ChemRxiv},\n  year   = {2026},\n  volume = {},\n  pages  = {},\n  doi  = {10.26434/chemrxiv.15011251/v1}\n}"
+  },
+  {
+    "type": "paper",
+    "year": 2026,
     "title": "Interplay of Aromaticity and Coulomb Repulsion in the Electronic Structure of a Dimeric Pentafulvalene Upon Multi-Electron Uptake",
     "authors": "<span class=\"me\">Zhe Wang</span>, Yikun Zhu, Zheng Wei, Herdya S. Torchon, Shu I. Takagi, Marina A. Petrukhina,<sup>*</sup> Aiko Fukazawa<sup>*</sup>",
     "venue": "<i>ChemRxiv</i>, <b>2026</b>.",
