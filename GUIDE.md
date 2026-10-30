@@ -145,6 +145,7 @@ wongzit.github.io/
 ├── programs.html             ← program index (cards link to program/ pages)
 ├── teaching.html             ← teaching
 ├── news.html                 ← all news, by year (filled from data/news.js)
+├── team.html                 ← students: members, alumni, presentations (filled from data/team.js)
 ├── links.html                ← useful links
 ├── 404.html                  ← "page not found" page, 6 languages (§6.7)
 ├── blog.html                 ← blog index (search + tag filter)
@@ -152,7 +153,8 @@ wongzit.github.io/
 │
 ├── data/
 │   ├── publications.js       ← THE publication list. All 3 pub pages read this.
-│   └── news.js               ← every news item (home shows 5 newest; news.html all)
+│   ├── news.js               ← every news item (home shows 5 newest; news.html all)
+│   └── team.js               ← students, alumni and presentations for team.html
 │
 ├── posts/
 │   ├── posts.json            ← blog index: slug, title, date, tags, summary
@@ -177,6 +179,7 @@ wongzit.github.io/
     ├── js/pubs.js            ← publications engine
     ├── js/cas.js             ← 3D molecule viewers for cas.html
     ├── js/news.js            ← shows data/news.js on index.html and news.html
+    ├── js/team.js            ← builds team.html; marks students' names in author lists
     ├── img/
     │   ├── prof_pic.png      ← your photo (home page)
     │   ├── favicon/          ← favicon.svg + favicon.png
@@ -311,7 +314,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=26`, test repo at `?v=35`. They are
+Current state: live repo is at `?v=27`, test repo at `?v=37`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -828,6 +831,32 @@ Because these pages sit two folders deep, their asset paths start with `../../`.
 Feature icons come from `assets/img/feat/<name>.png`; if a file is missing, the
 emoji in the `onerror` attribute is shown instead.
 
+### 6.10b The team page (`team.html`)
+
+The page is not in the top menu; it is reached from the "👥 Team →" button
+next to the "🔬 Compounds" button at the top of `research.html`.
+
+Everything on the team page comes from **`data/team.js`** — edit that file, not
+the page. It has three lists (the instructions at the top of the file show every
+field):
+
+- **`members`** — one line per student: `name`, optional `ja` (日本語 name),
+  `stage` (`"D1"`, `"M2"`, `"B4"` …), `since` (`"YYYY-MM"`), `topic`, optional
+  `photo` (`assets/img/team/<name>.jpg`; without one, initials are shown),
+  optional `links` (ORCID, GitHub, Email …). Cards are grouped into doctoral /
+  master's / undergraduate automatically.
+- **`alumni`** — `name`, `degree`, `year`, `thesis`, `now` (where they went).
+- **`presentations`** — `date`, `presenter`, `type` (Oral / Poster / Invited),
+  `title`, `meeting`, `place`, optional `award` (shown as 🏆).
+
+Automatic extras: a student's name in `data/publications.js` is underlined with
+a dotted line and links to their card on every publication page, and their
+papers are listed under "Publications with team members" — so papers are never
+entered twice. The name must be written the same way in both files; add other
+spellings with `aliases: ["H. Example"]`. Like `data/news.js`, `data/team.js`
+needs no `?v=` bump. Ask students before putting their name or photo online.
+The "Join us" text is plain HTML at the bottom of `team.html`.
+
 ### 6.10 Social icons, favicon and mouse pointer
 
 The home-page social buttons swap their icon with the theme. Each needs **two**
@@ -1037,6 +1066,7 @@ git push
 | Sitemap for Google (after adding/removing pages) | run `python3 tools/make_sitemap.py` (live repo) |
 | Mouse pointer (spin arrows) | `assets/img/cursor/` + "MOUSE POINTER" block at the top of `style.css` |
 | Year / sort menu labels on publications | `ALL_YEARS_LABEL`, `SORT_OPTIONS` in `assets/js/pubs.js` |
+| Students, alumni, presentations | `data/team.js` (team.html builds itself) |
 
 **Non-negotiable rules**
 

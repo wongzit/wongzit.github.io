@@ -209,6 +209,47 @@ main { padding: 46px 0 70px; min-height: 60vh; }
 }
 .card:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
 
+/* ---- Team page (team.html, built by assets/js/team.js from data/team.js) ---- */
+.team-section { margin-top: 44px; scroll-margin-top: 84px; }
+.team-group-title { font-size: 1rem; font-weight: 600; color: var(--text-dim); margin: 22px 0 12px; }
+.team-group-title span { font-family: var(--font-mono); font-size: .78rem; font-weight: 400; color: var(--text-faint); margin-left: 10px; }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.team-card {
+  display: flex; gap: 14px; align-items: flex-start; scroll-margin-top: 90px;
+  background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px; transition: border-color .2s, box-shadow .2s;
+}
+.team-card:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+.team-card:target { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }   /* opened from a name link */
+tr:target td { background: var(--accent-soft); }
+.team-avatar { width: 64px; height: 64px; flex: 0 0 64px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); }
+.team-avatar--initials {
+  display: grid; place-items: center; background: var(--accent-soft); color: var(--accent);
+  font-family: var(--font-mono); font-weight: 700; font-size: 1.1rem; letter-spacing: .04em;
+}
+.team-card__name { font-weight: 700; color: var(--text); margin: 0; }
+.team-card__ja { color: var(--text-dim); font-size: .9rem; margin: 0; }
+.team-card__meta { font-family: var(--font-mono); font-size: .78rem; color: var(--text-faint); margin: 4px 0 6px; }
+.team-card__topic { color: var(--text-dim); font-size: .92rem; margin: 0 0 8px; }
+.team-links { display: flex; flex-wrap: wrap; gap: 6px; }
+.team-links a {
+  font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .04em;
+  padding: 3px 8px; border-radius: 6px; border: 1px solid var(--border); color: var(--text-dim);
+}
+.team-links a:hover { border-color: var(--accent); color: var(--accent); }
+.team-tag {
+  display: inline-block; font-family: var(--font-mono); font-size: .68rem; line-height: 1.5;
+  padding: 0 7px; border-radius: 100px; border: 1px solid var(--border); color: var(--text-dim);
+  margin-left: 6px; vertical-align: 2px; font-weight: 400;
+}
+.team-tag.award { color: var(--accent); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+.team-tag.example { border-style: dashed; color: var(--text-faint); }
+.team-pres-title { color: var(--text); font-weight: 600; }
+.team-pres-meta { color: var(--text-dim); font-size: .92rem; margin-top: 2px; }
+.team-me { color: var(--text); font-weight: 600; }
+.team-name { color: inherit; text-decoration: underline dotted var(--accent); text-underline-offset: 3px; }  /* team members in author lists */
+.team-name:hover { color: var(--accent); }
+
 /* concept image inside a research card (sits between title and text) */
 .res-img {                        /* concept figure: keeps its own proportions, at most 200 px tall, centred */
   display: block; width: auto; height: auto; max-width: 100%; max-height: 200px;

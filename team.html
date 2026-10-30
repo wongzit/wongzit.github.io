@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon.png">
+  <title>Team · Zhe WANG</title>
+  <meta name="description" content="Students working with Zhe WANG at The University of Osaka: members, alumni, presentations and joint publications.">
+  <link rel="stylesheet" href="assets/css/style.css?v=27">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container reading">
+    <div class="page-head">
+      <div class="kicker">// team</div>
+      <h1>Team</h1>
+      <p class="lead">メンバー</p>
+    </div>
+
+    <p class="pub-nav">
+      <a href="research.html">← research</a><span class="sep">/</span>
+      <a href="#members">members</a><span class="sep">/</span>
+      <a href="#alumni">alumni</a><span class="sep">/</span>
+      <a href="#presentations">presentations</a><span class="sep">/</span>
+      <a href="#publications">publications</a><span class="sep">/</span>
+      <a href="#join">join us</a>
+    </p>
+
+    <!-- ====================================================================
+         Members, alumni, presentations and publications are filled in
+         automatically from data/team.js (and data/publications.js).
+         Edit those files, not this page.
+         ==================================================================== -->
+    <section class="team-section" id="members">
+      <h2>Members</h2>
+      <div id="team-members"></div>
+    </section>
+
+    <section class="team-section" id="alumni">
+      <h2>Alumni</h2>
+      <div id="team-alumni"></div>
+    </section>
+
+    <section class="team-section" id="presentations">
+      <h2>Presentations</h2>
+      <div id="team-presentations"></div>
+    </section>
+
+    <section class="team-section" id="publications">
+      <h2>Publications with team members</h2>
+      <div id="team-pubs"></div>
+    </section>
+
+    <!-- ====================================================================
+         JOIN US — a first draft; edit the text freely.
+         ==================================================================== -->
+    <section class="team-section" id="join">
+      <h2>Join us</h2>
+      <div class="card">
+        <p class="muted" lang="en">I work with students in the Mori Laboratory at The University of Osaka on
+          open-shell π-conjugated molecules — singlet diradicaloids and helicenes — with a focus on
+          near-infrared emission and circularly polarized luminescence, combining synthesis, spectroscopy
+          (ESR, CPL, NMR) and computational chemistry. If you are interested in joining or collaborating,
+          please feel free to contact me by <a href="mailto:wang.zhe.dr@gmail.com">e-mail</a>.</p>
+        <p class="muted" lang="ja">大阪大学の森研究室で，学生の皆さんと一緒に開殻π共役分子（一重項ジラジカロイドやヘリセン）の研究を行っています．近赤外発光や円偏光発光（CPL）に着目し，合成・分光測定（ESR，CPL，NMR）・計算化学を組み合わせて研究を進めています．研究室への参加や共同研究に興味のある方は，お気軽に<a href="mailto:wang.zhe.dr@gmail.com">メール</a>でご連絡ください．</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data/publications.js?v=27"></script>
+  <script src="data/team.js"></script>
+  <script src="assets/js/site.js?v=27"></script>
+  <script src="assets/js/team.js?v=27"></script>
+  <script>renderTeam();</script>
+</body>
+</html>

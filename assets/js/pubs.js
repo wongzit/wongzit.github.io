@@ -66,7 +66,7 @@ function pubHTML(p, idx) {
          onerror="this.style.opacity=.25;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22150%22></svg>'">
     <div>
       <p class="pub__title">${p.title}</p>
-      <p class="pub__authors">${p.authors || ""}</p>
+      <p class="pub__authors">${window.teamLinkNames ? teamLinkNames(p.authors || "") : (p.authors || "")}</p>
       <p class="pub__venue">${p.venue || ""}</p>
       <div class="pub__btns">${pubButtons(p, uid)}</div>
       ${p.abstract ? `<div class="pub__panel" id="abs-${uid}">${p.abstract}</div>` : ""}
