@@ -319,7 +319,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=29`, test repo at `?v=45`. They are
+Current state: live repo is at `?v=30`, test repo at `?v=46`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -499,6 +499,7 @@ window.PUBLICATIONS = [      // ← keep this first line
   "type": "paper",
   "year": 2026,
   "title": "Controlling through-space spin coupling in helical diradicaloids",
+  "tags": ["OA"],
   "authors": "<span class=\"me\">Zhe Wang</span><sup>*</sup>, Tadashi Mori<sup>*</sup>",
   "venue": "<i>J. Am. Chem. Soc.</i>, <b>2026</b>, <i>148</i>, 20974–20984.",
   "journalFull": "Journal of the American Chemical Society",
@@ -526,6 +527,15 @@ Field by field:
   year pull-down above the list is filled in for you.
 - **`title`** — HTML allowed (`<i>`, `<sub>`, `<sup>`) for italicised locants
   such as `fluoreno[3,4-<i>c</i>]fluorene`.
+- **`tags`** — optional small labels shown in front of the title, written
+  exactly as they should appear: `["OA"]`, `["Front Cover", "OA"]`,
+  `["Hot Paper"]`. Tags containing "cover" or "frontispiece" are violet,
+  `"OA"` / `"Open Access"` orange, anything else plain grey. A paper also gets
+  a **Cover** tag by itself when a `"cover"` entry has the same title, so you
+  never write it twice (write your own, e.g. `"Inside Cover"`, to replace it;
+  turn the automatic tag off with `AUTO_COVER_TAG = false` at the top of
+  `assets/js/pubs.js`). The search box finds tags too. Leave the line out when
+  a paper has no tags.
 - **`authors`** — HTML string. Wrap your own name in
   `<span class="me">Zhe Wang</span>` to underline it; use `<sup>*</sup>` for the
   corresponding-author star. Because the file is JavaScript, inner double quotes
@@ -1131,6 +1141,7 @@ git push
 | Sitemap for Google (after adding/removing pages) | run `python3 tools/make_sitemap.py` (live repo) |
 | Mouse pointer (spin arrows) | `assets/img/cursor/` + "MOUSE POINTER" block at the top of `style.css` |
 | Year / sort menu labels on publications | `ALL_YEARS_LABEL`, `SORT_OPTIONS` in `assets/js/pubs.js` |
+| Tags before paper titles (Cover, OA …) | `"tags"` in `data/publications.js`; colours: `PUB_TAG_STYLES` in `pubs.js` + `.pub-tag` in `style.css` |
 | Students, alumni | `data/team.js` (team.html builds itself) |
 | Presentations (talks, posters) | `data/presentations.js` (presentations.html builds itself) |
 

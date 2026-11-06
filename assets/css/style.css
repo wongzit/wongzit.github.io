@@ -650,6 +650,18 @@ tr:target td { background: var(--accent-soft); }
 }
 .license-text code { font-size: 0.8rem; color: var(--text-dim); white-space: pre-wrap; }
 .pub__title { font-weight: 700; font-size: 1.12rem; margin: 0 0 6px; color: var(--text); line-height: 1.35; }
+/* tags in front of a title — "Cover", "OA", … ("tags" in data/publications.js) */
+.pub-tag {
+  --tag-c: var(--text-dim);                                    /* plain tag */
+  display: inline-block; font-family: var(--font-mono); font-size: .7rem; font-weight: 500; line-height: 1.55;
+  padding: 0 7px; margin-right: 6px; border-radius: 100px; vertical-align: 2px; white-space: nowrap;
+  color: var(--tag-c); border: 1px solid color-mix(in srgb, var(--tag-c) 45%, transparent);
+  background: color-mix(in srgb, var(--tag-c) 12%, transparent);
+}
+.pub-tag--cover { --tag-c: #c4a5ff; }                          /* violet */
+.pub-tag--oa    { --tag-c: #f68a3c; }                          /* open-access orange */
+[data-theme="light"] .pub-tag--cover { --tag-c: #7c3aed; }
+[data-theme="light"] .pub-tag--oa    { --tag-c: #c2410c; }
 .pub__authors { color: var(--text-dim); font-size: 0.98rem; margin: 0 0 5px; }
 .pub__authors .me { color: var(--text); font-weight: 600; border-bottom: 2px solid var(--accent); }
 .pub__authors sup { color: var(--accent); }

@@ -19,6 +19,17 @@ const SORT_OPTIONS = [
 ];
 const CITATION_WAIT_MS = 8000;   // how long "Most cited" waits for the Dimensions badges to load
 
+// Tags in front of a paper's title. Write them in data/publications.js, e.g.
+// "tags": ["OA"]. The text is shown exactly as written; tags matching a rule
+// below get its colour (see .pub-tag in style.css), anything else is plain.
+const PUB_TAG_STYLES = [
+  { cls: "cover", test: /cover|frontispiece/i,      tip: "Featured on a journal cover" },
+  { cls: "oa",    test: /^(oa|open[ -]?access)$/i,  tip: "Open access: free to read" },
+];
+// true = a paper gets a "Cover" tag by itself when a "cover" entry in
+// data/publications.js has the same title. false = only the tags you write.
+const AUTO_COVER_TAG = true;
+
 // Data is loaded via <script src="data/publications.js"> as window.PUBLICATIONS.
 // (Using a script tag instead of fetch() means the pages also work when opened
 //  directly from disk, not only over http.)
@@ -58,6 +69,25 @@ function pubMetrics(p) {
     </div>`;
 }
 
+const pubPlain = s => String(s || "").replace(/<[^>]+>/g, "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+const pubTagStyle = t => PUB_TAG_STYLES.find(r => r.test.test(String(t).replace(/<[^>]+>/g, "").trim()));
+let pubCoverTitles = null;
+function pubTags(p) {
+  const tags = [].concat(p.tags || []).filter(Boolean);
+  if (AUTO_COVER_TAG && (p.type || "paper") !== "cover" && !tags.some(t => (pubTagStyle(t) || {}).cls === "cover")) {
+    pubCoverTitles = pubCoverTitles || new Set((window.PUBLICATIONS || [])
+      .filter(x => x.type === "cover").map(x => pubPlain(x.title)));
+    if (pubCoverTitles.has(pubPlain(p.title))) tags.unshift("Cover");
+  }
+  return tags;
+}
+function pubTagsHTML(p) {
+  return pubTags(p).map(t => {
+    const r = pubTagStyle(t);
+    return `<span class="pub-tag${r ? " pub-tag--" + r.cls : ""}"${r ? ` title="${r.tip}"` : ""}>${t}</span>`;
+  }).join("");
+}
+
 function pubHTML(p, idx) {
   const uid = (p.type || "p") + idx;
   return `
@@ -65,7 +95,7 @@ function pubHTML(p, idx) {
     <img class="pub__thumb" src="${p.image || ""}" alt=""
          onerror="this.style.opacity=.25;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22150%22></svg>'">
     <div>
-      <p class="pub__title">${p.title}</p>
+      <p class="pub__title">${pubTagsHTML(p)}${p.title}</p>
       <p class="pub__authors">${window.teamLinkNames ? teamLinkNames(p.authors || "") : (p.authors || "")}</p>
       <p class="pub__venue">${p.venue || ""}</p>
       <div class="pub__btns">${pubButtons(p, uid)}</div>
@@ -195,7 +225,7 @@ function renderPublications(type) {
   items.forEach(it => {
     tpl.innerHTML = pubHTML(it.p, it.i).trim();
     it.el = tpl.content.firstElementChild;
-    it.text = [it.p.title, it.p.authors, it.p.venue, it.p.year].join(" ")
+    it.text = [...pubTags(it.p), it.p.title, it.p.authors, it.p.venue, it.p.year].join(" ")
                 .replace(/<[^>]+>/g, "").toLowerCase();
   });
 
