@@ -146,7 +146,9 @@ wongzit.github.io/
 ├── programs.html             ← program index (cards link to program/ pages)
 ├── teaching.html             ← teaching
 ├── news.html                 ← all news, by year (filled from data/news.js)
-├── team.html                 ← students: members, alumni, presentations (filled from data/team.js)
+├── presentations.html        ← talks & posters, by year (filled from data/presentations.js)
+├── books.html, patents.html  ← books & chapters / patents (hidden from the menu until there are any)
+├── team.html                 ← students: members, alumni, joint papers (filled from data/team.js)
 ├── links.html                ← useful links
 ├── 404.html                  ← "page not found" page, 6 languages (§6.7)
 ├── blog.html                 ← blog index (search + tag filter)
@@ -155,7 +157,8 @@ wongzit.github.io/
 ├── data/
 │   ├── publications.js       ← THE publication list. All 3 pub pages read this.
 │   ├── news.js               ← every news item (home shows 5 newest; news.html all)
-│   └── team.js               ← students, alumni and presentations for team.html
+│   ├── team.js               ← students and alumni for team.html
+│   └── presentations.js      ← every talk and poster for presentations.html
 │
 ├── posts/
 │   ├── posts.json            ← blog index: slug, title, date, tags, summary
@@ -316,7 +319,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=28`, test repo at `?v=39`. They are
+Current state: live repo is at `?v=29`, test repo at `?v=45`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -408,6 +411,16 @@ const SITE = {
 - **Add a menu item:** add `{ label: "talks", href: "/talks.html" },` in the
   position you want. Menu order = array order.
 - **Make a dropdown:** add a `children: [...]` array.
+- **Divider / hidden pages in a dropdown:** `{ divider: true }` draws a line;
+  `hidden: true` keeps an item out of the menu, out of the "List by Type" row
+  on the publication pages and out of the sitemap. "books & chapters" and
+  "patents" are hidden until they have entries — to show one, add its entries
+  to `data/publications.js` (`"type": "book"` / `"patent"`, same fields as a
+  paper), set `hidden: false` in `site.js`, and bump `?v=` (§5).
+- The "List by Type" row on the publication pages is built from the
+  publications dropdown, so it never needs editing by hand (`short` gives a
+  shorter label there, e.g. "all"; `listByType: false` keeps an item in the
+  menu but out of that row — used for "presentations").
 - **Paths here start with `/`** (root-relative). `site.js` converts them with
   `siteUrl()`, so they work from inside blog-post folders too. This is the one
   place where a leading slash is correct.
@@ -467,6 +480,8 @@ All three publication pages read one file: **`data/publications.js`**. The
 | `"paper"` | `publications.html`, `papers.html` |
 | `"review"` | `publications.html`, `reviews.html` |
 | `"cover"` | `covers.html` |
+| `"book"` | `books.html` (books & chapters — hidden until you show it, see §6.2) |
+| `"patent"` | `patents.html` (hidden until you show it, see §6.2) |
 
 The file is plain JavaScript data:
 
@@ -878,7 +893,7 @@ The page is not in the top menu; it is reached from the "👥 Team →" button
 next to the "🔬 Compounds" button at the top of `research.html`.
 
 Everything on the team page comes from **`data/team.js`** — edit that file, not
-the page. It has three lists (the instructions at the top of the file show every
+the page. It has two lists (the instructions at the top of the file show every
 field):
 
 - **`members`** — one line per student: `name`, optional `ja` (日本語 name),
@@ -887,8 +902,17 @@ field):
   optional `links` (ORCID, GitHub, Email …). Cards are grouped into doctoral /
   master's / undergraduate automatically.
 - **`alumni`** — `name`, `degree`, `year`, `thesis`, `now` (where they went).
-- **`presentations`** — `date`, `presenter`, `type` (Oral / Poster / Invited),
-  `title`, `meeting`, `place`, optional `award` (shown as 🏆).
+- **Presentations** are not on the team page; they live in their own file,
+  **`data/presentations.js`**: `date`, `scope` (`"international"` or
+  `"domestic"`), `presenter`, optional `authors`, `type` (Oral / Poster /
+  Invited), `title`, `meeting`, `place`, optional `award` (🏆). They are shown
+  on `presentations.html` (Publications ▸ presentations), grouped by year, with
+  an International / Domestic tag after each title. Below the title comes the
+  author list with **only the presenter highlighted** (dotted accent underline);
+  nobody else — you or students — gets any special mark there. Without
+  `authors`, just the presenter's name is shown. The presenter must be written
+  the same way in both fields; if it is not found in `authors`, the line ends
+  with "(presented by …)".
 
 Automatic extras: a student's name in `data/publications.js` is underlined with
 a dotted line and links to their card on every publication page, and their
@@ -1107,7 +1131,8 @@ git push
 | Sitemap for Google (after adding/removing pages) | run `python3 tools/make_sitemap.py` (live repo) |
 | Mouse pointer (spin arrows) | `assets/img/cursor/` + "MOUSE POINTER" block at the top of `style.css` |
 | Year / sort menu labels on publications | `ALL_YEARS_LABEL`, `SORT_OPTIONS` in `assets/js/pubs.js` |
-| Students, alumni, presentations | `data/team.js` (team.html builds itself) |
+| Students, alumni | `data/team.js` (team.html builds itself) |
+| Presentations (talks, posters) | `data/presentations.js` (presentations.html builds itself) |
 
 **Non-negotiable rules**
 

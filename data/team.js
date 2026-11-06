@@ -14,9 +14,7 @@
      links         optional, e.g. { ORCID: "https://orcid.org/…", GitHub: "https://github.com/…", Email: "mailto:…" }
      aliases       optional other spellings used in papers, e.g. ["H. Example"]
    alumni:         { name, ja, degree, year, thesis, now }
-   presentations:  { date: "YYYY-MM-DD", presenter, type: "Oral" | "Poster" | "Invited",
-                     title, meeting, place, award }
-     presenter     a member's name links to their card; "Zhe Wang" is shown in bold
+   (Presentations are in data/presentations.js and shown on presentations.html.)
 
    • Write text between backticks ` … ` so quotes and apostrophes need no escaping.
    • Comma after every entry except the last one in each list.
@@ -35,15 +33,5 @@ window.TEAM = {
   alumni: [
     { name: "Ichiro Placeholder", ja: "仮 一郎", degree: "M.Eng.", year: 2026, example: true,
       thesis: `Example thesis title on near-infrared emitters`, now: `Example Chemical Co., Ltd.` }
-  ],
-
-  presentations: [
-    { date: "2026-09-18", presenter: "Taro Sample", type: "Poster", example: true,
-      title: `Example poster title`, meeting: `Example Symposium on Physical Organic Chemistry`, place: "Osaka",
-      award: "Best Poster Award" },
-    { date: "2026-03-20", presenter: "Zhe Wang", type: "Oral", example: true,
-      title: `Example talk title`, meeting: `Example Annual Meeting`, place: "Tokyo" },
-    { date: "2025-11-02", presenter: "Hanako Example", type: "Oral", example: true,
-      title: `Example oral presentation title`, meeting: `Example Conference on Structural Organic Chemistry`, place: "Kyoto" }
   ]
 };

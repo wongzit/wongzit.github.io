@@ -12,6 +12,7 @@ It lists every public page automatically:
   • every blog post in posts/posts.json that has its <slug>/ folder
   • the program pages under program/
   • news stories (news items with an "id" and a "body") in data/news.js
+Pages marked hidden: true in the menu (assets/js/site.js) are left out.
 "lastmod" is the date of the file's last git commit (today if it has
 uncommitted changes). Only the Python standard library and git are needed.
 """
@@ -25,6 +26,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 EXCLUDE = {"404.html", "post.html", "googleb2b7e2a4a12ce439.html"}
 # News stories that are only examples.
 EXCLUDE_STORIES = {"example-story"}
+# Pages switched off in the menu (hidden: true in assets/js/site.js), e.g. books & patents.
+_site_js = (ROOT / "assets" / "js" / "site.js").read_text(encoding="utf-8")
+for _obj in re.findall(r"\{[^{}]*\}", _site_js):
+    _href = re.search(r'href:\s*"/([^"#/]+\.html)"', _obj)
+    if _href and re.search(r"\bhidden:\s*true\b", _obj):
+        EXCLUDE.add(_href.group(1))
 
 TODAY = datetime.date.today().isoformat()
 

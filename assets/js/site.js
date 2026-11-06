@@ -24,11 +24,20 @@ const SITE = {
     { label: "research",     href: "/research.html" },
     {
       label: "publications", href: "/publications.html",
+      // "short" = label in the "List by Type" row on the publication pages;
+      // listByType: false keeps an item in the menu but out of that row.
+      // { divider: true } draws a line in the menu. hidden: true keeps a page
+      // out of the menu, the "List by Type" row and the sitemap — set it to
+      // false once the page has entries.
       children: [
-        { label: "all publications",                href: "/publications.html" },
+        { label: "all publications",   href: "/publications.html", short: "all" },
         { label: "original papers",    href: "/papers.html" },
         { label: "accounts & reviews", href: "/reviews.html" },
         { label: "cover pictures",     href: "/covers.html" },
+        { divider: true },
+        { label: "books & chapters",   href: "/books.html",   hidden: true },
+        { label: "presentations",      href: "/presentations.html", listByType: false },
+        { label: "patents",            href: "/patents.html", hidden: true },
       ],
     },
     {
@@ -87,13 +96,19 @@ function refreshSocialIcons() {
 }
 
 /* ---- Build the navbar -------------------------------------------------- */
-function buildNav() {
-  // Current page path relative to the site base (handles sub-folder hosting).
+// Current page path relative to the site base (handles sub-folder hosting):
+// "", "cv.html", "blog.html", "my-post/" …
+function currentRel() {
   const basePath = new URL(window.SITE_BASE).pathname;          // "/" or "/repo/"
   let rel = location.pathname;
   if (rel.startsWith(basePath)) rel = rel.slice(basePath.length);
-  rel = rel.replace(/index\.html$/, "");                        // "/index.html" => home
-  // rel is now like "", "cv.html", "blog.html", or "my-post/".
+  return rel.replace(/index\.html$/, "");                       // "/index.html" => home
+}
+const navRelOf = href => href.split("#")[0].replace(/^\//, "").replace(/\/$/, "");
+const navShown = c => !c.divider && !c.hidden;
+
+function buildNav() {
+  const rel = currentRel();
   const isHome = rel === "";
   const isLight = document.documentElement.getAttribute("data-theme") === "light";
 
@@ -102,10 +117,13 @@ function buildNav() {
     (isHome ? "" : `<span class="site-nav__brandtext">${SITE.brandText}</span>`);
 
   const linkHTML = SITE.nav.map(item => {
-    const navRel = item.href.split("#")[0].replace(/^\//, "");
-    const active = navRel === rel ? "active" : "";
+    const here = rel.replace(/\/$/, "");
+    const active = navRelOf(item.href) === here ||
+      (item.children || []).some(c => navShown(c) && navRelOf(c.href) === here) ? "active" : "";
     if (item.children) {
-      const sub = item.children.map(c => `<a href="${siteUrl(c.href)}">${c.label}</a>`).join("");
+      const sub = item.children.filter(c => !c.hidden).map(c => c.divider
+        ? `<span class="nav-drop__sep" role="separator"></span>`
+        : `<a href="${siteUrl(c.href)}">${c.label}</a>`).join("");
       return `<div class="nav-drop">
                 <a href="${siteUrl(item.href)}" class="${active}">${item.label} ▾</a>
                 <div class="nav-drop__menu">${sub}</div>
@@ -127,6 +145,19 @@ function buildNav() {
     </div>`;
   const slot = document.getElementById("site-header");
   (slot || document.body).prepend(nav);
+}
+
+/* ---- "List by Type" row on the publication pages ------------------------
+   Built from the publications menu above, so a page that is hidden there is
+   hidden here too. A page asks for it with <p class="pub-nav" id="pub-type-nav"></p>. */
+function buildPubTypeNav() {
+  const el = document.getElementById("pub-type-nav");
+  const pubs = SITE.nav.find(i => i.href === "/publications.html");
+  if (!el || !pubs || !pubs.children) return;
+  const rel = currentRel();
+  el.innerHTML = "<b>List by Type:</b> " + pubs.children.filter(c => navShown(c) && c.listByType !== false).map(c =>
+    `<a href="${siteUrl(c.href)}"${navRelOf(c.href) === rel ? ' class="active"' : ""}>${c.short || c.label}</a>`)
+    .join('<span class="sep">/</span>');
 }
 
 /* ---- Build the footer -------------------------------------------------- */
@@ -176,5 +207,5 @@ function initCursorGlow() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  buildNav(); buildFooter(); refreshSocialIcons(); initCursorGlow();
+  buildNav(); buildPubTypeNav(); buildFooter(); refreshSocialIcons(); initCursorGlow();
 });
