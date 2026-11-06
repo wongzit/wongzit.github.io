@@ -21,11 +21,11 @@
    • Comma after every entry except the last one.
    ========================================================================== */
 window.PRESENTATIONS = [
-  { date: "2026-09-18", scope: "domestic", presenter: "Taro Sample", type: "Poster", example: true,
-    authors: `Taro Sample, Hanako Example, Zhe Wang`,
-    title: `Example poster title`, meeting: `Example Symposium on Physical Organic Chemistry`, place: "Osaka",
-    award: "Best Poster Award" },
-  { date: "2026-03-20", scope: "international", presenter: "Zhe Wang", type: "Invited", example: true,
+
+  { date: "2026-09-08", scope: "domestic", presenter: "中根 晴太", type: "Oral", example: false,
+    authors: `中根 晴太，王 哲，森 直`,
+    title: `ラダー型ピレン誘導体のエキシマー形成における配向と円偏光発光制御`, place: "神戸大学鶴甲第1キャンパス" },
+  { date: "2026-03-20", scope: "international", presenter: "Zhe Wang", type: "Invited",
     title: `Example invited talk title`, meeting: `Example International Symposium on Physical Organic Chemistry`, place: "Seoul, Korea" },
   { date: "2025-11-02", scope: "domestic", presenter: "Hanako Example", type: "Oral", example: true,
     authors: `Jiro Demo, Hanako Example, Zhe Wang`,
