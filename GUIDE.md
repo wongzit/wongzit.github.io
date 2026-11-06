@@ -55,13 +55,14 @@ Three consequences worth internalising:
 
 ### Where the "logic" lives
 
-Only six files contain machinery. Everything else is content.
+Only seven files contain machinery. Everything else is content.
 
 | File | Responsibility |
 | --- | --- |
 | `assets/js/site.js` | Navbar, footer, dark/light theme, cursor glow, base-path detection |
 | `assets/js/blog.js` | Blog index, tag filter, Markdown→HTML rendering, math, latest-posts table |
 | `assets/js/pubs.js` | Publication list rendering, year grouping, search / year / sort pull-downs, buttons, cover slideshow, lightbox |
+| `assets/js/pubexport.js` | "Export" button on `publications.html`: formatting panel, preview, Word (.docx) download, copy |
 | `assets/js/cas.js` | Rotatable 3D molecule viewers on the compound gallery (`cas.html`) |
 | `assets/js/news.js` | News list on the home page (5 newest) and `news.html` (all) |
 | `assets/css/style.css` | All styling for the entire site |
@@ -177,6 +178,7 @@ wongzit.github.io/
     ├── js/site.js            ← navbar, footer, theme
     ├── js/blog.js            ← blog engine
     ├── js/pubs.js            ← publications engine
+    ├── js/pubexport.js       ← "Export" → Word (.docx) panel on publications.html
     ├── js/cas.js             ← 3D molecule viewers for cas.html
     ├── js/news.js            ← shows data/news.js on index.html and news.html
     ├── js/team.js            ← builds team.html; marks students' names in author lists
@@ -274,7 +276,7 @@ Notes:
 
 ## 5. The `?v=` cache rule
 
-Every reference to `style.css`, `site.js`, `blog.js`, `pubs.js`, `cas.js` and
+Every reference to `style.css`, `site.js`, `blog.js`, `pubs.js`, `pubexport.js`, `cas.js` and
 `data/publications.js` ends with a query string:
 
 ```html
@@ -288,7 +290,7 @@ The number itself has no meaning — only "different from last time" matters.
 
 > ### The rule
 >
-> **If you edited `style.css`, `site.js`, `blog.js`, `pubs.js`, `cas.js` or
+> **If you edited `style.css`, `site.js`, `blog.js`, `pubs.js`, `pubexport.js`, `cas.js` or
 > `data/publications.js`, increase `?v=` by one across the whole repository
 > before you push.**
 >
@@ -314,7 +316,7 @@ references (currently 154 in the live repo — most of them are the per-post
 some pages will load a stale stylesheet — that is exactly the bug the count
 check catches.
 
-Current state: live repo is at `?v=27`, test repo at `?v=37`. They are
+Current state: live repo is at `?v=28`, test repo at `?v=39`. They are
 independent counters; do not try to make them match.
 
 ---
@@ -484,6 +486,8 @@ window.PUBLICATIONS = [      // ← keep this first line
   "title": "Controlling through-space spin coupling in helical diradicaloids",
   "authors": "<span class=\"me\">Zhe Wang</span><sup>*</sup>, Tadashi Mori<sup>*</sup>",
   "venue": "<i>J. Am. Chem. Soc.</i>, <b>2026</b>, <i>148</i>, 20974–20984.",
+  "journalFull": "Journal of the American Chemical Society",
+  "issue": "12",
   "image": "assets/img/pubs/wang2026controlling.png",
   "doi": "10.1021/jacs.6b01234",
   "links": {
@@ -514,6 +518,14 @@ Field by field:
 - **`venue`** — HTML string, following the house style:
   `<i>` = journal name and volume, `<b>` = year, plain text = page numbers
   (page numbers stay upright, not italic).
+- **`journalFull`** — the journal's full name, e.g. `"Journal of the American
+  Chemical Society"`. Not shown on the site; the Export panel uses it when
+  "Journal name: Full name" is chosen (the Wiley and APA presets do), and falls
+  back to the abbreviation in `venue` when it is left `""`. Fill it in for each
+  new paper or review.
+- **`issue`** — the issue number, e.g. `"issue": "12"`. Every paper and review
+  has this line; leave it `""` when unknown or when the journal has no issues.
+  Not shown on the site; used by the Export panel (see *Export to Word* below).
 - **`image`** — TOC graphic in `assets/img/pubs/`. Any aspect ratio; it is shown
   at its natural proportions and enlarges in a lightbox when clicked.
 - **`doi`** — the bare DOI (no `https://doi.org/`). Supplying it turns on the
@@ -598,6 +610,35 @@ delete one to hide that control):
   <select id="pub-sort" class="pub-select" aria-label="Sort order"></select>
 </div>
 ```
+
+**Export to Word.** `publications.html` has an **Export** button at the end of
+the toolbar (`assets/js/pubexport.js`). It opens a panel where a visitor picks a
+citation style (ACS, RSC, Wiley, Nature, APA, or this website's full-name
+style) and then fine-tunes it: author name order (Zhe Wang / Wang, Z. / Wang Z.),
+full given names or initials, middle names, "and" / "&" before the last author,
+"et al." after N authors, highlighting of your own name, the `*` marks, and for
+each field (authors, title, journal, year, volume, issue, pages, DOI) whether it is
+shown, **bold** / *italic*, wrapped in ( ) or [ ], the text placed before it,
+and its position. List options cover paper / review / preprint selection, a
+year range, order, year or type headings, numbering (1. [1] (1) 1), up or
+down), font, size, spacing and paper size. A live preview shows the Word page;
+**Download .docx** builds a real Word file in the browser (no library, no
+server) and **Copy text** puts formatted text on the clipboard. A visitor's
+last choices are remembered in their own browser.
+
+Nothing needs maintaining — it reads `data/publications.js`. It relies on the
+house style above: your name in `<span class="me">`, corresponding marks as
+`<sup>*</sup>`, and a venue written `<i>Journal</i>, <b>year</b>, <i>volume</i>,
+pages.` Entries that deviate still export, with the venue as-is. Entries whose
+journal contains "rxiv" count as preprints. The year comes from the `"year"`
+field, not from the venue. Full journal names come from
+`journalFull` (see the field list above). The issue number is optional and appears only
+for entries that have one: fill in the entry's `"issue"` line (export only), or
+write it right after the volume in the venue, `<i>148</i>(12), 1–5.`, which also
+shows it on the site. Presets, the download file name and the group
+labels are at the top of `pubexport.js`. To add the button to another page,
+copy the `<button id="pub-export" …>` from `publications.html` into its toolbar
+and load `pubexport.js` after `data/publications.js`.
 
 **After editing `data/publications.js`, bump `?v=`** (§5).
 
