@@ -136,7 +136,7 @@ window.PUBLICATIONS = [
     "year": 2024,
     "title": "py.Aroma: An Intuitive Graphical User Interface for Diverse Aromaticity Analyses",
     "authors": "<span class=\"me\">Zhe Wang</span><sup>*</sup>",
-    "venue": "<i>Chemistry</i>, <b>2026</b>, <i>6</i>, 1692–1703.",
+    "venue": "<i>Chemistry</i>, <b>2024</b>, <i>6</i>, 1692–1703.",
     "image": "assets/img/pubs/wang2024pyaroma.png",
     "doi": "10.3390/chemistry6060103",
     "links": {
