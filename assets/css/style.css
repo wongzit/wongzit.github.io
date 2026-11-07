@@ -249,6 +249,7 @@ tr:target td { background: var(--accent-soft); }
 .team-pres-meta { color: var(--text-dim); font-size: .92rem; margin-top: 2px; }
 .pres-presenter { text-decoration: underline dotted var(--accent); text-decoration-thickness: 2px;
                   text-underline-offset: 3px; }   /* presenter on presentations.html */
+.pres-note { color: var(--text-faint); font-size: .9rem; margin: 0 0 4px; }   /* line above the list */
 .team-name { color: inherit; text-decoration: underline dotted var(--accent); text-underline-offset: 3px; }  /* team members in author lists */
 .team-name:hover { color: var(--accent); }
 .team-tag.scope-international { color: var(--accent-2); border-color: color-mix(in srgb, var(--accent-2) 45%, transparent);
